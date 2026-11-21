@@ -1,0 +1,274 @@
+{
+  "dataset_id": "genji_koh_poetry_exchange_pilot_v0_1",
+  "version": "0.1.0",
+  "title": "Genji-kō Poetry Exchange Pilot",
+  "description": "A small, human-curated bank of connected waka for testing a sequential matching game, not a complete edition or a publication-ready critical text.",
+  "curation_date": "2026-11-21",
+  "language_of_original": "Japanese (historical transcription)",
+  "translation_credits": "New provisional English game glosses drafted for this project; not taken from an existing published translation.",
+  "source_policy": {
+    "waka_index": "https://kouigenjimonogatari.github.io/en/waka.html",
+    "waka_count_in_reference_index": 795,
+    "poem_numbering": "Global 1–795 order in the Kōi Genji Monogatari Text DB waka index",
+    "original_text_note": "Historical orthography is preserved from the public waka index, including variant kana, ditto marks, and manuscript-style spellings. Slashes separate the five verse units and are not in the source poem.",
+    "context_reference": "https://genji-monogatari.net/html/",
+    "metadata_reference": "https://www.genjipoems.org/",
+    "caveat": "Context, attribution, poem boundary, and response order require manual editorial confirmation in an annotated edition before final public release. Entries marked review_required must not be considered fully verified."
+  },
+  "game_use": {
+    "relationship_type": "same_direct_poetic_exchange",
+    "group_key": "exchange_id",
+    "display_policy": "Show only one poem at a time; hide chapter, exchange ID, speaker, recipient, motif labels, and pair order until the answer reveal.",
+    "pilot_pattern_recommendation": "2+2+1 or 2+1+1+1, because each exchange currently has exactly two poems.",
+    "constraints": [
+      "For a five-card round, draw at most two poems from any exchange.",
+      "At most one copy of any poem may appear in a round.",
+      "Do not use chapter as the answer key; two independent exchanges can occur in one chapter.",
+      "Avoid selecting multiple pairs whose English glosses share an obvious keyword unless an intentionally hard round is being tested.",
+      "A solitary poem from an exchange is a legitimate singleton in a round; do not imply that every group must contain a pair.",
+      "All draft translations and answer explanations need Japanese-literary editorial review before assessment of player skill."
+    ]
+  },
+  "exchanges": [
+    {
+      "exchange_id": "GK-001",
+      "chapter_number": 2,
+      "chapter_romaji": "Hahakigi",
+      "chapter_english": "The Broom Tree",
+      "context": "An exchange recalled during the Rainy Night Discussion, in which a man and the woman he has been involved with contest whose conduct counts as a cause for separation.",
+      "response_mechanism": "The reply takes up the initiating poem's 'unhappy joints/occasions,' counting on the fingers, and the moment of parting; a rebuke becomes a counter-rebuke.",
+      "motif_tags": ["fingers", "counting", "grievance", "parting", "wordplay"],
+      "difficulty_provisional": "medium",
+      "poems": [
+        {"poem_id": 10, "exchange_role": "initiation", "speaker": "Captain of the Left Horse (Sama no Kami), recounting an earlier relationship", "recipient": "Woman in the Captain's anecdote", "japanese": "てをおりて/あひみし事を/かそふれは/これひとつやは/君かうきふし", "english_game_gloss": "Counting on my fingers the times we have met, is this truly the only painful turn in your dealings with me?"},
+        {"poem_id": 11, "exchange_role": "reply", "speaker": "Woman in the Captain's anecdote", "recipient": "Captain of the Left Horse", "japanese": "うきふしを/心ひとつに/かそへきて/こや君かてを/わかるへきおり", "english_game_gloss": "I have counted those painful turns alone in my heart; is this the moment when your own hand will let go of mine?"}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes02.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "The exchange is embedded in a character's anecdote rather than enacted in the novel's narrative present. The woman is unnamed."}
+    },
+    {
+      "exchange_id": "GK-002",
+      "chapter_number": 3,
+      "chapter_romaji": "Utsusemi",
+      "chapter_english": "The Cicada Shell",
+      "context": "After Utsusemi evades Genji, the discarded cicada-shell robe becomes a token through which they articulate desire and concealment.",
+      "response_mechanism": "The answer repeats 'cicada' while reversing the perspective from a shell left behind to the hidden, tear-damp person.",
+      "motif_tags": ["cicada", "shell", "concealment", "dew", "tears"],
+      "difficulty_provisional": "easy",
+      "poems": [
+        {"poem_id": 24, "exchange_role": "initiation", "speaker": "Hikaru Genji", "recipient": "Utsusemi", "japanese": "うつせみの/みをかへてける/木のもとに/なを人からの/なつかしきかな", "english_game_gloss": "Beneath the tree where the cicada changed its body, I still find the empty shell of that person dear."},
+        {"poem_id": 25, "exchange_role": "reply", "speaker": "Utsusemi", "recipient": "Hikaru Genji", "japanese": "うつせみの/はにをく露の/木かくれて/しのひ〱に/ぬるゝそてかな", "english_game_gloss": "Like dew settling on a cicada's wing, hidden among the trees, my sleeves grow wet with secret tears."}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes03.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "Genji's poem about the discarded robe is transmitted to Utsusemi, who appends her answer to the poem's paper; commentary identifies her answer as an adapted/quoted older poem."}
+    },
+    {
+      "exchange_id": "GK-003",
+      "chapter_number": 4,
+      "chapter_romaji": "Yūgao",
+      "chapter_english": "Evening Faces",
+      "context": "A woman associated with a house of evening-face flowers sends Genji a poem on a fan; he replies without openly naming himself.",
+      "response_mechanism": "Both use evening-face flowers and the uncertainty of identifying someone through pale light and twilight; the reply requests a closer view.",
+      "motif_tags": ["evening-face", "flowers", "twilight", "recognition", "light"],
+      "difficulty_provisional": "easy",
+      "poems": [
+        {"poem_id": 26, "exchange_role": "initiation", "speaker": "Yūgao", "recipient": "Hikaru Genji", "japanese": "心あてに/それかとそみる/しら露の/ひかりそへたる/ゆふかほの花", "english_game_gloss": "I can only guess that it is you: the evening-face flower shines more brightly beneath the pale dew."},
+        {"poem_id": 27, "exchange_role": "reply", "speaker": "Hikaru Genji", "recipient": "Yūgao", "japanese": "よりてこそ/それかともみめ/たそかれに/ほの〱みつる/花のゆふかほ", "english_game_gloss": "Only coming closer could I tell if it is truly you, the evening-face blossom I glimpsed faintly in twilight."}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/genji04.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "Reply order has been explicitly corrected: the woman's fan-poem comes before Genji's answer."}
+    },
+    {
+      "exchange_id": "GK-004",
+      "chapter_number": 5,
+      "chapter_romaji": "Wakamurasaki",
+      "chapter_english": "Young Murasaki",
+      "context": "Murasaki's ailing grandmother wonders about the child's future; a woman of the household responds with a plea against dying too soon.",
+      "response_mechanism": "Young grass represents the child and vanishing dew represents the elder's mortality; the response turns an anxious image into an appeal to remain alive.",
+      "motif_tags": ["young-grass", "dew", "child", "care", "mortality"],
+      "difficulty_provisional": "medium",
+      "poems": [
+        {"poem_id": 45, "exchange_role": "initiation", "speaker": "Elder nun (Murasaki's grandmother)", "recipient": "Lady attendant in her household", "japanese": "をひたゝむ/ありかもしらぬ/わか草を/をくらす露そ/きえんそらなき", "english_game_gloss": "Not knowing where this young grass will grow to maturity, the dew that shelters it cannot bear to vanish."},
+        {"poem_id": 46, "exchange_role": "reply", "speaker": "Lady attendant", "recipient": "Elder nun (Murasaki's grandmother)", "japanese": "はつ草の/おひ行すゑも/しらぬまに/いかてか露の/きえんとすらむ", "english_game_gloss": "Before you know where the new grass will grow, how can the dew think of disappearing?"}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes05.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "Annotated editions identify the speakers as the elder nun and an unnamed attendant; the child's fate motivates their imagery."}
+    },
+    {
+      "exchange_id": "GK-005",
+      "chapter_number": 9,
+      "chapter_romaji": "Aoi",
+      "chapter_english": "Heartvine",
+      "context": "At the Kamo festival, the older court lady Gen no Naishi makes a flirtatious pun on the aoi leaves worn by festival participants; Genji returns a pointed reply.",
+      "response_mechanism": "The word aoi evokes the ritual leaf and an 'occasion to meet'; both poems exploit the festival image to spar about attraction and exclusivity.",
+      "motif_tags": ["aoi", "festival", "leaves", "meeting", "pun"],
+      "difficulty_provisional": "hard",
+      "poems": [
+        {"poem_id": 112, "exchange_role": "initiation", "speaker": "Gen no Naishi", "recipient": "Hikaru Genji", "japanese": "はかなしや/人のかさせる/あふひゆへ/神のゆるしの/けふをまちける", "english_game_gloss": "How futile to have waited for the god's sanctioned day, just for the aoi leaves another person wears—the day of meeting."},
+        {"poem_id": 113, "exchange_role": "reply", "speaker": "Hikaru Genji", "recipient": "Gen no Naishi", "japanese": "かさしける/こゝろそあたに/おもほゆる/やそうち人に/なへてあふひを", "english_game_gloss": "The heart that placed those leaves in the hair seems fickle to me—offering an aoi, a day of meeting, to every courtier alike."}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/genji09.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "The aoi/au-hi pun is culturally specific and will require a player-facing hint or introduction."}
+    },
+    {
+      "exchange_id": "GK-006",
+      "chapter_number": 10,
+      "chapter_romaji": "Sakaki",
+      "chapter_english": "The Sacred Tree",
+      "context": "Genji addresses Princess Asagao with a respectful allusion to the ritual shoulder cord and a former bond; Asagao answers at a distance.",
+      "response_mechanism": "The answer echoes the initiator's 'that god/former time' and ritual yūdasuki, disputing what kind of remembered attachment is appropriate.",
+      "motif_tags": ["ritual-cord", "shrine", "divinity", "former-times", "memory"],
+      "difficulty_provisional": "hard",
+      "poems": [
+        {"poem_id": 152, "exchange_role": "initiation", "speaker": "Hikaru Genji", "recipient": "Princess Asagao", "japanese": "かけまくは/かしこけれとも/その神の/あきおもほゆる/ゆふたすきかな", "english_game_gloss": "It may be presumptuous even to speak of it, yet the sacred shoulder-cord draws my mind back to that god—and to old times."},
+        {"poem_id": 153, "exchange_role": "reply", "speaker": "Princess Asagao", "recipient": "Hikaru Genji", "japanese": "その神や/いかゝはありし/ゆふたすき/心にかけて/しのふらんゆへ", "english_game_gloss": "What was that god—or that former time—to you, that you should keep the ritual cord tied in your thoughts and long for it?"}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes10.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "Annotated editions confirm Genji and Princess Asagao. Interpretation of そのかみ ('long ago' / divine allusion) is pun-dependent; English is provisional."}
+    },
+    {
+      "exchange_id": "GK-007",
+      "chapter_number": 12,
+      "chapter_romaji": "Suma",
+      "chapter_english": "Suma",
+      "context": "A visiting Gosechi dancer aboard a departing boat addresses the exiled Genji, who answers with the boat's motion and the waves at Suma.",
+      "response_mechanism": "A towline held by the music of a koto becomes an actual boat-rope and a figure of emotional hesitation; the answer sustains and redirects the maritime metaphor.",
+      "motif_tags": ["towline", "boat", "hesitation", "koto", "waves"],
+      "difficulty_provisional": "medium",
+      "poems": [
+        {"poem_id": 206, "exchange_role": "initiation", "speaker": "Gosechi dancer", "recipient": "Hikaru Genji", "japanese": "ことのねに/ひきとめらるゝ/つなてなは/たゆたふ心/君しるらめや", "english_game_gloss": "If the koto's sound holds me back like a towline, would you know how my heart hangs in hesitation?"},
+        {"poem_id": 207, "exchange_role": "reply", "speaker": "Hikaru Genji", "recipient": "Gosechi dancer", "japanese": "こゝろありて/ひきてのつなの/たゆたはゝ/うちすきましや/すまのうら浪", "english_game_gloss": "If the rope pulling your boat truly wavered out of feeling, could it simply pass beyond the waves of Suma?"}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes12.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "A previously tested pairing; boat/towline imagery is strong when the English gloss preserves it."}
+    },
+    {
+      "exchange_id": "GK-008",
+      "chapter_number": 13,
+      "chapter_romaji": "Akashi",
+      "chapter_english": "Akashi",
+      "context": "Genji hopes for an intimate companion with whom to discuss his dreamlike misfortunes; the Akashi lady counters that she cannot tell waking from dream.",
+      "response_mechanism": "The answer repeats the metaphor of a dream but replaces Genji's wish for a companion with the respondent's inability to distinguish reality from illusion.",
+      "motif_tags": ["dreams", "waking", "conversation", "uncertainty", "intimacy"],
+      "difficulty_provisional": "medium",
+      "poems": [
+        {"poem_id": 229, "exchange_role": "initiation", "speaker": "Hikaru Genji", "recipient": "Lady of Akashi", "japanese": "むつことを/かたりあはせむ/人もかな/うき世の夢も/なかはさむやと", "english_game_gloss": "If only I had someone with whom to share intimate words—perhaps I might wake halfway from this bitter world's dream."},
+        {"poem_id": 230, "exchange_role": "reply", "speaker": "Lady of Akashi", "recipient": "Hikaru Genji", "japanese": "あけぬ夜に/やかてまとへる/心には/いつれを夢と/わきてかたらむ", "english_game_gloss": "My heart is lost in a night that never dawns; how could I tell which part is dream and put it into words?"}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes13.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "The historical transcription なかはさむ corresponds to the edited なかば覚む ('wake partway'); the English gloss makes that interpretation explicit."}
+    },
+    {
+      "exchange_id": "GK-009",
+      "chapter_number": 14,
+      "chapter_romaji": "Miotsukushi",
+      "chapter_english": "Channel Buoys",
+      "context": "Genji sends a farewell to a woman connected with the court, who suspects that his regret at parting is a pretext for a different attachment.",
+      "response_mechanism": "Both poems turn explicitly on the word 'parting,' but the response reinterprets the sender's regret as an excuse rather than shared sorrow.",
+      "motif_tags": ["parting", "regret", "farewell", "pretext", "attachment"],
+      "difficulty_provisional": "medium",
+      "poems": [
+        {"poem_id": 248, "exchange_role": "initiation", "speaker": "Hikaru Genji", "recipient": "Daughter of a court lady referred to as Senji", "japanese": "かねてより/へたてぬ中と/ならはねと/わかれはおしき/物にそありける", "english_game_gloss": "Though we were never accustomed to an intimacy without distance, I have learned that parting is painful all the same."},
+        {"poem_id": 249, "exchange_role": "reply", "speaker": "Daughter of a court lady referred to as Senji", "recipient": "Hikaru Genji", "japanese": "うちつけの/わかれをおしむ/かことにて/おもはむかたに/したひやはせぬ", "english_game_gloss": "Is your sudden lament at parting only a pretext, so that you may follow wherever your heart truly wishes to go?"}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes14.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "The addressee is a daughter of a former palace attendant called Senji (宣旨); her name is not given. The dialogue is linked to a court appointment/parting."}
+    },
+    {
+      "exchange_id": "GK-010",
+      "chapter_number": 15,
+      "chapter_romaji": "Yomogiu",
+      "chapter_english": "The Wormwood Patch",
+      "context": "Genji visits Suetsumuhana's neglected dwelling, where wisteria and waiting frame the uneasy reunion.",
+      "response_mechanism": "Both play on matsu ('pine' and 'to wait') and the lingering house; the reply questions whether the caller came for the woman or merely the flowers.",
+      "motif_tags": ["wisteria", "waiting", "pine", "house", "loyalty", "wordplay"],
+      "difficulty_provisional": "hard",
+      "poems": [
+        {"poem_id": 269, "exchange_role": "initiation", "speaker": "Hikaru Genji", "recipient": "Suetsumuhana", "japanese": "ふちなみの/うちすきかたく/みえつるは/まつこそやとの/しるしなりけれ", "english_game_gloss": "I could hardly pass by these waves of wisteria; they must be the sign of a house that has waited for me."},
+        {"poem_id": 270, "exchange_role": "reply", "speaker": "Suetsumuhana", "recipient": "Hikaru Genji", "japanese": "としをへて/まつしるしなき/わかやとを/花のたよりに/すきぬはかりか", "english_game_gloss": "For years my house has waited without a sign of reward; have you only stopped by because the flowers gave you a reason?"}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes15.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "English reveals a portion of the matsu pun; consider a glossary for Japanese-advanced mode."}
+    },
+    {
+      "exchange_id": "GK-011",
+      "chapter_number": 24,
+      "chapter_romaji": "Kochō",
+      "chapter_english": "Butterflies",
+      "context": "Murasaki no Ue and Akikonomu exchange poems in the seasonal contest between spring flowers and autumn insects.",
+      "response_mechanism": "The response picks up the butterfly carried by the first poem while placing an obstacle of thick yamabuki flowers between sender and recipient.",
+      "motif_tags": ["butterfly", "spring", "autumn", "insects", "flowers", "seasonal-rivalry"],
+      "difficulty_provisional": "medium",
+      "poems": [
+        {"poem_id": 364, "exchange_role": "initiation", "speaker": "Murasaki no Ue", "recipient": "Akikonomu (the Autumn Princess)", "japanese": "はなそのゝ/こてふをさへや/したくさに/秋まつむしは/うとくみるらむ", "english_game_gloss": "Would even a butterfly from the flower garden seem a stranger to the autumn-crickets waiting deep among the grasses?"},
+        {"poem_id": 365, "exchange_role": "reply", "speaker": "Akikonomu (the Autumn Princess)", "recipient": "Murasaki no Ue", "japanese": "こてふにも/さそはれなまし/こゝろありて/やへ山ふきを/へたてさりせは", "english_game_gloss": "I might gladly follow even a butterfly, if only those layers of golden kerria blossoms did not keep us apart."}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes24.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "The word kochō ('butterfly') carries an additional pun on 'come here,' and yamabuki is kerria; the English gloss does not fully capture the wordplay."}
+    },
+    {
+      "exchange_id": "GK-012",
+      "chapter_number": 45,
+      "chapter_romaji": "Hashihime",
+      "chapter_english": "The Lady at the Bridge",
+      "context": "Kaoru's approach to the Uji sisters is expressed through boatmanship and river imagery, answered by the elder sister's image of sleeves worn away by spray.",
+      "response_mechanism": "The river-pole's dripping water is reimagined as the constant moisture of tears and the wearing down of sleeves; the response sustains the Uji river setting.",
+      "motif_tags": ["Uji-river", "boat-pole", "spray", "sleeves", "tears"],
+      "difficulty_provisional": "medium",
+      "poems": [
+        {"poem_id": 628, "exchange_role": "initiation", "speaker": "Kaoru", "recipient": "Ōigimi (elder Uji princess)", "japanese": "橋ひめの/心をくみて/たかせさす/さほのしつくに/袖そぬれぬる", "english_game_gloss": "Trying to fathom the lady at the bridge, I dip my pole into the shallows; its falling drops have soaked my sleeves."},
+        {"poem_id": 629, "exchange_role": "reply", "speaker": "Ōigimi (elder Uji princess)", "recipient": "Kaoru", "japanese": "さしかへる/うちの河おさ/あさ夕の/しつくや袖を/くたしはつらむ", "english_game_gloss": "Pushing back and forth along the Uji River, will the drops of morning and evening wear your sleeves away entirely?"}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes45.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "The river-steering technical vocabulary may need a short glossary to distinguish imagery from ordinary repeated words."}
+    },
+    {
+      "exchange_id": "GK-013",
+      "chapter_number": 46,
+      "chapter_romaji": "Shiigamoto",
+      "chapter_english": "Beneath the Oak",
+      "context": "The Eighth Prince, separated from visitors by river and mountain mist, sends a verse that Niou answers on Kaoru's behalf.",
+      "response_mechanism": "Distant white waves and a wind that clears clouds or mist are turned into a plea for the Uji river wind to cross the intervening space.",
+      "motif_tags": ["wind", "river", "waves", "distance", "mist"],
+      "difficulty_provisional": "medium",
+      "poems": [
+        {"poem_id": 632, "exchange_role": "initiation", "speaker": "Eighth Prince (Hachi no Miya)", "recipient": "Kaoru and his visiting party", "japanese": "山風に/かすみふきとく/こゑはあれと/へたてゝみゆる/をちのしら浪", "english_game_gloss": "The mountain wind can be heard blowing the mist apart, yet the white waves across the distance still seem to keep us apart."},
+        {"poem_id": 633, "exchange_role": "reply", "speaker": "Niou (replying for Kaoru's party)", "recipient": "Eighth Prince (Hachi no Miya)", "japanese": "をちこちの/汀になみは/へたつとも/なをふきかよへ/うちの河風", "english_game_gloss": "Though waves separate the shores on either side, keep blowing between us, wind over the Uji River."}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://www.genji-monogatari.com/volumes/volume_46/"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "Composing the reply on behalf of another person is pedagogically useful; retain it as author/role metadata but hide it during a round."}
+    },
+    {
+      "exchange_id": "GK-014",
+      "chapter_number": 46,
+      "chapter_romaji": "Shiigamoto",
+      "chapter_english": "Beneath the Oak",
+      "context": "Niou inquires about the autumn mountain village in a poem addressed to Naka no Kimi; Ōigimi composes a reply for her sister.",
+      "response_mechanism": "The first verse's deer, mountain village, and dew are transformed into a chorus of deer at the fence and a mountain village veiled in tears and mist.",
+      "motif_tags": ["deer", "autumn", "mountain-village", "dew", "tears", "mist"],
+      "difficulty_provisional": "medium",
+      "poems": [
+        {"poem_id": 638, "exchange_role": "initiation", "speaker": "Niou", "recipient": "Naka no Kimi (younger Uji princess)", "japanese": "をしかなく/秋の山さと/いかならむ/こ萩か露の/かゝる夕くれ", "english_game_gloss": "What must the autumn mountain village be like this evening, as deer call and dew gathers on the little bush clover?"},
+        {"poem_id": 639, "exchange_role": "reply", "speaker": "Ōigimi (composing for Naka no Kimi)", "recipient": "Niou", "japanese": "なみたのみ/きりふたかれる/山里は/まかきに鹿そ/もろこゑになく", "english_game_gloss": "In this mountain village shrouded in a mist of tears, the deer at the fence cry out together, voice answering voice."}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://www.genji-monogatari.com/volumes/volume_46/"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "Two different exchanges from the same chapter occur in this pilot, a useful check against inadvertently treating chapter as group ID."}
+    },
+    {
+      "exchange_id": "GK-015",
+      "chapter_number": 47,
+      "chapter_romaji": "Agemaki",
+      "chapter_english": "Trefoil Knots",
+      "context": "Kaoru proposes a durable bond to Ōigimi by invoking a knot; she counters with the image of fragile, tear-strung pearls.",
+      "response_mechanism": "The reply directly repeats a 'long promise' but argues that it cannot be tied on a strand made fragile by tears, overturning the knot of the first verse.",
+      "motif_tags": ["knots", "thread", "promise", "pearls", "tears", "fragility"],
+      "difficulty_provisional": "medium",
+      "poems": [
+        {"poem_id": 653, "exchange_role": "initiation", "speaker": "Kaoru", "recipient": "Ōigimi (elder Uji princess)", "japanese": "あけまきに/なかき契を/むすひこめ/おなしところに/よりもあはなむ", "english_game_gloss": "Let us tie a long promise into the trefoil knot, our strands coming together at a single place."},
+        {"poem_id": 654, "exchange_role": "reply", "speaker": "Ōigimi (elder Uji princess)", "recipient": "Kaoru", "japanese": "ぬきもあへす/もろき涙の/たまのをに/なかき契を/いかゝむすはん", "english_game_gloss": "On a fragile string of tear-pearls I cannot even thread together, how could I tie a promise that must last so long?"}
+      ],
+      "source_urls": ["https://kouigenjimonogatari.github.io/en/waka.html", "https://genji-monogatari.net/html/notes47.html"],
+      "verification": {"status": "cross_checked", "original_text_checked": true, "reply_relation_supported": true, "review_note": "Strong matching potential, but translation should preserve the knot/string contrast, not just generic promises."}
+    }
+  ]
+}
