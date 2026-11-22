@@ -2,11 +2,34 @@
 
 **Project owner:** Aaron Epshteyn (Boston University; Computer Science, Linguistics, and Japanese)  
 **Origin:** Creative final project for a course on *The Tale of Genji*, Fall 2026  
-**Document updated:** 2026-11-21  
-**Current stage:** Literary/game-design exploration completed; 15-exchange data pilot created; programming has not yet begun.  
+**Document updated:** 2026-11-22<br>
+**Current stage:** Local proof of concept implemented; 15-exchange pilot retained unchanged; interaction and demo workflow ready for testing.<br>
 **Audience:** A new Codex conversation or developer who cannot see the original brainstorming and trial conversations.
 
 > **Instructions for the next developer:** Read this file first, then `genji_poetry_exchanges_README.md` and `genji_poetry_exchanges_pilot.json`. Respect the distinctions between **[DECIDED]**, **[WORKING BASELINE]**, **[TENTATIVE]**, **[DEFERRED]**, and **[OPEN]** below. The owner wants to preserve the literary/game-design reasoning, not merely assemble a generic poem-matching app.
+
+### Implementation follow-up — 22 November 2026
+
+The owner approved TypeScript + Vite with plain HTML/CSS and Vitest. Game
+language is English; original Japanese may appear alongside it. Group assignments
+are final only at submission. For this proof of concept, the agreed flow is to
+read all five poems first, then assign and revise groups of numbered positions
+without redisplaying their texts, and submit once for the reveal. Reading is
+self-paced, without a timer. Japanese is optional during reading and always
+included at reveal; English glosses retain their provisional label.
+
+The local prototype includes schema validation, reproducible seeded `2+2+1`
+rounds, label-invariant scoring, sequential presentation, and source-backed answer
+reveals. Automated logic and interface tests accompany it. The immediate purpose
+is to verify play and the demo workflow, not to establish balanced difficulty.
+Statistical calibration, motif-interference filtering, persistence, and hosting
+remain deferred. See `../README.md` for commands and current limits.
+
+The original handoff below preserves the earlier rationale, experiments, and
+proposals. Statements that programming has not begun, that the stack/language/
+assignment timing is open, or that players must assign while reading describe
+the earlier stage and are superseded by this follow-up. The database and its
+editorial README now live in `../data/`; their curated content is unchanged.
 
 ## 1. Executive summary
 
