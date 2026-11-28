@@ -46,7 +46,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
           <select id="template">${Object.keys(TEMPLATES).map(name => `<option value="${name}" ${name === templateName ? 'selected' : ''}>${name}</option>`).join('')}</select>
           <label class="check"><input id="hard-toggle" type="checkbox" ${hardMode ? 'checked' : ''}> Hard mode: allow unrelated poems from the same chapter</label>
           <details class="demo-settings"><summary>Repeat a round</summary><label for="seed">Round seed</label><input id="seed" name="seed" maxlength="100" required value="${escape(seed)}"><p class="muted">The same seed and settings repeat the same poems and order.</p></details>
-          <button class="primary" type="submit">Begin the round</button>
+          <button id="start-button" class="primary" type="button">Begin the round</button>
         </form>
         <p class="prototype-note">Research prototype · Groupings and hooks are provisional; difficulty has not been calibrated.</p>
       </section>`;
@@ -72,7 +72,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
             <div class="assignment-grid">${assignments.map((value, i) => `<label class="assignment" for="group-${i}"><span>Poem ${i + 1}</span><select id="group-${i}" name="group-${i}" required><option value="">Choose</option>${groupLetters.map(letter => `<option value="${letter}" ${value === letter ? 'selected' : ''}>Group ${letter}</option>`).join('')}</select></label>`).join('')}</div>
           </fieldset>
           <div class="group-preview" aria-live="polite" aria-atomic="true">${preview()}</div>
-          <div class="reading-controls"><p class="muted">Change any assignment before submitting.<br>The poem texts return after your answer.</p><button id="submit-answer" class="primary" type="submit" ${assignments.some(value => !value) ? 'disabled' : ''}>Submit grouping</button></div>
+          <div class="reading-controls"><p class="muted">Change any assignment before submitting.<br>The poem texts return after your answer.</p><button id="submit-answer" class="primary" type="button" ${assignments.some(value => !value) ? 'disabled' : ''}>Submit grouping</button></div>
         </form>
       </section>`;
 
@@ -121,13 +121,15 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
   }
 
   function bind() {
-    root.querySelector('#start-form')?.addEventListener('submit', event => {
-      event.preventDefault();
+    // Buttons are type="button" with click handlers: sandboxed previews without allow-forms block form submission.
+    const begin = () => {
       seed = root.querySelector<HTMLInputElement>('#seed')!.value.trim() || 'genji-full-1';
       templateName = root.querySelector<HTMLSelectElement>('#template')!.value;
       hardMode = root.querySelector<HTMLInputElement>('#hard-toggle')!.checked;
       start();
-    });
+    };
+    root.querySelector('#start-button')?.addEventListener('click', begin);
+    root.querySelector('#start-form')?.addEventListener('submit', event => { event.preventDefault(); begin(); });
     root.querySelector('#next')?.addEventListener('click', () => {
       if (position < 4) position++;
       else phase = 'grouping';
@@ -141,13 +143,14 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
         root.querySelector<HTMLButtonElement>('#submit-answer')!.disabled = assignments.some(value => !value);
       });
     });
-    root.querySelector('#answer-form')?.addEventListener('submit', event => {
-      event.preventDefault();
+    const submitAnswer = () => {
       if (assignments.some(value => !value)) return;
       phase = 'results';
       render();
       window.scrollTo?.(0, 0);
-    });
+    };
+    root.querySelector('#submit-answer')?.addEventListener('click', submitAnswer);
+    root.querySelector('#answer-form')?.addEventListener('submit', event => { event.preventDefault(); submitAnswer(); });
     root.querySelector('#restart')?.addEventListener('click', start);
     root.querySelector('#new-round')?.addEventListener('click', () => {
       seed = `genji-${crypto.randomUUID()}`;

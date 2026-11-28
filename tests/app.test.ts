@@ -7,7 +7,6 @@ import { canonicalLabels, generateRound, parseDataset } from '../src/game';
 const dataset = parseDataset(raw);
 let root: HTMLDivElement;
 const button = (id: string) => root.querySelector<HTMLButtonElement>(id)!;
-const submit = (id: string) => root.querySelector<HTMLFormElement>(id)!.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
 
 beforeEach(() => {
   document.body.innerHTML = '<div id="app"></div>';
@@ -19,7 +18,7 @@ beforeEach(() => {
 describe('complete player flow', () => {
   it('shows one poem at a time, hides metadata, allows revisions, and reveals only after submission', () => {
     const cards = generateRound(dataset, 'genji-demo-1');
-    submit('#start-form');
+    button('#start-button').click();
     for (let i = 0; i < 5; i++) {
       expect(root.querySelectorAll('blockquote')).toHaveLength(1);
       expect(root.querySelector('blockquote')!.textContent).toBe(cards[i].poem.english_game_gloss);
@@ -32,7 +31,7 @@ describe('complete player flow', () => {
     expect(root.querySelector('blockquote')).toBeNull();
     for (const card of cards) expect(root.textContent).not.toContain(card.poem.english_game_gloss);
     expect(button('#submit-answer').disabled).toBe(true);
-    submit('#answer-form');
+    button('#submit-answer').click();
     expect(root.querySelectorAll('select')).toHaveLength(5);
     const selects = [...root.querySelectorAll<HTMLSelectElement>('select')];
     const answer = canonicalLabels(cards.map(card => card.exchange.exchange_id));
@@ -46,7 +45,7 @@ describe('complete player flow', () => {
     expect(root.querySelector('.group-preview')!.textContent).toContain('Group E');
     selects[0].value = answer[0];
     selects[0].dispatchEvent(new Event('change'));
-    submit('#answer-form');
+    button('#submit-answer').click();
     expect(root.textContent).toContain('Every connection found.');
     expect(root.querySelectorAll('blockquote')).toHaveLength(5);
     expect(root.querySelectorAll('[lang="ja"]')).toHaveLength(5);
@@ -60,14 +59,14 @@ describe('complete player flow', () => {
 
   it('supports Japanese during reading, an incorrect result, and a fresh round', () => {
     root.querySelector<HTMLInputElement>('#japanese-toggle')!.checked = true;
-    submit('#start-form');
+    button('#start-button').click();
     expect(root.querySelector('[lang="ja"]')).not.toBeNull();
     for (let i = 0; i < 5; i++) button('#next').click();
     root.querySelectorAll('select').forEach((select, i) => {
       select.value = String.fromCharCode(65 + i);
       select.dispatchEvent(new Event('change'));
     });
-    submit('#answer-form');
+    button('#submit-answer').click();
     expect(root.textContent).toContain('Every exchange tells a story.');
     expect(root.textContent).toContain('0 / 2');
     button('#new-round').click();

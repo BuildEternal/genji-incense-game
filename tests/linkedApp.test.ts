@@ -9,7 +9,6 @@ import { correctLabels, generateLinkedRound, TEMPLATES } from '../src/linkedRoun
 const db = parseLinkedDatabase(poemsJsonl, rawBuckets);
 let root: HTMLDivElement;
 const button = (id: string) => root.querySelector<HTMLButtonElement>(id)!;
-const submit = (id: string) => root.querySelector<HTMLFormElement>(id)!.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
 const answer = (labels: string[]) => root.querySelectorAll<HTMLSelectElement>('.assignment select').forEach((select, i) => {
   select.value = labels[i];
   select.dispatchEvent(new Event('change'));
@@ -25,7 +24,7 @@ beforeEach(() => {
 describe('full-collection player flow', () => {
   it('shows one Japanese poem at a time, hides answers, and reveals hooks after submission', () => {
     const cards = generateLinkedRound(db, 'genji-full-1');
-    submit('#start-form');
+    button('#start-button').click();
     for (let i = 0; i < 5; i++) {
       expect(root.querySelectorAll('[lang="ja"]')).toHaveLength(1);
       expect(root.querySelector('[lang="ja"]')!.innerHTML).toBe(cards[i].poem.japanese.split('/').join('<br>'));
@@ -37,7 +36,7 @@ describe('full-collection player flow', () => {
     }
     expect(root.querySelector('[lang="ja"]')).toBeNull();
     answer(correctLabels(cards));
-    submit('#answer-form');
+    button('#submit-answer').click();
     expect(root.textContent).toContain('Every connection found.');
     expect(root.textContent).toContain('2 / 2');
     expect(root.querySelectorAll('.exchange')).toHaveLength(3);
@@ -49,12 +48,12 @@ describe('full-collection player flow', () => {
   it('uses the chosen round shape and hard mode, and scores a wrong answer', () => {
     root.querySelector<HTMLSelectElement>('#template')!.value = '3+1+1';
     root.querySelector<HTMLInputElement>('#hard-toggle')!.checked = true;
-    submit('#start-form');
+    button('#start-button').click();
     const cards = generateLinkedRound(db, 'genji-full-1', { template: TEMPLATES['3+1+1'], sameChapterRule: false });
     expect(root.querySelector('[lang="ja"]')!.innerHTML).toBe(cards[0].poem.japanese.split('/').join('<br>'));
     for (let i = 0; i < 5; i++) button('#next').click();
     answer(['A', 'B', 'C', 'D', 'E']);
-    submit('#answer-form');
+    button('#submit-answer').click();
     expect(root.textContent).toContain('0 / 3');
     expect(root.textContent).toContain('Hard mode');
     button('#new-round').click();
