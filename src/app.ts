@@ -39,7 +39,7 @@ export function mountGame(root: HTMLElement, dataset: Dataset) {
         <form id="start-form" class="start-panel">
           <label class="check"><input id="japanese-toggle" type="checkbox" ${showJapanese ? 'checked' : ''}> Show Japanese alongside English</label>
           <details class="demo-settings"><summary>Repeat a round</summary><label for="seed">Round seed</label><input id="seed" name="seed" maxlength="100" required value="${escape(seed)}"><p class="muted">The same seed repeats the same poems and order in this prototype.</p></details>
-          <button class="primary" type="submit">Begin the round</button>
+          <button id="start-button" class="primary" type="button">Begin the round</button>
         </form>
         <p class="prototype-note">Research prototype · Translations are provisional; round difficulty has not been calibrated.</p>
       </section>`;
@@ -67,7 +67,7 @@ export function mountGame(root: HTMLElement, dataset: Dataset) {
             <div class="assignment-grid">${assignments.map((value, i) => `<label class="assignment" for="group-${i}"><span>Poem ${i + 1}</span><select id="group-${i}" name="group-${i}" required><option value="">Choose</option>${groupLetters.map(letter => `<option value="${letter}" ${value === letter ? 'selected' : ''}>Group ${letter}</option>`).join('')}</select></label>`).join('')}</div>
           </fieldset>
           <div class="group-preview" aria-live="polite" aria-atomic="true">${preview()}</div>
-          <div class="reading-controls"><p class="muted">Change any assignment before submitting.<br>The poem texts return after your answer.</p><button id="submit-answer" class="primary" type="submit" ${assignments.some(value => !value) ? 'disabled' : ''}>Submit grouping</button></div>
+          <div class="reading-controls"><p class="muted">Change any assignment before submitting.<br>The poem texts return after your answer.</p><button id="submit-answer" class="primary" type="button" ${assignments.some(value => !value) ? 'disabled' : ''}>Submit grouping</button></div>
         </form>
       </section>`;
 
@@ -118,12 +118,14 @@ export function mountGame(root: HTMLElement, dataset: Dataset) {
   }
 
   function bind() {
-    root.querySelector('#start-form')?.addEventListener('submit', event => {
-      event.preventDefault();
+    // Buttons are type="button" with click handlers: sandboxed previews without allow-forms block form submission.
+    const begin = () => {
       seed = root.querySelector<HTMLInputElement>('#seed')!.value.trim() || 'genji-demo-1';
       showJapanese = root.querySelector<HTMLInputElement>('#japanese-toggle')!.checked;
       start();
-    });
+    };
+    root.querySelector('#start-button')?.addEventListener('click', begin);
+    root.querySelector('#start-form')?.addEventListener('submit', event => { event.preventDefault(); begin(); });
     root.querySelector('#next')?.addEventListener('click', () => {
       if (position < 4) position++;
       else phase = 'grouping';
@@ -137,13 +139,14 @@ export function mountGame(root: HTMLElement, dataset: Dataset) {
         root.querySelector<HTMLButtonElement>('#submit-answer')!.disabled = assignments.some(value => !value);
       });
     });
-    root.querySelector('#answer-form')?.addEventListener('submit', event => {
-      event.preventDefault();
+    const submitAnswer = () => {
       if (assignments.some(value => !value)) return;
       phase = 'results';
       render();
       window.scrollTo?.(0, 0);
-    });
+    };
+    root.querySelector('#submit-answer')?.addEventListener('click', submitAnswer);
+    root.querySelector('#answer-form')?.addEventListener('submit', event => { event.preventDefault(); submitAnswer(); });
     root.querySelector('#restart')?.addEventListener('click', start);
     root.querySelector('#new-round')?.addEventListener('click', () => {
       seed = `genji-${crypto.randomUUID()}`;

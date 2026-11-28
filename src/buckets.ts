@@ -10,6 +10,7 @@ const poemId = z.number().int().min(1);
 const poemSchema = z.object({
   poem_id: poemId,
   chapter_number: z.number().int().min(1).max(54),
+  chapter_title_ja: text,
   // Validation must not transform the original transcription.
   japanese: z.string().refine(value => {
     const units = value.split('/');

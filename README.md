@@ -29,7 +29,10 @@ demo until that infrastructure is available. Cloud loopback URLs do not point
 to your computer. Previews may need restarting after the environment resumes;
 `sites-preview stop` stops the managed preview.
 
-1. Optionally enable Japanese alongside English; English is always shown.
+1. The game opens on the **full collection** (795 waka, Japanese only, since English
+   glosses exist only for the pilot). Choose a round shape (2+2+1, 2+1+1+1, 3+1+1,
+   3+2) and optionally hard mode. Add `?pilot` to the URL for the 15-exchange
+   English pilot, where Japanese can be shown alongside English.
 2. Read each poem and select **Next poem**. There is no timer or backtracking.
 3. After poem five, assign group letters to positions 1–5 without their texts.
    Matching poems share a letter; a singleton gets its own. Revise freely.
@@ -74,6 +77,8 @@ JSON parsing alone does not verify schema or literary accuracy.
 │   ├── game.ts                         # Schema, seeded rounds, partition scoring
 │   ├── app.ts                          # Read → group → reveal interface
 │   ├── buckets.ts                      # Linked-bucket schema and checks
+│   ├── linkedRound.ts                  # Round generator for the full database
+│   ├── normalize.ts                    # Kana normalization for the echo check
 │   ├── main.ts                         # Validate the pilot and start the app
 │   └── style.css
 ├── tests/                              # Vitest logic and interface checks
@@ -93,8 +98,10 @@ original filenames describe the earlier handoff; the paths above are current.
 ## Current status and limits
 
 The proof of concept uses **TypeScript, Vite, Zod, and Vitest** with plain HTML/CSS.
-The curated pilot contains **15 exchanges, 30 waka, and 14 chapters** and remains
-unchanged. Each round has two complete exchanges and one singleton (`2+2+1`).
+The full collection (`data/genji_buckets.json`, 428 buckets, 366 links) is the
+default game, built by `src/linkedRound.ts` under the round rules in
+`data/genji_buckets_README.md`. The curated pilot contains **15 exchanges, 30 waka,
+and 14 chapters**, remains unchanged, and plays at `?pilot`. In the pilot, Each round has two complete exchanges and one singleton (`2+2+1`).
 Generator v1 uses a seed to select distinct exchanges and shuffle five unique
 poems. Scoring accepts equivalent labelings and reports exact grouping, matching
 pairs found, and incorrect connections. Seeding is reproducible for the same
