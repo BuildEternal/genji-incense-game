@@ -105,9 +105,19 @@ export function drawPackets(random: () => number): number[] {
  * Lines of one group are joined by a bar across their tops. A bar that spans a line of
  * another group sits lower than that group's bar, and lines passing under a bar are cut short.
  */
-export function patternSvg(groups: readonly (readonly number[])[], label = ''): string {
-  const W = 60, H = 60, top = 8, step = 9, gap = 11;
-  const x = (p: number) => W - 8 - (p - 1) * gap;
+export type SvgOptions = {
+  /** Wide layout: lines at 10/30/50/70/90% of the width, to sit over five equal columns. */
+  wide?: boolean;
+  /** Positions drawn faint (not yet assigned). */
+  faint?: readonly number[];
+  /** Extra class names on the svg. */
+  className?: string;
+};
+
+export function patternSvg(groups: readonly (readonly number[])[], label = '', options: SvgOptions = {}): string {
+  const wide = options.wide ?? false;
+  const W = wide ? 100 : 60, H = wide ? 46 : 60, top = wide ? 5 : 8, step = wide ? 7 : 9, gap = wide ? 20 : 11, margin = wide ? 10 : 8;
+  const x = (p: number) => W - margin - (p - 1) * gap;
   const multi = groups.filter(g => g.length > 1).map(g => [...g].sort((a, b) => a - b));
   // Level 0 is the top. A group sits below any group with a line inside its span, wider groups first.
   const level = new Map<readonly number[], number>();
@@ -124,17 +134,19 @@ export function patternSvg(groups: readonly (readonly number[])[], label = ''): 
     level.set(g, lvl);
   }
   const y = (lvl: number) => top + lvl * step;
+  const faint = new Set(options.faint ?? []);
   const parts: string[] = [];
   for (let p = 1; p <= 5; p++) {
     const own = multi.find(g => g.includes(p));
     let start = own ? y(level.get(own)!) : top;
     for (const g of multi) if (g !== own && p > g[0] && p < g[g.length - 1]) start = Math.max(start, y(level.get(g)!) + step - 2);
-    parts.push(`<line x1="${x(p)}" y1="${start}" x2="${x(p)}" y2="${H - 6}"/>`);
+    parts.push(`<line class="stroke${faint.has(p) ? ' faint' : ''}" x1="${x(p)}" y1="${start}" x2="${x(p)}" y2="${H - (wide ? 3 : 6)}"/>`);
   }
   for (const g of multi) {
     const yy = y(level.get(g)!);
-    parts.push(`<line x1="${x(g[g.length - 1])}" y1="${yy}" x2="${x(g[0])}" y2="${yy}"/>`);
+    parts.push(`<line class="stroke bar" x1="${x(g[g.length - 1])}" y1="${yy}" x2="${x(g[0])}" y2="${yy}"/>`);
   }
   const title = label ? `<title>${label}</title>` : '';
-  return `<svg class="genjiko" viewBox="0 0 ${W} ${H}" role="img"${label ? ` aria-label="${label}"` : ' aria-hidden="true"'}>${title}<g stroke="currentColor" stroke-width="3.2" stroke-linecap="square" fill="none">${parts.join('')}</g></svg>`;
+  const cls = ['genjiko', wide ? 'wide' : '', options.className ?? ''].filter(Boolean).join(' ');
+  return `<svg class="${cls}" viewBox="0 0 ${W} ${H}" role="img"${label ? ` aria-label="${label}"` : ' aria-hidden="true"'}>${title}<g stroke="currentColor" stroke-width="${wide ? 2.6 : 3.2}" stroke-linecap="square" fill="none">${parts.join('')}</g></svg>`;
 }

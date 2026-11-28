@@ -38,14 +38,13 @@ describe('English glosses', () => {
     root.querySelector<HTMLButtonElement>('#start-button')!.click();
     for (let i = 0; i < 5; i++) {
       expect(root.querySelector('blockquote')!.textContent).toBe(db.glosses.get(cards[i].poem.poem_id)!.english);
-      expect(root.querySelectorAll('[lang="ja"]')).toHaveLength(1);
+      expect(root.querySelectorAll('main .ja')).toHaveLength(1);
       expect(root.textContent).toContain('Provisional English gloss');
       expect(root.querySelector('.gloss-note')).toBeNull();
       root.querySelector<HTMLButtonElement>('#next')!.click();
     }
-    root.querySelectorAll<HTMLSelectElement>('.assignment select').forEach((select, i) => {
-      select.value = correctLabels(cards)[i];
-      select.dispatchEvent(new Event('change'));
+    correctLabels(cards).forEach((label, i) => {
+      for (let k = 0; k <= label.charCodeAt(0) - 65; k++) root.querySelector<HTMLButtonElement>(`.dye[data-poem="${i}"]`)!.click();
     });
     root.querySelector<HTMLButtonElement>('#submit-answer')!.click();
     for (const card of cards) expect(root.textContent).toContain(db.glosses.get(card.poem.poem_id)!.english);

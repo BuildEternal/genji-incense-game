@@ -36,7 +36,8 @@ to your computer. Previews may need restarting after the environment resumes;
 2. A game is five rounds. Each round's shape comes from the real Genji-kō draw
    (25 packets, 5 drawn; `src/genjiko.ts`), so every pattern has its real odds.
    Read each poem and select **Next poem**. There is no timer or backtracking.
-3. Group the poems with letters or pick one of the 52 Genji-kō patterns on the chart.
+3. Colour the five poem buttons (right to left, like the diagram's lines); the Genji-kō
+   diagram draws itself live. Sound is optional (off by default). Credits: `ASSETS.md`.
 4. Only an exact pattern scores (玉). The reveal shows both patterns, which pairs you
    found (feedback only), the poems, links, notes, and source links. After five
    rounds a summary shows your 玉 count. Add `?pilot` for the 15-exchange pilot.
