@@ -31,8 +31,9 @@ For any two poems shown in one round:
 
 Rule 3 applies to every hook of every group actually shown, including common words such as 月 in a moon-viewing chorus. A pair that is not linked is never shown, so it never triggers the check.
 
-`src/linkedRound.ts` implements these rules for the templates 2+2+1, 2+1+1+1,
-3+1+1 and 3+2. A 3-poem group needs at least two of its three pairs linked.
+`src/linkedRound.ts` implements these rules. Each round's shape comes from the real
+Genji-kō draw (`src/genjiko.ts`): any of the 52 patterns, with its real odds. A group of
+3–5 poems must be connected through its links (for 3 poems: at least two of three pairs).
 The echo check matches hook words against normalized kana. It errs on the strict
 side: a short hook such as なみ also matches inside なみた, so some fair rounds
 are rejected, but no unfair round gets through on that account.

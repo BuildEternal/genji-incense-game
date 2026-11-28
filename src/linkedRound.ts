@@ -1,4 +1,5 @@
 import type { Bucket, Link, LinkedDatabase, LinkedPoem } from './buckets';
+import { drawPackets } from './genjiko';
 import { englishWords, hookTokens, normalizeText } from './normalize';
 
 // Round generator for the linked-bucket database. Round rules (data/genji_buckets_README.md):
@@ -41,23 +42,31 @@ function shuffled<T>(values: readonly T[], random: () => number): T[] {
   return result;
 }
 
-/** Every showable group of a given size: link pairs, or link-connected triples within one bucket. */
+/** Every showable group of a given size: one poem, or 2–5 poems of one bucket connected by its links. */
 export function candidateGroups(db: LinkedDatabase, size: number): Group[] {
   if (size === 1) return [...db.poems.keys()].map(id => ({ bucket: db.bucketOf.get(id)!, poemIds: [id], links: [] }));
   const groups: Group[] = [];
+  const choose = (ids: number[], k: number, start = 0, picked: number[] = []): number[][] =>
+    picked.length === k ? [picked] : ids.slice(start).flatMap((id, i) => choose(ids, k, start + i + 1, [...picked, id]));
   for (const bucket of db.buckets) {
-    if (size === 2) for (const link of bucket.links) groups.push({ bucket, poemIds: [...link.poems], links: [link] });
-    if (size === 3) {
-      const ids = bucket.poem_ids;
-      for (let a = 0; a < ids.length; a++) for (let b = a + 1; b < ids.length; b++) for (let c = b + 1; c < ids.length; c++) {
-        const members = [ids[a], ids[b], ids[c]];
-        const links = bucket.links.filter(link => link.poems.every(id => members.includes(id)));
-        // Three poems are connected by links when at least two of the three pairs are linked.
-        if (links.length >= 2) groups.push({ bucket, poemIds: members, links });
-      }
+    if (bucket.poem_ids.length < size) continue;
+    for (const members of choose(bucket.poem_ids, size)) {
+      const links = bucket.links.filter(link => link.poems.every(id => members.includes(id)));
+      if (connected(members, links)) groups.push({ bucket, poemIds: members, links });
     }
   }
   return groups;
+}
+
+// Every member reachable from the first through links (for three poems: at least two of three pairs linked).
+function connected(members: number[], links: Link[]): boolean {
+  const seen = new Set([members[0]]);
+  for (let grew = true; grew;) {
+    grew = false;
+    for (const { poems: [a, b] } of links)
+      if (seen.has(a) !== seen.has(b)) { seen.add(a); seen.add(b); grew = true; }
+  }
+  return seen.size === members.length;
 }
 
 const textCache = new WeakMap<LinkedDatabase, Map<number, string>>();
@@ -104,22 +113,44 @@ export function roundViolation(db: LinkedDatabase, groups: readonly Group[], sam
   return null;
 }
 
+/**
+ * Builds a fair round. By default the shape comes from the real Genji-kō draw (25 packets,
+ * five drawn), so every one of the 52 patterns has its real-life odds, and poems are placed
+ * in the drawn positions. Passing `template` instead fixes the group sizes and shuffles.
+ */
 export function generateLinkedRound(db: LinkedDatabase, seed: string, options: RoundOptions = {}): LinkedCard[] {
   if (!seed.trim()) throw new Error('A round needs a nonempty seed');
-  const template = options.template ?? TEMPLATES['2+2+1'];
-  if (template.reduce((sum, size) => sum + size, 0) !== 5 || template.some(size => size < 1 || size > 3))
-    throw new Error('A template needs group sizes of 1–3 summing to 5');
   const random = seededRandom(seed);
-  const pools = new Map(template.map(size => [size, candidateGroups(db, size)]));
-  for (let attempt = 0; attempt < (options.maxAttempts ?? 2000); attempt++) {
+  let positions: number[] | undefined; // incense label for each of the five positions
+  let template = options.template;
+  if (!template) {
+    positions = drawPackets(random);
+    const order = [...new Set(positions)];
+    template = order.map(label => positions!.filter(value => value === label).length);
+    positions = positions.map(label => order.indexOf(label));
+  }
+  if (template.reduce((sum, size) => sum + size, 0) !== 5 || template.some(size => size < 1 || size > 5))
+    throw new Error('A template needs group sizes of 1–5 summing to 5');
+  const pools = new Map(template.map(size => [size, poolCache(db, size)]));
+  for (let attempt = 0; attempt < (options.maxAttempts ?? 4000); attempt++) {
     const groups = template.map(size => pick(pools.get(size)!, random));
     if (roundViolation(db, groups, options.sameChapterRule ?? true)) continue;
-    const cards = groups.flatMap((group, groupIndex) => group.poemIds.map(id => ({
+    const card = (group: Group, groupIndex: number, id: number): LinkedCard => ({
       poem: db.poems.get(id)!, bucket: group.bucket, groupIndex, hooks: group.links.map(link => link.hook),
-    })));
-    return shuffled(cards, random);
+    });
+    if (!positions) return shuffled(groups.flatMap((group, i) => group.poemIds.map(id => card(group, i, id))), random);
+    const queues = groups.map(group => shuffled(group.poemIds, random));
+    return positions.map(groupIndex => card(groups[groupIndex], groupIndex, queues[groupIndex].shift()!));
   }
-  throw new Error('No fair round found for this seed and template');
+  throw new Error('No fair round found for this seed');
+}
+
+const pools = new WeakMap<LinkedDatabase, Map<number, Group[]>>();
+function poolCache(db: LinkedDatabase, size: number): Group[] {
+  let cache = pools.get(db);
+  if (!cache) pools.set(db, (cache = new Map()));
+  if (!cache.has(size)) cache.set(size, candidateGroups(db, size));
+  return cache.get(size)!;
 }
 
 /** Groups as canonical labels by first appearance, e.g. [A, B, A, C, B]. */
