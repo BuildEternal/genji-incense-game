@@ -29,8 +29,9 @@ demo until that infrastructure is available. Cloud loopback URLs do not point
 to your computer. Previews may need restarting after the environment resumes;
 `sites-preview stop` stops the managed preview.
 
-1. The game opens on the **full collection** (795 waka, Japanese only, since English
-   glosses exist only for the pilot). Choose a round shape (2+2+1, 2+1+1+1, 3+1+1,
+1. The game opens on the **full collection** (795 waka), each shown as a provisional
+   English gloss with the Japanese original beneath it
+   (`data/genji_glosses.json`). Choose a round shape (2+2+1, 2+1+1+1, 3+1+1,
    3+2) and optionally hard mode. Add `?pilot` to the URL for the 15-exchange
    English pilot, where Japanese can be shown alongside English.
 2. Read each poem and select **Next poem**. There is no timer or backtracking.

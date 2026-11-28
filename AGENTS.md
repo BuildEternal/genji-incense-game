@@ -37,7 +37,8 @@
 - For authorized editorial changes, document the source, precise location when
   available, rationale, and review status. Retain textual variants and distinguish
   source evidence from interpretation. `cross_checked` is not scholarly sign-off.
-- Label `english_game_gloss` text as provisional wherever it is presented.
+- Label `english_game_gloss` text and `data/genji_glosses.json` glosses as
+  provisional wherever they are presented. Show the Japanese original with them.
   Preserve clue-bearing imagery and explain puns or allusions without claiming
   that English fully captures them. Changes can alter game difficulty and need
   literary review and playtesting.
@@ -77,3 +78,22 @@
   Parsing alone establishes neither schema validity nor scholarly accuracy.
 - Keep the root README's layout, status, and future build/test commands current.
   Preserve design rationale and trial findings when updating project context.
+
+## Art and visual assets
+
+- **No AI-generated artistic assets.** The project owner's rule: any texture,
+  sprite, illustration, pattern image, animation, icon, sound, or font used in the
+  game must be found on the internet and used ethically (public domain, or a
+  license that permits this use, with attribution recorded). If a wanted asset
+  cannot be found that way, change the design so it is not needed. Do not
+  generate, upscale, or "touch up" art with AI tools.
+- Record each asset's source URL, creator, and license in the repository next to
+  the asset (e.g. an `ASSETS.md` credits file) when it is added.
+- Plain CSS and code-drawn shapes (for example, Genji-kō diagrams drawn from their
+  known stroke structure) are fine; they are not artistic assets in this sense.
+
+## Planned player experience (later, not yet)
+
+- After the mechanics are finished, the owner wants the game to feel like an
+  immersive Genji-kō session rather than a form: visual and animated elements,
+  with poems shown as popups. Do not start this redesign until it is requested.

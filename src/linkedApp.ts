@@ -1,7 +1,7 @@
 import type { LinkedDatabase } from './buckets';
 import { generateLinkedRound, scoreLinkedRound, TEMPLATES, type LinkedCard } from './linkedRound';
 
-// Full-collection game, Japanese only until English glosses exist for all 795 poems.
+// Full-collection game. English gloss first, Japanese original beneath it; Japanese only if a poem has no gloss.
 
 const escape = (value: string | number) => String(value).replace(/[&<>"']/g, char =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]!);
@@ -18,12 +18,21 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
   let assignments = Array<string>(5).fill('');
 
   const japanese = (text: string, cls = 'japanese') => `<p class="${cls}" lang="ja">${text.split('/').map(escape).join('<br>')}</p>`;
+  const GLOSS_LABEL = '<p class="gloss-label">Provisional English gloss · Japanese original below</p>';
+  const poemText = (poem: LinkedCard['poem']) => {
+    const gloss = db.glosses.get(poem.poem_id);
+    return gloss ? `<blockquote>${escape(gloss.english)}</blockquote>${GLOSS_LABEL}${japanese(poem.japanese)}` : `<blockquote>${japanese(poem.japanese)}</blockquote>`;
+  };
+  const noteFor = (poem: LinkedCard['poem']) => {
+    const note = db.glosses.get(poem.poem_id)?.note;
+    return note ? `<p class="gloss-note"><strong>Note:</strong> ${escape(note)}</p>` : '';
+  };
   const groups = (labels: string[]) => [...new Set(labels)].map(label =>
     `<span class="group-chip">${labels.flatMap((value, index) => value === label ? [index + 1] : []).join(' + ')}</span>`).join('');
 
   function render(focusHeading = true) {
     root.innerHTML = `
-      <header class="masthead"><a class="brand" href="./" aria-label="Genji-kō home">源氏香 <span>GENJI-KŌ</span></a><span class="edition">Full collection · Japanese</span></header>
+      <header class="masthead"><a class="brand" href="./" aria-label="Genji-kō home">源氏香 <span>GENJI-KŌ</span></a><span class="edition">Full collection${db.glosses.size ? '' : ' · Japanese'}</span></header>
       <main id="main" tabindex="-1">${content()}</main>
       <footer><span>A game of poetry, memory, and connection.</span><span>795 waka · <a href="?pilot">English pilot</a></span></footer>`;
     bind();
@@ -35,7 +44,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
       <section class="intro">
         <p class="eyebrow">Inspired by The Tale of Genji</p>
         <h1 tabindex="-1">Five poems.<br><em>Which belong together?</em></h1>
-        <p class="lead">Poems from the whole tale, in the original Japanese. Listen for shared words and images, and carry them in memory.</p>
+        <p class="lead">Poems from the whole tale, in English with the original Japanese. Listen for shared words and images, and carry them in memory.</p>
         <ol class="instructions">
           <li><strong>Read</strong><span>Five waka, one at a time. Once you move on, the earlier text disappears.</span></li>
           <li><strong>Remember</strong><span>Poems that belong together share wording. Some poems stand alone.</span></li>
@@ -48,7 +57,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
           <details class="demo-settings"><summary>Repeat a round</summary><label for="seed">Round seed</label><input id="seed" name="seed" maxlength="100" required value="${escape(seed)}"><p class="muted">The same seed and settings repeat the same poems and order.</p></details>
           <button id="start-button" class="primary" type="button">Begin the round</button>
         </form>
-        <p class="prototype-note">Research prototype · Groupings and hooks are provisional; difficulty has not been calibrated.</p>
+        <p class="prototype-note">Research prototype · English glosses, groupings, and hooks are provisional; difficulty has not been calibrated.</p>
       </section>`;
 
     if (phase === 'reading') return `
@@ -57,7 +66,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
         <div class="progress" aria-hidden="true">${Array.from({ length: 5 }, (_, i) => `<span class="${i <= position ? 'filled' : ''}"></span>`).join('')}</div>
         <article class="poem-card">
           <h1 class="poem-number" tabindex="-1">Poem ${position + 1}</h1>
-          <blockquote>${japanese(cards[position].poem.japanese)}</blockquote>
+          ${poemText(cards[position].poem)}
         </article>
         <div class="reading-controls"><p class="muted">Keep the wording in mind.<br>This text disappears when you continue.</p><button id="next" class="primary">${position === 4 ? 'Arrange your groups' : 'Next poem'}</button></div>
       </section>`;
@@ -96,7 +105,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
             <h2>${escape(first.chapter_title_ja)} <span>· Chapter ${first.chapter_number}</span></h2>
             <p>${escape(bucket.context)}</p>
             ${hooks.length ? `<h3>Shared wording</h3><p class="hook" lang="ja">${hooks.map(escape).join(' ／ ')}</p>` : '<p class="singleton-note">No other poem in this round belongs with this one.</p>'}
-            <div class="revealed-poems">${selected.map(({ card, index }) => `<div class="revealed-poem"><h3>Poem ${index + 1}</h3>${japanese(card.poem.japanese)}<p class="attribution">${escape(card.poem.speaker)}</p><p class="muted"><a href="${escape(card.poem.original_page_url)}" target="_blank" rel="noopener noreferrer">Source text</a> · Poem ${card.poem.poem_id} · ${escape(bucket.bucket_id)}</p></div>`).join('')}</div>
+            <div class="revealed-poems">${selected.map(({ card, index }) => `<div class="revealed-poem"><h3>Poem ${index + 1}</h3>${poemText(card.poem)}${noteFor(card.poem)}<p class="attribution">${escape(card.poem.speaker)}</p><p class="muted"><a href="${escape(card.poem.original_page_url)}" target="_blank" rel="noopener noreferrer">Source text</a> · Poem ${card.poem.poem_id} · ${escape(bucket.bucket_id)}</p></div>`).join('')}</div>
           </article>`;
         }).join('')}</div>
         <div class="end-controls"><button class="primary" id="new-round">Try a new round</button><button class="secondary" id="restart">Replay this round</button></div>
