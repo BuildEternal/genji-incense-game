@@ -139,17 +139,17 @@ describe('tutorial round', () => {
 });
 
 describe('sound', () => {
-  it('starts off and remembers the toggle', () => {
+  it('starts on and remembers muting', () => {
     document.body.innerHTML = '<div id="app"></div>';
     const el = document.querySelector<HTMLDivElement>('#app')!;
     localStorage.removeItem('genji-ko-sound');
     mountLinkedGame(el, db);
     const toggle = el.querySelector<HTMLButtonElement>('#sound-toggle')!;
-    expect(toggle.getAttribute('aria-pressed')).toBe('false');
-    toggle.click();
     expect(toggle.getAttribute('aria-pressed')).toBe('true');
-    expect(localStorage.getItem('genji-ko-sound')).toBe('on');
     toggle.click();
+    expect(toggle.getAttribute('aria-pressed')).toBe('false');
     expect(localStorage.getItem('genji-ko-sound')).toBe('off');
+    toggle.click();
+    expect(localStorage.getItem('genji-ko-sound')).toBe('on');
   });
 });

@@ -5,7 +5,9 @@
 @font-face { font-family: 'EB Garamond'; font-weight: 400 800; font-display: swap; src: url('./assets/fonts/eb-garamond-latin.woff2') format('woff2'); }
 @font-face { font-family: 'EB Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('./assets/fonts/eb-garamond-latin-italic.woff2') format('woff2'); }
 
-body:has(.room) { background: #120d0b; margin: 0; }
+/* Dark all the way out, so overscroll and rubber-band stretch show night, not white. */
+html:has(.room), body:has(.room) { background: #120d0b; margin: 0; overflow-x: clip; }
+html:has(.room) { color-scheme: dark; }
 .room {
   --night: #120d0b;
   --lacquer: #1d1512;
@@ -73,8 +75,8 @@ body:has(.room) { background: #120d0b; margin: 0; }
 .room .steps strong { display: block; color: var(--text); font-size: 1.05rem; margin-bottom: .2rem; }
 .room .modes { border: 0; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; max-width: 48rem; width: 100%; }
 .room .modes legend { font-size: .8rem; letter-spacing: .25em; text-transform: uppercase; color: var(--text-soft); margin: 0 auto .75rem; }
-.room .mode { display: grid; gap: .2rem; padding: .9rem 1rem; text-align: left; border: 1px solid rgba(200, 163, 90, .25); border-radius: 2px; cursor: pointer; transition: border-color .2s, background .2s; }
-.room .mode input { position: absolute; opacity: 0; pointer-events: none; }
+.room .mode { position: relative; display: grid; gap: .2rem; padding: .9rem 1rem; text-align: left; border: 1px solid rgba(200, 163, 90, .25); border-radius: 2px; cursor: pointer; transition: border-color .2s, background .2s; }
+.room .mode input { position: absolute; top: 0; left: 0; width: 1px; height: 1px; margin: 0; padding: 0; opacity: 0; pointer-events: none; }
 .room .mode span { font-size: .9rem; color: var(--text-soft); }
 .room .mode.chosen, .room .mode:has(input:checked) { border-color: var(--gold); background: rgba(200, 163, 90, .1); }
 .room .mode:has(input:focus-visible) { outline: 2px solid var(--gold); outline-offset: 2px; }
@@ -128,9 +130,9 @@ body:has(.room) { background: #120d0b; margin: 0; }
 .room .grouping h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 .5rem; }
 .room .grouping .lead { margin: 0 auto; }
 .room .answer-board { width: min(30rem, 100%); margin: 2rem auto 0; padding: 1.5rem 1.25rem 1.25rem; background: linear-gradient(180deg, var(--lacquer-2), var(--lacquer)); border: 1px solid rgba(200, 163, 90, .3); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .04), 0 20px 50px rgba(0, 0, 0, .5); }
-.room .live-pattern .genjiko { width: 100%; height: auto; color: var(--gold); }
+.room .live-pattern .genjiko { display: block; width: min(9rem, 45%); height: auto; margin: 0 auto; color: var(--gold); }
 .room .genjiko .stroke { transition: all .35s ease; }
-.room .genjiko .faint { opacity: .22; stroke-dasharray: 2 3; }
+.room .genjiko .faint { opacity: .18; }
 .room .live-name { min-height: 3.2rem; margin: .5rem 0 1rem; display: grid; gap: .1rem; }
 .room .pname { font-size: 1.25rem; color: var(--text); }
 .room .pname .romaji { font-style: italic; }
@@ -162,9 +164,9 @@ body:has(.room) { background: #120d0b; margin: 0; }
 .room .results { text-align: center; position: relative; }
 .room .results h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 1rem; }
 .room .compare { display: flex; justify-content: center; gap: clamp(1rem, 5vw, 3rem); margin: 1.5rem 0; }
-.room .compare figure { margin: 0; width: min(16rem, 45%); }
+.room .compare figure { margin: 0; width: min(14rem, 45%); }
 .room .compare figcaption { font-size: .8rem; letter-spacing: .2em; text-transform: uppercase; color: var(--text-soft); margin-bottom: .5rem; }
-.room .compare .genjiko { width: 100%; height: auto; color: var(--text-soft); }
+.room .compare .genjiko { display: block; width: min(8.5rem, 75%); height: auto; margin: 0 auto; color: var(--text-soft); }
 .room .compare .draw { color: var(--gold); }
 .room .exact .compare .genjiko { color: var(--gold); }
 .room .compare p { display: grid; gap: .1rem; margin: .4rem 0 0; }

@@ -116,8 +116,10 @@ export type SvgOptions = {
 
 export function patternSvg(groups: readonly (readonly number[])[], label = '', options: SvgOptions = {}): string {
   const wide = options.wide ?? false;
-  const W = wide ? 100 : 60, H = wide ? 46 : 60, top = wide ? 5 : 8, step = wide ? 7 : 9, gap = wide ? 20 : 11, margin = wide ? 10 : 8;
-  const x = (p: number) => W - margin - (p - 1) * gap;
+  // Traditional proportions: a square; five uprights 14 wide with 7.5 gaps; crossbars 16 thick;
+  // each lower level starts 20 below the one above, leaving a thin 4-unit gap.
+  const S = 100, T = 14, pitch = 21.5, barT = 16, step = 20, half = T / 2;
+  const x = (p: number) => S - half - (p - 1) * pitch;
   const multi = groups.filter(g => g.length > 1).map(g => [...g].sort((a, b) => a - b));
   // Level 0 is the top. A group sits below any group with a line inside its span, wider groups first.
   const level = new Map<readonly number[], number>();
@@ -133,20 +135,20 @@ export function patternSvg(groups: readonly (readonly number[])[], label = '', o
     }
     level.set(g, lvl);
   }
-  const y = (lvl: number) => top + lvl * step;
+  const top = (lvl: number) => lvl * step; // top edge of a crossbar
   const faint = new Set(options.faint ?? []);
   const parts: string[] = [];
   for (let p = 1; p <= 5; p++) {
     const own = multi.find(g => g.includes(p));
-    let start = own ? y(level.get(own)!) : top;
-    for (const g of multi) if (g !== own && p > g[0] && p < g[g.length - 1]) start = Math.max(start, y(level.get(g)!) + step - 2);
-    parts.push(`<line class="stroke${faint.has(p) ? ' faint' : ''}" x1="${x(p)}" y1="${start}" x2="${x(p)}" y2="${H - (wide ? 3 : 6)}"/>`);
+    let start = own ? top(level.get(own)!) : 0;
+    for (const g of multi) if (g !== own && p > g[0] && p < g[g.length - 1]) start = Math.max(start, top(level.get(g)!) + step);
+    parts.push(`<line class="stroke${faint.has(p) ? ' faint' : ''}" x1="${x(p)}" y1="${start}" x2="${x(p)}" y2="${S}" stroke-width="${T}"/>`);
   }
   for (const g of multi) {
-    const yy = y(level.get(g)!);
-    parts.push(`<line class="stroke bar" x1="${x(g[g.length - 1])}" y1="${yy}" x2="${x(g[0])}" y2="${yy}"/>`);
+    const yy = top(level.get(g)!) + barT / 2;
+    parts.push(`<line class="stroke bar" x1="${x(g[g.length - 1]) - half}" y1="${yy}" x2="${x(g[0]) + half}" y2="${yy}" stroke-width="${barT}"/>`);
   }
   const title = label ? `<title>${label}</title>` : '';
   const cls = ['genjiko', wide ? 'wide' : '', options.className ?? ''].filter(Boolean).join(' ');
-  return `<svg class="${cls}" viewBox="0 0 ${W} ${H}" role="img"${label ? ` aria-label="${label}"` : ' aria-hidden="true"'}>${title}<g stroke="currentColor" stroke-width="${wide ? 2.6 : 3.2}" stroke-linecap="square" fill="none">${parts.join('')}</g></svg>`;
+  return `<svg class="${cls}" viewBox="0 0 ${S} ${S}" role="img"${label ? ` aria-label="${label}"` : ' aria-hidden="true"'}>${title}<g stroke="currentColor" stroke-linecap="butt" fill="none">${parts.join('')}</g></svg>`;
 }

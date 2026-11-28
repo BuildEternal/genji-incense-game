@@ -6,13 +6,13 @@ import pluck1 from './assets/sounds/pluck1.mp3';
 import pluck2 from './assets/sounds/pluck2.mp3';
 import pluck3 from './assets/sounds/pluck3.mp3';
 
-// Found recordings only (see ASSETS.md). Sound starts off; the choice is remembered.
+// Found recordings only (see ASSETS.md). Sound starts on (it only plays after a click); muting is remembered.
 const SOURCES = { begin, click, gyoku, paper, pluck1, pluck2, pluck3 } as const;
 export type SoundName = keyof typeof SOURCES | 'pluck';
 const KEY = 'genji-ko-sound';
 const VOLUME: Partial<Record<SoundName, number>> = { click: 0.5, paper: 0.8, begin: 0.7, gyoku: 0.8 };
 
-let enabled = (() => { try { return localStorage.getItem(KEY) === 'on'; } catch { return false; } })();
+let enabled = (() => { try { return localStorage.getItem(KEY) !== 'off'; } catch { return true; } })();
 let pluckIndex = 0;
 
 export const soundEnabled = () => enabled;
