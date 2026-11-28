@@ -62,16 +62,23 @@ JSON parsing alone does not verify schema or literary accuracy.
 ├── AGENTS.md                           # Development and editorial guidelines
 ├── README.md
 ├── data/
-│   ├── genji_poetry_exchanges_pilot.json
-│   └── genji_poetry_exchanges_README.md
+│   ├── genji_poetry_exchanges_pilot.json  # 15-exchange pilot the prototype plays
+│   ├── genji_poetry_exchanges_README.md
+│   ├── genji_poems_v2.jsonl            # All 795 waka (text, speaker, sources)
+│   ├── genji_buckets.json              # 428 buckets with links and hooks
+│   ├── genji_buckets_README.md         # How buckets, links, and hooks work
+│   └── archive/                        # v2 exchange notes and the link review
+
 ├── docs/PROJECT_CONTEXT.md             # Design rationale, trials, decisions
 ├── src/
 │   ├── game.ts                         # Schema, seeded rounds, partition scoring
 │   ├── app.ts                          # Read → group → reveal interface
+│   ├── buckets.ts                      # Linked-bucket schema and checks
 │   ├── main.ts                         # Validate the pilot and start the app
 │   └── style.css
 ├── tests/                              # Vitest logic and interface checks
 ├── scripts/make-demo.mjs               # Package a self-contained offline demo
+├── scripts/build_buckets.py            # One-time v2 → linked-bucket migration
 ├── index.html
 ├── package.json
 ├── package-lock.json

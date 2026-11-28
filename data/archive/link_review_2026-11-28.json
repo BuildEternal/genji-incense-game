@@ -1,0 +1,4235 @@
+{
+ "note": "Pair-by-pair hook judgments from the 2026-11-28 review (Claude). 'link' pairs become bucket links; 'weak' pairs are kept as review suggestions; 'none' pairs are left unlinked. Input to scripts/build_buckets.py; not loaded by the game.",
+ "pairs": [
+  {
+   "bucket": "CH01-02",
+   "poems": [
+    2,
+    5
+   ],
+   "suggestion": "link",
+   "hook": "こはぎ・風"
+  },
+  {
+   "bucket": "CH01-03",
+   "poems": [
+    3,
+    4
+   ],
+   "suggestion": "link",
+   "hook": "虫・露/涙"
+  },
+  {
+   "bucket": "CH01-06",
+   "poems": [
+    8,
+    9
+   ],
+   "suggestion": "link",
+   "hook": "もとゆひ・むすぶ"
+  },
+  {
+   "bucket": "CH02-01",
+   "poems": [
+    10,
+    11
+   ],
+   "suggestion": "link",
+   "hook": "うきふし・かぞふ"
+  },
+  {
+   "bucket": "CH02-02",
+   "poems": [
+    12,
+    13
+   ],
+   "suggestion": "link",
+   "hook": "ひきとむ・こと"
+  },
+  {
+   "bucket": "CH02-03",
+   "poems": [
+    14,
+    15
+   ],
+   "suggestion": "link",
+   "hook": "なでしこ/とこなつ"
+  },
+  {
+   "bucket": "CH02-03",
+   "poems": [
+    14,
+    16
+   ],
+   "suggestion": "link",
+   "hook": "なでしこ/とこなつ・露"
+  },
+  {
+   "bucket": "CH02-03",
+   "poems": [
+    15,
+    16
+   ],
+   "suggestion": "link",
+   "hook": "とこなつ"
+  },
+  {
+   "bucket": "CH02-04",
+   "poems": [
+    17,
+    18
+   ],
+   "suggestion": "link",
+   "hook": "ひるま"
+  },
+  {
+   "bucket": "CH02-05",
+   "poems": [
+    19,
+    20
+   ],
+   "suggestion": "link",
+   "hook": "とり"
+  },
+  {
+   "bucket": "CH02-07",
+   "poems": [
+    22,
+    23
+   ],
+   "suggestion": "link",
+   "hook": "ははき木"
+  },
+  {
+   "bucket": "CH03-01",
+   "poems": [
+    24,
+    25
+   ],
+   "suggestion": "link",
+   "hook": "うつせみ"
+  },
+  {
+   "bucket": "CH04-01",
+   "poems": [
+    26,
+    27
+   ],
+   "suggestion": "link",
+   "hook": "それかと・ゆふがほ"
+  },
+  {
+   "bucket": "CH04-02",
+   "poems": [
+    28,
+    29
+   ],
+   "suggestion": "weak",
+   "hook": "花に（心を）うつる/とむ"
+  },
+  {
+   "bucket": "CH04-03",
+   "poems": [
+    30,
+    31
+   ],
+   "suggestion": "link",
+   "hook": "契・前世/来世"
+  },
+  {
+   "bucket": "CH04-04",
+   "poems": [
+    32,
+    33
+   ],
+   "suggestion": "weak",
+   "hook": "しらぬ/しらで"
+  },
+  {
+   "bucket": "CH04-05",
+   "poems": [
+    34,
+    35
+   ],
+   "suggestion": "link",
+   "hook": "夕露/上露・夕顔"
+  },
+  {
+   "bucket": "CH04-07",
+   "poems": [
+    37,
+    38
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH04-08",
+   "poems": [
+    39,
+    40
+   ],
+   "suggestion": "link",
+   "hook": "荻・むすぶ・ほの"
+  },
+  {
+   "bucket": "CH04-10",
+   "poems": [
+    42,
+    43
+   ],
+   "suggestion": "weak",
+   "hook": "袖/夏衣"
+  },
+  {
+   "bucket": "CH05-01",
+   "poems": [
+    45,
+    46
+   ],
+   "suggestion": "link",
+   "hook": "わか草/はつ草・露きえん"
+  },
+  {
+   "bucket": "CH05-02",
+   "poems": [
+    47,
+    48
+   ],
+   "suggestion": "weak",
+   "hook": "露けさ・旅寝/枕"
+  },
+  {
+   "bucket": "CH05-03",
+   "poems": [
+    49,
+    50
+   ],
+   "suggestion": "link",
+   "hook": "山の水/滝"
+  },
+  {
+   "bucket": "CH05-04",
+   "poems": [
+    51,
+    52
+   ],
+   "suggestion": "link",
+   "hook": "山桜"
+  },
+  {
+   "bucket": "CH05-04",
+   "poems": [
+    51,
+    53
+   ],
+   "suggestion": "weak",
+   "hook": "山の花"
+  },
+  {
+   "bucket": "CH05-04",
+   "poems": [
+    52,
+    53
+   ],
+   "suggestion": "weak",
+   "hook": "山の花"
+  },
+  {
+   "bucket": "CH05-05",
+   "poems": [
+    54,
+    55
+   ],
+   "suggestion": "link",
+   "hook": "花・かすみ・たつ"
+  },
+  {
+   "bucket": "CH05-06",
+   "poems": [
+    56,
+    57
+   ],
+   "suggestion": "link",
+   "hook": "山桜・心とむ"
+  },
+  {
+   "bucket": "CH05-07",
+   "poems": [
+    58,
+    59
+   ],
+   "suggestion": "link",
+   "hook": "山の井・あさ"
+  },
+  {
+   "bucket": "CH05-08",
+   "poems": [
+    60,
+    61
+   ],
+   "suggestion": "link",
+   "hook": "夢"
+  },
+  {
+   "bucket": "CH05-11",
+   "poems": [
+    64,
+    65
+   ],
+   "suggestion": "link",
+   "hook": "わかのうら・なみ"
+  },
+  {
+   "bucket": "CH05-12",
+   "poems": [
+    66,
+    67
+   ],
+   "suggestion": "link",
+   "hook": "霧・すぎがて/すぎう"
+  },
+  {
+   "bucket": "CH05-13",
+   "poems": [
+    68,
+    69
+   ],
+   "suggestion": "link",
+   "hook": "草のゆかり"
+  },
+  {
+   "bucket": "CH06-01",
+   "poems": [
+    70,
+    71
+   ],
+   "suggestion": "link",
+   "hook": "いる（月）・山"
+  },
+  {
+   "bucket": "CH06-02",
+   "poems": [
+    72,
+    73
+   ],
+   "suggestion": "weak",
+   "hook": "黙る/答えない"
+  },
+  {
+   "bucket": "CH06-02",
+   "poems": [
+    72,
+    74
+   ],
+   "suggestion": "link",
+   "hook": "いはぬ"
+  },
+  {
+   "bucket": "CH06-02",
+   "poems": [
+    73,
+    74
+   ],
+   "suggestion": "weak",
+   "hook": "黙る/答えない"
+  },
+  {
+   "bucket": "CH06-03",
+   "poems": [
+    75,
+    76
+   ],
+   "suggestion": "link",
+   "hook": "はれぬ"
+  },
+  {
+   "bucket": "CH06-06",
+   "poems": [
+    79,
+    82
+   ],
+   "suggestion": "link",
+   "hook": "から衣/ころも"
+  },
+  {
+   "bucket": "CH06-07",
+   "poems": [
+    80,
+    81
+   ],
+   "suggestion": "link",
+   "hook": "末摘花/紅の花衣"
+  },
+  {
+   "bucket": "CH07-01",
+   "poems": [
+    84,
+    85
+   ],
+   "suggestion": "link",
+   "hook": "袖ふる・たち"
+  },
+  {
+   "bucket": "CH07-02",
+   "poems": [
+    86,
+    87
+   ],
+   "suggestion": "weak",
+   "hook": "世・ちぎり"
+  },
+  {
+   "bucket": "CH07-03",
+   "poems": [
+    88,
+    89
+   ],
+   "suggestion": "link",
+   "hook": "なでしこ・露"
+  },
+  {
+   "bucket": "CH07-04",
+   "poems": [
+    90,
+    91
+   ],
+   "suggestion": "link",
+   "hook": "こま"
+  },
+  {
+   "bucket": "CH07-05",
+   "poems": [
+    92,
+    93
+   ],
+   "suggestion": "link",
+   "hook": "あづまや"
+  },
+  {
+   "bucket": "CH07-06",
+   "poems": [
+    94,
+    95
+   ],
+   "suggestion": "link",
+   "hook": "中の衣/夏衣"
+  },
+  {
+   "bucket": "CH07-07",
+   "poems": [
+    96,
+    97
+   ],
+   "suggestion": "link",
+   "hook": "浪・うらみ・たつ"
+  },
+  {
+   "bucket": "CH07-08",
+   "poems": [
+    98,
+    99
+   ],
+   "suggestion": "link",
+   "hook": "帯・なか絶え"
+  },
+  {
+   "bucket": "CH08-03",
+   "poems": [
+    103,
+    104
+   ],
+   "suggestion": "link",
+   "hook": "草のはら・露"
+  },
+  {
+   "bucket": "CH08-06",
+   "poems": [
+    107,
+    108
+   ],
+   "suggestion": "link",
+   "hook": "弓/いる・月・まどふ"
+  },
+  {
+   "bucket": "CH09-02",
+   "poems": [
+    110,
+    111
+   ],
+   "suggestion": "link",
+   "hook": "ちひろ"
+  },
+  {
+   "bucket": "CH09-03",
+   "poems": [
+    112,
+    113
+   ],
+   "suggestion": "link",
+   "hook": "あふひ"
+  },
+  {
+   "bucket": "CH09-03",
+   "poems": [
+    112,
+    114
+   ],
+   "suggestion": "link",
+   "hook": "かざす"
+  },
+  {
+   "bucket": "CH09-03",
+   "poems": [
+    113,
+    114
+   ],
+   "suggestion": "link",
+   "hook": "かざしける"
+  },
+  {
+   "bucket": "CH09-04",
+   "poems": [
+    115,
+    116
+   ],
+   "suggestion": "link",
+   "hook": "おりたつ・恋ぢ"
+  },
+  {
+   "bucket": "CH09-08",
+   "poems": [
+    120,
+    121
+   ],
+   "suggestion": "link",
+   "hook": "露・おくる/おく"
+  },
+  {
+   "bucket": "CH09-09",
+   "poems": [
+    122,
+    123
+   ],
+   "suggestion": "link",
+   "hook": "雨となり・雲"
+  },
+  {
+   "bucket": "CH09-10",
+   "poems": [
+    124,
+    125
+   ],
+   "suggestion": "link",
+   "hook": "なでしこ"
+  },
+  {
+   "bucket": "CH09-11",
+   "poems": [
+    126,
+    127
+   ],
+   "suggestion": "weak",
+   "hook": "秋・露/時雨"
+  },
+  {
+   "bucket": "CH09-15",
+   "poems": [
+    131,
+    132
+   ],
+   "suggestion": "link",
+   "hook": "涙ふる・あらた/あたらし"
+  },
+  {
+   "bucket": "CH10-01",
+   "poems": [
+    133,
+    134
+   ],
+   "suggestion": "link",
+   "hook": "榊・神・をる"
+  },
+  {
+   "bucket": "CH10-02",
+   "poems": [
+    135,
+    136
+   ],
+   "suggestion": "link",
+   "hook": "秋のわかれ"
+  },
+  {
+   "bucket": "CH10-03",
+   "poems": [
+    137,
+    138
+   ],
+   "suggestion": "link",
+   "hook": "くにつ神・ことわる"
+  },
+  {
+   "bucket": "CH10-05",
+   "poems": [
+    140,
+    141
+   ],
+   "suggestion": "link",
+   "hook": "すずか河・やそせ"
+  },
+  {
+   "bucket": "CH10-07",
+   "poems": [
+    143,
+    144
+   ],
+   "suggestion": "weak",
+   "hook": "かげ（陰/影）"
+  },
+  {
+   "bucket": "CH10-07",
+   "poems": [
+    143,
+    145
+   ],
+   "suggestion": "link",
+   "hook": "年の暮"
+  },
+  {
+   "bucket": "CH10-07",
+   "poems": [
+    144,
+    145
+   ],
+   "suggestion": "link",
+   "hook": "影・池/水"
+  },
+  {
+   "bucket": "CH10-08",
+   "poems": [
+    146,
+    147
+   ],
+   "suggestion": "link",
+   "hook": "あく（明く/飽く）"
+  },
+  {
+   "bucket": "CH10-09",
+   "poems": [
+    148,
+    149
+   ],
+   "suggestion": "weak",
+   "hook": "なげき/うらみ"
+  },
+  {
+   "bucket": "CH10-10",
+   "poems": [
+    150,
+    151
+   ],
+   "suggestion": "link",
+   "hook": "浅茅・露"
+  },
+  {
+   "bucket": "CH10-11",
+   "poems": [
+    152,
+    153
+   ],
+   "suggestion": "link",
+   "hook": "ゆふだすき・その神"
+  },
+  {
+   "bucket": "CH10-12",
+   "poems": [
+    154,
+    155
+   ],
+   "suggestion": "link",
+   "hook": "霧へだつ・月"
+  },
+  {
+   "bucket": "CH10-13",
+   "poems": [
+    156,
+    157
+   ],
+   "suggestion": "weak",
+   "hook": "ころ・時雨/木枯"
+  },
+  {
+   "bucket": "CH10-14",
+   "poems": [
+    158,
+    159
+   ],
+   "suggestion": "link",
+   "hook": "けふ・ゆきあふ/ゆきめぐり"
+  },
+  {
+   "bucket": "CH10-15",
+   "poems": [
+    160,
+    161
+   ],
+   "suggestion": "link",
+   "hook": "この世"
+  },
+  {
+   "bucket": "CH10-16",
+   "poems": [
+    162,
+    163
+   ],
+   "suggestion": "link",
+   "hook": "うらしま"
+  },
+  {
+   "bucket": "CH10-17",
+   "poems": [
+    164,
+    165
+   ],
+   "suggestion": "link",
+   "hook": "けさ・花・にほふ"
+  },
+  {
+   "bucket": "CH11-01",
+   "poems": [
+    166,
+    167
+   ],
+   "suggestion": "link",
+   "hook": "ほととぎす"
+  },
+  {
+   "bucket": "CH11-02",
+   "poems": [
+    168,
+    169
+   ],
+   "suggestion": "link",
+   "hook": "たちばな"
+  },
+  {
+   "bucket": "CH12-01",
+   "poems": [
+    170,
+    171
+   ],
+   "suggestion": "link",
+   "hook": "煙"
+  },
+  {
+   "bucket": "CH12-02",
+   "poems": [
+    172,
+    173
+   ],
+   "suggestion": "link",
+   "hook": "鏡・影"
+  },
+  {
+   "bucket": "CH12-03",
+   "poems": [
+    174,
+    175
+   ],
+   "suggestion": "link",
+   "hook": "月影"
+  },
+  {
+   "bucket": "CH12-04",
+   "poems": [
+    176,
+    177
+   ],
+   "suggestion": "link",
+   "hook": "涙の河・みを/みなは"
+  },
+  {
+   "bucket": "CH12-05",
+   "poems": [
+    178,
+    179
+   ],
+   "suggestion": "weak",
+   "hook": "かなしき・世"
+  },
+  {
+   "bucket": "CH12-09",
+   "poems": [
+    183,
+    184
+   ],
+   "suggestion": "link",
+   "hook": "花の都・春"
+  },
+  {
+   "bucket": "CH12-10",
+   "poems": [
+    185,
+    186
+   ],
+   "suggestion": "link",
+   "hook": "別れ・命"
+  },
+  {
+   "bucket": "CH12-13",
+   "poems": [
+    189,
+    191
+   ],
+   "suggestion": "link",
+   "hook": "しほたるる・松島・あま"
+  },
+  {
+   "bucket": "CH12-14",
+   "poems": [
+    190,
+    192
+   ],
+   "suggestion": "link",
+   "hook": "あま・しほ焼く/たく・浦"
+  },
+  {
+   "bucket": "CH12-16",
+   "poems": [
+    194,
+    195
+   ],
+   "suggestion": "link",
+   "hook": "伊勢・あま"
+  },
+  {
+   "bucket": "CH12-16",
+   "poems": [
+    194,
+    196
+   ],
+   "suggestion": "link",
+   "hook": "うきめ"
+  },
+  {
+   "bucket": "CH12-16",
+   "poems": [
+    194,
+    197
+   ],
+   "suggestion": "link",
+   "hook": "須磨の浦・しほたる"
+  },
+  {
+   "bucket": "CH12-16",
+   "poems": [
+    195,
+    196
+   ],
+   "suggestion": "link",
+   "hook": "伊勢"
+  },
+  {
+   "bucket": "CH12-16",
+   "poems": [
+    195,
+    197
+   ],
+   "suggestion": "link",
+   "hook": "しほ"
+  },
+  {
+   "bucket": "CH12-16",
+   "poems": [
+    196,
+    197
+   ],
+   "suggestion": "weak",
+   "hook": "あま/浪"
+  },
+  {
+   "bucket": "CH12-19",
+   "poems": [
+    200,
+    201
+   ],
+   "suggestion": "link",
+   "hook": "雁"
+  },
+  {
+   "bucket": "CH12-19",
+   "poems": [
+    200,
+    202
+   ],
+   "suggestion": "link",
+   "hook": "雁"
+  },
+  {
+   "bucket": "CH12-19",
+   "poems": [
+    200,
+    203
+   ],
+   "suggestion": "link",
+   "hook": "雁・旅の空"
+  },
+  {
+   "bucket": "CH12-19",
+   "poems": [
+    201,
+    202
+   ],
+   "suggestion": "link",
+   "hook": "雁"
+  },
+  {
+   "bucket": "CH12-19",
+   "poems": [
+    201,
+    203
+   ],
+   "suggestion": "link",
+   "hook": "雁"
+  },
+  {
+   "bucket": "CH12-19",
+   "poems": [
+    202,
+    203
+   ],
+   "suggestion": "link",
+   "hook": "雁・常世"
+  },
+  {
+   "bucket": "CH12-22",
+   "poems": [
+    206,
+    207
+   ],
+   "suggestion": "link",
+   "hook": "綱・たゆたふ・ひく"
+  },
+  {
+   "bucket": "CH12-27",
+   "poems": [
+    212,
+    213
+   ],
+   "suggestion": "link",
+   "hook": "雁・ふるさと/都"
+  },
+  {
+   "bucket": "CH12-28",
+   "poems": [
+    214,
+    215
+   ],
+   "suggestion": "link",
+   "hook": "鶴・雲"
+  },
+  {
+   "bucket": "CH13-05",
+   "poems": [
+    222,
+    223
+   ],
+   "suggestion": "link",
+   "hook": "明石・うら"
+  },
+  {
+   "bucket": "CH13-06",
+   "poems": [
+    224,
+    225
+   ],
+   "suggestion": "link",
+   "hook": "雲居・ながむ"
+  },
+  {
+   "bucket": "CH13-06",
+   "poems": [
+    224,
+    226
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH13-06",
+   "poems": [
+    224,
+    227
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH13-06",
+   "poems": [
+    225,
+    226
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH13-06",
+   "poems": [
+    225,
+    227
+   ],
+   "suggestion": "weak",
+   "hook": "思ふ"
+  },
+  {
+   "bucket": "CH13-06",
+   "poems": [
+    226,
+    227
+   ],
+   "suggestion": "link",
+   "hook": "やよいかに・なやむ"
+  },
+  {
+   "bucket": "CH13-08",
+   "poems": [
+    229,
+    230
+   ],
+   "suggestion": "link",
+   "hook": "夢・かたる"
+  },
+  {
+   "bucket": "CH13-09",
+   "poems": [
+    231,
+    232
+   ],
+   "suggestion": "link",
+   "hook": "まつ（待つ/松）・波"
+  },
+  {
+   "bucket": "CH13-10",
+   "poems": [
+    233,
+    234
+   ],
+   "suggestion": "link",
+   "hook": "塩焼く煙"
+  },
+  {
+   "bucket": "CH13-11",
+   "poems": [
+    235,
+    236
+   ],
+   "suggestion": "weak",
+   "hook": "琴の音/緒"
+  },
+  {
+   "bucket": "CH13-12",
+   "poems": [
+    237,
+    238
+   ],
+   "suggestion": "link",
+   "hook": "波・なごり"
+  },
+  {
+   "bucket": "CH13-13",
+   "poems": [
+    239,
+    240
+   ],
+   "suggestion": "link",
+   "hook": "衣・かさね/かふ"
+  },
+  {
+   "bucket": "CH13-14",
+   "poems": [
+    241,
+    242
+   ],
+   "suggestion": "weak",
+   "hook": "海/浦"
+  },
+  {
+   "bucket": "CH13-15",
+   "poems": [
+    243,
+    244
+   ],
+   "suggestion": "weak",
+   "hook": "年月・めぐりあひ"
+  },
+  {
+   "bucket": "CH13-17",
+   "poems": [
+    246,
+    247
+   ],
+   "suggestion": "link",
+   "hook": "袖・よせ"
+  },
+  {
+   "bucket": "CH14-01",
+   "poems": [
+    248,
+    249
+   ],
+   "suggestion": "link",
+   "hook": "別れ惜し"
+  },
+  {
+   "bucket": "CH14-02",
+   "poems": [
+    250,
+    251
+   ],
+   "suggestion": "link",
+   "hook": "なづる・袖・おひさき"
+  },
+  {
+   "bucket": "CH14-03",
+   "poems": [
+    252,
+    253
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH14-04",
+   "poems": [
+    254,
+    255
+   ],
+   "suggestion": "weak",
+   "hook": "いかに"
+  },
+  {
+   "bucket": "CH14-05",
+   "poems": [
+    256,
+    257
+   ],
+   "suggestion": "link",
+   "hook": "くひな・おどろか・月をいれ"
+  },
+  {
+   "bucket": "CH14-06",
+   "poems": [
+    258,
+    259
+   ],
+   "suggestion": "link",
+   "hook": "住吉・神・かけて"
+  },
+  {
+   "bucket": "CH14-07",
+   "poems": [
+    260,
+    261
+   ],
+   "suggestion": "link",
+   "hook": "みをつくし"
+  },
+  {
+   "bucket": "CH14-09",
+   "poems": [
+    263,
+    264
+   ],
+   "suggestion": "link",
+   "hook": "ふる・かなしき・空"
+  },
+  {
+   "bucket": "CH15-01",
+   "poems": [
+    265,
+    266
+   ],
+   "suggestion": "link",
+   "hook": "玉かづら"
+  },
+  {
+   "bucket": "CH15-04",
+   "poems": [
+    269,
+    270
+   ],
+   "suggestion": "link",
+   "hook": "松/待つ・しるし・宿"
+  },
+  {
+   "bucket": "CH16-02",
+   "poems": [
+    272,
+    273
+   ],
+   "suggestion": "link",
+   "hook": "わくらば/わくら・あふ"
+  },
+  {
+   "bucket": "CH17-01",
+   "poems": [
+    274,
+    275
+   ],
+   "suggestion": "link",
+   "hook": "はるか・別れ"
+  },
+  {
+   "bucket": "CH17-02",
+   "poems": [
+    276,
+    277
+   ],
+   "suggestion": "weak",
+   "hook": "より・涙"
+  },
+  {
+   "bucket": "CH17-03",
+   "poems": [
+    278,
+    279
+   ],
+   "suggestion": "weak",
+   "hook": "深い海の底"
+  },
+  {
+   "bucket": "CH17-03",
+   "poems": [
+    278,
+    280
+   ],
+   "suggestion": "link",
+   "hook": "伊勢・あま"
+  },
+  {
+   "bucket": "CH17-03",
+   "poems": [
+    279,
+    280
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH17-04",
+   "poems": [
+    281,
+    282
+   ],
+   "suggestion": "link",
+   "hook": "しめ・神"
+  },
+  {
+   "bucket": "CH18-01",
+   "poems": [
+    283,
+    284
+   ],
+   "suggestion": "weak",
+   "hook": "別れ路/道"
+  },
+  {
+   "bucket": "CH18-01",
+   "poems": [
+    283,
+    285
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH18-01",
+   "poems": [
+    284,
+    285
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH18-02",
+   "poems": [
+    286,
+    287
+   ],
+   "suggestion": "link",
+   "hook": "かへる・舟/浮木"
+  },
+  {
+   "bucket": "CH18-03",
+   "poems": [
+    288,
+    289
+   ],
+   "suggestion": "weak",
+   "hook": "ふるさと/山里"
+  },
+  {
+   "bucket": "CH18-04",
+   "poems": [
+    290,
+    291
+   ],
+   "suggestion": "link",
+   "hook": "清水/いさらゐ・あるじ"
+  },
+  {
+   "bucket": "CH18-05",
+   "poems": [
+    292,
+    293
+   ],
+   "suggestion": "link",
+   "hook": "かはらぬ・契・しらべ/ね"
+  },
+  {
+   "bucket": "CH18-06",
+   "poems": [
+    294,
+    295
+   ],
+   "suggestion": "link",
+   "hook": "月・桂・里"
+  },
+  {
+   "bucket": "CH18-07",
+   "poems": [
+    296,
+    297
+   ],
+   "suggestion": "link",
+   "hook": "月"
+  },
+  {
+   "bucket": "CH18-07",
+   "poems": [
+    296,
+    298
+   ],
+   "suggestion": "link",
+   "hook": "月"
+  },
+  {
+   "bucket": "CH18-07",
+   "poems": [
+    297,
+    298
+   ],
+   "suggestion": "link",
+   "hook": "月・雲"
+  },
+  {
+   "bucket": "CH19-01",
+   "poems": [
+    299,
+    300
+   ],
+   "suggestion": "link",
+   "hook": "雪・山・跡絶え・かよふ"
+  },
+  {
+   "bucket": "CH19-02",
+   "poems": [
+    301,
+    302
+   ],
+   "suggestion": "link",
+   "hook": "松・根"
+  },
+  {
+   "bucket": "CH19-03",
+   "poems": [
+    303,
+    304
+   ],
+   "suggestion": "link",
+   "hook": "をちかた人・あす"
+  },
+  {
+   "bucket": "CH19-06",
+   "poems": [
+    307,
+    308
+   ],
+   "suggestion": "link",
+   "hook": "かがり火"
+  },
+  {
+   "bucket": "CH20-01",
+   "poems": [
+    309,
+    310
+   ],
+   "suggestion": "link",
+   "hook": "神・ゆるし/いさめ"
+  },
+  {
+   "bucket": "CH20-02",
+   "poems": [
+    311,
+    312
+   ],
+   "suggestion": "link",
+   "hook": "あさがほ"
+  },
+  {
+   "bucket": "CH20-04",
+   "poems": [
+    314,
+    315
+   ],
+   "suggestion": "link",
+   "hook": "親"
+  },
+  {
+   "bucket": "CH20-05",
+   "poems": [
+    316,
+    317
+   ],
+   "suggestion": "weak",
+   "hook": "心・つらき/心がはり"
+  },
+  {
+   "bucket": "CH21-01",
+   "poems": [
+    322,
+    323
+   ],
+   "suggestion": "link",
+   "hook": "藤衣・みそぎ"
+  },
+  {
+   "bucket": "CH21-03",
+   "poems": [
+    325,
+    326
+   ],
+   "suggestion": "link",
+   "hook": "色・染め・衣/袖"
+  },
+  {
+   "bucket": "CH21-06",
+   "poems": [
+    329,
+    330
+   ],
+   "suggestion": "link",
+   "hook": "袖（舞姫）"
+  },
+  {
+   "bucket": "CH21-08",
+   "poems": [
+    332,
+    333
+   ],
+   "suggestion": "link",
+   "hook": "鴬"
+  },
+  {
+   "bucket": "CH21-08",
+   "poems": [
+    332,
+    334
+   ],
+   "suggestion": "link",
+   "hook": "さへづる・むかし/いにしへ"
+  },
+  {
+   "bucket": "CH21-08",
+   "poems": [
+    332,
+    335
+   ],
+   "suggestion": "link",
+   "hook": "鴬・むかし・花"
+  },
+  {
+   "bucket": "CH21-08",
+   "poems": [
+    333,
+    334
+   ],
+   "suggestion": "weak",
+   "hook": "鴬/鳥"
+  },
+  {
+   "bucket": "CH21-08",
+   "poems": [
+    333,
+    335
+   ],
+   "suggestion": "link",
+   "hook": "鴬"
+  },
+  {
+   "bucket": "CH21-08",
+   "poems": [
+    334,
+    335
+   ],
+   "suggestion": "link",
+   "hook": "さへづる"
+  },
+  {
+   "bucket": "CH21-09",
+   "poems": [
+    336,
+    337
+   ],
+   "suggestion": "link",
+   "hook": "紅葉・風・春"
+  },
+  {
+   "bucket": "CH21-09",
+   "poems": [
+    336,
+    364
+   ],
+   "suggestion": "link",
+   "hook": "春待つ/秋待つ"
+  },
+  {
+   "bucket": "CH21-09",
+   "poems": [
+    336,
+    365
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH21-09",
+   "poems": [
+    337,
+    364
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH21-09",
+   "poems": [
+    337,
+    365
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH21-09",
+   "poems": [
+    364,
+    365
+   ],
+   "suggestion": "link",
+   "hook": "こてふ"
+  },
+  {
+   "bucket": "CH22-01",
+   "poems": [
+    338,
+    339
+   ],
+   "suggestion": "link",
+   "hook": "恋ふ"
+  },
+  {
+   "bucket": "CH22-02",
+   "poems": [
+    340,
+    341
+   ],
+   "suggestion": "link",
+   "hook": "鏡の神"
+  },
+  {
+   "bucket": "CH22-03",
+   "poems": [
+    342,
+    343
+   ],
+   "suggestion": "link",
+   "hook": "うき・ゆく・舟"
+  },
+  {
+   "bucket": "CH22-05",
+   "poems": [
+    345,
+    346
+   ],
+   "suggestion": "link",
+   "hook": "河（布留川/初瀬川）"
+  },
+  {
+   "bucket": "CH22-06",
+   "poems": [
+    347,
+    348
+   ],
+   "suggestion": "link",
+   "hook": "みくり・すぢ"
+  },
+  {
+   "bucket": "CH22-08",
+   "poems": [
+    350,
+    351
+   ],
+   "suggestion": "link",
+   "hook": "から衣・かへす"
+  },
+  {
+   "bucket": "CH23-01",
+   "poems": [
+    352,
+    353
+   ],
+   "suggestion": "link",
+   "hook": "池の鏡・影"
+  },
+  {
+   "bucket": "CH23-02",
+   "poems": [
+    354,
+    355
+   ],
+   "suggestion": "link",
+   "hook": "松・ね・鴬"
+  },
+  {
+   "bucket": "CH23-02",
+   "poems": [
+    354,
+    356
+   ],
+   "suggestion": "link",
+   "hook": "鴬・ふる"
+  },
+  {
+   "bucket": "CH23-02",
+   "poems": [
+    355,
+    356
+   ],
+   "suggestion": "link",
+   "hook": "鴬・巣"
+  },
+  {
+   "bucket": "CH24-01",
+   "poems": [
+    358,
+    359
+   ],
+   "suggestion": "link",
+   "hook": "山吹"
+  },
+  {
+   "bucket": "CH24-01",
+   "poems": [
+    358,
+    360
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH24-01",
+   "poems": [
+    358,
+    361
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH24-01",
+   "poems": [
+    359,
+    360
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH24-01",
+   "poems": [
+    359,
+    361
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH24-01",
+   "poems": [
+    360,
+    361
+   ],
+   "suggestion": "link",
+   "hook": "舟"
+  },
+  {
+   "bucket": "CH24-02",
+   "poems": [
+    362,
+    363
+   ],
+   "suggestion": "link",
+   "hook": "淵に身投げ"
+  },
+  {
+   "bucket": "CH24-04",
+   "poems": [
+    367,
+    368
+   ],
+   "suggestion": "link",
+   "hook": "竹・根・おひ"
+  },
+  {
+   "bucket": "CH24-05",
+   "poems": [
+    369,
+    370
+   ],
+   "suggestion": "link",
+   "hook": "橘・袖・よそふ"
+  },
+  {
+   "bucket": "CH25-01",
+   "poems": [
+    372,
+    373
+   ],
+   "suggestion": "link",
+   "hook": "おもひ（思ひ/火）・虫/蛍"
+  },
+  {
+   "bucket": "CH25-02",
+   "poems": [
+    374,
+    375
+   ],
+   "suggestion": "link",
+   "hook": "あやめ・ね（根/音）・なかれ"
+  },
+  {
+   "bucket": "CH25-03",
+   "poems": [
+    376,
+    377
+   ],
+   "suggestion": "link",
+   "hook": "こま・あやめ・ひく"
+  },
+  {
+   "bucket": "CH25-04",
+   "poems": [
+    378,
+    379
+   ],
+   "suggestion": "link",
+   "hook": "昔の跡をたづぬ・親"
+  },
+  {
+   "bucket": "CH26-01",
+   "poems": [
+    380,
+    381
+   ],
+   "suggestion": "link",
+   "hook": "なでしこ"
+  },
+  {
+   "bucket": "CH26-02",
+   "poems": [
+    382,
+    383
+   ],
+   "suggestion": "link",
+   "hook": "常陸"
+  },
+  {
+   "bucket": "CH27-01",
+   "poems": [
+    384,
+    385
+   ],
+   "suggestion": "link",
+   "hook": "かがり火・煙"
+  },
+  {
+   "bucket": "CH28-02",
+   "poems": [
+    387,
+    388
+   ],
+   "suggestion": "link",
+   "hook": "をみなへし・風・しほれ"
+  },
+  {
+   "bucket": "CH29-01",
+   "poems": [
+    390,
+    391
+   ],
+   "suggestion": "link",
+   "hook": "小塩山・雪・跡"
+  },
+  {
+   "bucket": "CH29-02",
+   "poems": [
+    392,
+    393
+   ],
+   "suggestion": "link",
+   "hook": "み雪・光・空"
+  },
+  {
+   "bucket": "CH29-04",
+   "poems": [
+    395,
+    396
+   ],
+   "suggestion": "link",
+   "hook": "から衣"
+  },
+  {
+   "bucket": "CH29-05",
+   "poems": [
+    397,
+    398
+   ],
+   "suggestion": "link",
+   "hook": "あま・よる/なぎさ"
+  },
+  {
+   "bucket": "CH30-01",
+   "poems": [
+    399,
+    400
+   ],
+   "suggestion": "link",
+   "hook": "露・かこと・野"
+  },
+  {
+   "bucket": "CH30-02",
+   "poems": [
+    401,
+    402
+   ],
+   "suggestion": "link",
+   "hook": "妹背山・ふみまよふ"
+  },
+  {
+   "bucket": "CH30-04",
+   "poems": [
+    404,
+    406
+   ],
+   "suggestion": "link",
+   "hook": "光・霜・けつ"
+  },
+  {
+   "bucket": "CH31-01",
+   "poems": [
+    407,
+    408
+   ],
+   "suggestion": "link",
+   "hook": "わたり川/三瀬川"
+  },
+  {
+   "bucket": "CH31-03",
+   "poems": [
+    410,
+    411
+   ],
+   "suggestion": "weak",
+   "hook": "恋の火（ほのを/けぶり）"
+  },
+  {
+   "bucket": "CH31-04",
+   "poems": [
+    412,
+    413
+   ],
+   "suggestion": "link",
+   "hook": "真木の柱・なれき"
+  },
+  {
+   "bucket": "CH31-05",
+   "poems": [
+    414,
+    415
+   ],
+   "suggestion": "link",
+   "hook": "石間の水"
+  },
+  {
+   "bucket": "CH31-07",
+   "poems": [
+    417,
+    418
+   ],
+   "suggestion": "link",
+   "hook": "紫・染め"
+  },
+  {
+   "bucket": "CH31-08",
+   "poems": [
+    419,
+    420
+   ],
+   "suggestion": "link",
+   "hook": "梅の花・にほひ・かばかり"
+  },
+  {
+   "bucket": "CH31-09",
+   "poems": [
+    421,
+    422
+   ],
+   "suggestion": "link",
+   "hook": "しのぶ・雨/しづく"
+  },
+  {
+   "bucket": "CH31-11",
+   "poems": [
+    424,
+    425
+   ],
+   "suggestion": "link",
+   "hook": "卵/雁の子・巣"
+  },
+  {
+   "bucket": "CH31-12",
+   "poems": [
+    426,
+    427
+   ],
+   "suggestion": "link",
+   "hook": "よるべなみ・舟"
+  },
+  {
+   "bucket": "CH32-01",
+   "poems": [
+    428,
+    429
+   ],
+   "suggestion": "link",
+   "hook": "花の香・袖"
+  },
+  {
+   "bucket": "CH32-02",
+   "poems": [
+    430,
+    431
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH32-02",
+   "poems": [
+    430,
+    432
+   ],
+   "suggestion": "link",
+   "hook": "鴬"
+  },
+  {
+   "bucket": "CH32-02",
+   "poems": [
+    430,
+    433
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH32-02",
+   "poems": [
+    430,
+    434
+   ],
+   "suggestion": "weak",
+   "hook": "鳥"
+  },
+  {
+   "bucket": "CH32-02",
+   "poems": [
+    431,
+    432
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH32-02",
+   "poems": [
+    431,
+    433
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH32-02",
+   "poems": [
+    431,
+    434
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH32-02",
+   "poems": [
+    432,
+    433
+   ],
+   "suggestion": "link",
+   "hook": "吹く（笛/風）"
+  },
+  {
+   "bucket": "CH32-02",
+   "poems": [
+    432,
+    434
+   ],
+   "suggestion": "link",
+   "hook": "ねぐら"
+  },
+  {
+   "bucket": "CH32-02",
+   "poems": [
+    433,
+    434
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH32-03",
+   "poems": [
+    435,
+    436
+   ],
+   "suggestion": "weak",
+   "hook": "花・袖/着る"
+  },
+  {
+   "bucket": "CH32-04",
+   "poems": [
+    437,
+    438
+   ],
+   "suggestion": "link",
+   "hook": "忘る"
+  },
+  {
+   "bucket": "CH33-01",
+   "poems": [
+    439,
+    440
+   ],
+   "suggestion": "link",
+   "hook": "藤・たそかれ"
+  },
+  {
+   "bucket": "CH33-02",
+   "poems": [
+    441,
+    442
+   ],
+   "suggestion": "weak",
+   "hook": "藤の花"
+  },
+  {
+   "bucket": "CH33-02",
+   "poems": [
+    441,
+    443
+   ],
+   "suggestion": "link",
+   "hook": "藤の花"
+  },
+  {
+   "bucket": "CH33-02",
+   "poems": [
+    442,
+    443
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH33-03",
+   "poems": [
+    444,
+    445
+   ],
+   "suggestion": "link",
+   "hook": "河口・関・あさき"
+  },
+  {
+   "bucket": "CH33-05",
+   "poems": [
+    447,
+    448
+   ],
+   "suggestion": "link",
+   "hook": "かざし・かつ"
+  },
+  {
+   "bucket": "CH33-06",
+   "poems": [
+    449,
+    450
+   ],
+   "suggestion": "link",
+   "hook": "菊・露・色"
+  },
+  {
+   "bucket": "CH33-07",
+   "poems": [
+    451,
+    452
+   ],
+   "suggestion": "link",
+   "hook": "水（真清水/いさらゐ）"
+  },
+  {
+   "bucket": "CH33-08",
+   "poems": [
+    453,
+    454
+   ],
+   "suggestion": "link",
+   "hook": "松・小松・根"
+  },
+  {
+   "bucket": "CH33-09",
+   "poems": [
+    455,
+    456
+   ],
+   "suggestion": "link",
+   "hook": "菊"
+  },
+  {
+   "bucket": "CH33-10",
+   "poems": [
+    457,
+    458
+   ],
+   "suggestion": "link",
+   "hook": "紅葉"
+  },
+  {
+   "bucket": "CH34-01",
+   "poems": [
+    459,
+    460
+   ],
+   "suggestion": "link",
+   "hook": "小櫛・神さぶ"
+  },
+  {
+   "bucket": "CH34-02",
+   "poems": [
+    461,
+    462
+   ],
+   "suggestion": "link",
+   "hook": "小松・野辺・若"
+  },
+  {
+   "bucket": "CH34-03",
+   "poems": [
+    463,
+    464
+   ],
+   "suggestion": "weak",
+   "hook": "世・契"
+  },
+  {
+   "bucket": "CH34-04",
+   "poems": [
+    465,
+    466
+   ],
+   "suggestion": "link",
+   "hook": "あは雪"
+  },
+  {
+   "bucket": "CH34-05",
+   "poems": [
+    467,
+    468
+   ],
+   "suggestion": "link",
+   "hook": "そむく・ほだし"
+  },
+  {
+   "bucket": "CH34-06",
+   "poems": [
+    469,
+    470
+   ],
+   "suggestion": "link",
+   "hook": "関・涙"
+  },
+  {
+   "bucket": "CH34-07",
+   "poems": [
+    471,
+    472
+   ],
+   "suggestion": "link",
+   "hook": "こりすま・身を投げ・淵"
+  },
+  {
+   "bucket": "CH34-08",
+   "poems": [
+    473,
+    474
+   ],
+   "suggestion": "link",
+   "hook": "青葉・色/うつろふ"
+  },
+  {
+   "bucket": "CH34-09",
+   "poems": [
+    475,
+    476
+   ],
+   "suggestion": "link",
+   "hook": "しほたるるあま"
+  },
+  {
+   "bucket": "CH34-09",
+   "poems": [
+    475,
+    477
+   ],
+   "suggestion": "weak",
+   "hook": "浦"
+  },
+  {
+   "bucket": "CH34-09",
+   "poems": [
+    476,
+    477
+   ],
+   "suggestion": "weak",
+   "hook": "浦"
+  },
+  {
+   "bucket": "CH34-11",
+   "poems": [
+    479,
+    480
+   ],
+   "suggestion": "link",
+   "hook": "ねぐら・花・鳥"
+  },
+  {
+   "bucket": "CH34-12",
+   "poems": [
+    481,
+    482
+   ],
+   "suggestion": "link",
+   "hook": "花（桜）を折る"
+  },
+  {
+   "bucket": "CH35-02",
+   "poems": [
+    484,
+    485
+   ],
+   "suggestion": "link",
+   "hook": "住吉/住の江"
+  },
+  {
+   "bucket": "CH35-02",
+   "poems": [
+    484,
+    486
+   ],
+   "suggestion": "link",
+   "hook": "住吉・神・松"
+  },
+  {
+   "bucket": "CH35-02",
+   "poems": [
+    485,
+    486
+   ],
+   "suggestion": "link",
+   "hook": "住吉"
+  },
+  {
+   "bucket": "CH35-03",
+   "poems": [
+    487,
+    488
+   ],
+   "suggestion": "link",
+   "hook": "霜・神・ゆふ"
+  },
+  {
+   "bucket": "CH35-03",
+   "poems": [
+    487,
+    489
+   ],
+   "suggestion": "link",
+   "hook": "霜・神・ゆふ"
+  },
+  {
+   "bucket": "CH35-03",
+   "poems": [
+    488,
+    489
+   ],
+   "suggestion": "link",
+   "hook": "霜・神・ゆふ"
+  },
+  {
+   "bucket": "CH35-04",
+   "poems": [
+    490,
+    491
+   ],
+   "suggestion": "link",
+   "hook": "あけくれ・空・きえ"
+  },
+  {
+   "bucket": "CH35-05",
+   "poems": [
+    492,
+    493
+   ],
+   "suggestion": "link",
+   "hook": "かざし"
+  },
+  {
+   "bucket": "CH35-07",
+   "poems": [
+    495,
+    496
+   ],
+   "suggestion": "link",
+   "hook": "はちすの露"
+  },
+  {
+   "bucket": "CH35-08",
+   "poems": [
+    497,
+    498
+   ],
+   "suggestion": "link",
+   "hook": "ひぐらし"
+  },
+  {
+   "bucket": "CH35-09",
+   "poems": [
+    499,
+    500
+   ],
+   "suggestion": "link",
+   "hook": "あま・須磨/明石の浦"
+  },
+  {
+   "bucket": "CH36-01",
+   "poems": [
+    501,
+    502
+   ],
+   "suggestion": "link",
+   "hook": "煙"
+  },
+  {
+   "bucket": "CH36-01",
+   "poems": [
+    501,
+    503
+   ],
+   "suggestion": "link",
+   "hook": "煙"
+  },
+  {
+   "bucket": "CH36-01",
+   "poems": [
+    502,
+    503
+   ],
+   "suggestion": "link",
+   "hook": "煙"
+  },
+  {
+   "bucket": "CH36-03",
+   "poems": [
+    505,
+    506
+   ],
+   "suggestion": "weak",
+   "hook": "春の花"
+  },
+  {
+   "bucket": "CH36-04",
+   "poems": [
+    507,
+    508
+   ],
+   "suggestion": "link",
+   "hook": "かすみの衣"
+  },
+  {
+   "bucket": "CH36-04",
+   "poems": [
+    507,
+    509
+   ],
+   "suggestion": "link",
+   "hook": "かすみの衣"
+  },
+  {
+   "bucket": "CH36-04",
+   "poems": [
+    508,
+    509
+   ],
+   "suggestion": "link",
+   "hook": "かすみ・着る"
+  },
+  {
+   "bucket": "CH36-05",
+   "poems": [
+    510,
+    511
+   ],
+   "suggestion": "link",
+   "hook": "葉守の神・ならす"
+  },
+  {
+   "bucket": "CH37-01",
+   "poems": [
+    512,
+    513
+   ],
+   "suggestion": "link",
+   "hook": "背く/入る・ところ・山路"
+  },
+  {
+   "bucket": "CH37-03",
+   "poems": [
+    515,
+    516
+   ],
+   "suggestion": "link",
+   "hook": "こと（言/琴）"
+  },
+  {
+   "bucket": "CH37-04",
+   "poems": [
+    517,
+    518
+   ],
+   "suggestion": "link",
+   "hook": "かはらぬ・声/音"
+  },
+  {
+   "bucket": "CH38-01",
+   "poems": [
+    520,
+    521
+   ],
+   "suggestion": "link",
+   "hook": "はちす・契"
+  },
+  {
+   "bucket": "CH38-02",
+   "poems": [
+    522,
+    523
+   ],
+   "suggestion": "link",
+   "hook": "すずむし"
+  },
+  {
+   "bucket": "CH38-03",
+   "poems": [
+    524,
+    525
+   ],
+   "suggestion": "link",
+   "hook": "秋・月・雲"
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    526,
+    527
+   ],
+   "suggestion": "link",
+   "hook": "霧・たつ"
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    526,
+    528
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    526,
+    529
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    526,
+    530
+   ],
+   "suggestion": "link",
+   "hook": "霧"
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    526,
+    531
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    527,
+    528
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    527,
+    529
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    527,
+    530
+   ],
+   "suggestion": "link",
+   "hook": "霧"
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    527,
+    531
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    528,
+    529
+   ],
+   "suggestion": "link",
+   "hook": "ぬれ衣/袖・名をくたす"
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    528,
+    530
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    528,
+    531
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    529,
+    530
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    529,
+    531
+   ],
+   "suggestion": "link",
+   "hook": "ぬれぎぬ"
+  },
+  {
+   "bucket": "CH39-01",
+   "poems": [
+    530,
+    531
+   ],
+   "suggestion": "link",
+   "hook": "露・わけ"
+  },
+  {
+   "bucket": "CH39-04",
+   "poems": [
+    534,
+    535
+   ],
+   "suggestion": "link",
+   "hook": "かり（宿借り/仮寝）・野"
+  },
+  {
+   "bucket": "CH39-05",
+   "poems": [
+    536,
+    537
+   ],
+   "suggestion": "weak",
+   "hook": "あはれ/ながめ"
+  },
+  {
+   "bucket": "CH39-06",
+   "poems": [
+    538,
+    539
+   ],
+   "suggestion": "link",
+   "hook": "しか（鹿/然）・声/音"
+  },
+  {
+   "bucket": "CH39-13",
+   "poems": [
+    546,
+    547
+   ],
+   "suggestion": "link",
+   "hook": "松島のあま・衣/ぬれぎぬ"
+  },
+  {
+   "bucket": "CH39-14",
+   "poems": [
+    548,
+    549
+   ],
+   "suggestion": "link",
+   "hook": "うらめし/うし・きく"
+  },
+  {
+   "bucket": "CH39-15",
+   "poems": [
+    550,
+    551
+   ],
+   "suggestion": "link",
+   "hook": "世のうさ・身"
+  },
+  {
+   "bucket": "CH40-01",
+   "poems": [
+    552,
+    553
+   ],
+   "suggestion": "link",
+   "hook": "薪"
+  },
+  {
+   "bucket": "CH40-02",
+   "poems": [
+    554,
+    555
+   ],
+   "suggestion": "link",
+   "hook": "みのり・契・むすぶ・たえ"
+  },
+  {
+   "bucket": "CH40-03",
+   "poems": [
+    556,
+    557
+   ],
+   "suggestion": "link",
+   "hook": "露・風"
+  },
+  {
+   "bucket": "CH40-03",
+   "poems": [
+    556,
+    558
+   ],
+   "suggestion": "link",
+   "hook": "露・風"
+  },
+  {
+   "bucket": "CH40-03",
+   "poems": [
+    557,
+    558
+   ],
+   "suggestion": "link",
+   "hook": "露の世"
+  },
+  {
+   "bucket": "CH40-05",
+   "poems": [
+    560,
+    561
+   ],
+   "suggestion": "link",
+   "hook": "露・いにしへ/むかし・秋"
+  },
+  {
+   "bucket": "CH40-06",
+   "poems": [
+    562,
+    563
+   ],
+   "suggestion": "weak",
+   "hook": "秋"
+  },
+  {
+   "bucket": "CH41-01",
+   "poems": [
+    564,
+    565
+   ],
+   "suggestion": "link",
+   "hook": "たづね/とめ・花・来つ"
+  },
+  {
+   "bucket": "CH41-03",
+   "poems": [
+    567,
+    568
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH41-04",
+   "poems": [
+    569,
+    570
+   ],
+   "suggestion": "link",
+   "hook": "かり（仮/雁）"
+  },
+  {
+   "bucket": "CH41-05",
+   "poems": [
+    571,
+    572
+   ],
+   "suggestion": "link",
+   "hook": "衣・たちかへ・けふ"
+  },
+  {
+   "bucket": "CH41-06",
+   "poems": [
+    573,
+    574
+   ],
+   "suggestion": "weak",
+   "hook": "かざし/あふひ"
+  },
+  {
+   "bucket": "CH41-07",
+   "poems": [
+    575,
+    576
+   ],
+   "suggestion": "link",
+   "hook": "ほととぎす"
+  },
+  {
+   "bucket": "CH41-08",
+   "poems": [
+    577,
+    578
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH41-10",
+   "poems": [
+    580,
+    581
+   ],
+   "suggestion": "link",
+   "hook": "恋ふる涙"
+  },
+  {
+   "bucket": "CH41-14",
+   "poems": [
+    585,
+    586
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH41-15",
+   "poems": [
+    587,
+    588
+   ],
+   "suggestion": "link",
+   "hook": "雪・春・梅/花"
+  },
+  {
+   "bucket": "CH43-01",
+   "poems": [
+    591,
+    592
+   ],
+   "suggestion": "link",
+   "hook": "風・花の香/にほふ"
+  },
+  {
+   "bucket": "CH43-01",
+   "poems": [
+    591,
+    593
+   ],
+   "suggestion": "link",
+   "hook": "にほふ"
+  },
+  {
+   "bucket": "CH43-01",
+   "poems": [
+    591,
+    594
+   ],
+   "suggestion": "link",
+   "hook": "にほはす"
+  },
+  {
+   "bucket": "CH43-01",
+   "poems": [
+    592,
+    593
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH43-01",
+   "poems": [
+    592,
+    594
+   ],
+   "suggestion": "link",
+   "hook": "花の香"
+  },
+  {
+   "bucket": "CH43-01",
+   "poems": [
+    593,
+    594
+   ],
+   "suggestion": "link",
+   "hook": "にほふ"
+  },
+  {
+   "bucket": "CH44-01",
+   "poems": [
+    595,
+    596
+   ],
+   "suggestion": "link",
+   "hook": "梅のはつ花"
+  },
+  {
+   "bucket": "CH44-02",
+   "poems": [
+    597,
+    598
+   ],
+   "suggestion": "link",
+   "hook": "花に心をうつす/うつる"
+  },
+  {
+   "bucket": "CH44-02",
+   "poems": [
+    597,
+    611
+   ],
+   "suggestion": "link",
+   "hook": "花・まどふ"
+  },
+  {
+   "bucket": "CH44-02",
+   "poems": [
+    597,
+    612
+   ],
+   "suggestion": "link",
+   "hook": "花に心をうつす"
+  },
+  {
+   "bucket": "CH44-02",
+   "poems": [
+    598,
+    611
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH44-02",
+   "poems": [
+    598,
+    612
+   ],
+   "suggestion": "link",
+   "hook": "うつる/うつす"
+  },
+  {
+   "bucket": "CH44-02",
+   "poems": [
+    611,
+    612
+   ],
+   "suggestion": "link",
+   "hook": "けふ・花"
+  },
+  {
+   "bucket": "CH44-03",
+   "poems": [
+    599,
+    600
+   ],
+   "suggestion": "link",
+   "hook": "竹河・ふし"
+  },
+  {
+   "bucket": "CH44-03",
+   "poems": [
+    599,
+    617
+   ],
+   "suggestion": "link",
+   "hook": "竹河・ふし"
+  },
+  {
+   "bucket": "CH44-03",
+   "poems": [
+    599,
+    618
+   ],
+   "suggestion": "link",
+   "hook": "竹河"
+  },
+  {
+   "bucket": "CH44-03",
+   "poems": [
+    600,
+    617
+   ],
+   "suggestion": "link",
+   "hook": "竹河・ふし"
+  },
+  {
+   "bucket": "CH44-03",
+   "poems": [
+    600,
+    618
+   ],
+   "suggestion": "link",
+   "hook": "竹河"
+  },
+  {
+   "bucket": "CH44-03",
+   "poems": [
+    617,
+    618
+   ],
+   "suggestion": "link",
+   "hook": "竹河"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    601,
+    602
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    601,
+    603
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    601,
+    604
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    601,
+    605
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    601,
+    606
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    602,
+    603
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    602,
+    604
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    602,
+    605
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    602,
+    606
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    603,
+    604
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    603,
+    605
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    603,
+    606
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    604,
+    605
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    604,
+    606
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-04",
+   "poems": [
+    605,
+    606
+   ],
+   "suggestion": "link",
+   "hook": "桜/花・風・散る"
+  },
+  {
+   "bucket": "CH44-06",
+   "poems": [
+    608,
+    609
+   ],
+   "suggestion": "link",
+   "hook": "勝ち負け・心"
+  },
+  {
+   "bucket": "CH44-06",
+   "poems": [
+    608,
+    610
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH44-06",
+   "poems": [
+    609,
+    610
+   ],
+   "suggestion": "link",
+   "hook": "まかする"
+  },
+  {
+   "bucket": "CH44-07",
+   "poems": [
+    613,
+    614
+   ],
+   "suggestion": "link",
+   "hook": "ひとこと・世"
+  },
+  {
+   "bucket": "CH44-08",
+   "poems": [
+    615,
+    616
+   ],
+   "suggestion": "link",
+   "hook": "藤の花・色・かく"
+  },
+  {
+   "bucket": "CH45-01",
+   "poems": [
+    619,
+    620
+   ],
+   "suggestion": "link",
+   "hook": "水鳥"
+  },
+  {
+   "bucket": "CH45-01",
+   "poems": [
+    619,
+    621
+   ],
+   "suggestion": "weak",
+   "hook": "たちおくれ/君なくは"
+  },
+  {
+   "bucket": "CH45-01",
+   "poems": [
+    620,
+    621
+   ],
+   "suggestion": "link",
+   "hook": "巣・すだつ"
+  },
+  {
+   "bucket": "CH45-03",
+   "poems": [
+    623,
+    624
+   ],
+   "suggestion": "link",
+   "hook": "世を（いとふ/宇治）・山・心"
+  },
+  {
+   "bucket": "CH45-05",
+   "poems": [
+    626,
+    627
+   ],
+   "suggestion": "link",
+   "hook": "霧・へだつ"
+  },
+  {
+   "bucket": "CH45-06",
+   "poems": [
+    628,
+    629
+   ],
+   "suggestion": "link",
+   "hook": "しづく・袖・棹さす"
+  },
+  {
+   "bucket": "CH45-07",
+   "poems": [
+    630,
+    631
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH46-01",
+   "poems": [
+    632,
+    633
+   ],
+   "suggestion": "link",
+   "hook": "をち・浪・吹く・へだつ"
+  },
+  {
+   "bucket": "CH46-02",
+   "poems": [
+    634,
+    635
+   ],
+   "suggestion": "link",
+   "hook": "かざし"
+  },
+  {
+   "bucket": "CH46-02",
+   "poems": [
+    634,
+    651
+   ],
+   "suggestion": "link",
+   "hook": "かざし・桜"
+  },
+  {
+   "bucket": "CH46-02",
+   "poems": [
+    634,
+    652
+   ],
+   "suggestion": "link",
+   "hook": "たづね・をる・桜"
+  },
+  {
+   "bucket": "CH46-02",
+   "poems": [
+    635,
+    651
+   ],
+   "suggestion": "link",
+   "hook": "かざし・をる"
+  },
+  {
+   "bucket": "CH46-02",
+   "poems": [
+    635,
+    652
+   ],
+   "suggestion": "link",
+   "hook": "をる・桜"
+  },
+  {
+   "bucket": "CH46-02",
+   "poems": [
+    651,
+    652
+   ],
+   "suggestion": "link",
+   "hook": "宿の桜・をる"
+  },
+  {
+   "bucket": "CH46-03",
+   "poems": [
+    636,
+    637
+   ],
+   "suggestion": "link",
+   "hook": "草の庵・かれ"
+  },
+  {
+   "bucket": "CH46-04",
+   "poems": [
+    638,
+    639
+   ],
+   "suggestion": "link",
+   "hook": "鹿・山里"
+  },
+  {
+   "bucket": "CH46-04",
+   "poems": [
+    638,
+    640
+   ],
+   "suggestion": "link",
+   "hook": "鹿"
+  },
+  {
+   "bucket": "CH46-04",
+   "poems": [
+    639,
+    640
+   ],
+   "suggestion": "link",
+   "hook": "鹿・霧"
+  },
+  {
+   "bucket": "CH46-05",
+   "poems": [
+    641,
+    642
+   ],
+   "suggestion": "link",
+   "hook": "色かはる・袖"
+  },
+  {
+   "bucket": "CH46-07",
+   "poems": [
+    644,
+    645
+   ],
+   "suggestion": "link",
+   "hook": "松・雪"
+  },
+  {
+   "bucket": "CH46-08",
+   "poems": [
+    646,
+    647
+   ],
+   "suggestion": "link",
+   "hook": "ふみ（踏み）・山"
+  },
+  {
+   "bucket": "CH46-10",
+   "poems": [
+    649,
+    650
+   ],
+   "suggestion": "weak",
+   "hook": "春の山菜（わらび/せり）"
+  },
+  {
+   "bucket": "CH47-01",
+   "poems": [
+    653,
+    654
+   ],
+   "suggestion": "link",
+   "hook": "なかき契・むすぶ"
+  },
+  {
+   "bucket": "CH47-02",
+   "poems": [
+    655,
+    656
+   ],
+   "suggestion": "link",
+   "hook": "山・鳥の声"
+  },
+  {
+   "bucket": "CH47-03",
+   "poems": [
+    657,
+    658
+   ],
+   "suggestion": "link",
+   "hook": "山姫・染め"
+  },
+  {
+   "bucket": "CH47-04",
+   "poems": [
+    659,
+    660
+   ],
+   "suggestion": "link",
+   "hook": "をみなへし"
+  },
+  {
+   "bucket": "CH47-05",
+   "poems": [
+    661,
+    662
+   ],
+   "suggestion": "link",
+   "hook": "まどふ・道・心"
+  },
+  {
+   "bucket": "CH47-07",
+   "poems": [
+    664,
+    665
+   ],
+   "suggestion": "link",
+   "hook": "なれ・かけ・衣/袖"
+  },
+  {
+   "bucket": "CH47-08",
+   "poems": [
+    666,
+    667
+   ],
+   "suggestion": "link",
+   "hook": "橋姫/宇治橋・たえ"
+  },
+  {
+   "bucket": "CH47-09",
+   "poems": [
+    668,
+    669
+   ],
+   "suggestion": "link",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH47-09",
+   "poems": [
+    668,
+    670
+   ],
+   "suggestion": "weak",
+   "hook": "秋"
+  },
+  {
+   "bucket": "CH47-09",
+   "poems": [
+    668,
+    671
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH47-09",
+   "poems": [
+    668,
+    672
+   ],
+   "suggestion": "link",
+   "hook": "木のもと・さびし・秋"
+  },
+  {
+   "bucket": "CH47-09",
+   "poems": [
+    669,
+    670
+   ],
+   "suggestion": "link",
+   "hook": "もみぢ"
+  },
+  {
+   "bucket": "CH47-09",
+   "poems": [
+    669,
+    671
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH47-09",
+   "poems": [
+    669,
+    672
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH47-09",
+   "poems": [
+    670,
+    671
+   ],
+   "suggestion": "link",
+   "hook": "山里"
+  },
+  {
+   "bucket": "CH47-09",
+   "poems": [
+    670,
+    672
+   ],
+   "suggestion": "weak",
+   "hook": "秋"
+  },
+  {
+   "bucket": "CH47-09",
+   "poems": [
+    671,
+    672
+   ],
+   "suggestion": "weak",
+   "hook": "山"
+  },
+  {
+   "bucket": "CH47-11",
+   "poems": [
+    674,
+    675
+   ],
+   "suggestion": "link",
+   "hook": "ながむ・空/雲居"
+  },
+  {
+   "bucket": "CH47-12",
+   "poems": [
+    676,
+    677
+   ],
+   "suggestion": "link",
+   "hook": "千鳥・霜・鳴く"
+  },
+  {
+   "bucket": "CH47-15",
+   "poems": [
+    680,
+    681
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH47-16",
+   "poems": [
+    682,
+    683
+   ],
+   "suggestion": "link",
+   "hook": "行く末"
+  },
+  {
+   "bucket": "CH48-01",
+   "poems": [
+    684,
+    685
+   ],
+   "suggestion": "link",
+   "hook": "蕨・摘む"
+  },
+  {
+   "bucket": "CH48-02",
+   "poems": [
+    686,
+    687
+   ],
+   "suggestion": "link",
+   "hook": "折る・花・心"
+  },
+  {
+   "bucket": "CH48-04",
+   "poems": [
+    689,
+    690
+   ],
+   "suggestion": "link",
+   "hook": "梅の香/にほひ"
+  },
+  {
+   "bucket": "CH48-05",
+   "poems": [
+    691,
+    692
+   ],
+   "suggestion": "link",
+   "hook": "涙の河・身を投げ"
+  },
+  {
+   "bucket": "CH48-05",
+   "poems": [
+    691,
+    695
+   ],
+   "suggestion": "link",
+   "hook": "身を投げ"
+  },
+  {
+   "bucket": "CH48-05",
+   "poems": [
+    691,
+    696
+   ],
+   "suggestion": "weak",
+   "hook": "恋し"
+  },
+  {
+   "bucket": "CH48-05",
+   "poems": [
+    692,
+    695
+   ],
+   "suggestion": "link",
+   "hook": "身を投げ・せ（瀬）"
+  },
+  {
+   "bucket": "CH48-05",
+   "poems": [
+    692,
+    696
+   ],
+   "suggestion": "link",
+   "hook": "恋しき・忘る"
+  },
+  {
+   "bucket": "CH48-05",
+   "poems": [
+    695,
+    696
+   ],
+   "suggestion": "weak",
+   "hook": "わすれ/ゆく心"
+  },
+  {
+   "bucket": "CH48-06",
+   "poems": [
+    693,
+    694
+   ],
+   "suggestion": "link",
+   "hook": "しほたるるあま・袖"
+  },
+  {
+   "bucket": "CH49-01",
+   "poems": [
+    699,
+    700
+   ],
+   "suggestion": "weak",
+   "hook": "花/菊"
+  },
+  {
+   "bucket": "CH49-02",
+   "poems": [
+    701,
+    702
+   ],
+   "suggestion": "link",
+   "hook": "露・花・きえ"
+  },
+  {
+   "bucket": "CH49-02",
+   "poems": [
+    701,
+    703
+   ],
+   "suggestion": "link",
+   "hook": "露・花・きえ"
+  },
+  {
+   "bucket": "CH49-02",
+   "poems": [
+    702,
+    703
+   ],
+   "suggestion": "link",
+   "hook": "露・朝顔/花"
+  },
+  {
+   "bucket": "CH49-04",
+   "poems": [
+    705,
+    707
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH49-06",
+   "poems": [
+    708,
+    709
+   ],
+   "suggestion": "link",
+   "hook": "せき河"
+  },
+  {
+   "bucket": "CH49-08",
+   "poems": [
+    711,
+    712
+   ],
+   "suggestion": "link",
+   "hook": "なれ・袖/衣"
+  },
+  {
+   "bucket": "CH49-10",
+   "poems": [
+    714,
+    715
+   ],
+   "suggestion": "link",
+   "hook": "宿り木"
+  },
+  {
+   "bucket": "CH49-10",
+   "poems": [
+    714,
+    732
+   ],
+   "suggestion": "link",
+   "hook": "宿り木"
+  },
+  {
+   "bucket": "CH49-10",
+   "poems": [
+    714,
+    733
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH49-10",
+   "poems": [
+    714,
+    758
+   ],
+   "suggestion": "link",
+   "hook": "宿り木"
+  },
+  {
+   "bucket": "CH49-10",
+   "poems": [
+    715,
+    732
+   ],
+   "suggestion": "link",
+   "hook": "宿り木"
+  },
+  {
+   "bucket": "CH49-10",
+   "poems": [
+    715,
+    733
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH49-10",
+   "poems": [
+    715,
+    758
+   ],
+   "suggestion": "link",
+   "hook": "宿り木・荒れはつ"
+  },
+  {
+   "bucket": "CH49-10",
+   "poems": [
+    732,
+    733
+   ],
+   "suggestion": "link",
+   "hook": "月・むかし"
+  },
+  {
+   "bucket": "CH49-10",
+   "poems": [
+    732,
+    758
+   ],
+   "suggestion": "link",
+   "hook": "宿り木"
+  },
+  {
+   "bucket": "CH49-10",
+   "poems": [
+    733,
+    758
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH49-11",
+   "poems": [
+    716,
+    717
+   ],
+   "suggestion": "link",
+   "hook": "すすき"
+  },
+  {
+   "bucket": "CH49-12",
+   "poems": [
+    718,
+    719
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH49-12",
+   "poems": [
+    718,
+    720
+   ],
+   "suggestion": "link",
+   "hook": "かざし・折る"
+  },
+  {
+   "bucket": "CH49-12",
+   "poems": [
+    718,
+    721
+   ],
+   "suggestion": "link",
+   "hook": "藤の花"
+  },
+  {
+   "bucket": "CH49-12",
+   "poems": [
+    719,
+    720
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH49-12",
+   "poems": [
+    719,
+    721
+   ],
+   "suggestion": "link",
+   "hook": "色・花"
+  },
+  {
+   "bucket": "CH49-12",
+   "poems": [
+    720,
+    721
+   ],
+   "suggestion": "link",
+   "hook": "紫の雲/雲居"
+  },
+  {
+   "bucket": "CH50-01",
+   "poems": [
+    723,
+    724
+   ],
+   "suggestion": "link",
+   "hook": "なで物・瀬々・身にそふ"
+  },
+  {
+   "bucket": "CH50-02",
+   "poems": [
+    725,
+    726
+   ],
+   "suggestion": "link",
+   "hook": "小萩・露"
+  },
+  {
+   "bucket": "CH50-03",
+   "poems": [
+    727,
+    728
+   ],
+   "suggestion": "link",
+   "hook": "あらぬ所"
+  },
+  {
+   "bucket": "CH51-02",
+   "poems": [
+    735,
+    736
+   ],
+   "suggestion": "link",
+   "hook": "命"
+  },
+  {
+   "bucket": "CH51-03",
+   "poems": [
+    737,
+    738
+   ],
+   "suggestion": "weak",
+   "hook": "涙"
+  },
+  {
+   "bucket": "CH51-04",
+   "poems": [
+    739,
+    740
+   ],
+   "suggestion": "link",
+   "hook": "宇治橋・くちせぬ"
+  },
+  {
+   "bucket": "CH51-05",
+   "poems": [
+    741,
+    742
+   ],
+   "suggestion": "link",
+   "hook": "橘の小島"
+  },
+  {
+   "bucket": "CH51-06",
+   "poems": [
+    743,
+    744
+   ],
+   "suggestion": "link",
+   "hook": "汀・氷・雪"
+  },
+  {
+   "bucket": "CH51-07",
+   "poems": [
+    745,
+    746
+   ],
+   "suggestion": "link",
+   "hook": "ながめ・かきくらす"
+  },
+  {
+   "bucket": "CH51-07",
+   "poems": [
+    745,
+    747
+   ],
+   "suggestion": "weak",
+   "hook": "里"
+  },
+  {
+   "bucket": "CH51-07",
+   "poems": [
+    745,
+    748
+   ],
+   "suggestion": "link",
+   "hook": "雲・かきくらし"
+  },
+  {
+   "bucket": "CH51-07",
+   "poems": [
+    745,
+    749
+   ],
+   "suggestion": "weak",
+   "hook": "身"
+  },
+  {
+   "bucket": "CH51-07",
+   "poems": [
+    746,
+    747
+   ],
+   "suggestion": "link",
+   "hook": "里"
+  },
+  {
+   "bucket": "CH51-07",
+   "poems": [
+    746,
+    748
+   ],
+   "suggestion": "link",
+   "hook": "かきくらし・晴れぬ"
+  },
+  {
+   "bucket": "CH51-07",
+   "poems": [
+    746,
+    749
+   ],
+   "suggestion": "link",
+   "hook": "水かさまさる/みかさまさる"
+  },
+  {
+   "bucket": "CH51-07",
+   "poems": [
+    747,
+    748
+   ],
+   "suggestion": "weak",
+   "hook": "うき"
+  },
+  {
+   "bucket": "CH51-07",
+   "poems": [
+    747,
+    749
+   ],
+   "suggestion": "weak",
+   "hook": "身"
+  },
+  {
+   "bucket": "CH51-07",
+   "poems": [
+    748,
+    749
+   ],
+   "suggestion": "weak",
+   "hook": "身"
+  },
+  {
+   "bucket": "CH51-09",
+   "poems": [
+    751,
+    752
+   ],
+   "suggestion": "link",
+   "hook": "身をすつ"
+  },
+  {
+   "bucket": "CH51-09",
+   "poems": [
+    751,
+    753
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH51-09",
+   "poems": [
+    752,
+    753
+   ],
+   "suggestion": "weak",
+   "hook": "うき・なき/から"
+  },
+  {
+   "bucket": "CH51-10",
+   "poems": [
+    754,
+    755
+   ],
+   "suggestion": "none",
+   "hook": ""
+  },
+  {
+   "bucket": "CH52-01",
+   "poems": [
+    756,
+    757
+   ],
+   "suggestion": "link",
+   "hook": "ほととぎす（しでのたをさ）・なく"
+  },
+  {
+   "bucket": "CH52-02",
+   "poems": [
+    759,
+    760
+   ],
+   "suggestion": "weak",
+   "hook": "人・うき身"
+  },
+  {
+   "bucket": "CH52-04",
+   "poems": [
+    762,
+    763
+   ],
+   "suggestion": "link",
+   "hook": "をみなへし・露・みだる"
+  },
+  {
+   "bucket": "CH52-04",
+   "poems": [
+    762,
+    764
+   ],
+   "suggestion": "link",
+   "hook": "をみなへし"
+  },
+  {
+   "bucket": "CH52-04",
+   "poems": [
+    762,
+    765
+   ],
+   "suggestion": "weak",
+   "hook": "うつる"
+  },
+  {
+   "bucket": "CH52-04",
+   "poems": [
+    763,
+    764
+   ],
+   "suggestion": "link",
+   "hook": "をみなへし"
+  },
+  {
+   "bucket": "CH52-04",
+   "poems": [
+    763,
+    765
+   ],
+   "suggestion": "weak",
+   "hook": "花"
+  },
+  {
+   "bucket": "CH52-04",
+   "poems": [
+    764,
+    765
+   ],
+   "suggestion": "link",
+   "hook": "うつる"
+  },
+  {
+   "bucket": "CH53-01",
+   "poems": [
+    767,
+    793
+   ],
+   "suggestion": "link",
+   "hook": "涙・河・せき/しがらみ"
+  },
+  {
+   "bucket": "CH53-03",
+   "poems": [
+    769,
+    770
+   ],
+   "suggestion": "link",
+   "hook": "をみなへし"
+  },
+  {
+   "bucket": "CH53-04",
+   "poems": [
+    771,
+    772
+   ],
+   "suggestion": "link",
+   "hook": "露・野"
+  },
+  {
+   "bucket": "CH53-05",
+   "poems": [
+    773,
+    774
+   ],
+   "suggestion": "link",
+   "hook": "月・山の端"
+  },
+  {
+   "bucket": "CH53-06",
+   "poems": [
+    775,
+    776
+   ],
+   "suggestion": "link",
+   "hook": "笛竹・昔のこと"
+  },
+  {
+   "bucket": "CH53-07",
+   "poems": [
+    777,
+    778
+   ],
+   "suggestion": "link",
+   "hook": "布留川・杉"
+  },
+  {
+   "bucket": "CH53-09",
+   "poems": [
+    780,
+    781
+   ],
+   "suggestion": "link",
+   "hook": "物思ふ人・知る"
+  },
+  {
+   "bucket": "CH53-10",
+   "poems": [
+    782,
+    783
+   ],
+   "suggestion": "link",
+   "hook": "世を捨つ/背く"
+  },
+  {
+   "bucket": "CH53-11",
+   "poems": [
+    784,
+    785
+   ],
+   "suggestion": "link",
+   "hook": "あま舟/あまの浮木・岸・はなる"
+  },
+  {
+   "bucket": "CH53-12",
+   "poems": [
+    786,
+    787
+   ],
+   "suggestion": "link",
+   "hook": "山の木・嵐/木枯"
+  },
+  {
+   "bucket": "CH53-15",
+   "poems": [
+    790,
+    791
+   ],
+   "suggestion": "link",
+   "hook": "雪・若菜・摘む"
+  }
+ ]
+}
