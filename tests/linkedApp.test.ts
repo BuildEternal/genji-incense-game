@@ -175,3 +175,15 @@ describe('sound', () => {
     expect(localStorage.getItem('genji-ko-sound')).toBe('on');
   });
 });
+
+describe('credits', () => {
+  it('opens from the footer, credits the CC BY sound, and closes', () => {
+    button('#credits-button').click();
+    const popup = root.querySelector('.popup.credits')!;
+    expect(popup.textContent).toContain('the_very_Real_Horst');
+    expect(popup.textContent).toContain('CC BY 4.0');
+    button('#close-popup').click();
+    expect(root.querySelector('.popup')).toBeNull();
+    expect(root.textContent).not.toContain('English pilot');
+  });
+});

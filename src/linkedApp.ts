@@ -17,6 +17,23 @@ const MODES: Record<Mode, { name: string; text: string }> = {
   normal: { name: 'Normal', text: 'Each poem is gone once you move on.' },
   hard: { name: 'Hard', text: 'As normal, with unrelated poems from the same chapter.' },
 };
+// Code-drawn speaker; the waves hide and a cross shows when sound is off (CSS, by aria-pressed).
+const SOUND_ICON = `<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.2L12 5.5v13l-4.8-4H4z" fill="currentColor" stroke-width="1.2"/><path class="wave" d="M15.5 9.2a4 4 0 0 1 0 5.6"/><path class="wave" d="M18.2 6.6a7.6 7.6 0 0 1 0 10.8"/><path class="mute" d="M16 9.5l5 5M21 9.5l-5 5"/></svg>`;
+
+const CREDITS = `<h2>Credits</h2>
+<h3>Poems</h3>
+<p>The 795 waka of the <i>Tale of Genji</i>, with chapter texts and notes from <a href="https://genji-monogatari.net/html/" target="_blank" rel="noopener noreferrer">Genji Monogatari no Sekai</a>. The English glosses are provisional, written for this class project (not a published translation).</p>
+<h3>Sounds</h3>
+<ul>
+<li>Wood block: “Fischtrommel_Muyu.mp3” by the_very_Real_Horst (<a href="https://freesound.org/s/205999/" target="_blank" rel="noopener noreferrer">freesound</a>), <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>, trimmed and level-adjusted.</li>
+<li>Paper: “rustling paper.wav” by keweldog (<a href="https://freesound.org/s/181774/" target="_blank" rel="noopener noreferrer">freesound</a>), CC0.</li>
+<li>Singing bowls: “Big Singing Bowl” by Garuda1982 (<a href="https://freesound.org/s/116315/" target="_blank" rel="noopener noreferrer">freesound</a>) and “Tibetan_Singing_Bowls_Improv.wav” by RutgerMuller (<a href="https://freesound.org/s/365416/" target="_blank" rel="noopener noreferrer">freesound</a>), CC0.</li>
+<li>Koto: “Japan_Koto_My_Amateur_Improv_Session_2.wav” by RutgerMuller (<a href="https://freesound.org/s/365215/" target="_blank" rel="noopener noreferrer">freesound</a>), CC0.</li>
+</ul>
+<h3>Fonts</h3>
+<p><a href="https://github.com/productiontype/Newsreader" target="_blank" rel="noopener noreferrer">Newsreader</a> by Production Type and <a href="https://github.com/notofonts/noto-cjk" target="_blank" rel="noopener noreferrer">Noto Serif JP</a> by Google, both under the SIL Open Font License 1.1.</p>
+<p>The Genji-kō patterns, smoke and seals are drawn in code.</p>`;
+
 /** The five dye colours of the answer buttons, with a numeral mark so colour is never the only cue. */
 export const DYES = [
   { id: 'ai', name: 'Indigo', mark: '一' },
@@ -77,7 +94,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
   let colours: (number | null)[] = Array(5).fill(null);
   let history: RoundRecord[] = [];
   let readingHeight = 0; // reserved height of the reading slip for this round (0 = not measured yet)
-  let popup: number | null = null; // poem index shown in the reread popup (easy mode)
+  let popup: number | 'credits' | null = null; // poem index for the easy-mode reread popup, or the credits
 
   root.classList.add('room');
 
@@ -103,11 +120,11 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
       <header class="bar">
         <a class="brand" href="./" aria-label="Genji-kō home"><span lang="ja">源氏香</span><span class="brand-en">Genji-kō</span></a>
         <span class="where">${phase === 'intro' ? '' : `${escape(roundLabel())} · ${MODES[mode].name}${tutorial ? '' : ` · ${score()} 玉`}`}</span>
-        <button id="sound-toggle" class="icon-button" type="button" aria-pressed="${soundEnabled()}" title="Sound">${soundEnabled() ? 'Sound on' : 'Sound off'}</button>
+        <button id="sound-toggle" class="icon-button sound" type="button" aria-pressed="${soundEnabled()}" aria-label="Sound" title="${soundEnabled() ? 'Sound on' : 'Sound off'}">${SOUND_ICON}</button>
       </header>
       <main id="main" class="stage stage-${phase}" tabindex="-1">${content()}</main>
       ${popup !== null ? popupHtml(popup) : ''}
-      <footer class="foot"><span>795 waka from the Tale of Genji · <a href="?pilot">English pilot</a></span><span>Sounds: found recordings, credited in ASSETS.md · No AI-generated art</span></footer>`;
+      <footer class="foot"><span>795 waka from the Tale of Genji</span><button type="button" class="link-button" id="credits-button">Credits</button></footer>`;
     bind();
     if (phase === 'reading' && !readingHeight) measureReading();
     if (focus) root.querySelector<HTMLElement>(popup !== null ? '.popup' : 'h1')?.focus({ preventScroll: true });
@@ -204,7 +221,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
             <p class="eyebrow">${selected.length === 1 ? 'On its own' : escape(kindLabel[bucket.kind])} · Poem${selected.length === 1 ? '' : 's'} ${selected.map(item => item.index + 1).join(' & ')}</p>
             <h2><span lang="ja">${escape(first.chapter_title_ja)}</span> <span class="fine">Chapter ${first.chapter_number}</span></h2>
             <p class="context">${escape(bucket.context)}</p>
-            ${hooks.length ? `<p class="hook-line"><span>Shared wording</span> <span class="hook" lang="ja">${hooks.map(escape).join(' ／ ')}</span></p>` : '<p class="fine">No other poem in this round belongs with this one.</p>'}
+            ${hooks.length ? `<p class="hook-line"><span>Shared wording</span> <span class="hook" lang="ja">${[...new Set(hooks)].map(escape).join(' ／ ')}</span></p>` : '<p class="fine">No other poem in this round belongs with this one.</p>'}
             <div class="revealed">${selected.map(({ card, index }) => `<div class="slip small"><p class="slip-no">${index + 1}</p>${slip(card.poem, `${noteFor(card.poem)}<p class="attribution">${escape(card.poem.speaker)} · <a href="${escape(card.poem.original_page_url)}" target="_blank" rel="noopener noreferrer">Source text</a> · Poem ${card.poem.poem_id}</p>`)}</div>`).join('')}</div>
           </article>`;
         }).join('')}</div>
@@ -256,7 +273,8 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
     if (readingHeight) body.style.minHeight = `${readingHeight}px`;
   }
 
-  function popupHtml(i: number) {
+  function popupHtml(i: number | 'credits') {
+    if (i === 'credits') return `<div class="veil"></div><div class="popup slip credits" role="dialog" aria-modal="true" aria-label="Credits" tabindex="-1">${CREDITS}<div class="actions"><button type="button" class="secondary" id="close-popup">Close</button></div></div>`;
     return `<div class="veil"></div><div class="popup slip" role="dialog" aria-modal="true" aria-label="Poem ${i + 1}" tabindex="-1"><p class="slip-no">${i + 1}</p>${slip(cards[i].poem)}<div class="actions"><button type="button" class="secondary" id="close-popup">Close</button></div></div>`;
   }
 
@@ -317,7 +335,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
     root.querySelector('#sound-toggle')?.addEventListener('click', () => {
       setSoundEnabled(!soundEnabled());
       const button = root.querySelector<HTMLButtonElement>('#sound-toggle')!;
-      button.textContent = soundEnabled() ? 'Sound on' : 'Sound off';
+      button.title = soundEnabled() ? 'Sound on' : 'Sound off';
       button.setAttribute('aria-pressed', String(soundEnabled()));
       play('click');
     });
@@ -347,11 +365,12 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
       play('paper');
       render();
     }));
+    root.querySelector('#credits-button')?.addEventListener('click', () => { popup = 'credits'; render(); });
     const closePopup = () => leave('.popup, .veil', () => {
       const last = popup;
       popup = null;
       render(false);
-      root.querySelector<HTMLButtonElement>(`.reread[data-poem="${last}"]`)?.focus();
+      root.querySelector<HTMLButtonElement>(last === 'credits' ? '#credits-button' : `.reread[data-poem="${last}"]`)?.focus();
     });
     root.querySelector('#close-popup')?.addEventListener('click', closePopup);
     root.querySelector('.veil')?.addEventListener('click', closePopup);

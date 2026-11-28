@@ -22,13 +22,13 @@ Credit for the CC BY sound: "Fischtrommel_Muyu.mp3" by the_very_Real_Horst
 
 ## Fonts (`src/assets/fonts/`)
 
-Subsets downloaded from Google Fonts. Both are under the SIL Open Font License 1.1; the license
+Subsets made from the full fonts in the google/fonts repository. Both are under the SIL Open Font License 1.1; the license
 texts sit next to the font files.
 
 | File | Font | License |
 | --- | --- | --- |
-| `shippori-mincho-500-subset.woff2`, `shippori-mincho-700-subset.woff2` | [Shippori Mincho](https://github.com/fontdasu/ShipporiMincho) (subset to the characters the game uses) | OFL 1.1 (`OFL-ShipporiMincho.txt`) |
-| `eb-garamond-latin.woff2`, `eb-garamond-latin-italic.woff2`, `eb-garamond-latin-ext.woff2`, `eb-garamond-latin-ext-italic.woff2` | [EB Garamond](https://github.com/octaviopardo/EBGaramond12) (Google Fonts Latin and Latin Extended subsets) | OFL 1.1 (`OFL-EBGaramond.txt`) |
+| `noto-serif-jp-500.woff2`, `noto-serif-jp-700.woff2` | [Noto Serif JP](https://github.com/notofonts/noto-cjk) by Google (subset to the characters the game uses, including the 〱 repeat mark; `scripts/subset_fonts.py`) | OFL 1.1 (`OFL-NotoSerifJP.txt`) |
+| `newsreader.woff2`, `newsreader-italic.woff2` | [Newsreader](https://github.com/productiontype/Newsreader) by Production Type (Latin subset with macrons; `scripts/subset_fonts.py`) | OFL 1.1 (`OFL-Newsreader.txt`) |
 
 ## Images
 
