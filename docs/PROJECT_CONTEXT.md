@@ -72,7 +72,7 @@ Group poems according to **documented exchanges**, not shared chapter, speaker i
 | 2+2+1 and 2+1+1+1 partitions | **[WORKING BASELINE]** | Supported by current two-poem exchange records; useful generator templates. |
 | Hidden chapter/speaker/recipient/motif/source IDs | **[WORKING BASELINE]** | Disclosing them would leak answers. Show after scoring. |
 | Reveal literary explanations after submission | **[DECIDED]** | Learning and fairness depend on showing *why* an exchange connects. |
-| English text | **[WORKING BASELINE]** | Provisional in-house glosses are in the pilot; Japanese originals are retained. Exact language/display modes remain open. |
+| English text | **[WORKING BASELINE]** | Provisional in-house glosses for all 795 poems in `data/genji_glosses.json` (pilot glosses reused verbatim). The full game shows English first with the Japanese original beneath; pun notes appear only at the reveal. |
 | Difficulty must be controlled statistically | **[DECIDED as a goal]** | Randomness cannot be completely uncontrolled. Specific thresholds/features are not yet fixed. |
 | Traditional Genji-kō diagram presentation | **[TENTATIVE]** | Potentially elegant and culturally relevant; no UI specification or implementation yet. |
 | A hard mode with broader motif clusters | **[DEFERRED]** | Only if explicitly separated from 'true historical exchange' grouping; it changes the ground-truth definition. |
@@ -272,7 +272,7 @@ Aaron's strongest forward-looking concern is the **algorithm choosing which poem
 - Whether original Japanese, English, romaji, a glossary, or bilingual display is default.
 - Whether diagrams named after traditional Genji-kō chapter patterns are used, and their exact rendering.
 - Difficulty scoring weights, automated synonym detection, penalty for ambiguous rounds, and target win rates.
-- Number of rounds per game, replay policy, timer, hints, tutorial, sound/visual assets, and how many exchanges the final class deliverable needs.
+- Number of rounds per game, replay policy, timer, hints, tutorial, sound/visual assets (no AI-generated art: see AGENTS.md), and how many exchanges the final class deliverable needs.
 - Whether poems should be shown with character names after a hint or only after final scoring.
 - A particular source edition or translation style for publication.
 

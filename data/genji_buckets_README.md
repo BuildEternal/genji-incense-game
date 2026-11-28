@@ -62,3 +62,19 @@ pending the owner's review. Pairs judged weak or without a hook were left unlink
 their suggested hooks remain in the review file if a pair is ever promoted. Hooks have not yet
 been checked against English glosses: a link is only fair in English if the
 gloss renders the hook with the same word in both poems.
+
+## English glosses (`genji_glosses.json`)
+
+- One provisional English gloss per poem (795), keyed by `poem_id`, with an optional
+  `note` explaining a pun or allusion English cannot carry. Notes are shown only
+  after the answer, so they never act as hints.
+- Glosses for the 30 pilot poems are copied verbatim from the pilot file.
+- Where two linked poems share a hook, both glosses try to use the same English
+  word for it, so an English reader can hear the echo. A word-overlap check over
+  all links was run on 2026-11-28; the pilot pairs were left as written.
+- **Known gap:** the echo check (rule 3) runs on the Japanese text only. An English
+  gloss of an unrelated poem can still happen to use a hook's English word
+  (for example "dew" or "sleeves"). The Japanese is shown alongside, so the
+  rule holds there; an English-side check would need English hook words per link.
+- Not reviewed by a specialist. Corrections are welcome and need only an edit to
+  this file.

@@ -103,3 +103,4 @@ footer { border-top: 1px solid var(--line); display: flex; justify-content: spac
   .exchange { padding: 1.3rem; }
   footer { flex-direction: column; gap: .25rem; }
 }
+.gloss-note { font-size: .95rem; color: #435962; margin-top: .75rem; }

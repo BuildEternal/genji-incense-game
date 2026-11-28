@@ -45,11 +45,23 @@ const bucketFileSchema = z.object({
 export type LinkedPoem = z.infer<typeof poemSchema>;
 export type Link = z.infer<typeof linkSchema>;
 export type Bucket = z.infer<typeof bucketSchema>;
-export type LinkedDatabase = { poems: Map<number, LinkedPoem>; buckets: Bucket[]; bucketOf: Map<number, Bucket> };
+export type Gloss = { english: string; note?: string };
+export type LinkedDatabase = {
+  poems: Map<number, LinkedPoem>;
+  buckets: Bucket[];
+  bucketOf: Map<number, Bucket>;
+  /** Provisional English glosses (data/genji_glosses.json). Empty when none were supplied. */
+  glosses: Map<number, Gloss>;
+};
+
+const glossFileSchema = z.object({
+  translation_credits: text,
+  glosses: z.array(z.object({ poem_id: poemId, english: text, note: text.optional() })),
+}).loose();
 
 const pairKey = ([a, b]: readonly [number, number]) => (a < b ? `${a}-${b}` : `${b}-${a}`);
 
-export function parseLinkedDatabase(poemsJsonl: string, bucketsJson: unknown): LinkedDatabase {
+export function parseLinkedDatabase(poemsJsonl: string, bucketsJson: unknown, glossesJson?: unknown): LinkedDatabase {
   const poemList = poemsJsonl.split('\n').filter(line => line.trim()).map(line => poemSchema.parse(JSON.parse(line)));
   const poems = new Map<number, LinkedPoem>();
   for (const poem of poemList) {
@@ -81,7 +93,15 @@ export function parseLinkedDatabase(poemsJsonl: string, bucketsJson: unknown): L
   }
   for (const id of poems.keys())
     if (!bucketOf.has(id)) throw new Error(`Poem ${id} is not in any bucket`);
-  return { poems, buckets, bucketOf };
+  const glosses = new Map<number, Gloss>();
+  if (glossesJson !== undefined) {
+    for (const { poem_id, english, note } of glossFileSchema.parse(glossesJson).glosses) {
+      if (!poems.has(poem_id)) throw new Error(`Gloss for unknown poem ${poem_id}`);
+      if (glosses.has(poem_id)) throw new Error(`Duplicate gloss for poem ${poem_id}`);
+      glosses.set(poem_id, note ? { english, note } : { english });
+    }
+  }
+  return { poems, buckets, bucketOf, glosses };
 }
 
 /** True when the two poems may be shown together as one group. */

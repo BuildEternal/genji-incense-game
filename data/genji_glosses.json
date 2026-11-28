@@ -1,0 +1,3266 @@
+{
+ "version": "0.1.0",
+ "status": "provisional",
+ "translation_credits": "Provisional English game glosses drafted in-house for this class project with AI assistance (Claude), 2026-11-28. Glosses for the 30 pilot poems are reused verbatim from data/genji_poetry_exchanges_pilot.json. Not taken from any published translation. Not reviewed by a specialist.",
+ "style": "One plain prose sentence per poem. Keeps the poem's images, and where a linked partner shares a hook word, uses the same English word in both. Notes explain puns that English cannot carry; they are shown only after the answer.",
+ "glosses": [
+  {
+   "poem_id": 1,
+   "english": "Now that we reach the end and part on separate roads, how sad it is: the road I long to take is the road of life."
+  },
+  {
+   "poem_id": 2,
+   "english": "Hearing the wind that binds the dew on Miyagi Moor, my thoughts go out to the young bush clover beneath it.",
+   "note": "The young bush clover (kohagi) is the motherless child, Genji."
+  },
+  {
+   "poem_id": 3,
+   "english": "Though the bell-cricket, that autumn insect, sings until its voice gives out, the long night is not long enough for my falling tears."
+  },
+  {
+   "poem_id": 4,
+   "english": "To this patch of reeds already loud with insect cries, a visitor from above the clouds adds yet more dew of tears."
+  },
+  {
+   "poem_id": 5,
+   "english": "Since the tree that sheltered it from the harsh wind has withered, my heart cannot rest for the young bush clover.",
+   "note": "Answers poem 2: the sheltering tree is the dead mother."
+  },
+  {
+   "poem_id": 6,
+   "english": "If only there were a wizard who could search her out, so that even by hearsay I might learn where her spirit dwells."
+  },
+  {
+   "poem_id": 7,
+   "english": "Even above the clouds the autumn moon is dark with tears; how could it shine clearly on that reed-grown house?"
+  },
+  {
+   "poem_id": 8,
+   "english": "Into this first hair-cord of his boyhood, did you tie a pledge that your line and his will be bound forever?"
+  },
+  {
+   "poem_id": 9,
+   "english": "If the deep purple of the hair-cord I have tied with all my heart does not fade, our bond will hold."
+  },
+  {
+   "poem_id": 10,
+   "english": "Counting on my fingers the times we have met, is this truly the only painful turn in your dealings with me?"
+  },
+  {
+   "poem_id": 11,
+   "english": "I have counted those painful turns alone in my heart; is this the moment when your own hand will let go of mine?"
+  },
+  {
+   "poem_id": 12,
+   "english": "A house where koto music and moonlight are so fine: could even these hold back a man so cold?",
+   "note": "Koto (koto) also means 'words'."
+  },
+  {
+   "poem_id": 13,
+   "english": "With the cold wind blowing along with your flute, I have no koto, no word, fit to hold you back.",
+   "note": "Koto (koto) also means 'words'."
+  },
+  {
+   "poem_id": 14,
+   "english": "Though the mountain hedge is humble, now and then let your pity fall like dew on the little pink.",
+   "note": "The pink (nadeshiko, 'stroked child') is their daughter."
+  },
+  {
+   "poem_id": 15,
+   "english": "I cannot tell which of these mingled blossoms is fairest, but none surpasses the everlasting pink.",
+   "note": "Tokonatsu, 'everlasting summer', is another name for the pink and puns on the bed (toko)."
+  },
+  {
+   "poem_id": 16,
+   "english": "Even the sleeves that brush the bed of the everlasting pink are wet with dew, and now the autumn storm blows too."
+  },
+  {
+   "poem_id": 17,
+   "english": "At dusk, when the spider's weaving shows that you will come, how strange to tell me to wait out the garlic-reeking daytime.",
+   "note": "Hiruma plays on 'daytime' and the garlic (hiru) she has eaten."
+  },
+  {
+   "poem_id": 18,
+   "english": "If ours were a bond that met every night, why should even the garlic-reeking daytime be too bright for you?"
+  },
+  {
+   "poem_id": 19,
+   "english": "Before I can finish my complaint at your coldness, dawn comes, and the cock's crow hurries me away."
+  },
+  {
+   "poem_id": 20,
+   "english": "While I still lament my wretched lot, the night grows light, and with the cock's crow I sob all the more."
+  },
+  {
+   "poem_id": 21,
+   "english": "Grieving whether I will ever again have a night to meet you as in that dream, I have spent these days without closing my eyes."
+  },
+  {
+   "poem_id": 22,
+   "english": "Not knowing the heart of the broom tree of Sonohara, I have wandered lost upon the road to it.",
+   "note": "The broom tree (hahakigi) is seen from afar but vanishes as one approaches."
+  },
+  {
+   "poem_id": 23,
+   "english": "Ashamed of the name of one born in a humble hut, I vanish like the broom tree, neither here nor there."
+  },
+  {
+   "poem_id": 24,
+   "english": "Beneath the tree where the cicada changed its body, I still find the empty shell of that person dear.",
+   "note": "Utsusemi, 'cicada shell', is the robe she left behind."
+  },
+  {
+   "poem_id": 25,
+   "english": "Like dew settling on a cicada's wing, hidden among the trees, my sleeves grow wet with secret tears."
+  },
+  {
+   "poem_id": 26,
+   "english": "I can only guess that it is you: the evening-face flower shines more brightly beneath the pale dew."
+  },
+  {
+   "poem_id": 27,
+   "english": "Only coming closer could I tell if it is truly you, the evening-face blossom I glimpsed faintly in twilight."
+  },
+  {
+   "poem_id": 28,
+   "english": "Though I fear being called one who shifts to every blooming flower, I can hardly pass this morning glory by unpicked."
+  },
+  {
+   "poem_id": 29,
+   "english": "Since you leave before the morning mist even clears, it seems your heart has not settled on the flower."
+  },
+  {
+   "poem_id": 30,
+   "english": "Following the path the lay monk walks in prayer, do not break our vow, deep enough to last into the next life."
+  },
+  {
+   "poem_id": 31,
+   "english": "Knowing from my sorrows how poor my vows in a past life were, I can hardly trust in what is to come."
+  },
+  {
+   "poem_id": 32,
+   "english": "Did others in the past lose their way like this? I have never known such a road at dawn."
+  },
+  {
+   "poem_id": 33,
+   "english": "Not knowing the heart of the mountain rim it goes toward, the moon in the empty sky may fade away midway."
+  },
+  {
+   "poem_id": 34,
+   "english": "The flower opening in the evening dew: it was our bond that let me see it by the roadside.",
+   "note": "Genji uncovers his face to Yūgao."
+  },
+  {
+   "poem_id": 35,
+   "english": "The dew on the evening face that seemed to shine so brightly was only a trick of the twilight eye."
+  },
+  {
+   "poem_id": 36,
+   "english": "When I gaze on the clouds as the smoke of the one I lost, even the evening sky feels dear to me."
+  },
+  {
+   "poem_id": 37,
+   "english": "While time passes and you never ask why I do not ask after you, how tangled my thoughts have grown."
+  },
+  {
+   "poem_id": 38,
+   "english": "I knew this cicada-shell world was full of sorrow, yet once again my life hangs on your words."
+  },
+  {
+   "poem_id": 39,
+   "english": "Had I not tied even faintly the reed by the eaves, on what would I hang my complaint of dew?"
+  },
+  {
+   "poem_id": 40,
+   "english": "At the faint wind you send, the low reed by the eaves is half bound up in frost."
+  },
+  {
+   "poem_id": 41,
+   "english": "Weeping as I tie this sash for parting today, in what life will I see it loosened again?"
+  },
+  {
+   "poem_id": 42,
+   "english": "I kept your robe as a keepsake until we met again, but my sleeves have rotted through with tears."
+  },
+  {
+   "poem_id": 43,
+   "english": "Seeing the summer robe returned, changed as the cicada changes its wings, I can only weep aloud."
+  },
+  {
+   "poem_id": 44,
+   "english": "The one who has passed and the one who leaves today go by two roads I cannot follow, at autumn's end."
+  },
+  {
+   "poem_id": 45,
+   "english": "Not knowing where this young grass will grow to maturity, the dew that shelters it cannot bear to vanish."
+  },
+  {
+   "poem_id": 46,
+   "english": "Before you know where the new grass will grow, how can the dew think of disappearing?"
+  },
+  {
+   "poem_id": 47,
+   "english": "Ever since I glimpsed the new grass with its young leaves, my traveler's sleeves have not been dry of dew."
+  },
+  {
+   "poem_id": 48,
+   "english": "Do not compare the dew that wets your pillow for one night with the moss of these deep mountains."
+  },
+  {
+   "poem_id": 49,
+   "english": "Woken from my dream by the wind blowing down the mountain, I am moved to tears by the sound of the falls."
+  },
+  {
+   "poem_id": 50,
+   "english": "You wet your sleeves at once in the mountain water, but a heart that has settled here is not stirred by its falls."
+  },
+  {
+   "poem_id": 51,
+   "english": "I will go and tell the courtiers of these mountain cherries: come see them before the wind does."
+  },
+  {
+   "poem_id": 52,
+   "english": "I feel as though I have found the rare udumbara in bloom; my eyes do not turn to the mountain cherries now."
+  },
+  {
+   "poem_id": 53,
+   "english": "Opening at last my pine door deep in the mountains, I see a face like a flower I have never seen."
+  },
+  {
+   "poem_id": 54,
+   "english": "Having glimpsed the flower's color faintly at dusk, this morning the mist is loath to rise and go."
+  },
+  {
+   "poem_id": 55,
+   "english": "Is it true that it is hard to rise and leave the flower? Let me watch the misted sky to see."
+  },
+  {
+   "poem_id": 56,
+   "english": "The image of the mountain cherry never leaves me; I left my whole heart behind with it."
+  },
+  {
+   "poem_id": 57,
+   "english": "How fleeting, to leave your heart with the mountain cherry on the peak while the storm has yet to scatter it."
+  },
+  {
+   "poem_id": 58,
+   "english": "My feelings are not shallow like Mount Asaka's spring; why does the mountain well keep its reflection from me?"
+  },
+  {
+   "poem_id": 59,
+   "english": "I have heard of those who regret drawing from the mountain well; could I let you see its reflection while it is so shallow?"
+  },
+  {
+   "poem_id": 60,
+   "english": "Meeting you again is as rare as a night in a dream; I wish I could vanish into that dream."
+  },
+  {
+   "poem_id": 61,
+   "english": "Will people pass on our story, even if I make my wretched self a dream that never wakes?"
+  },
+  {
+   "poem_id": 62,
+   "english": "Since I heard the young crane's single cry, my boat stuck among the reeds cannot go on."
+  },
+  {
+   "poem_id": 63,
+   "english": "When can I pick and hold the young grass of the moor whose root runs to the purple plant?",
+   "note": "Murasaki ('purple') is Fujitsubo's niece; the grass is the girl."
+  },
+  {
+   "poem_id": 64,
+   "english": "Though seaweed is hard to find in Waka Bay, will the wave go back without even rising to it?"
+  },
+  {
+   "poem_id": 65,
+   "english": "To let the jeweled seaweed of Waka Bay drift with the wave without knowing its heart would be rash."
+  },
+  {
+   "poem_id": 66,
+   "english": "Even lost in the misty morning sky, I find it hard to pass my lady's gate."
+  },
+  {
+   "poem_id": 67,
+   "english": "If you find it so hard to pass the misty hedge, the grass door would not have kept you out."
+  },
+  {
+   "poem_id": 68,
+   "english": "Though I have not slept with it, I love the grass of Musashi Moor, kin to the one I long for, wet with dew.",
+   "note": "The 'kin grass' (kusa no yukari) is Murasaki, Fujitsubo's niece."
+  },
+  {
+   "poem_id": 69,
+   "english": "I do not know why you should sigh; what grass could I be kin to?"
+  },
+  {
+   "poem_id": 70,
+   "english": "We left the palace together, yet you hide where you set, like the sixteenth-night moon."
+  },
+  {
+   "poem_id": 71,
+   "english": "The moon's light falls on every house alike; who would follow it to the mountain where it sets?"
+  },
+  {
+   "poem_id": 72,
+   "english": "How many times have I lost to your silence, trusting that you did not say 'Do not speak'?"
+  },
+  {
+   "poem_id": 73,
+   "english": "The bell has rung to end the silence; I cannot answer, and yet it is strange to say nothing."
+  },
+  {
+   "poem_id": 74,
+   "english": "I know that not speaking can say more than speech, but such held-in silence is painful."
+  },
+  {
+   "poem_id": 75,
+   "english": "Before I have even seen the evening mist clear, the night rain adds to my gloom."
+  },
+  {
+   "poem_id": 76,
+   "english": "Think of my village, waiting for the moon on a night that will not clear, even if you do not share my gazing."
+  },
+  {
+   "poem_id": 77,
+   "english": "The icicles on the eaves melt in the morning sun; why then does the ice stay frozen here?"
+  },
+  {
+   "poem_id": 78,
+   "english": "Seeing the snow on the old man's head, my morning sleeves are as wet as his."
+  },
+  {
+   "poem_id": 79,
+   "english": "Because your heart is cold, the sleeves of this Chinese robe are always wet with tears."
+  },
+  {
+   "poem_id": 80,
+   "english": "Its color is not one I love; why did I let this safflower brush my sleeve?",
+   "note": "Suetsumuhana, 'safflower', also points to her red nose."
+  },
+  {
+   "poem_id": 81,
+   "english": "Even if the red safflower robe is thinly dyed, do not ruin its name entirely."
+  },
+  {
+   "poem_id": 82,
+   "english": "Do you send me robes to layer, so that I may look still more on the nights we spend apart?"
+  },
+  {
+   "poem_id": 83,
+   "english": "The red flower is somehow unpleasing, though the tall plum branch is dear.",
+   "note": "Red flower (hana) also means 'nose'."
+  },
+  {
+   "poem_id": 84,
+   "english": "Did you understand my heart as I waved my sleeves, in no state to dance for all my longing?"
+  },
+  {
+   "poem_id": 85,
+   "english": "The waving of sleeves by men of China is far from me, yet I watched every movement with feeling."
+  },
+  {
+   "poem_id": 86,
+   "english": "What bond did we tie in some past life, that this barrier lies between us in this one?"
+  },
+  {
+   "poem_id": 87,
+   "english": "She who sees him grieves; how much more must you who do not see him lament, lost in the darkness of a parent's heart."
+  },
+  {
+   "poem_id": 88,
+   "english": "Comparing it with him brings my heart no comfort; the dew on the little pink only grows heavier."
+  },
+  {
+   "poem_id": 89,
+   "english": "Though I think of it as kin to the dew that wets my sleeves, I still cannot turn from the Yamato pink."
+  },
+  {
+   "poem_id": 90,
+   "english": "If you come, I will feed grass to your tamed colt, though the lower leaves are past their prime."
+  },
+  {
+   "poem_id": 91,
+   "english": "If I pushed through the bamboo grass, people would blame me: your grove is always full of colts."
+  },
+  {
+   "poem_id": 92,
+   "english": "No one comes to stand and get wet at my eastern cottage; how hateful this falling rain."
+  },
+  {
+   "poem_id": 93,
+   "english": "Another man's wife is trouble; I would not grow too familiar with the eaves of your eastern cottage."
+  },
+  {
+   "poem_id": 94,
+   "english": "Pulling at each other, our name will leak out like rain through the torn sleeves of the robe between us."
+  },
+  {
+   "poem_id": 95,
+   "english": "Knowing it will all come out, you wear a summer robe; I see your heart is thin as it."
+  },
+  {
+   "poem_id": 96,
+   "english": "There is no use complaining after the waves that rose one on another and rolled back."
+  },
+  {
+   "poem_id": 97,
+   "english": "My heart is not troubled by the waves that rose wildly, but how could I not resent the shore they came to?"
+  },
+  {
+   "poem_id": 98,
+   "english": "Afraid I'll be blamed if our tie is broken, I won't even take back the indigo sash."
+  },
+  {
+   "poem_id": 99,
+   "english": "Since the sash you pulled from me is now yours, I will blame you that our tie is broken."
+  },
+  {
+   "poem_id": 100,
+   "english": "I am lost in the endless darkness of a parent's heart as I see her above the clouds."
+  },
+  {
+   "poem_id": 101,
+   "english": "If I could see the flower's beauty as others do, would the dew of feeling settle on my heart?"
+  },
+  {
+   "poem_id": 102,
+   "english": "That you too know the beauty of the deep night with its setting moon must be no common bond."
+  },
+  {
+   "poem_id": 103,
+   "english": "If I, poor thing, should vanish from this world, would you not seek me out on the grassy moor?"
+  },
+  {
+   "poem_id": 104,
+   "english": "While I try to tell which blade the dew has settled on, the wind may blow across the bamboo-grass moor."
+  },
+  {
+   "poem_id": 105,
+   "english": "I feel as never before, having lost the dawn moon's path across the sky."
+  },
+  {
+   "poem_id": 106,
+   "english": "If the blossoms at my house were of the common sort, why would I wait for you to come?"
+  },
+  {
+   "poem_id": 107,
+   "english": "I wander lost on Mount Irusa, wondering if I'll see again the moon I glimpsed so faintly.",
+   "note": "Azusa-yumi, 'catalpa bow', leads to iru, 'shoot' and 'enter'."
+  },
+  {
+   "poem_id": 108,
+   "english": "If your heart truly aimed there, would you lose your way under a sky with no bow-shaped moon?"
+  },
+  {
+   "poem_id": 109,
+   "english": "Glimpsing only his reflection in the cold Mitarashi River, I learn all the more how wretched I am."
+  },
+  {
+   "poem_id": 110,
+   "english": "I alone will watch the deep seaweed of the endless thousand-fathom bottom grow.",
+   "note": "The seaweed is Murasaki's hair, which Genji is trimming."
+  },
+  {
+   "poem_id": 111,
+   "english": "How could you know its thousand fathoms, when the tide that ebbs and flows is never still?"
+  },
+  {
+   "poem_id": 112,
+   "english": "How futile to have waited for the god's sanctioned day, just for the aoi leaves another person wears—the day of meeting.",
+   "note": "Aoi (heartvine) puns on au hi, 'day of meeting'."
+  },
+  {
+   "poem_id": 113,
+   "english": "The heart that placed those leaves in the hair seems fickle to me—offering an aoi, a day of meeting, to every courtier alike."
+  },
+  {
+   "poem_id": 114,
+   "english": "How I regret having worn them in my hair: mere leaves of grass that promise a meeting in name only."
+  },
+  {
+   "poem_id": 115,
+   "english": "Knowing full well that the path of love soaks the sleeves, I step down into its muddy field myself, to my sorrow.",
+   "note": "Koiji puns on 'path of love' and 'muddy field'."
+  },
+  {
+   "poem_id": 116,
+   "english": "You step only into the shallows, while I am soaked to the skin in the deep mud of the path of love."
+  },
+  {
+   "poem_id": 117,
+   "english": "Tie fast my soul that wanders the sky in grief, binding the hem of your robe in the old charm."
+  },
+  {
+   "poem_id": 118,
+   "english": "I cannot tell which rising smoke is hers, yet the whole sky of clouds is full of sorrow."
+  },
+  {
+   "poem_id": 119,
+   "english": "Custom keeps my mourning robe pale, yet my tears have turned its sleeves into deep pools."
+  },
+  {
+   "poem_id": 120,
+   "english": "Hearing of the world's sorrows wets my sleeves with dew; I think of the sleeves of one left behind."
+  },
+  {
+   "poem_id": 121,
+   "english": "Those who stay and those who vanish are alike in this world of dew; how vain to set the heart on it, left behind."
+  },
+  {
+   "poem_id": 122,
+   "english": "She has become rain; in this sky of drizzling, drifting clouds, how can I tell which one is hers?"
+  },
+  {
+   "poem_id": 123,
+   "english": "Even the sky where she became rain and cloud is darkened more by the autumn drizzle."
+  },
+  {
+   "poem_id": 124,
+   "english": "I see the pink left by the withered hedge as a keepsake of the autumn when she left."
+  },
+  {
+   "poem_id": 125,
+   "english": "Looking at it now only rots my sleeves with tears, the Yamato pink in a ruined hedge."
+  },
+  {
+   "poem_id": 126,
+   "english": "My sleeves are wetter with dew this evening than in all the autumns of sorrow I have passed."
+  },
+  {
+   "poem_id": 127,
+   "english": "Since I heard you were left behind in the autumn mist, I have wondered how you bear this drizzling sky."
+  },
+  {
+   "poem_id": 128,
+   "english": "The departed soul is all the sadder, for this bed we shared was one it could hardly leave."
+  },
+  {
+   "poem_id": 129,
+   "english": "Without you, how many nights have I brushed the dew from the everlasting pink, where dust has piled?"
+  },
+  {
+   "poem_id": 130,
+   "english": "How senseless that we kept apart so long, though our night robes were long familiar."
+  },
+  {
+   "poem_id": 131,
+   "english": "After so many years I put on these colors renewed for today, and my tears fall as if it were the old days."
+  },
+  {
+   "poem_id": 132,
+   "english": "New year or not, what falls is the tears of one grown old."
+  },
+  {
+   "poem_id": 133,
+   "english": "The sacred fence has no cedar to mark the way; why did you break this sakaki branch by mistake?"
+  },
+  {
+   "poem_id": 134,
+   "english": "Thinking the shrine maiden near, I loved the scent of the sakaki leaves and broke a branch to stay."
+  },
+  {
+   "poem_id": 135,
+   "english": "Dawn partings are always wet with dew, but this one is under an autumn sky unknown to the world."
+  },
+  {
+   "poem_id": 136,
+   "english": "An autumn parting is sad enough; pine cricket of the moor, do not add your crying."
+  },
+  {
+   "poem_id": 137,
+   "english": "Gods of the land who guard these isles, if you have hearts, judge between us, parting unwilling."
+  },
+  {
+   "poem_id": 138,
+   "english": "If the gods of the land are to judge between you in the sky, they will first examine your empty words."
+  },
+  {
+   "poem_id": 139,
+   "english": "I resolved not to speak of the past today, yet in my heart there is sorrow."
+  },
+  {
+   "poem_id": 140,
+   "english": "Though you shake me off and go today, will your sleeves not be wet in the eighty shallows of the Suzuka River?"
+  },
+  {
+   "poem_id": 141,
+   "english": "Whether or not my sleeves are wet in the eighty shallows of the Suzuka River, who will send his thoughts after me to Ise?"
+  },
+  {
+   "poem_id": 142,
+   "english": "I will keep gazing the way you went; this autumn, mist, do not hide Ōsaka Mountain."
+  },
+  {
+   "poem_id": 143,
+   "english": "Has the pine whose broad shade we trusted withered? Its lower leaves fall as the year ends."
+  },
+  {
+   "poem_id": 144,
+   "english": "In the cold clear mirror of the pond, I grieve not to see the reflection I knew so well."
+  },
+  {
+   "poem_id": 145,
+   "english": "As the year ends the rock-spring water freezes, and the reflection of one we knew fades away."
+  },
+  {
+   "poem_id": 146,
+   "english": "I wet my sleeves by my own fault, hearing a voice that tells me dawn has come.",
+   "note": "Aku means both 'dawn breaks' and 'grow tired'."
+  },
+  {
+   "poem_id": 147,
+   "english": "Must I pass my life in sighs like this, with never a time my heart can dawn and be eased?"
+  },
+  {
+   "poem_id": 148,
+   "english": "If today is not the last of these hard meetings, how many more lives must I spend in sighs?"
+  },
+  {
+   "poem_id": 149,
+   "english": "Even if you leave resentment to last through a long life, know that the fault is your own fickle heart."
+  },
+  {
+   "poem_id": 150,
+   "english": "Having left you in the dewy lodging of the reeds, I cannot rest for the winds blowing on every side."
+  },
+  {
+   "poem_id": 151,
+   "english": "When the wind blows, the spider web hanging from the reeds' fading dew is the first to tremble."
+  },
+  {
+   "poem_id": 152,
+   "english": "It may be presumptuous even to speak of it, yet the sacred shoulder-cord draws my mind back to that god—and to old times.",
+   "note": "Sono kami means both 'that god' and 'that time'."
+  },
+  {
+   "poem_id": 153,
+   "english": "What was that god—or that former time—to you, that you should keep the ritual cord tied in your thoughts and long for it?"
+  },
+  {
+   "poem_id": 154,
+   "english": "Does mist divide the nine-fold palace? I think of the moon above the clouds from far away."
+  },
+  {
+   "poem_id": 155,
+   "english": "The moonlight is no different from the autumn nights we knew, but how cruel is the mist that divides us."
+  },
+  {
+   "poem_id": 156,
+   "english": "Waiting as each cold wind blows, I have spent these days in doubt."
+  },
+  {
+   "poem_id": 157,
+   "english": "Do you think the tears I shed in these days of secret longing are only the sky's common drizzle?"
+  },
+  {
+   "poem_id": 158,
+   "english": "Today, the day of parting, ends; when can I hope to meet again the one I knew?"
+  },
+  {
+   "poem_id": 159,
+   "english": "Though living on is hard, coming round today again, I feel I meet that time once more."
+  },
+  {
+   "poem_id": 160,
+   "english": "Though I long to follow you to the clouds where the moon shines clear, I am still lost in this world's darkness."
+  },
+  {
+   "poem_id": 161,
+   "english": "I shun this world for its many sorrows, but when can I turn from this world entirely?"
+  },
+  {
+   "poem_id": 162,
+   "english": "Seeing this as the home of a nun, my tears drip like brine at Matsugaura Island.",
+   "note": "Ama means both 'nun' and 'fisher'."
+  },
+  {
+   "poem_id": 163,
+   "english": "How rare, the waves that come to the island bay where nothing remains of the past."
+  },
+  {
+   "poem_id": 164,
+   "english": "In this morning's first-opened flower I see your beauty, no less fragrant than it."
+  },
+  {
+   "poem_id": 165,
+   "english": "The flower that bloomed out of season this morning wilts in the summer rain, with no fragrance left."
+  },
+  {
+   "poem_id": 166,
+   "english": "The cuckoo returns, unable to hold back, to the hedge where it once sang softly."
+  },
+  {
+   "poem_id": 167,
+   "english": "The cuckoo's voice that calls is the same, but how uncertain is this sky of early-summer rain."
+  },
+  {
+   "poem_id": 168,
+   "english": "Drawn by the orange blossom's scent, the cuckoo seeks out the village of falling flowers."
+  },
+  {
+   "poem_id": 169,
+   "english": "At this ruined house where no one comes, only the orange blossom draws you to the eaves."
+  },
+  {
+   "poem_id": 170,
+   "english": "I go to the shore where fishers burn salt, as if to mingle with the smoke that rose on Toribe Hill."
+  },
+  {
+   "poem_id": 171,
+   "english": "Will you not go further still from the one who died, outside the sky where she became smoke?"
+  },
+  {
+   "poem_id": 172,
+   "english": "Though I wander like this, my reflection will not leave the mirror that stays by you."
+  },
+  {
+   "poem_id": 173,
+   "english": "If at least your reflection would stay when we part, I could take comfort looking in the mirror."
+  },
+  {
+   "poem_id": 174,
+   "english": "Narrow though my sleeve is where the moonlight lodges, I wish I could keep its light, of which I never tire."
+  },
+  {
+   "poem_id": 175,
+   "english": "Coming round, the moonlight will shine clear at last; do not gaze at a sky clouded for a while."
+  },
+  {
+   "poem_id": 176,
+   "english": "Did I sink in the river of tears, with no shallows to meet you, as the first step of drifting away?"
+  },
+  {
+   "poem_id": 177,
+   "english": "The foam floating on the river of tears will surely vanish without waiting to meet again in the shallows."
+  },
+  {
+   "poem_id": 178,
+   "english": "One I knew is gone, one who lives is sad; at the world's end, what use was turning from it but to weep and weep?"
+  },
+  {
+   "poem_id": 179,
+   "english": "I thought the sorrow of parting was exhausted, but the pain of this world grows worse."
+  },
+  {
+   "poem_id": 180,
+   "english": "Remembering that day we wore aoi together in our hair, how cruel is the Kamo shrine's sacred fence."
+  },
+  {
+   "poem_id": 181,
+   "english": "I leave this world of sorrow now; I leave my name to the god of Tadasu to judge."
+  },
+  {
+   "poem_id": 182,
+   "english": "How does your departed spirit see me? The moon I gaze at, thinking of you, is hidden in clouds."
+  },
+  {
+   "poem_id": 183,
+   "english": "When will I see the flowers of the spring capital again, a mountain peasant who has lost his time?"
+  },
+  {
+   "poem_id": 184,
+   "english": "It is hard that flowers fall so soon, but come back and look on the flowers of the capital in a passing spring."
+  },
+  {
+   "poem_id": 185,
+   "english": "I pledged my life to you, not knowing there are partings while we live."
+  },
+  {
+   "poem_id": 186,
+   "english": "I would give my worthless life to hold back for a while this parting before my eyes."
+  },
+  {
+   "poem_id": 187,
+   "english": "Rather than leave a name in China like the exiles there, I may simply vanish without trace."
+  },
+  {
+   "poem_id": 188,
+   "english": "Mist on the peaks hides my old home, but is not the sky I gaze at the same sky?"
+  },
+  {
+   "poem_id": 189,
+   "english": "How is it with the fisher-nun's hut at Matsushima, while this man of Suma Bay drips brine?"
+  },
+  {
+   "poem_id": 190,
+   "english": "Unrepentant, I long for the seaweed of Suma Bay; what does the fisher who burns salt there think?",
+   "note": "Mirume, 'seaweed', also means 'a chance to meet'."
+  },
+  {
+   "poem_id": 191,
+   "english": "The fisher-nun at Matsushima, long years dripping brine as her task, piles up her sighs like wood."
+  },
+  {
+   "poem_id": 192,
+   "english": "My love is hidden among the many fishers' fires on the bay; the smoke smolders with nowhere to go."
+  },
+  {
+   "poem_id": 193,
+   "english": "Compare the sleeves of the bay folk, wet with brine, to my night robe, kept apart from you by the waves."
+  },
+  {
+   "poem_id": 194,
+   "english": "Think of the fisher of Ise, gathering wretched seaweed, as you drip brine at Suma Bay.",
+   "note": "Ukime is both 'floating seaweed' and 'misery'."
+  },
+  {
+   "poem_id": 195,
+   "english": "Though I search the brine-wet beach of Ise for shells, the one with no worth left is me.",
+   "note": "Kai is 'shell' and 'worth'."
+  },
+  {
+   "poem_id": 196,
+   "english": "I would have boarded the little boat rowing the waves of Ise, rather than gather wretched seaweed here."
+  },
+  {
+   "poem_id": 197,
+   "english": "Dripping brine among the fisher's piled sighs, how long must I gaze out over Suma Bay?"
+  },
+  {
+   "poem_id": 198,
+   "english": "Gazing at the fern of longing growing thick on the ruined eaves, my sleeves are heavy with dew."
+  },
+  {
+   "poem_id": 199,
+   "english": "The waves of the bay seem to echo my sobs of longing; does the wind blow from where my love is?"
+  },
+  {
+   "poem_id": 200,
+   "english": "Are the first wild geese companions of the one I love? How sad their voices crossing the traveler's sky."
+  },
+  {
+   "poem_id": 201,
+   "english": "Thoughts of old times come in a line, though the wild geese were never our friends in those days."
+  },
+  {
+   "poem_id": 202,
+   "english": "I used to think of the wild geese crying beyond the clouds, who left their eternal land by choice."
+  },
+  {
+   "poem_id": 203,
+   "english": "Even the wild geese, leaving their eternal land for the traveler's sky, take comfort in not falling behind their line."
+  },
+  {
+   "poem_id": 204,
+   "english": "Only while I gaze am I comforted; the capital of the moon, where we will meet again, is far away."
+  },
+  {
+   "poem_id": 205,
+   "english": "Thinking only of sorrow, I find my sleeves wet on the left and on the right."
+  },
+  {
+   "poem_id": 206,
+   "english": "If the koto's sound holds me back like a towline, would you know how my heart hangs in hesitation?"
+  },
+  {
+   "poem_id": 207,
+   "english": "If the rope pulling your boat truly wavered out of feeling, could it simply pass beyond the waves of Suma?"
+  },
+  {
+   "poem_id": 208,
+   "english": "Come visit, friends from home I long for, as often as the brushwood burns in this peasant's hut."
+  },
+  {
+   "poem_id": 209,
+   "english": "On which cloud path will I too be lost? I am ashamed of what the moon will see."
+  },
+  {
+   "poem_id": 210,
+   "english": "At dawn, when plovers cry in chorus, even a bed of waking alone is a comfort."
+  },
+  {
+   "poem_id": 211,
+   "english": "Always longing for the courtiers of the palace, the day we wore cherry blossoms in our hair has come again."
+  },
+  {
+   "poem_id": 212,
+   "english": "In which spring will I go and see my old home? How I envy the wild geese going back."
+  },
+  {
+   "poem_id": 213,
+   "english": "Unwilling, I leave the wild geese's temporary home; will I lose my way on the road to the flower capital?",
+   "note": "Kari is both 'wild goose' and 'temporary'."
+  },
+  {
+   "poem_id": 214,
+   "english": "Look into the sky, you cranes flying near the clouds: I am one without a cloud, like a spring day."
+  },
+  {
+   "poem_id": 215,
+   "english": "Helpless, I cry alone in the clouds like a crane, longing for the friend I flew beside."
+  },
+  {
+   "poem_id": 216,
+   "english": "Washed up on an ocean I never knew, is it only one thing that makes me sad?"
+  },
+  {
+   "poem_id": 217,
+   "english": "The myriad gods must surely pity me, for I have committed no particular crime."
+  },
+  {
+   "poem_id": 218,
+   "english": "How does the bay wind blow? My sleeves are wet with thinking of you in these days of endless waves."
+  },
+  {
+   "poem_id": 219,
+   "english": "Without the help of the god who dwells in the sea, I would have drifted among the meeting tides."
+  },
+  {
+   "poem_id": 220,
+   "english": "I think of you from far away, having followed the shore beyond the bay I never knew."
+  },
+  {
+   "poem_id": 221,
+   "english": "Even the pathos of Awaji Island, seen faintly, is lit without a shadow by the clear night moon."
+  },
+  {
+   "poem_id": 222,
+   "english": "Do you know now too what it is to sleep alone, lonely all night long by the Akashi shore?",
+   "note": "Akashi puns on akasu, 'to stay up until dawn'."
+  },
+  {
+   "poem_id": 223,
+   "english": "In my traveler's robe, too sad by the shore to stay up till dawn at Akashi, I cannot even dream on my grass pillow."
+  },
+  {
+   "poem_id": 224,
+   "english": "Gazing sadly at a distant sky I do not know, I write to the treetops of the house I heard of."
+  },
+  {
+   "poem_id": 225,
+   "english": "She who gazes at the same distant sky that you gaze at must surely have the same thoughts."
+  },
+  {
+   "poem_id": 226,
+   "english": "How gloomy my troubled heart, with no one to ask me, 'Well, and how are you?'"
+  },
+  {
+   "poem_id": 227,
+   "english": "'Well, and how are you?' How deep can your feelings be, troubled over one you have never seen?"
+  },
+  {
+   "poem_id": 228,
+   "english": "Moon-grey colt of the autumn night, fly across the sky to the one I love, so I may see her for a moment."
+  },
+  {
+   "poem_id": 229,
+   "english": "If only I had someone with whom to share intimate words—perhaps I might wake halfway from this bitter world's dream."
+  },
+  {
+   "poem_id": 230,
+   "english": "My heart is lost in a night that never dawns; how could I tell which part is dream and put it into words?"
+  },
+  {
+   "poem_id": 231,
+   "english": "Dripping brine, I weep first of all, waiting like the pine; would the waves cross over? My glimpse of the seaweed was only a fisher's pastime.",
+   "note": "Matsu is 'pine' and 'wait'; mirume, 'seaweed', is also 'a chance to meet'."
+  },
+  {
+   "poem_id": 232,
+   "english": "How trusting I was, believing our vow, that the waves would never cross over the Pine Hill.",
+   "note": "Matsu is 'pine' and 'wait'; waves crossing the pine hill is an old image of broken faith."
+  },
+  {
+   "poem_id": 233,
+   "english": "Though we part on this journey, the salt-burning smoke will drift the same way as yours."
+  },
+  {
+   "poem_id": 234,
+   "english": "Gathering my thoughts like the fishers' salt-burning seaweed, I will not even resent you now, when it is useless."
+  },
+  {
+   "poem_id": 235,
+   "english": "Shall I keep on longing, sounding my endless sobs, for the single word you left so lightly?"
+  },
+  {
+   "poem_id": 236,
+   "english": "Let the tuning of the middle string we pledged as a keepsake until we meet never change."
+  },
+  {
+   "poem_id": 237,
+   "english": "How sad to leave you behind; I wonder how the bay waves will feel when they ebb away."
+  },
+  {
+   "poem_id": 238,
+   "english": "My rush hut of many years will fall to ruin; I would go with the sad waves back where they return."
+  },
+  {
+   "poem_id": 239,
+   "english": "Will you shun this traveler's robe I have layered for you, rising like night waves, as damp with brine?"
+  },
+  {
+   "poem_id": 240,
+   "english": "Let us exchange robes as keepsakes; this robe will lie between us through the days until we meet."
+  },
+  {
+   "poem_id": 241,
+   "english": "Weary of the world, my body steeped in brine, I still cannot leave this shore."
+  },
+  {
+   "poem_id": 242,
+   "english": "Could my grief in spring on leaving the capital be less than this autumn, leaving the bay of many years?"
+  },
+  {
+   "poem_id": 243,
+   "english": "Like the leech child of the sea who could not stand, I have passed the years drooping and forlorn.",
+   "note": "An allusion to the myth of Izanagi and Izanami's first child."
+  },
+  {
+   "poem_id": 244,
+   "english": "Since we have met again like the gods circling the pillar, leave behind your resentment of that parting spring."
+  },
+  {
+   "poem_id": 245,
+   "english": "Sighing, I think of you on the Akashi shore, wondering whether the morning mist rises there."
+  },
+  {
+   "poem_id": 246,
+   "english": "I would show the boatman whose heart drew near to Suma's bay the sleeves he has left to rot."
+  },
+  {
+   "poem_id": 247,
+   "english": "Should I be the one to complain? My sleeves, too, have hardly dried since the waves drew you near."
+  },
+  {
+   "poem_id": 248,
+   "english": "Though we were never accustomed to an intimacy without distance, I have learned that parting is painful all the same."
+  },
+  {
+   "poem_id": 249,
+   "english": "Is your sudden lament at parting only a pretext, so that you may follow wherever your heart truly wishes to go?"
+  },
+  {
+   "poem_id": 250,
+   "english": "When can I cover her with my sleeves, the maiden whose future grows like rock stroked by angels' sleeves over ages?"
+  },
+  {
+   "poem_id": 251,
+   "english": "Stroking her alone, my sleeves are too small; I wait for a shade wide enough to cover her."
+  },
+  {
+   "poem_id": 252,
+   "english": "Even if we do not lean the same way, I would rather go first as smoke."
+  },
+  {
+   "poem_id": 253,
+   "english": "For whose sake did I wander sea and mountain, sinking and floating in endless tears?"
+  },
+  {
+   "poem_id": 254,
+   "english": "Living in the shade of the sea pine where no season comes, how can the child tell the iris festival?"
+  },
+  {
+   "poem_id": 255,
+   "english": "Hidden among the islands, a crane of no account cries, and today again no one asks how she is."
+  },
+  {
+   "poem_id": 256,
+   "english": "If not even the water rail came knocking, how would the moon be let into this ruined house?"
+  },
+  {
+   "poem_id": 257,
+   "english": "If you open to every water rail that knocks, a wandering moon may slip in as well."
+  },
+  {
+   "poem_id": 258,
+   "english": "The pines of Sumiyoshi move me most, when I think of the age of gods."
+  },
+  {
+   "poem_id": 259,
+   "english": "Could I ever forget the god of Sumiyoshi, whom I called on amid the wild waves?"
+  },
+  {
+   "poem_id": 260,
+   "english": "Our bond must be deep, to bring us together even here, marked like the channel posts by my longing.",
+   "note": "Miotsukushi is a channel marker and 'giving one's whole self'."
+  },
+  {
+   "poem_id": 261,
+   "english": "I am of no account, and nothing at Naniwa is worth it; why did I give my whole self, like a channel post, to love you?"
+  },
+  {
+   "poem_id": 262,
+   "english": "This traveler's robe is damp as in the old days; the isle of Tamino gives me no shelter."
+  },
+  {
+   "poem_id": 263,
+   "english": "How sad this house, in a sky of falling snow and rain without a break, where her spirit must be soaring."
+  },
+  {
+   "poem_id": 264,
+   "english": "How sad that I live on, unable to vanish, in a falling darkness where I hardly know myself."
+  },
+  {
+   "poem_id": 265,
+   "english": "The jeweled vine I trusted never to break has, against my hopes, drifted far away."
+  },
+  {
+   "poem_id": 266,
+   "english": "Even if the jeweled vine breaks, I will not leave you; I swear by the gods of the road I take."
+  },
+  {
+   "poem_id": 267,
+   "english": "My sleeves, wet with longing for the dead, are never dry, and the drip from the ruined eaves adds more."
+  },
+  {
+   "poem_id": 268,
+   "english": "I will be the one to seek you out, though there is no path through the deep mugwort, to find your heart unchanged."
+  },
+  {
+   "poem_id": 269,
+   "english": "I could hardly pass by these waves of wisteria; they must be the sign of a house that has waited for me.",
+   "note": "Matsu is 'pine' and 'wait'."
+  },
+  {
+   "poem_id": 270,
+   "english": "For years my house has waited without a sign of reward; have you only stopped by because the flowers gave you a reason?"
+  },
+  {
+   "poem_id": 271,
+   "english": "Will people see my tears, which I cannot hold back as I come and go, as the barrier's endless spring?"
+  },
+  {
+   "poem_id": 272,
+   "english": "I trusted in our rare meeting on the road, but it was no use: a sea without salt.",
+   "note": "Kai is 'shellfish' and 'worth'; a freshwater lake has none."
+  },
+  {
+   "poem_id": 273,
+   "english": "What kind of barrier is the Barrier of Meeting, that it divides us through such thick sighs?"
+  },
+  {
+   "poem_id": 274,
+   "english": "Did the god forbid us, with the comb I gave at our parting, to be kept so far apart?"
+  },
+  {
+   "poem_id": 275,
+   "english": "Even the word you spoke so far away when I parted now turns back to sorrow."
+  },
+  {
+   "poem_id": 276,
+   "english": "Rather than sigh alone, I should have seen the fishers' shore you lived on, like this."
+  },
+  {
+   "poem_id": 277,
+   "english": "Today the tears flow back to the past even more than when I saw misery there."
+  },
+  {
+   "poem_id": 278,
+   "english": "Without fathoming the deep heart of the Ise sea, should the waves wash out the old traces as worn?"
+  },
+  {
+   "poem_id": 279,
+   "english": "To a heart that rises above the clouds, even a thousand-fathom bottom looks far away."
+  },
+  {
+   "poem_id": 280,
+   "english": "The seaweed of the bay may look old, but should the name of the Ise fisher of many years be sunk?"
+  },
+  {
+   "poem_id": 281,
+   "english": "Though I am outside the sacred rope now, I have not forgotten the heart of that time, that god."
+  },
+  {
+   "poem_id": 282,
+   "english": "Within the sacred rope it no longer feels as before; now I long even for the days of the gods."
+  },
+  {
+   "poem_id": 283,
+   "english": "On this parting road, praying for your far future, what never ends is an old man's tears."
+  },
+  {
+   "poem_id": 284,
+   "english": "We left the capital together; on this journey, will I lose my way alone in the fields?"
+  },
+  {
+   "poem_id": 285,
+   "english": "When can we meet again alive? How can I trust a world whose end I do not know?"
+  },
+  {
+   "poem_id": 286,
+   "english": "The fisher's boat whose heart was drawn to the far shore rows back to the coast it left."
+  },
+  {
+   "poem_id": 287,
+   "english": "Having seen so many autumns come and go, I row back now aboard a drifting log.",
+   "note": "Ukigi, 'floating log', also suggests uki, 'sorrow'."
+  },
+  {
+   "poem_id": 288,
+   "english": "Changed, I return alone to this mountain village, where the pine wind blows as it did by the sea."
+  },
+  {
+   "poem_id": 289,
+   "english": "Who can understand what I play, longing for the friend I knew in my old home?"
+  },
+  {
+   "poem_id": 290,
+   "english": "The one who lived here returns and gropes for the old ways, while the spring acts as master of the house."
+  },
+  {
+   "poem_id": 291,
+   "english": "The little spring has not forgotten the past; has the old master changed his face?"
+  },
+  {
+   "poem_id": 292,
+   "english": "In this tuning unchanged since our vow, did you know how unbroken my heart has been?"
+  },
+  {
+   "poem_id": 293,
+   "english": "Trusting your vow that nothing would change, I added my sobs to the pine wind's sound."
+  },
+  {
+   "poem_id": 294,
+   "english": "A village across the river where the moon shines clear must have a calm light from the moon-laurel.",
+   "note": "Katsura is both the laurel in the moon and the place name."
+  },
+  {
+   "poem_id": 295,
+   "english": "Katsura has only the name of being near the light; mist hangs morning and evening on this mountain village."
+  },
+  {
+   "poem_id": 296,
+   "english": "Come round again, the moon I saw faintly at Awaji Island is now so clear I could hold it."
+  },
+  {
+   "poem_id": 297,
+   "english": "The moonlight, hidden a while by drifting clouds, will be calm now that it shines clear for good."
+  },
+  {
+   "poem_id": 298,
+   "english": "Leaving its dwelling above the clouds, into which valley did the midnight moon hide its light?"
+  },
+  {
+   "poem_id": 299,
+   "english": "Though the mountain road is buried in deep snow, keep coming, do not let your tracks be lost."
+  },
+  {
+   "poem_id": 300,
+   "english": "Even seeking her in the snowbound Yoshino mountains, could the tracks of hearts that reach out ever be lost?"
+  },
+  {
+   "poem_id": 301,
+   "english": "Parted from the young pine of two leaves with its long future, when will I see its tall shade?"
+  },
+  {
+   "poem_id": 302,
+   "english": "Its roots run deep from its first growth; the little pine will stand a thousand years beside the pine of Takekuma."
+  },
+  {
+   "poem_id": 303,
+   "english": "If there were no one on the far shore to stop your boat, I could wait for you to return tomorrow."
+  },
+  {
+   "poem_id": 304,
+   "english": "I will go and see, and come back tomorrow without fail, even if the one on the far shore resents it."
+  },
+  {
+   "poem_id": 305,
+   "english": "Do the thin clouds trailing over the peak in the setting sun take their color from my mourning sleeves?"
+  },
+  {
+   "poem_id": 306,
+   "english": "Then share this feeling with me, autumn evening wind that pierces me unknown to all."
+  },
+  {
+   "poem_id": 307,
+   "english": "The flares that show the fishers' work by night seem to have followed my sad boat here."
+  },
+  {
+   "poem_id": 308,
+   "english": "Is it because you do not know my deep hidden feelings that the flares' light still flickers so?"
+  },
+  {
+   "poem_id": 309,
+   "english": "Waiting in secret for the god's permission, I have passed so many cold years."
+  },
+  {
+   "poem_id": 310,
+   "english": "If I so much as ask after you with common sympathy, the god may rebuke me for breaking my vow."
+  },
+  {
+   "poem_id": 311,
+   "english": "I have never forgotten the dew of that time; has the morning glory passed its bloom?"
+  },
+  {
+   "poem_id": 312,
+   "english": "Late in autumn, tangled in the misty hedge, the morning glory fades, barely there at all."
+  },
+  {
+   "poem_id": 313,
+   "english": "When did this hedge fall into ruin, tangled with mugwort, a snowy old home?"
+  },
+  {
+   "poem_id": 314,
+   "english": "Years have passed, yet I cannot forget our bond: the word you spoke of a parent's parent."
+  },
+  {
+   "poem_id": 315,
+   "english": "Wait and see in the next life: in this world, is there any case of a child forgetting a parent?"
+  },
+  {
+   "poem_id": 316,
+   "english": "The heart that learned nothing from your old coldness is crueler to me than your coldness itself."
+  },
+  {
+   "poem_id": 317,
+   "english": "Why should I change now and see you, having heard of such changes of heart in others?"
+  },
+  {
+   "poem_id": 318,
+   "english": "The water among the stones is locked in ice and cannot flow, while the clear moon's light streams across the sky."
+  },
+  {
+   "poem_id": 319,
+   "english": "On a snowy night when I long for the past, the mandarin duck sleeping on the water adds to my sorrow."
+  },
+  {
+   "poem_id": 320,
+   "english": "On a lonely winter night of waking, unable to sleep at ease, how short was the tangled dream."
+  },
+  {
+   "poem_id": 321,
+   "english": "Even if I follow my heart's longing for her, will I lose my way at the river crossing without seeing her shade?"
+  },
+  {
+   "poem_id": 322,
+   "english": "Did you ever think the river waves would turn back, and that I would see your purification end the mourning in wisteria robes?"
+  },
+  {
+   "poem_id": 323,
+   "english": "I thought I had only just put on the wisteria robe of mourning, and now the purification changes the world's current."
+  },
+  {
+   "poem_id": 324,
+   "english": "At midnight, as wild geese call to one another, the wind over the reeds adds its sad sound."
+  },
+  {
+   "poem_id": 325,
+   "english": "Should my sleeves, dyed crimson with deep tears, be scorned for the pale green of my rank?"
+  },
+  {
+   "poem_id": 326,
+   "english": "How was the robe between us dyed, that the many colors show me how sad my lot is?"
+  },
+  {
+   "poem_id": 327,
+   "english": "Day and night the sky is darkened with frost and ice, and my tears fall."
+  },
+  {
+   "poem_id": 328,
+   "english": "Courtier of Toyooka-hime, the goddess in heaven, do not forget the sacred rope my heart has marked."
+  },
+  {
+   "poem_id": 329,
+   "english": "The dancing maiden too must be grown old, now that the friend of the heavenly sleeves is aged."
+  },
+  {
+   "poem_id": 330,
+   "english": "Your words make it feel like today, the frost melting on the sacred vine on my sleeves."
+  },
+  {
+   "poem_id": 331,
+   "english": "Did the sunlight show you my heart, set on the maiden's heavenly feathered sleeves?"
+  },
+  {
+   "poem_id": 332,
+   "english": "The warbler's singing is as it was of old, but the shade of the blossoms we loved has changed."
+  },
+  {
+   "poem_id": 333,
+   "english": "Even to my dwelling, shut off from the palace by mist, the warbler's voice comes to tell of spring."
+  },
+  {
+   "poem_id": 334,
+   "english": "In the bamboo flute that has handed down the past, even the singing bird's tune is unchanged."
+  },
+  {
+   "poem_id": 335,
+   "english": "The warbler sings longing for the past; have the colors of the blossoms it flits among faded?"
+  },
+  {
+   "poem_id": 336,
+   "english": "You who wait for spring in your garden by choice, at least see my autumn leaves carried by the wind."
+  },
+  {
+   "poem_id": 337,
+   "english": "The autumn leaves scattered by the wind are light; see instead the spring color in the pine on the rock."
+  },
+  {
+   "poem_id": 338,
+   "english": "Whom do the boatmen long for, that their voices sound so sad off the island of Ōshima?"
+  },
+  {
+   "poem_id": 339,
+   "english": "Out on the open sea, not knowing where we came from or where we go, where should anyone long for you?"
+  },
+  {
+   "poem_id": 340,
+   "english": "If my heart should ever turn from you, I swear by the mirror god of Matsura."
+  },
+  {
+   "poem_id": 341,
+   "english": "If the prayers of years go wrong, I will think the mirror god cruel."
+  },
+  {
+   "poem_id": 342,
+   "english": "Rowing away from the island of sorrow, we do not know where we are going or where we will moor.",
+   "note": "Uki is 'floating' and 'sorrowful'."
+  },
+  {
+   "poem_id": 343,
+   "english": "Setting out on a sea road with nothing ahead, I leave my sorrowful self to the wind, rowing away like a boat."
+  },
+  {
+   "poem_id": 344,
+   "english": "Even the rough Hibiki Sea is nothing beside the pounding of my heart at our troubles."
+  },
+  {
+   "poem_id": 345,
+   "english": "Had I not sought the two cedars at Hatsuse, would I have met you by the old river?"
+  },
+  {
+   "poem_id": 346,
+   "english": "I know nothing of the old days of the Hatsuse River, but at today's meeting I am swept away."
+  },
+  {
+   "poem_id": 347,
+   "english": "Though you do not know, seek and you will know: the line of the bur-reed in Mishima Inlet has not broken.",
+   "note": "Suji, 'line', means both a plant's runner and a family line."
+  },
+  {
+   "poem_id": 348,
+   "english": "What line am I, a bur-reed of no account, that I should take root in such sorrow?"
+  },
+  {
+   "poem_id": 349,
+   "english": "Longing for her, I am the same as ever, but by what line has this jeweled vine come to me?"
+  },
+  {
+   "poem_id": 350,
+   "english": "Looking at it, I feel resentful: I will send back this Chinese robe, my sleeves wet with tears."
+  },
+  {
+   "poem_id": 351,
+   "english": "When you speak of sending it back, I think of your night robe spread for one alone."
+  },
+  {
+   "poem_id": 352,
+   "english": "In the pond's mirror, where the thin ice has melted, our reflections stand side by side, matchless in the world."
+  },
+  {
+   "poem_id": 353,
+   "english": "In the clear mirror of the pond, our reflections show plainly that they will dwell together ten thousand years."
+  },
+  {
+   "poem_id": 354,
+   "english": "To one who has spent the years waiting by the pine, let me hear today the warbler's first song.",
+   "note": "Matsu is 'pine' and 'wait'; the warbler is her daughter."
+  },
+  {
+   "poem_id": 355,
+   "english": "Though years have passed since we parted, could the warbler forget the song of the pine it left its nest in?"
+  },
+  {
+   "poem_id": 356,
+   "english": "How wonderful: the warbler flitting through the flowers to roost now calls at its old nest in the valley."
+  },
+  {
+   "poem_id": 357,
+   "english": "Seeking out the spring treetops of my old home, I find flowers beyond the common kind."
+  },
+  {
+   "poem_id": 358,
+   "english": "When the wind blows, even the flowers of the waves show color: is this the famous Cape of Kerria?"
+  },
+  {
+   "poem_id": 359,
+   "english": "Does the spring pond reach the river at Ide? The kerria on the shore is fragrant to its depths."
+  },
+  {
+   "poem_id": 360,
+   "english": "In this boat, which needs no search for the turtle-borne mountain of the immortals, let us leave our names as ageless."
+  },
+  {
+   "poem_id": 361,
+   "english": "In the soft spring sun, the boat glides on, and even the drops from its pole scatter like flowers."
+  },
+  {
+   "poem_id": 362,
+   "english": "Because my heart is set on the purple flower, I would throw myself into the wisteria pool, and would I regret my name?",
+   "note": "Fuji/fuchi: 'wisteria' and 'deep pool'."
+  },
+  {
+   "poem_id": 363,
+   "english": "Before you throw yourself into the pool, stay by the flowers this spring and see."
+  },
+  {
+   "poem_id": 364,
+   "english": "Would even a butterfly from the flower garden seem a stranger to the autumn-crickets waiting deep among the grasses?",
+   "note": "Answers poem 336: 'waiting for autumn' turns 'waiting for spring' around."
+  },
+  {
+   "poem_id": 365,
+   "english": "I might gladly follow even a butterfly, if only those layers of golden kerria blossoms did not keep us apart."
+  },
+  {
+   "poem_id": 366,
+   "english": "You will never know my love, for the water seeping through the rocks shows no color as it seethes."
+  },
+  {
+   "poem_id": 367,
+   "english": "Will the bamboo shoot I planted deep-rooted in my fence grow up and leave me to its own life?"
+  },
+  {
+   "poem_id": 368,
+   "english": "How could it be now? Why would the young bamboo go seeking the root it grew from?"
+  },
+  {
+   "poem_id": 369,
+   "english": "When I liken you to the scent of the orange blossom on her sleeves, you do not seem a different person."
+  },
+  {
+   "poem_id": 370,
+   "english": "If you liken me to the scent of the orange blossom on her sleeves, I too may fade like its fruit."
+  },
+  {
+   "poem_id": 371,
+   "english": "We have not slept together at ease; why should the young grass look so tangled, as if something had happened?"
+  },
+  {
+   "poem_id": 372,
+   "english": "Even the silent insect's fire of longing will not go out when someone puts it out.",
+   "note": "Omoi, 'longing', contains hi, 'fire'."
+  },
+  {
+   "poem_id": 373,
+   "english": "The firefly that burns without a voice must hold a fire of longing deeper than words."
+  },
+  {
+   "poem_id": 374,
+   "english": "Will even today's iris, growing hidden where no one pulls it, only weep its roots away?",
+   "note": "Ne is both 'root' and 'cry'."
+  },
+  {
+   "poem_id": 375,
+   "english": "Pulled into view, your roots look shallow, weeping without knowing the iris from anything else."
+  },
+  {
+   "poem_id": 376,
+   "english": "Is today the day you pull the iris by the water, which even your colt will not graze?"
+  },
+  {
+   "poem_id": 377,
+   "english": "When will my colt, which walks beside the grebe, ever be pulled away from the iris?"
+  },
+  {
+   "poem_id": 378,
+   "english": "Overwhelmed by longing, I search the old stories, but none tells of a child who turned against a parent like this."
+  },
+  {
+   "poem_id": 379,
+   "english": "Search the old stories as I might, there is none of a parent with such a heart in this world."
+  },
+  {
+   "poem_id": 380,
+   "english": "If he saw the lasting color of the pink, would he come seeking the hedge it grew from?"
+  },
+  {
+   "poem_id": 381,
+   "english": "Who would come seeking the root of the pink that grew by a peasant's hedge?"
+  },
+  {
+   "poem_id": 382,
+   "english": "Young grass of Hitachi Bay, Ikaga Point: how can I meet you, waves of Tago Bay?"
+  },
+  {
+   "poem_id": 383,
+   "english": "Waves of Suma Bay on the sea of Suruga in Hitachi, rise up, pine of Hakozaki!",
+   "note": "A deliberately muddled parody of place names."
+  },
+  {
+   "poem_id": 384,
+   "english": "The smoke of love that rises with the cresset flames is a fire that never dies in this world."
+  },
+  {
+   "poem_id": 385,
+   "english": "If it is smoke that goes with the cresset flames, let it vanish into the empty sky."
+  },
+  {
+   "poem_id": 386,
+   "english": "Even the wind that passes over the reed leaves seems to pierce my lonely body alone."
+  },
+  {
+   "poem_id": 387,
+   "english": "In the wild blowing wind, the maidenflower feels it may wither and die."
+  },
+  {
+   "poem_id": 388,
+   "english": "If the maidenflower bent to the dew below, it would not wither in the wild wind."
+  },
+  {
+   "poem_id": 389,
+   "english": "Even on an evening of wind and tangled clouds, I never stop thinking of you, whom I cannot forget."
+  },
+  {
+   "poem_id": 390,
+   "english": "Today, follow the old tracks of the pheasant rising on snowy Mount Oshio."
+  },
+  {
+   "poem_id": 391,
+   "english": "In the pine woods of Mount Oshio deep in snow, will there be no tracks for today's royal outing?",
+   "note": "Miyuki is 'deep snow' and 'royal outing'."
+  },
+  {
+   "poem_id": 392,
+   "english": "On a morning clouded with snow that soon melted, could I see the light in the sky clearly?"
+  },
+  {
+   "poem_id": 393,
+   "english": "The light shines unclouded in the sky; why did you let the snow blind your eyes?"
+  },
+  {
+   "poem_id": 394,
+   "english": "Whichever way you take it, she is the inner tray of the jeweled comb box, never apart from me."
+  },
+  {
+   "poem_id": 395,
+   "english": "It is myself I blame, Chinese robe, thinking that I am never near your sleeve."
+  },
+  {
+   "poem_id": 396,
+   "english": "Chinese robe, again a Chinese robe, Chinese robe, over and over a Chinese robe."
+  },
+  {
+   "poem_id": 397,
+   "english": "How hateful, the fisher who hid by the rocks until she dived for the jeweled seaweed offshore."
+  },
+  {
+   "poem_id": 398,
+   "english": "I saw her as driftweed washed onto this beach with nowhere to go, which no fisher came to look for."
+  },
+  {
+   "poem_id": 399,
+   "english": "Have pity on the purple trousers flower, worn by dew on the same moor, if only as a pretext."
+  },
+  {
+   "poem_id": 400,
+   "english": "If it were dew from a moor far off, the pale purple might be your pretext."
+  },
+  {
+   "poem_id": 401,
+   "english": "Not knowing the deep path of Mount Imose, I stumbled lost on the Bridge of Odae.",
+   "note": "Imose means 'brother and sister' and 'lovers'."
+  },
+  {
+   "poem_id": 402,
+   "english": "Not knowing you were lost, all of us stumbled unsure on the paths of Mount Imose."
+  },
+  {
+   "poem_id": 403,
+   "english": "If I were of no account, I would shun it; how fleeting to stake my life on the ninth month."
+  },
+  {
+   "poem_id": 404,
+   "english": "Even when you see the morning sunlight, do not let it melt the frost on the bamboo grass."
+  },
+  {
+   "poem_id": 405,
+   "english": "I feel such sorrow at the thought of forgetting you; what am I to do?"
+  },
+  {
+   "poem_id": 406,
+   "english": "Even the hollyhock that turns to the light by its own will does not melt the morning frost itself."
+  },
+  {
+   "poem_id": 407,
+   "english": "You did not draw water from the River of Crossing with me, and yet I never promised its shallows to another."
+  },
+  {
+   "poem_id": 408,
+   "english": "Before I cross the River of Three Shallows, how I wish to vanish like foam on the stream of tears."
+  },
+  {
+   "poem_id": 409,
+   "english": "On a snowy night, my heart lost in the sky, my sleeves spread for one alone are cold."
+  },
+  {
+   "poem_id": 410,
+   "english": "Sitting alone with a burning heart, I saw that smoldering flame of longing."
+  },
+  {
+   "poem_id": 411,
+   "english": "When I am stirred by my troubles, the smoke smolders and rises higher in many ways."
+  },
+  {
+   "poem_id": 412,
+   "english": "Though I leave my home now, beloved cypress pillar, do not forget me."
+  },
+  {
+   "poem_id": 413,
+   "english": "Even if it remembers you as beloved, why should the cypress pillar make us stay?"
+  },
+  {
+   "poem_id": 414,
+   "english": "The water among the stones is shallow, yet it stays clear; is it you who will leave the house?"
+  },
+  {
+   "poem_id": 415,
+   "english": "In any case the water among the rocks is frozen; I do not think it will keep my reflection."
+  },
+  {
+   "poem_id": 416,
+   "english": "How jealous this spring, of the birds who share wings in the deep mountain trees."
+  },
+  {
+   "poem_id": 417,
+   "english": "Why did I set my heart on the purple, which is so hard to bring near, and dye it so deep?"
+  },
+  {
+   "poem_id": 418,
+   "english": "Not knowing what shade the purple would be, I took care with how it was dyed."
+  },
+  {
+   "poem_id": 419,
+   "english": "If mist divides the palace, will not even the scent of the plum blossom reach me this much?"
+  },
+  {
+   "poem_id": 420,
+   "english": "At least send this much on the wind, though I have no scent fit to stand among those blossoms."
+  },
+  {
+   "poem_id": 421,
+   "english": "In the steady spring rain of these calm days, how do you long for the one at your old home?"
+  },
+  {
+   "poem_id": 422,
+   "english": "My sleeves wet by the drops from the eaves as I gaze, how could I not long for you, fleeting as foam?"
+  },
+  {
+   "poem_id": 423,
+   "english": "Though the middle road of Ide unexpectedly divides us, I love you silently, kerria blossom.",
+   "note": "Kuchinashi, the kerria's yellow dye, also means 'without a mouth'."
+  },
+  {
+   "poem_id": 424,
+   "english": "I cannot see the egg that hatched in the same nest; whose hand holds it now?"
+  },
+  {
+   "poem_id": 425,
+   "english": "Hidden in the nest, a gosling of no account: where could anyone take and hide it?"
+  },
+  {
+   "poem_id": 426,
+   "english": "If you drift on the wave road with nowhere to moor, boat of the offing, show me your harbor and I will pole my way to you."
+  },
+  {
+   "poem_id": 427,
+   "english": "Even a boatman with nowhere to moor would not go along the rocks where he never meant to, though the wind blows."
+  },
+  {
+   "poem_id": 428,
+   "english": "The flowers' scent does not stay on the bare branch, but it will not stain your sleeves only faintly."
+  },
+  {
+   "poem_id": 429,
+   "english": "I set my heart all the more on the flowering branch, though I hide its scent for fear of blame."
+  },
+  {
+   "poem_id": 430,
+   "english": "With the warbler's song, my heart will wander all the more from the flowers I have loved."
+  },
+  {
+   "poem_id": 431,
+   "english": "This spring, do not neglect this house of flowers, until both colors and scent rub off on you."
+  },
+  {
+   "poem_id": 432,
+   "english": "Keep blowing the bamboo flute through the night, until even the warbler's roosting branch bends."
+  },
+  {
+   "poem_id": 433,
+   "english": "Should I blow on a flowering tree the wind kindly spares, until even the birds take fright?"
+  },
+  {
+   "poem_id": 434,
+   "english": "If only the mist did not divide the moon and the flowers, even the roosting bird would burst into song."
+  },
+  {
+   "poem_id": 435,
+   "english": "If I bring home the flowers' scent rubbed off on these fine sleeves, my wife may suspect me."
+  },
+  {
+   "poem_id": 436,
+   "english": "How the people at home will wait to see you, coming back in a brocade of flowers."
+  },
+  {
+   "poem_id": 437,
+   "english": "Coldness has become the way of this sad world; am I alone in not forgetting?"
+  },
+  {
+   "poem_id": 438,
+   "english": "Forgetting what was hard to forget, saying it was the end: is that a heart that bends to the world?"
+  },
+  {
+   "poem_id": 439,
+   "english": "Will you not come at twilight, when the wisteria at my house is deep in color, to find what is left of spring?"
+  },
+  {
+   "poem_id": 440,
+   "english": "I might be at a loss to pick the wisteria, if it is so hard to see in the twilight."
+  },
+  {
+   "poem_id": 441,
+   "english": "I will lay the blame on purple: the wisteria flower bloomed later than the pine, though it vexed me."
+  },
+  {
+   "poem_id": 442,
+   "english": "After so many springs heavy with dew, have I come at last to the time the flower opens?"
+  },
+  {
+   "poem_id": 443,
+   "english": "The wisteria flower that rivals a maiden's sleeves: may its color grow deeper with the one who sees it."
+  },
+  {
+   "poem_id": 444,
+   "english": "How did the river mouth let out the shallow rumor? How did the barrier's rough fence leak?"
+  },
+  {
+   "poem_id": 445,
+   "english": "Do not lay it all on the shallow river mouth; it was the Kukita barrier that leaked."
+  },
+  {
+   "poem_id": 446,
+   "english": "Do not blame me if my hands, tired of secretly wringing my sleeves, now show their drops today."
+  },
+  {
+   "poem_id": 447,
+   "english": "What is it, the plant you wear in your hair today? Though I see it, I am dazed."
+  },
+  {
+   "poem_id": 448,
+   "english": "The one who plucked the laurel would know the name of the plant you wear in your hair, though you cannot tell it."
+  },
+  {
+   "poem_id": 449,
+   "english": "Did you ever think the young green chrysanthemum, by a drop of dew, would turn deep purple?"
+  },
+  {
+   "poem_id": 450,
+   "english": "A chrysanthemum famous in the garden from its first two leaves: no dew could tell its pale color."
+  },
+  {
+   "poem_id": 451,
+   "english": "You, spring water dripping from the rocks, keeper of this house, do you know where the one I knew has gone?"
+  },
+  {
+   "poem_id": 452,
+   "english": "Not even the shade of the one who is gone appears, yet the little spring water goes on carefree."
+  },
+  {
+   "poem_id": 453,
+   "english": "No wonder the old tree of that time has rotted: even the little pine planted then is mossy now."
+  },
+  {
+   "poem_id": 454,
+   "english": "We trust in the shade of both, the pines whose roots have twined since their first two leaves."
+  },
+  {
+   "poem_id": 455,
+   "english": "Even the chrysanthemums by the fence, deepening in color, must long for the autumn you wore them on your sleeves."
+  },
+  {
+   "poem_id": 456,
+   "english": "The chrysanthemum blending with the purple clouds looks like a star in an unclouded reign."
+  },
+  {
+   "poem_id": 457,
+   "english": "Even a villager through many autumns of drizzle has never seen autumn leaves like these."
+  },
+  {
+   "poem_id": 458,
+   "english": "Do you see them as ordinary autumn leaves, this brocade in the garden following an ancient precedent?"
+  },
+  {
+   "poem_id": 459,
+   "english": "Worn as it is, handing down the past to now, this jeweled little comb has grown hallowed with age."
+  },
+  {
+   "poem_id": 460,
+   "english": "May I see you wear it next, until the boxwood comb grows hallowed through ten thousand ages."
+  },
+  {
+   "poem_id": 461,
+   "english": "Bringing with me the little pines putting out young leaves on the moor, I pray today for the rock they rose from."
+  },
+  {
+   "poem_id": 462,
+   "english": "Drawn by the long years of the little pines, the young herbs of the moor too will gather years."
+  },
+  {
+   "poem_id": 463,
+   "english": "How far I trusted the future, in a world that changes before our eyes."
+  },
+  {
+   "poem_id": 464,
+   "english": "Life may end, but not the bond between us, unlike the common bonds of an uncertain world."
+  },
+  {
+   "poem_id": 465,
+   "english": "Though no distance on the road divides us, my heart is troubled by this morning's light snow."
+  },
+  {
+   "poem_id": 466,
+   "english": "Fleeting, I may vanish into the empty sky, like light spring snow drifting on the wind."
+  },
+  {
+   "poem_id": 467,
+   "english": "The heart that stays in the world I have turned from is the tether on the mountain path I enter."
+  },
+  {
+   "poem_id": 468,
+   "english": "If you worry about the world you turn from, do not cut the tether you cannot leave behind."
+  },
+  {
+   "poem_id": 469,
+   "english": "After the long years between us, the barrier of Meeting is so hard to pass that my tears fall."
+  },
+  {
+   "poem_id": 470,
+   "english": "Only my tears flow from the spring, unchecked by the barrier; the road where we would meet was cut off long ago."
+  },
+  {
+   "poem_id": 471,
+   "english": "Though I sank once and have not forgotten, unrepentant I could throw myself again into the waves of wisteria at your house.",
+   "note": "Kori-zuma: 'unrepentant', with Suma, where he was exiled."
+  },
+  {
+   "poem_id": 472,
+   "english": "The pool you would throw yourself into is no true pool; would you still be drenched again by the unrepentant waves?"
+  },
+  {
+   "poem_id": 473,
+   "english": "Has autumn come close to me? Even as I watch, the green-leaved mountain changes color."
+  },
+  {
+   "poem_id": 474,
+   "english": "The waterbird's green feathers never change color, but beneath the bush clover the look of things is different."
+  },
+  {
+   "poem_id": 475,
+   "english": "Who would blame the old fisherwoman, dripping with brine, who rises with the waves of age on a shore that rewards her?"
+  },
+  {
+   "poem_id": 476,
+   "english": "With the brine-wet fisherwoman as my guide on the wave road, I would like to visit that rush hut on the beach."
+  },
+  {
+   "poem_id": 477,
+   "english": "Even one who left the world to live on Akashi Bay could not clear away the darkness of a parent's heart."
+  },
+  {
+   "poem_id": 478,
+   "english": "Dawn is near, when the light will rise; now at last I tell the dream I saw long ago."
+  },
+  {
+   "poem_id": 479,
+   "english": "Why does the warbler, flitting from flower to flower, not choose the cherry above all to roost in?"
+  },
+  {
+   "poem_id": 480,
+   "english": "How could even the box-bird roosting in deep mountain trees ever tire of the flowers' color?"
+  },
+  {
+   "poem_id": 481,
+   "english": "Watching from afar, I grieve much that I cannot pick the cherry, yet I long for the flower in the evening light."
+  },
+  {
+   "poem_id": 482,
+   "english": "Do not show it now, mountain cherry, that you set your heart on picking a flower beyond your reach."
+  },
+  {
+   "poem_id": 483,
+   "english": "I tame you as a keepsake of the one I long for; why, little cat, do you cry so?",
+   "note": "Ne o naku: the cat's mewing, also 'weeping'."
+  },
+  {
+   "poem_id": 484,
+   "english": "Who else knows my heart and will speak with the pine of Sumiyoshi that has outlived the age of gods?"
+  },
+  {
+   "poem_id": 485,
+   "english": "Today even the old fisherwoman knows the shore of Sumiyoshi, where living has been worth it."
+  },
+  {
+   "poem_id": 486,
+   "english": "I cannot forget the past, when I see the sign of the god of Sumiyoshi.",
+   "note": "Matsu is 'pine' and 'first of all'."
+  },
+  {
+   "poem_id": 487,
+   "english": "The frost that falls late at night on the pines of Suminoe: is it a sacred cord the god has hung?"
+  },
+  {
+   "poem_id": 488,
+   "english": "Frost late at night adds sacred cords to the sakaki leaves held in the hand of the god's servant."
+  },
+  {
+   "poem_id": 489,
+   "english": "The frost that mingles with the priests' sacred cords: surely it is a clear sign from the god."
+  },
+  {
+   "poem_id": 490,
+   "english": "Day and night, not knowing the sky I rise and leave into, what dew is it that soaks my sleeve?"
+  },
+  {
+   "poem_id": 491,
+   "english": "Let this wretched self vanish into the sky of dawn and dusk, so it ends as only a dream."
+  },
+  {
+   "poem_id": 492,
+   "english": "How I regret the sin I committed: the heartvine was not a hair ornament the gods allowed me.",
+   "note": "Aoi, 'heartvine', also sounds like 'day of meeting'."
+  },
+  {
+   "poem_id": 493,
+   "english": "Why did I pick up the fallen leaf of the double vine? Its name is dear, as a hair ornament."
+  },
+  {
+   "poem_id": 494,
+   "english": "I myself have become something else, yet you, feigning not to know me, are still yourself."
+  },
+  {
+   "poem_id": 495,
+   "english": "Can I hope to stay a while, when I only cling for a moment like the dew on a lotus leaf?"
+  },
+  {
+   "poem_id": 496,
+   "english": "Let us vow, if not in this world, to share a lotus leaf; do not keep your heart apart from me like separate dewdrops."
+  },
+  {
+   "poem_id": 497,
+   "english": "Do you mean for my sleeves to be wet with evening dew, rising to leave as you hear the evening cicada?"
+  },
+  {
+   "poem_id": 498,
+   "english": "How will she hear it, waiting in her house? The evening cicada's voice troubles my heart both ways."
+  },
+  {
+   "poem_id": 499,
+   "english": "Could I hear of your life as a nun as someone else's matter, when I too dripped brine on the shore of Suma?",
+   "note": "Ama is 'nun' and 'fisherfolk'."
+  },
+  {
+   "poem_id": 500,
+   "english": "How could you have been left behind by the nun's boat, you who fished on Akashi Bay?"
+  },
+  {
+   "poem_id": 501,
+   "english": "Now at the end, even my smoke as I burn will be tangled, with the fire of longing that never ends still left."
+  },
+  {
+   "poem_id": 502,
+   "english": "I would rise beside you and vanish, in a contest of smoke over our tangled sorrows."
+  },
+  {
+   "poem_id": 503,
+   "english": "Even if I become smoke in the sky with nowhere to go, I will never leave the place I long for."
+  },
+  {
+   "poem_id": 504,
+   "english": "If someone asks in whose day the seed was sown, how will the pine on the rock answer, unable to speak?",
+   "note": "Iwane is 'rock' and 'unspoken'."
+  },
+  {
+   "poem_id": 505,
+   "english": "When the season comes, it blooms in unchanged color, even the cherry at this house whose branch has withered."
+  },
+  {
+   "poem_id": 506,
+   "english": "This spring I string tears like beads on the willow buds, not knowing where the scattered flowers have gone."
+  },
+  {
+   "poem_id": 507,
+   "english": "Wet with the drops beneath the tree, it is upside down: a spring when I wear the robe of mist.",
+   "note": "The father mourns his son: the order of mourning is reversed."
+  },
+  {
+   "poem_id": 508,
+   "english": "Even the dead would not have thought you should wear the evening mist, leaving you behind."
+  },
+  {
+   "poem_id": 509,
+   "english": "How bitter: for whom should we wear the robe of mist, when the flower fell before spring was over?"
+  },
+  {
+   "poem_id": 510,
+   "english": "If so, let me grow close to the branch already grown close, with leave from the god who guards the leaves."
+  },
+  {
+   "poem_id": 511,
+   "english": "Though no god guarding the leaves dwells in the oak, is this the house where anyone may grow close to the treetops?"
+  },
+  {
+   "poem_id": 512,
+   "english": "Though I part from the world before you on the path we enter, come seek the same place too."
+  },
+  {
+   "poem_id": 513,
+   "english": "Longing for a place that is not this wretched world, my heart enters the mountain path of renunciation."
+  },
+  {
+   "poem_id": 514,
+   "english": "Though I do not forget the bitter joint, this child of the black bamboo is hard to throw away.",
+   "note": "Fushi: 'bamboo joint' and 'occasion'; ko: 'child'."
+  },
+  {
+   "poem_id": 515,
+   "english": "Saying nothing says more than words, more than any koto: I see that in your shy look."
+  },
+  {
+   "poem_id": 516,
+   "english": "Of this deep night, I understood only the sorrow; could I play anything more than that on the koto, more than words?",
+   "note": "Koto is both 'words' and 'zither'."
+  },
+  {
+   "poem_id": 517,
+   "english": "In this house of dewy weeds, the insects' voices are unchanged from autumns long ago."
+  },
+  {
+   "poem_id": 518,
+   "english": "The tune of the flute is unchanged, but the sound of the one who is gone never ends in my heart."
+  },
+  {
+   "poem_id": 519,
+   "english": "If wind blows on this bamboo flute, I would pass its sound down to a long line of descendants.",
+   "note": "Ne is 'sound' and 'root'; yo, 'joint' and 'generation'."
+  },
+  {
+   "poem_id": 520,
+   "english": "We vowed to share a lotus seat, yet today, when we part like dewdrops, is so sad."
+  },
+  {
+   "poem_id": 521,
+   "english": "Though you vow without a barrier a house of lotus, your heart will not settle there with me."
+  },
+  {
+   "poem_id": 522,
+   "english": "I knew autumn was bitter in general, yet the bell cricket's voice is hard to shake off.",
+   "note": "Furi-sute: 'shake off', with furi, the bell's shaking."
+  },
+  {
+   "poem_id": 523,
+   "english": "Though you shun your lodging in the grass by your own will, the bell cricket's voice never grows old."
+  },
+  {
+   "poem_id": 524,
+   "english": "Even to a dwelling far beyond the clouds, the autumn night's moon does not forget to come."
+  },
+  {
+   "poem_id": 525,
+   "english": "The moon looks the same in the cloud-high sky, yet my house's autumn is changed."
+  },
+  {
+   "poem_id": 526,
+   "english": "In the evening mist that deepens the sadness of this mountain village, I feel I have no sky to set out into."
+  },
+  {
+   "poem_id": 527,
+   "english": "Even the mist rising round the peasant's fence will not hold a man whose heart is in the sky."
+  },
+  {
+   "poem_id": 528,
+   "english": "Am I alone to be the example of one who knows the sad world, letting my soaked sleeves rot my name?"
+  },
+  {
+   "poem_id": 529,
+   "english": "Even if I did not put the wet robe of false rumor on you, could the name of rotted sleeves be hidden?",
+   "note": "Nureginu, 'wet robe', means 'false accusation'."
+  },
+  {
+   "poem_id": 530,
+   "english": "Soaked by the dew from the eaves on the reed plain, must I push through the mist rising eightfold?"
+  },
+  {
+   "poem_id": 531,
+   "english": "Do you mean to use as your pretext the dew on the grass you push through, and put the wet robe on me again?"
+  },
+  {
+   "poem_id": 532,
+   "english": "I left my soul behind in your cold sleeve, and by my own heart I am lost."
+  },
+  {
+   "poem_id": 533,
+   "english": "If you block it, it will look shallow: if you cannot dam the name that flows like a mountain river."
+  },
+  {
+   "poem_id": 534,
+   "english": "Where on this moor of drooping maidenflowers did you take a lodging only for one night?"
+  },
+  {
+   "poem_id": 535,
+   "english": "I pushed through the thick grass of the autumn moor, but I did not tie a pillow for a brief sleep."
+  },
+  {
+   "poem_id": 536,
+   "english": "How can I comfort you, knowing this sorrow? Do you long for the living, or grieve for the dead?"
+  },
+  {
+   "poem_id": 537,
+   "english": "Which should I grieve for, in a world where I do not see even the dew that vanishes as belonging to the grass?"
+  },
+  {
+   "poem_id": 538,
+   "english": "Far from home, I pushed through the bamboo plains of Ono, and like the deer I do not spare my voice.",
+   "note": "Shika is 'deer' and 'thus'."
+  },
+  {
+   "poem_id": 539,
+   "english": "The mountain dwellers in wisteria mourning robes, in this dewy autumn, add their cries to the deer's calling."
+  },
+  {
+   "poem_id": 540,
+   "english": "In the pond water where the one I knew no longer dwells, does the autumn night's moon lodge alone?"
+  },
+  {
+   "poem_id": 541,
+   "english": "When should I wake you? From a dream on a night that never dawns, was that what she said, that single word?"
+  },
+  {
+   "poem_id": 542,
+   "english": "On Mount Ono, crying out morning and evening, my endless tears are the Silent Falls.",
+   "note": "Otonashi, 'soundless', for weeping without a sound."
+  },
+  {
+   "poem_id": 543,
+   "english": "I would mingle with the smoke that rose up to the peak, not bending in a direction I do not wish."
+  },
+  {
+   "poem_id": 544,
+   "english": "A keepsake that cannot comfort my longing: the jeweled box clouded with tears."
+  },
+  {
+   "poem_id": 545,
+   "english": "Bitter and weary, on a winter night when my heart will not open, the rock door of the barrier shuts tighter still."
+  },
+  {
+   "poem_id": 546,
+   "english": "Rather than resent the self you have grown used to, I might change into the robes of a fisher of Matsushima.",
+   "note": "She means becoming a nun."
+  },
+  {
+   "poem_id": 547,
+   "english": "Because the wet robe of the fisher of Matsushima is worn, should the name be given out that she changed it?"
+  },
+  {
+   "poem_id": 548,
+   "english": "Is there a bond? Keeping you in my heart, I feel pity, and I hear you resent me."
+  },
+  {
+   "poem_id": 549,
+   "english": "Why do I, one person of no account, hear myself called wretched and also pitied?"
+  },
+  {
+   "poem_id": 550,
+   "english": "If I counted for anything, I would know the world's sorrow for myself; instead I wet my sleeves for another."
+  },
+  {
+   "poem_id": 551,
+   "english": "I pitied others for the world's sorrow, but never thought it would take my own place."
+  },
+  {
+   "poem_id": 552,
+   "english": "Though I do not mourn this self, how sad that, at the end, the firewood will run out.",
+   "note": "Firewood running out recalls the Buddha's death."
+  },
+  {
+   "poem_id": 553,
+   "english": "Today, the first day of cutting firewood for the Law, begins a long road to the Law we pray for."
+  },
+  {
+   "poem_id": 554,
+   "english": "Though the rite must end, I trust in the bond we tie through this Law, from life to life."
+  },
+  {
+   "poem_id": 555,
+   "english": "The bond we tied will not break, though few of us are left for the rite of the Law."
+  },
+  {
+   "poem_id": 556,
+   "english": "So brief, that I see it settle: the dew on the bush clover, scattered by the wind."
+  },
+  {
+   "poem_id": 557,
+   "english": "In this world of dew, ever racing to vanish, let us not be long apart, the one before, the one behind."
+  },
+  {
+   "poem_id": 558,
+   "english": "Who would see the world of dew, which the autumn wind lets rest for no moment, as only on the grass leaves?"
+  },
+  {
+   "poem_id": 559,
+   "english": "I long for that autumn evening of old; now, in dawn and dusk, the dream of her last moment."
+  },
+  {
+   "poem_id": 560,
+   "english": "Even that autumn of old feels like now, and more dew settles on my wet sleeves."
+  },
+  {
+   "poem_id": 561,
+   "english": "The dew of tears feels neither old nor new; every autumn night is simply hard."
+  },
+  {
+   "poem_id": 562,
+   "english": "Did she dislike the withered moor, so that she set no heart on autumn?"
+  },
+  {
+   "poem_id": 563,
+   "english": "Though she rose into the clouds, look back, for my own autumn is not over, in this changing world."
+  },
+  {
+   "poem_id": 564,
+   "english": "At my house no one makes much of the flowers; why have you come searching for spring?"
+  },
+  {
+   "poem_id": 565,
+   "english": "Following the scent I came in vain, if you call it only a visit for the flowers."
+  },
+  {
+   "poem_id": 566,
+   "english": "Thinking I would melt like snow in this sad world, against my will I live on as it falls."
+  },
+  {
+   "poem_id": 567,
+   "english": "At a house whose master who planted and watched the flowers is gone, the warbler comes and sings as if it does not know."
+  },
+  {
+   "poem_id": 568,
+   "english": "Must it now fall to ruin, the spring hedge she who is gone set her heart on?"
+  },
+  {
+   "poem_id": 569,
+   "english": "Weeping, I went home like the wild geese: in this passing world, no place is an everlasting land.",
+   "note": "Kari: 'passing' and 'wild goose'."
+  },
+  {
+   "poem_id": 570,
+   "english": "Since the seedbed water where the wild geese passing through stayed ran dry, I cannot even see the flowers reflected."
+  },
+  {
+   "poem_id": 571,
+   "english": "Today, changing into summer robes, will not old thoughts rise up?"
+  },
+  {
+   "poem_id": 572,
+   "english": "From today, when the robes change to light feathery ones, this world of the cicada shell is sadder still."
+  },
+  {
+   "poem_id": 573,
+   "english": "Water plants may well grow in the water I lean on, but today I have even forgotten the name of the heartvine."
+  },
+  {
+   "poem_id": 574,
+   "english": "I thought I had mostly cast off the world, yet should I pick the heartvine, which means 'meeting'?"
+  },
+  {
+   "poem_id": 575,
+   "english": "Did you come wet from the passing rain, mountain cuckoo, on this night I mourn the dead?"
+  },
+  {
+   "poem_id": 576,
+   "english": "Cuckoo, give him the message: at the old home, the orange blossom is in full bloom now."
+  },
+  {
+   "poem_id": 577,
+   "english": "Through the long summer day I spend weeping, the insects' voices seem to blame me."
+  },
+  {
+   "poem_id": 578,
+   "english": "Seeing the fireflies that know the night is sad: my longing burns at every hour."
+  },
+  {
+   "poem_id": 579,
+   "english": "I watch the Weaver's meeting from beyond the clouds, and in my garden of parting the dew settles more."
+  },
+  {
+   "poem_id": 580,
+   "english": "My tears of longing for you have no end; why do they call today the end of mourning?"
+  },
+  {
+   "poem_id": 581,
+   "english": "I who long for her am coming to my end, yet so many tears are left."
+  },
+  {
+   "poem_id": 582,
+   "english": "The white dew on the chrysanthemums we tended together falls this autumn on my sleeve alone."
+  },
+  {
+   "poem_id": 583,
+   "english": "Phantom who passes through the great sky, seek where the soul has gone who does not come even in my dreams."
+  },
+  {
+   "poem_id": 584,
+   "english": "The court people hurry today to the Harvest Feast; I have spent it not knowing the sun's light."
+  },
+  {
+   "poem_id": 585,
+   "english": "Longing for the one who crossed the Mountain of Death, I see her traces and am lost still more."
+  },
+  {
+   "poem_id": 586,
+   "english": "It is no use gathering and reading these letters; become smoke in the same clouds as she did, seaweed of brine.",
+   "note": "Moshiogusa, 'salt seaweed', stands for written letters."
+  },
+  {
+   "poem_id": 587,
+   "english": "Not knowing if I will live to spring, today I wear in my hair the plum that colors in the snow."
+  },
+  {
+   "poem_id": 588,
+   "english": "I prayed for flowers to see a thousand springs, while I myself grew old as the snow fell.",
+   "note": "Furu is 'fall' and 'grow old'."
+  },
+  {
+   "poem_id": 589,
+   "english": "Lost in grief, not knowing the months pass, have the year and my life both ended today?"
+  },
+  {
+   "poem_id": 590,
+   "english": "So uncertain: whom can I ask how I came to be, I who know neither my beginning nor my end?"
+  },
+  {
+   "poem_id": 591,
+   "english": "Should the warbler not come at once to the garden plum whose scent the wind has kindly carried?"
+  },
+  {
+   "poem_id": 592,
+   "english": "If I were one to be lured by the flowers' scent, would I let the wind's message pass me by?"
+  },
+  {
+   "poem_id": 593,
+   "english": "If your sleeves, fragrant from the root, should brush the flowers, they too may spread a matchless name."
+  },
+  {
+   "poem_id": 594,
+   "english": "If I follow the flowers' scent to the house that sends it, people may blame me for loving color."
+  },
+  {
+   "poem_id": 595,
+   "english": "Show a little color, first plum blossom, to see if picking you makes your scent all the sweeter."
+  },
+  {
+   "poem_id": 596,
+   "english": "From afar you may judge it dry wood, but the first plum blossom is fragrant underneath."
+  },
+  {
+   "poem_id": 597,
+   "english": "Everyone must be turning their hearts to the flowers, while I alone am lost in the spring night's dark."
+  },
+  {
+   "poem_id": 598,
+   "english": "Perhaps it is the season: the plum blossom knows sorrow, but it does not turn its heart just because of this."
+  },
+  {
+   "poem_id": 599,
+   "english": "With that single phrase of Bamboo River we struck up, did you know the depth of my heart?",
+   "note": "Fushi is 'bamboo joint' and 'melody'."
+  },
+  {
+   "poem_id": 600,
+   "english": "We hurried to Bamboo River so as not to let the night grow late; what phrase should I have kept in mind?"
+  },
+  {
+   "poem_id": 601,
+   "english": "Because of the cherry, my heart is troubled by the wind, though I see the flowers as heartless."
+  },
+  {
+   "poem_id": 602,
+   "english": "Since they are flowers that fall as soon as they bloom, I feel no deep grudge at losing."
+  },
+  {
+   "poem_id": 603,
+   "english": "For flowers to fall in the wind is the way of the world; I could not watch calmly as they faded on the branch."
+  },
+  {
+   "poem_id": 604,
+   "english": "Flowers falling willingly by the pond's edge, even if you turn to foam, drift to our side."
+  },
+  {
+   "poem_id": 605,
+   "english": "Though the wind of the great sky scatters them, I gather the cherry flowers and look on them as ours."
+  },
+  {
+   "poem_id": 606,
+   "english": "Is there a sleeve wide enough to cover the cherry flowers, so their many-hued glow will not be scattered?"
+  },
+  {
+   "poem_id": 607,
+   "english": "Counting the months and days that pass with your coldness, how bitter this end of spring."
+  },
+  {
+   "poem_id": 608,
+   "english": "Well then, why is it that nothing goes the way of one of no account, but a heart determined not to lose to others?"
+  },
+  {
+   "poem_id": 609,
+   "english": "How unreasonable: how can one leave to a single heart winning and losing, which go by strength?"
+  },
+  {
+   "poem_id": 610,
+   "english": "Take pity and let my hand go free, if I am one who leaves life and death to you."
+  },
+  {
+   "poem_id": 611,
+   "english": "Gazing at flowers I spent the spring; from today, am I to wander lost beneath thick grief?"
+  },
+  {
+   "poem_id": 612,
+   "english": "Today I learn it, from the look of you gazing at the sky, that you had turned your heart to the flowers."
+  },
+  {
+   "poem_id": 613,
+   "english": "To what sort of person should one give that single word, 'pity', in this changing world?"
+  },
+  {
+   "poem_id": 614,
+   "english": "Since life and death in this living world do not go as I wish, shall I end without hearing your single word?"
+  },
+  {
+   "poem_id": 615,
+   "english": "If wisteria flowers were something to hold in my hand, would I see color finer than the pine's?"
+  },
+  {
+   "poem_id": 616,
+   "english": "Purple colors are akin, but the wisteria flower would not hang upon my heart."
+  },
+  {
+   "poem_id": 617,
+   "english": "Do you remember that night of Bamboo River, though there was no phrase to treasure?"
+  },
+  {
+   "poem_id": 618,
+   "english": "At Bamboo River, where trust flowed on in vain, I have learned this world is a sorry place."
+  },
+  {
+   "poem_id": 619,
+   "english": "Why have I been left behind in this passing world, by the waterbird that cast me off and flew away?",
+   "note": "Kari no ko: 'goose eggs' and 'passing world'."
+  },
+  {
+   "poem_id": 620,
+   "english": "When I wonder how we came to leave the nest like this, I know the sad fate of the floating waterbird."
+  },
+  {
+   "poem_id": 621,
+   "english": "Weeping as he spreads his wings over us: without you, I would have ended as the egg left in the nest."
+  },
+  {
+   "poem_id": 622,
+   "english": "The one I knew and my house both went up in smoke; why did I alone stay unvanished?"
+  },
+  {
+   "poem_id": 623,
+   "english": "My heart weary of the world goes back and forth to the mountains, but do you keep me off with eightfold clouds?"
+  },
+  {
+   "poem_id": 624,
+   "english": "Though my heart is not clear of the world with all tracks cut off, I have borrowed a lodging on the mountain of Uji.",
+   "note": "Uji puns on ushi, 'sad': 'mountain of a sad world'."
+  },
+  {
+   "poem_id": 625,
+   "english": "More senselessly fragile than the dew on leaves endlessly blown by the mountain wind are my tears."
+  },
+  {
+   "poem_id": 626,
+   "english": "At dawn I cannot see the road home; Mount Maki, which I came to seek, is shrouded in mist."
+  },
+  {
+   "poem_id": 627,
+   "english": "The autumn mist keeps off the path along the peak where clouds rest, all the more at this season."
+  },
+  {
+   "poem_id": 628,
+   "english": "Trying to fathom the lady at the bridge, I dip my pole into the shallows; its falling drops have soaked my sleeves."
+  },
+  {
+   "poem_id": 629,
+   "english": "Pushing back and forth along the Uji River, will the drops of morning and evening wear your sleeves away entirely?"
+  },
+  {
+   "poem_id": 630,
+   "english": "Sadder than you, who turn from the world before my eyes, is my soul, which parts from you far away."
+  },
+  {
+   "poem_id": 631,
+   "english": "If I lived, I could see that it is him: the old age of the pine I left on the rock, known to none."
+  },
+  {
+   "poem_id": 632,
+   "english": "The mountain wind can be heard blowing the mist apart, yet the white waves across the distance still seem to keep us apart."
+  },
+  {
+   "poem_id": 633,
+   "english": "Though waves separate the shores on either side, keep blowing between us, wind over the Uji River."
+  },
+  {
+   "poem_id": 634,
+   "english": "Coming in search of the place where mountain cherries glow, I have picked the same blossoms for my hair."
+  },
+  {
+   "poem_id": 635,
+   "english": "Spring traveler, on your way to pick flowers for your hair, you passed by the peasant's hedge."
+  },
+  {
+   "poem_id": 636,
+   "english": "Though without me the grass hut fall to ruin, I believe this single word will not wither."
+  },
+  {
+   "poem_id": 637,
+   "english": "In what world could the grass hut wither, where we tied a long night's bond?"
+  },
+  {
+   "poem_id": 638,
+   "english": "What must the autumn mountain village be like this evening, as deer call and dew gathers on the little bush clover?"
+  },
+  {
+   "poem_id": 639,
+   "english": "In this mountain village shrouded in a mist of tears, the deer at the fence cry out together, voice answering voice."
+  },
+  {
+   "poem_id": 640,
+   "english": "Do you think I hear only as common sorrow the cry of the deer whose mate is lost in the morning mist?"
+  },
+  {
+   "poem_id": 641,
+   "english": "Even seeing the color change in the reeds, I think of your sleeves worn in ink-dyed mourning."
+  },
+  {
+   "poem_id": 642,
+   "english": "My sleeves, changed in color, have become the lodging of dew; there is no place left for myself."
+  },
+  {
+   "poem_id": 643,
+   "english": "In the sky where autumn mist will not clear, why must you tell me again that this world is passing?"
+  },
+  {
+   "poem_id": 644,
+   "english": "Since you have gone and the rocky path is cut off, how should I look on the snow upon the pine?"
+  },
+  {
+   "poem_id": 645,
+   "english": "If only I could think of the one who vanished as snow piled on the pine needles deep in the mountains."
+  },
+  {
+   "poem_id": 646,
+   "english": "On the mountain bridge deep in snow, I see no other tracks but yours treading back and forth."
+  },
+  {
+   "poem_id": 647,
+   "english": "Shall I cross first, as your guide, the mountain stream where my horse tramples the icicles closed over it?"
+  },
+  {
+   "poem_id": 648,
+   "english": "The oak I trusted to stand in the shade of has become an empty bed."
+  },
+  {
+   "poem_id": 649,
+   "english": "If you had been here to see the bracken of the peak, I might have known it as a sign of spring."
+  },
+  {
+   "poem_id": 650,
+   "english": "For whom shall I pick the little parsley by the snowy shore and make much of it, being without a parent?"
+  },
+  {
+   "poem_id": 651,
+   "english": "This spring I would pick for my hair, without mist between us, the cherry of that house I saw through others."
+  },
+  {
+   "poem_id": 652,
+   "english": "Where will you search to pick it, the cherry of a house shrouded in mist and gray mourning?"
+  },
+  {
+   "poem_id": 653,
+   "english": "Let us tie a long promise into the trefoil knot, our strands coming together at a single place."
+  },
+  {
+   "poem_id": 654,
+   "english": "On a fragile string of tear-pearls I cannot even thread together, how could I tie a promise that must last so long?"
+  },
+  {
+   "poem_id": 655,
+   "english": "This dawn gathers together voice after voice that tell the sorrow of the mountain village."
+  },
+  {
+   "poem_id": 656,
+   "english": "I thought these mountains so deep not even birds' voices were heard, yet the world's sorrows came seeking us."
+  },
+  {
+   "poem_id": 657,
+   "english": "I would ask the mountain princess who dyed one branch differently: which color is deeper?"
+  },
+  {
+   "poem_id": 658,
+   "english": "I cannot tell the mind of the mountain princess who dyes it, but the fading side may be the deeper one."
+  },
+  {
+   "poem_id": 659,
+   "english": "Guarding the great moor where the maidenflowers bloom, are you narrow-hearted, tying up a rope?"
+  },
+  {
+   "poem_id": 660,
+   "english": "The maidenflower on the misty morning plain: one who sets a heart on it sees it."
+  },
+  {
+   "poem_id": 661,
+   "english": "Having been the guide, am I to be the one lost on a road of dawn and dusk my heart does not go along?"
+  },
+  {
+   "poem_id": 662,
+   "english": "Think of a heart passing the days in many troubles, if you are lost on a road of your own making."
+  },
+  {
+   "poem_id": 663,
+   "english": "Do you think it common, my pushing through the bamboo grass on a road deep in dew?"
+  },
+  {
+   "poem_id": 664,
+   "english": "Though you may not say I wore your night robe and grew close, you cannot wholly deny the pretext."
+  },
+  {
+   "poem_id": 665,
+   "english": "Hearts without a barrier may pass to each other, but I will not call them sleeves grown close."
+  },
+  {
+   "poem_id": 666,
+   "english": "It is not that the bond will break; will the Lady of the Bridge, her lone sleeve spread, wet it at midnight?"
+  },
+  {
+   "poem_id": 667,
+   "english": "Trusting your 'it will not break', must I wait to cross the long span of the Uji Bridge?"
+  },
+  {
+   "poem_id": 668,
+   "english": "Even the trees I glimpsed once at the height of blossom: are they lonely in autumn?"
+  },
+  {
+   "poem_id": 669,
+   "english": "The cherries teach us that blossoms that bloom and glow, and autumn leaves too, are not lasting in this world."
+  },
+  {
+   "poem_id": 670,
+   "english": "Where has autumn gone? It is hard to pass by the shade of the autumn leaves in the mountain village."
+  },
+  {
+   "poem_id": 671,
+   "english": "On the rock wall of the mountain village where the one I knew is gone, the vine creeps on, long-hearted."
+  },
+  {
+   "poem_id": 672,
+   "english": "Do not blow so hard, pine wind of the peak, on the trees where loneliness deepens as autumn ends."
+  },
+  {
+   "poem_id": 673,
+   "english": "I do not mean to lie down with the young grass, yet I feel my heart tied in knots.",
+   "note": "Ne is 'root' and 'sleep'."
+  },
+  {
+   "poem_id": 674,
+   "english": "We gaze at the same clouded sky; why does the drizzle add to my unease?"
+  },
+  {
+   "poem_id": 675,
+   "english": "In the deep mountain village where hail falls, the sky we gaze at morning and evening grows dark too."
+  },
+  {
+   "poem_id": 676,
+   "english": "How sad this dawn: the plovers by the frost-cold shore cry out in misery."
+  },
+  {
+   "poem_id": 677,
+   "english": "The plover crying as it shakes off dawn frost: does it know the heart of one lost in grief?"
+  },
+  {
+   "poem_id": 678,
+   "english": "In the deep mountains, clouded over with no sunlight seen, my heart too is darkened these days."
+  },
+  {
+   "poem_id": 679,
+   "english": "Even my tears that fall crimson are useless, since they cannot dye the color of a keepsake."
+  },
+  {
+   "poem_id": 680,
+   "english": "I long to follow the moon traveling the sky, not to be left behind, since this is no world to stay in."
+  },
+  {
+   "poem_id": 681,
+   "english": "Sick with longing, I wish for medicine to die; shall I vanish into the Snow Mountains?"
+  },
+  {
+   "poem_id": 682,
+   "english": "Even recalling the past is futile; why trust anything for the future?"
+  },
+  {
+   "poem_id": 683,
+   "english": "If you think the future short, at least do not turn against me before my eyes."
+  },
+  {
+   "poem_id": 684,
+   "english": "These are the first bracken shoots, which do not forget their custom, since I picked them many springs for you."
+  },
+  {
+   "poem_id": 685,
+   "english": "This spring, whom shall I show them to, the little bracken of the peak, picked as a keepsake of the dead?"
+  },
+  {
+   "poem_id": 686,
+   "english": "Is it a flower akin to the heart of the one who picks it, glowing beneath without showing its color?"
+  },
+  {
+   "poem_id": 687,
+   "english": "One should have picked with a careful heart the flower used as a pretext by the one who sees it."
+  },
+  {
+   "poem_id": 688,
+   "english": "How fleeting: on the island where you rise from the robe of mist, the season of flowers untying has come."
+  },
+  {
+   "poem_id": 689,
+   "english": "In the mountain village, where even those who see it are lost in storms, there is a flower scent that recalls the past."
+  },
+  {
+   "poem_id": 690,
+   "english": "The plum my sleeves brushed keeps its unchanged scent, but is the house different, now that its roots have moved away?"
+  },
+  {
+   "poem_id": 691,
+   "english": "If I threw myself into the river of tears that runs ahead of me, my life would not lag behind theirs."
+  },
+  {
+   "poem_id": 692,
+   "english": "Though I throw myself and sink in the river of tears, I will not forget in each shallow of longing."
+  },
+  {
+   "poem_id": 693,
+   "english": "Everyone seems to hurry off, while on the bay of my sleeve one fisher-nun alone drips with brine."
+  },
+  {
+   "poem_id": 694,
+   "english": "Is it different from the fisher's brine-dripping robe? My sleeve is wet on the floating waves."
+  },
+  {
+   "poem_id": 695,
+   "english": "Living on, I came to a shallow of joy; what if I had thrown myself into the river of Uji?"
+  },
+  {
+   "poem_id": 696,
+   "english": "I do not forget the past and its longing, but today my heart goes on ahead in hope."
+  },
+  {
+   "poem_id": 697,
+   "english": "As I gaze, even the moon that left the mountains, weary of the world, goes back into the mountains."
+  },
+  {
+   "poem_id": 698,
+   "english": "Like a boat rowing on the shining Lake of Grebes, though not under full sail, we did meet."
+  },
+  {
+   "poem_id": 699,
+   "english": "If it were a flower glowing by an ordinary hedge, I would have picked it as I pleased."
+  },
+  {
+   "poem_id": 700,
+   "english": "The chrysanthemum in the garden, withered by the frost, still keeps its lingering color unfaded."
+  },
+  {
+   "poem_id": 701,
+   "english": "I watch them, flowers that cling while the settled dew has not vanished: will they keep only this morning's color?"
+  },
+  {
+   "poem_id": 702,
+   "english": "I should have seen it as a likeness: the morning glory, on which the white dew's bond was laid."
+  },
+  {
+   "poem_id": 703,
+   "english": "The flower withers before the dew vanishes; more fleeting still is the dew left behind."
+  },
+  {
+   "poem_id": 704,
+   "english": "Even the moon of the great sky lodges at my house, but you, past the waiting evening, do not appear."
+  },
+  {
+   "poem_id": 705,
+   "english": "Even in the shade of pines in my mountain village, there was never an autumn wind that pierced me like this."
+  },
+  {
+   "poem_id": 706,
+   "english": "The maidenflower droops all the more: what morning dew settled on it, leaving this trace?"
+  },
+  {
+   "poem_id": 707,
+   "english": "I might have heard it as ordinary, but the evening cicada's voice is bitter this autumn dusk."
+  },
+  {
+   "poem_id": 708,
+   "english": "What a pity for your name, that you grew familiar with the barrier river the world will never let you cross."
+  },
+  {
+   "poem_id": 709,
+   "english": "The barrier river looks shallow on the surface, but does its flow underneath ever stop?"
+  },
+  {
+   "poem_id": 710,
+   "english": "Thick is the dew on the road I pushed through in vain; the autumn sky recalls the past."
+  },
+  {
+   "poem_id": 711,
+   "english": "I take into myself the scent from your robe and sleeves grown close to another, and resent it."
+  },
+  {
+   "poem_id": 712,
+   "english": "I trusted the robe between us, sleeves grown close, yet will we come so far apart over this much?"
+  },
+  {
+   "poem_id": 713,
+   "english": "Should you resent in one strand alone the inner sash, tied in a different bond?"
+  },
+  {
+   "poem_id": 714,
+   "english": "If I did not remember lodging beneath the mistletoe, how lonely my traveler's sleep beneath this tree would be.",
+   "note": "Yadorigi, 'mistletoe', also means 'having lodged'."
+  },
+  {
+   "poem_id": 715,
+   "english": "How sad that you think of the foot of this ruined, rotten tree as the mistletoe where you once lodged."
+  },
+  {
+   "poem_id": 716,
+   "english": "The bamboo pampas grass, its sleeves beckoning thick with dew, seems lost in thoughts it will not show in plumes."
+  },
+  {
+   "poem_id": 717,
+   "english": "Even the look of the moor at autumn's end I know only through the wind faintly stirring the pampas grass."
+  },
+  {
+   "poem_id": 718,
+   "english": "Picking wisteria to be an ornament for the emperor's hair, I hung my sleeve on a branch beyond my reach."
+  },
+  {
+   "poem_id": 719,
+   "english": "Since it is a flower whose scent will last ten thousand ages, I see its color today as one I cannot tire of."
+  },
+  {
+   "poem_id": 720,
+   "english": "The ornament picked for your hair: are its flowers not equal to the purple clouds?"
+  },
+  {
+   "poem_id": 721,
+   "english": "It looks no ordinary color, the waves of wisteria flowers that have risen to the clouds above."
+  },
+  {
+   "poem_id": 722,
+   "english": "Wondering if her voice will be like the face-bird's I heard of, I push through the thickets to seek her today."
+  },
+  {
+   "poem_id": 723,
+   "english": "If she is a likeness of the one I knew, I will keep her by me as a cleansing doll for each shallow of longing.",
+   "note": "Nademono: a doll that takes on one's sins and is set adrift."
+  },
+  {
+   "poem_id": 724,
+   "english": "Who would trust as a shadow by their side a cleansing doll set adrift in each shallow of the purification river?"
+  },
+  {
+   "poem_id": 725,
+   "english": "The little bush clover is roped off and safe; by what dew do its lower leaves change color?"
+  },
+  {
+   "poem_id": 726,
+   "english": "Had I known it grew at the foot of Miyagino's bush clover, the dew would not have made distinctions."
+  },
+  {
+   "poem_id": 727,
+   "english": "How simply happy I would be, if I could think it a place not of this world."
+  },
+  {
+   "poem_id": 728,
+   "english": "Even if I seek a place not of this sad world, I wish for some way to see you in your prime."
+  },
+  {
+   "poem_id": 729,
+   "english": "Why did the spring water that never runs dry not keep at least the face of the one who is gone?"
+  },
+  {
+   "poem_id": 730,
+   "english": "Are the weeds so thick that bar the door? The rain drips on too long at this eastern house."
+  },
+  {
+   "poem_id": 731,
+   "english": "When I see it as a keepsake, my sleeves grow wet, overflowing as the morning dew."
+  },
+  {
+   "poem_id": 732,
+   "english": "The mistletoe has changed color this autumn, but the moon shines clear as of old."
+  },
+  {
+   "poem_id": 733,
+   "english": "Even the village name is as of old, but the moon in the bedroom shows a changed face."
+  },
+  {
+   "poem_id": 734,
+   "english": "Though it is not yet old, know that for you it waits with a deep heart.",
+   "note": "Matsu: 'pine' and 'wait'."
+  },
+  {
+   "poem_id": 735,
+   "english": "Though I promise a long age, what is still sad is a life that does not know tomorrow."
+  },
+  {
+   "poem_id": 736,
+   "english": "I would not grieve my heart, if only life were the one uncertain thing in this world."
+  },
+  {
+   "poem_id": 737,
+   "english": "I must wander lost as never before, with tears running ahead and darkening the road."
+  },
+  {
+   "poem_id": 738,
+   "english": "How can I, unable to stop my tears with my narrow sleeves, hold back our parting?"
+  },
+  {
+   "poem_id": 739,
+   "english": "The long bond of the Uji Bridge will not decay; do not trouble your heart about its weakness."
+  },
+  {
+   "poem_id": 740,
+   "english": "The Uji Bridge, so unsafe with only gaps: do you say I should trust it will not decay?"
+  },
+  {
+   "poem_id": 741,
+   "english": "Though years pass, will it change, the heart I vow to you at the cape of Orange Islet?"
+  },
+  {
+   "poem_id": 742,
+   "english": "The color of Orange Islet may not change, but this drifting boat does not know where it will go.",
+   "note": "Ukifune, 'drifting boat', is her name."
+  },
+  {
+   "poem_id": 743,
+   "english": "Pushing through snow on the peak and ice at the shore, I am lost over you, though not lost on the road."
+  },
+  {
+   "poem_id": 744,
+   "english": "More than the snow that falls in flurries and freezes at the shore, I will vanish midway in the sky."
+  },
+  {
+   "poem_id": 745,
+   "english": "How miserable these days, when even the sky goes dark until I cannot see the clouds over where you are."
+  },
+  {
+   "poem_id": 746,
+   "english": "How is it in the village beyond the swelling waters, in these days darkened by gazing that never clears?"
+  },
+  {
+   "poem_id": 747,
+   "english": "Knowing that the village's name applies to me, the crossing at Uji in Yamashiro is all the harder to live in.",
+   "note": "Uji puns on ushi, 'sad'."
+  },
+  {
+   "poem_id": 748,
+   "english": "I wish I could become a rain cloud on the dark peak that never clears, drifting through life."
+  },
+  {
+   "poem_id": 749,
+   "english": "Idly, the rain that teaches me my place never stops, and my sleeves swell with water too."
+  },
+  {
+   "poem_id": 750,
+   "english": "Not knowing that waves were crossing, I thought only that the pine of Sue would wait for me.",
+   "note": "Waves over Sue's Pine Mountain mean a faithless lover."
+  },
+  {
+   "poem_id": 751,
+   "english": "Where shall I throw myself away? I go weeping, and no mountain is without white clouds."
+  },
+  {
+   "poem_id": 752,
+   "english": "Even if, worn by grief, I throw myself away, I fear leaving a shameful name after I am gone."
+  },
+  {
+   "poem_id": 753,
+   "english": "If I leave not even my body in this sad world, where will you go to grieve for my grave?"
+  },
+  {
+   "poem_id": 754,
+   "english": "Think rather that we will meet again later; do not lose your heart in this world's dream."
+  },
+  {
+   "poem_id": 755,
+   "english": "Adding my weeping to the dying echo of the bell, tell her my life has ended."
+  },
+  {
+   "poem_id": 756,
+   "english": "Do you too weep in secret, cuckoo, bird of the Mountain of Death? If our hearts are joined it is all in vain."
+  },
+  {
+   "poem_id": 757,
+   "english": "Near where the orange blossom is fragrant, the cuckoo should take care when it weeps.",
+   "note": "Kaoru, 'fragrant', is also his rival's name."
+  },
+  {
+   "poem_id": 758,
+   "english": "If I too let the old home fall to ruin, who will love the shade of the mistletoe where we lodged?"
+  },
+  {
+   "poem_id": 759,
+   "english": "My heart that knows sorrow is behind no one's, but being of no account, I live on vanishing."
+  },
+  {
+   "poem_id": 760,
+   "english": "Even I, sad as I am and seeing the world as changing, do I grieve so others know?"
+  },
+  {
+   "poem_id": 761,
+   "english": "Even the autumn wind that ties dew on the reed leaves pierces me most in the evening."
+  },
+  {
+   "poem_id": 762,
+   "english": "Though I mingle on the moor where the maidenflowers sway, could the dew's fickle name be laid on me?"
+  },
+  {
+   "poem_id": 763,
+   "english": "When called a flower, its name is fickle, but does the maidenflower sway for every dew?"
+  },
+  {
+   "poem_id": 764,
+   "english": "Spend a night and test it again: will the maidenflower change in the color of its prime or not?"
+  },
+  {
+   "poem_id": 765,
+   "english": "If you lend me lodging I would sleep a night, though my heart does not turn to ordinary flowers."
+  },
+  {
+   "poem_id": 766,
+   "english": "I saw her there, but could not take her in my hand; when I look again, the mayfly is gone, I know not where."
+  },
+  {
+   "poem_id": 767,
+   "english": "Who laid a weir across the swift shallows of the river of tears I threw myself into, and held me back?"
+  },
+  {
+   "poem_id": 768,
+   "english": "Even if I go on living like this in the sad world, who would know of it in the city of the moon?"
+  },
+  {
+   "poem_id": 769,
+   "english": "Do not bend in the wind of Adashino, maidenflower; I will rope you off, though the road is far."
+  },
+  {
+   "poem_id": 770,
+   "english": "I transplanted it and grieve over the maidenflower, to a grass hut that has turned from the sad world."
+  },
+  {
+   "poem_id": 771,
+   "english": "I came seeking the pine cricket's voice, yet again I am lost in the dew of the bush clover field."
+  },
+  {
+   "poem_id": 772,
+   "english": "Hunting robe that came through the dew of autumn fields, do not blame the house deep in weeds."
+  },
+  {
+   "poem_id": 773,
+   "english": "One who does not see the deep night's moon as moving: does he not stay at this house near the mountain rim?"
+  },
+  {
+   "poem_id": 774,
+   "english": "I will gaze at the moon until it sets behind the mountain rim, to see if the bedroom's planks show any sign."
+  },
+  {
+   "poem_id": 775,
+   "english": "The past I cannot forget: even the bamboo flute's painful notes bring my weeping out.",
+   "note": "Fushi: 'bamboo joint' and 'melody'."
+  },
+  {
+   "poem_id": 776,
+   "english": "At the sound of the flute I too yearned for the past, and my sleeves were wet when you left."
+  },
+  {
+   "poem_id": 777,
+   "english": "Living on so fleetingly in the sad shallows of Furu River, I do not wish to seek the twin cedars.",
+   "note": "Furu: the river's name and 'to live on'."
+  },
+  {
+   "poem_id": 778,
+   "english": "I do not know the root of the cedar at Furu River, but I see you as a likeness of the one who passed."
+  },
+  {
+   "poem_id": 779,
+   "english": "My heart does not single out autumn evenings, yet dew is scattered on my gazing sleeves."
+  },
+  {
+   "poem_id": 780,
+   "english": "The deep sorrow of an autumn night in the mountain village is known by one who broods."
+  },
+  {
+   "poem_id": 781,
+   "english": "I live on without knowing the world is sad, yet people knew me as one who broods."
+  },
+  {
+   "poem_id": 782,
+   "english": "Thinking of myself and others as gone, I have cast off again the world I once cast off."
+  },
+  {
+   "poem_id": 783,
+   "english": "The world I had come to think was at its end, I have turned from it again and again."
+  },
+  {
+   "poem_id": 784,
+   "english": "I hurry, not to miss the fisher's boat that must be rowing far from shore.",
+   "note": "Ama is 'nun' and 'fisherfolk'."
+  },
+  {
+   "poem_id": 785,
+   "english": "My heart leaves the shore of the sad world, but the fisher's floating log does not know where it goes."
+  },
+  {
+   "poem_id": 786,
+   "english": "At the foot of the mountain the winter wind blew over, there is not even shade to hide in."
+  },
+  {
+   "poem_id": 787,
+   "english": "I think no one will wait for me, yet looking at the treetops of the mountain village it is hard to pass."
+  },
+  {
+   "poem_id": 788,
+   "english": "You have turned from the ordinary world, yet it is I who suffer, thinking it a way to shun me."
+  },
+  {
+   "poem_id": 789,
+   "english": "Even gazing at the snow darkening the moors and mountains, what has passed is sad today."
+  },
+  {
+   "poem_id": 790,
+   "english": "Picking the young herbs between the snow in the mountain village and making much of them, I still trust in your future."
+  },
+  {
+   "poem_id": 791,
+   "english": "From now on, even the young herbs of the snowy moor will gather years for you."
+  },
+  {
+   "poem_id": 792,
+   "english": "I cannot see the one whose sleeves brushed me, but the flower scent glows like his in the spring dawn."
+  },
+  {
+   "poem_id": 793,
+   "english": "On the water where the one I knew left not even a shadow, my falling tears cannot be dammed."
+  },
+  {
+   "poem_id": 794,
+   "english": "Now that I have changed into a nun's robe, shall I keep my sleeve as a keepsake of the past and long for it?"
+  },
+  {
+   "poem_id": 795,
+   "english": "Taking the road I sought to the teacher of the Law as my guide, I am lost on a mountain I never expected."
+  }
+ ]
+}
