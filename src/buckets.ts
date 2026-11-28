@@ -23,6 +23,8 @@ const poemSchema = z.object({
 const linkSchema = z.object({
   poems: z.tuple([poemId, poemId]).refine(([a, b]) => a !== b, 'A link needs two different poems'),
   hook: text,
+  /** English words both linked glosses share; the echo check keeps them out of unrelated poems. */
+  hook_en: z.array(text).optional(),
 });
 
 const bucketSchema = z.object({

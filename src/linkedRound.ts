@@ -1,10 +1,11 @@
 import type { Bucket, Link, LinkedDatabase, LinkedPoem } from './buckets';
-import { hookTokens, normalizeText } from './normalize';
+import { englishWords, hookTokens, normalizeText } from './normalize';
 
 // Round generator for the linked-bucket database. Round rules (data/genji_buckets_README.md):
 // 1. Poems are grouped only through listed links (a 3-poem group must be connected by links).
 // 2. Each group, singletons included, comes from a different bucket.
-// 3. Echo check: no poem outside a group may contain one of that group's hook words.
+// 3. Echo check: no poem outside a group may contain one of that group's hook words
+//    (Japanese hook in the Japanese text; hook_en words in the English gloss, when glosses are loaded).
 // 4. Normal mode: no two poems from the same chapter unless they are in one group.
 
 export type Template = readonly number[]; // group sizes, e.g. [2, 2, 1]; must sum to 5
@@ -67,6 +68,16 @@ function normalizedText(db: LinkedDatabase, id: number): string {
   return cache.get(id)!;
 }
 
+const englishCache = new WeakMap<LinkedDatabase, Map<number, Set<string>>>();
+function glossWords(db: LinkedDatabase, id: number): Set<string> | undefined {
+  const gloss = db.glosses.get(id);
+  if (!gloss) return undefined;
+  let cache = englishCache.get(db);
+  if (!cache) englishCache.set(db, (cache = new Map()));
+  if (!cache.has(id)) cache.set(id, englishWords(gloss.english));
+  return cache.get(id);
+}
+
 /** Returns the first broken rule for a proposed set of groups, or null when the round is fair. */
 export function roundViolation(db: LinkedDatabase, groups: readonly Group[], sameChapterRule = true): string | null {
   const buckets = new Set(groups.map(group => group.bucket.bucket_id));
@@ -79,6 +90,12 @@ export function roundViolation(db: LinkedDatabase, groups: readonly Group[], sam
       if (other.index === index) continue;
       const token = tokens.find(t => normalizedText(db, other.id).includes(t));
       if (token) return `echo: poem ${other.id} repeats hook ${token}`;
+    }
+    const english = [...new Set(group.links.flatMap(link => link.hook_en ?? []).flatMap(word => [...englishWords(word)]))];
+    for (const other of all) {
+      if (other.index === index) continue;
+      const word = english.find(w => glossWords(db, other.id)?.has(w));
+      if (word) return `echo: poem ${other.id} repeats English hook "${word}"`;
     }
   }
   if (sameChapterRule) for (const x of all) for (const y of all)

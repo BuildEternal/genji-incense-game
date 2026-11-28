@@ -25,7 +25,7 @@ For any two poems shown in one round:
 
 1. Linked: they may be shown as one group.
 2. Same bucket, not linked: never in the same round.
-3. Echo check: if a poem repeats a hook word of a group shown in the round, it is never shown alongside that group.
+3. Echo check: if a poem repeats a hook word of a group shown in the round, it is never shown alongside that group. This is checked in Japanese (`hook`) and in English (`hook_en`).
 4. Same chapter: never in the same round unless they are a linked group. This applies in normal mode only; hard mode drops it.
 5. Otherwise: free.
 
@@ -45,7 +45,7 @@ are rejected, but no unfair round gets through on that account.
 | `kind` | `single`, `exchange` (sent/answered), `chorus` (several voices, one occasion), `solo` (one person's private poems) |
 | `poem_ids` | Poems in the bucket, in narrative order |
 | `context` | One line on what happens in the story |
-| `links` | `{poems: [a, b], hook}` pairs that may be shown together |
+| `links` | `{poems: [a, b], hook, hook_en}` pairs that may be shown together; `hook_en` is the shared English wording |
 | `split_from` / `merged_from` | Membership changes from the v2 buckets |
 
 ## Changes from v2 (2026-11-28 review)
@@ -72,9 +72,12 @@ gloss renders the hook with the same word in both poems.
 - Where two linked poems share a hook, both glosses try to use the same English
   word for it, so an English reader can hear the echo. A word-overlap check over
   all links was run on 2026-11-28; the pilot pairs were left as written.
-- **Known gap:** the echo check (rule 3) runs on the Japanese text only. An English
-  gloss of an unrelated poem can still happen to use a hook's English word
-  (for example "dew" or "sleeves"). The Japanese is shown alongside, so the
-  rule holds there; an English-side check would need English hook words per link.
+- **English echo check:** each link also has `hook_en`, the content words both
+  linked glosses share (filled by `scripts/derive_hook_en.py`, using
+  `scripts/english_stopwords.txt` and a light plural strip; three links were set by
+  hand). When glosses are loaded, rule 3 also checks that no poem outside a group
+  uses one of that group's `hook_en` words in its English. Re-running the script
+  only fills links that have no `hook_en` yet, so hand edits are kept. If you edit
+  a gloss, delete that link's `hook_en` and re-run.
 - Not reviewed by a specialist. Corrections are welcome and need only an edit to
   this file.
