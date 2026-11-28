@@ -6,7 +6,8 @@ import pilot from '../data/genji_poetry_exchanges_pilot.json';
 import poemsJsonl from '../data/genji_poems_v2.jsonl?raw';
 import { parseLinkedDatabase } from '../src/buckets';
 import { mountLinkedGame } from '../src/linkedApp';
-import { correctLabels, generateLinkedRound } from '../src/linkedRound';
+import { candidateGroups, correctLabels, generateLinkedRound, roundViolation, TEMPLATES } from '../src/linkedRound';
+import { englishWords } from '../src/normalize';
 
 const db = parseLinkedDatabase(poemsJsonl, rawBuckets, rawGlosses);
 
@@ -50,5 +51,37 @@ describe('English glosses', () => {
     for (const card of cards) expect(root.textContent).toContain(db.glosses.get(card.poem.poem_id)!.english);
     const notes = cards.filter(card => db.glosses.get(card.poem.poem_id)!.note).length;
     expect(root.querySelectorAll('.gloss-note')).toHaveLength(notes);
+  });
+});
+
+describe('English echo check', () => {
+  it('every link has English hook words', () => {
+    for (const bucket of db.buckets) for (const link of bucket.links) expect(link.hook_en?.length).toBeGreaterThan(0);
+  });
+
+  it('rejects a round where an unrelated poem reuses an English hook word', () => {
+    const pairs = candidateGroups(db, 2);
+    const singles = candidateGroups(db, 1);
+    let found = false;
+    for (const pair of pairs) {
+      const word = pair.links[0].hook_en![0];
+      const outsider = singles.find(single => single.bucket !== pair.bucket
+        && englishWords(db.glosses.get(single.poemIds[0])!.english).has(word)
+        && roundViolation(db, [pair, single], false)?.includes('English'));
+      if (outsider) { found = true; break; }
+    }
+    expect(found).toBe(true);
+  });
+
+  it('generated rounds never show a group\'s English hook word in another group', () => {
+    for (let i = 0; i < 100; i++) {
+      const cards = generateLinkedRound(db, `en-echo-${i}`, { template: TEMPLATES['2+2+1'] });
+      for (const card of cards) {
+        const words = card.bucket.links.filter(link => link.poems.every(id => cards.some(c => c.poem.poem_id === id && c.groupIndex === card.groupIndex)))
+          .flatMap(link => link.hook_en!);
+        for (const other of cards) if (other.groupIndex !== card.groupIndex)
+          for (const word of words) expect(englishWords(db.glosses.get(other.poem.poem_id)!.english).has(word)).toBe(false);
+      }
+    }
   });
 });

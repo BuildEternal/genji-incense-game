@@ -32,3 +32,16 @@ export function hookTokens(hook: string): string[] {
     .map(part => normalizeText(replaceAll(part, HOOK_KEYS, HOOK_EXTRA)))
     .filter(token => token.length >= 2);
 }
+
+// English side of the echo check. Must match scripts/derive_hook_en.py.
+const englishStem = (word: string) => {
+  if (word.endsWith('ies') && word.length > 4) return word.slice(0, -3) + 'y';
+  if (word.endsWith('es') && /(sh|ch|ss|x)$/.test(word.slice(0, -2))) return word.slice(0, -2);
+  if (word.endsWith('s') && !word.endsWith('ss') && word.length > 3) return word.slice(0, -1);
+  return word;
+};
+
+/** Lowercased, plural-stripped words of an English gloss. */
+export function englishWords(text: string): Set<string> {
+  return new Set((text.toLowerCase().replaceAll("'s", '').match(/[a-z]+/g) ?? []).map(englishStem));
+}
