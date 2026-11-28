@@ -74,6 +74,8 @@ JSON parsing alone does not verify schema or literary accuracy.
 │   ├── game.ts                         # Schema, seeded rounds, partition scoring
 │   ├── app.ts                          # Read → group → reveal interface
 │   ├── buckets.ts                      # Linked-bucket schema and checks
+│   ├── linkedRound.ts                  # Round generator for the full database
+│   ├── normalize.ts                    # Kana normalization for the echo check
 │   ├── main.ts                         # Validate the pilot and start the app
 │   └── style.css
 ├── tests/                              # Vitest logic and interface checks
