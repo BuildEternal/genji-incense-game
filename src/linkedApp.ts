@@ -116,6 +116,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
   const patternName = (p: GenjiPattern) => `<span class="pname"><span lang="ja">${p.ja}</span> <span class="romaji">${escape(p.romaji)}</span></span><span class="pgloss">${escape(p.english)} · Chapter ${p.chapter}</span>`;
 
   function render(focus = true) {
+    popup = null; // a full render never keeps a popup; popups open on top without re-rendering
     root.innerHTML = `
       <header class="bar">
         <a class="brand" href="./" aria-label="Genji-kō home"><span lang="ja">源氏香</span><span class="brand-en">Genji-kō</span></a>
@@ -123,11 +124,10 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
         <button id="sound-toggle" class="icon-button sound" type="button" aria-pressed="${soundEnabled()}" aria-label="Sound" title="${soundEnabled() ? 'Sound on' : 'Sound off'}">${SOUND_ICON}</button>
       </header>
       <main id="main" class="stage stage-${phase}" tabindex="-1">${content()}</main>
-      ${popup !== null ? popupHtml(popup) : ''}
       <footer class="foot"><span>795 waka from the Tale of Genji</span><button type="button" class="link-button" id="credits-button">Credits</button></footer>`;
     bind();
     if (phase === 'reading' && !readingHeight) measureReading();
-    if (focus) root.querySelector<HTMLElement>(popup !== null ? '.popup' : 'h1')?.focus({ preventScroll: true });
+    if (focus) root.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
   }
 
   function content(): string {
@@ -273,6 +273,28 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
     if (readingHeight) body.style.minHeight = `${readingHeight}px`;
   }
 
+  // Popups are laid over the page as extra elements; the page underneath is left untouched,
+  // so nothing behind them re-animates when they open or close.
+  function openPopup(which: number | 'credits') {
+    if (popup !== null) return;
+    popup = which;
+    root.insertAdjacentHTML('beforeend', popupHtml(which));
+    const dialog = root.querySelector<HTMLElement>('.popup')!;
+    root.querySelector('#close-popup')!.addEventListener('click', closePopup);
+    root.querySelector('.veil')!.addEventListener('click', closePopup);
+    dialog.addEventListener('keydown', event => { if (event.key === 'Escape') closePopup(); });
+    dialog.focus({ preventScroll: true });
+  }
+
+  function closePopup() {
+    leave('.popup, .veil', () => {
+      const last = popup;
+      popup = null;
+      root.querySelectorAll('.popup, .veil').forEach(el => el.remove());
+      root.querySelector<HTMLButtonElement>(last === 'credits' ? '#credits-button' : `.reread[data-poem="${last}"]`)?.focus({ preventScroll: true });
+    });
+  }
+
   function popupHtml(i: number | 'credits') {
     if (i === 'credits') return `<div class="veil"></div><div class="popup slip credits" role="dialog" aria-modal="true" aria-label="Credits" tabindex="-1">${CREDITS}<div class="actions"><button type="button" class="secondary" id="close-popup">Close</button></div></div>`;
     return `<div class="veil"></div><div class="popup slip" role="dialog" aria-modal="true" aria-label="Poem ${i + 1}" tabindex="-1"><p class="slip-no">${i + 1}</p>${slip(cards[i].poem)}<div class="actions"><button type="button" class="secondary" id="close-popup">Close</button></div></div>`;
@@ -361,20 +383,10 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
       });
     });
     root.querySelectorAll<HTMLButtonElement>('.reread').forEach(button => button.addEventListener('click', () => {
-      popup = Number(button.dataset.poem);
       play('paper');
-      render();
+      openPopup(Number(button.dataset.poem));
     }));
-    root.querySelector('#credits-button')?.addEventListener('click', () => { popup = 'credits'; render(); });
-    const closePopup = () => leave('.popup, .veil', () => {
-      const last = popup;
-      popup = null;
-      render(false);
-      root.querySelector<HTMLButtonElement>(last === 'credits' ? '#credits-button' : `.reread[data-poem="${last}"]`)?.focus();
-    });
-    root.querySelector('#close-popup')?.addEventListener('click', closePopup);
-    root.querySelector('.veil')?.addEventListener('click', closePopup);
-    root.querySelector('.popup')?.addEventListener('keydown', event => { if ((event as KeyboardEvent).key === 'Escape') closePopup(); });
+    root.querySelector('#credits-button')?.addEventListener('click', () => openPopup('credits'));
     root.querySelector('#submit-answer')?.addEventListener('click', () => {
       if (!complete()) return;
       const exact = scoreLinkedRound(cards, assignments()).exact;
