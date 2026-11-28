@@ -19,6 +19,18 @@ Two poems in the same bucket without a link are never shown in the same round.
 Either can still appear alone. A test for any pair: *can I point to a word they
 share?* If yes, it is a link. If not, leave it unlinked.
 
+## Round rules (for the generator)
+
+For any two poems shown in one round:
+
+1. Linked: they may be shown as one group.
+2. Same bucket, not linked: never in the same round.
+3. They share a rare hook word (one found in only a few poems), but are in different buckets: never in the same round.
+4. Same chapter: never in the same round unless they are a linked group. This applies in normal mode only; hard mode drops it.
+5. Otherwise: free.
+
+Common words such as 花, 露 or 秋 never count as hooks for rule 3. With them, a single pair would block more than a hundred poems.
+
 ## Fields
 
 | Field | Meaning |
