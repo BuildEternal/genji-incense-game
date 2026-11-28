@@ -57,7 +57,7 @@ for e in exchanges:
 bucket_of = {i: b["bucket_id"] for b in buckets for i in b["poem_ids"]}
 for b in buckets:
     b["kind"] = kind_of(b["poem_ids"])
-    b["links"], b["weak_links"] = [], []
+    b["links"] = []
 for r in review:
     a, c = r["poems"]
     if bucket_of[a] != bucket_of[c]:
@@ -65,13 +65,11 @@ for r in review:
     b = next(x for x in buckets if x["bucket_id"] == bucket_of[a])
     if r["suggestion"] == "link":
         b["links"].append({"poems": [a, c], "hook": r["hook"]})
-    elif r["suggestion"] == "weak":
-        b["weak_links"].append({"poems": [a, c], "hook": r["hook"]})
 for bid, extra in EXTRA_LINKS.items():
     b = next(x for x in buckets if x["bucket_id"] == bid)
     for ps, hook in extra:
         b["links"].append({"poems": ps, "hook": hook})
-order = ["bucket_id", "kind", "poem_ids", "context", "links", "weak_links", "split_from", "merged_from"]
+order = ["bucket_id", "kind", "poem_ids", "context", "links", "split_from", "merged_from"]
 buckets = [{k: b[k] for k in order if k in b and (b[k] or k in ("links",))} for b in buckets]
 
 out = {
@@ -81,7 +79,6 @@ out = {
     "rules": {
         "bucket": "Poems that must never be shown as different groups in one round.",
         "links": "Pairs that may be shown together as a group; hook = the shared wording the reveal points to.",
-        "weak_links": "Review suggestions only; the game ignores them.",
     },
     "buckets": buckets,
 }

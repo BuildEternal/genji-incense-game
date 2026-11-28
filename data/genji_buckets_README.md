@@ -25,11 +25,11 @@ For any two poems shown in one round:
 
 1. Linked: they may be shown as one group.
 2. Same bucket, not linked: never in the same round.
-3. They share a rare hook word (one found in only a few poems), but are in different buckets: never in the same round.
+3. Echo check: if a poem repeats a hook word of a group shown in the round, it is never shown alongside that group.
 4. Same chapter: never in the same round unless they are a linked group. This applies in normal mode only; hard mode drops it.
 5. Otherwise: free.
 
-Common words such as 花, 露 or 秋 never count as hooks for rule 3. With them, a single pair would block more than a hundred poems.
+Rule 3 applies to every hook of every group actually shown, including common words such as 月 in a moon-viewing chorus. A pair that is not linked is never shown, so it never triggers the check.
 
 ## Fields
 
@@ -40,7 +40,6 @@ Common words such as 花, 露 or 秋 never count as hooks for rule 3. With them,
 | `poem_ids` | Poems in the bucket, in narrative order |
 | `context` | One line on what happens in the story |
 | `links` | `{poems: [a, b], hook}` pairs that may be shown together |
-| `weak_links` | Possible links awaiting review; the game ignores them |
 | `split_from` / `merged_from` | Membership changes from the v2 buckets |
 
 ## Changes from v2 (2026-11-28 review)
@@ -53,6 +52,7 @@ Common words such as 花, 露 or 秋 never count as hooks for rule 3. With them,
 
 Links and hooks were drafted pair by pair by Claude on 2026-11-28 from the
 Japanese text (`archive/link_review_2026-11-28.json`). They are suggestions
-pending the owner's review, especially the 65 `weak_links`. Hooks have not yet
+pending the owner's review. Pairs judged weak or without a hook were left unlinked;
+their suggested hooks remain in the review file if a pair is ever promoted. Hooks have not yet
 been checked against English glosses: a link is only fair in English if the
 gloss renders the hook with the same word in both poems.

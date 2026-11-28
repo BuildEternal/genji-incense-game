@@ -30,7 +30,6 @@ const bucketSchema = z.object({
   poem_ids: z.array(poemId).min(1),
   context: text,
   links: z.array(linkSchema),
-  weak_links: z.array(linkSchema).optional(),
   split_from: text.optional(),
   merged_from: z.array(text).optional(),
 });
@@ -69,7 +68,7 @@ export function parseLinkedDatabase(poemsJsonl: string, bucketsJson: unknown): L
     }
     const members = new Set(bucket.poem_ids);
     const seen = new Set<string>();
-    for (const link of [...bucket.links, ...(bucket.weak_links ?? [])]) {
+    for (const link of bucket.links) {
       for (const id of link.poems)
         if (!members.has(id)) throw new Error(`${bucket.bucket_id}: link poem ${id} is not in the bucket`);
       const key = pairKey(link.poems);
