@@ -1,0 +1,7065 @@
+{
+ "dataset_id": "genji_linked_buckets",
+ "version": "3.0.0",
+ "poem_database": "genji_poems_v2.jsonl",
+ "rules": {
+  "bucket": "Poems that must never be shown as different groups in one round.",
+  "links": "Pairs that may be shown together as a group; hook = the shared wording the reveal points to."
+ },
+ "buckets": [
+  {
+   "bucket_id": "CH01-01",
+   "kind": "single",
+   "poem_ids": [
+    1
+   ],
+   "context": "A deathbed farewell to the emperor.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH01-02",
+   "kind": "exchange",
+   "poem_ids": [
+    2,
+    5
+   ],
+   "context": "The emperor sends a letter to the late consort's mother; she answers later.",
+   "links": [
+    {
+     "poems": [
+      2,
+      5
+     ],
+     "hook": "こはぎ・風"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH01-03",
+   "kind": "exchange",
+   "poem_ids": [
+    3,
+    4
+   ],
+   "context": "A visit to the grieving mother's residence.",
+   "links": [
+    {
+     "poems": [
+      3,
+      4
+     ],
+     "hook": "虫・露/涙"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH01-04",
+   "kind": "single",
+   "poem_ids": [
+    6
+   ],
+   "context": "The emperor wishes for a magician who could find his lost love's spirit.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH01-05",
+   "kind": "single",
+   "poem_ids": [
+    7
+   ],
+   "context": "The emperor reflects on moonlight and grief in the bereaved household.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH01-06",
+   "kind": "exchange",
+   "poem_ids": [
+    8,
+    9
+   ],
+   "context": "The coming-of-age celebration and marriage plans of young Genji.",
+   "links": [
+    {
+     "poems": [
+      8,
+      9
+     ],
+     "hook": "もとゆひ・むすぶ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH02-01",
+   "kind": "exchange",
+   "poem_ids": [
+    10,
+    11
+   ],
+   "context": "Rainy Night Discussion: an earlier strained romance.",
+   "links": [
+    {
+     "poems": [
+      10,
+      11
+     ],
+     "hook": "うきふし・かぞふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH02-02",
+   "kind": "exchange",
+   "poem_ids": [
+    12,
+    13
+   ],
+   "context": "Rainy Night Discussion: an encounter with a musically accomplished woman.",
+   "links": [
+    {
+     "poems": [
+      12,
+      13
+     ],
+     "hook": "ひきとむ・こと"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH02-03",
+   "kind": "exchange",
+   "poem_ids": [
+    14,
+    15,
+    16
+   ],
+   "context": "Rainy Night Discussion: the woman sends a flower poem invoking their child; the man returns, responds, and hears her counter-response.",
+   "links": [
+    {
+     "poems": [
+      14,
+      15
+     ],
+     "hook": "なでしこ/とこなつ"
+    },
+    {
+     "poems": [
+      14,
+      16
+     ],
+     "hook": "なでしこ/とこなつ・露"
+    },
+    {
+     "poems": [
+      15,
+      16
+     ],
+     "hook": "とこなつ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH02-04",
+   "kind": "exchange",
+   "poem_ids": [
+    17,
+    18
+   ],
+   "context": "Rainy Night Discussion: a comic encounter involving pungent garlic.",
+   "links": [
+    {
+     "poems": [
+      17,
+      18
+     ],
+     "hook": "ひるま"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH02-05",
+   "kind": "exchange",
+   "poem_ids": [
+    19,
+    20
+   ],
+   "context": "Genji's dawn farewell from Utsusemi.",
+   "links": [
+    {
+     "poems": [
+      19,
+      20
+     ],
+     "hook": "とり"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH02-06",
+   "kind": "single",
+   "poem_ids": [
+    21
+   ],
+   "context": "Genji sends Utsusemi a poem about the dream of seeing her.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH02-07",
+   "kind": "exchange",
+   "poem_ids": [
+    22,
+    23
+   ],
+   "context": "Genji writes to the evasive Utsusemi, who responds.",
+   "links": [
+    {
+     "poems": [
+      22,
+      23
+     ],
+     "hook": "ははき木"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH03-01",
+   "kind": "exchange",
+   "poem_ids": [
+    24,
+    25
+   ],
+   "context": "After Utsusemi leaves her cicada-shell robe and Genji writes about it.",
+   "links": [
+    {
+     "poems": [
+      24,
+      25
+     ],
+     "hook": "うつせみ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH04-01",
+   "kind": "exchange",
+   "poem_ids": [
+    26,
+    27
+   ],
+   "context": "A flower-adorned fan arrives from Yūgao's residence; Genji responds without identifying himself.",
+   "links": [
+    {
+     "poems": [
+      26,
+      27
+     ],
+     "hook": "それかと・ゆふがほ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH04-02",
+   "kind": "exchange",
+   "poem_ids": [
+    28,
+    29
+   ],
+   "context": "Genji speaks poetically to a woman at Yūgao's household.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH04-03",
+   "kind": "exchange",
+   "poem_ids": [
+    30,
+    31
+   ],
+   "context": "Genji invokes a Buddhist future-life bond with Yūgao.",
+   "links": [
+    {
+     "poems": [
+      30,
+      31
+     ],
+     "hook": "契・前世/来世"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH04-04",
+   "kind": "exchange",
+   "poem_ids": [
+    32,
+    33
+   ],
+   "context": "The couple share a departure and dawn exchange.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH04-05",
+   "kind": "exchange",
+   "poem_ids": [
+    34,
+    35
+   ],
+   "context": "Genji tries to reveal himself and jokes about the face first glimpsed.",
+   "links": [
+    {
+     "poems": [
+      34,
+      35
+     ],
+     "hook": "夕露/上露・夕顔"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH04-06",
+   "kind": "single",
+   "poem_ids": [
+    36
+   ],
+   "context": "After Yūgao's death, Genji watches cremation smoke.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH04-07",
+   "kind": "exchange",
+   "poem_ids": [
+    37,
+    38
+   ],
+   "context": "A later letter from Utsusemi arrives, and Genji answers.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH04-08",
+   "kind": "exchange",
+   "poem_ids": [
+    39,
+    40
+   ],
+   "context": "Genji writes to Nokiba no Ogi about their brief relationship.",
+   "links": [
+    {
+     "poems": [
+      39,
+      40
+     ],
+     "hook": "荻・むすぶ・ほの"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH04-09",
+   "kind": "single",
+   "poem_ids": [
+    41
+   ],
+   "context": "Genji laments the loss of Yūgao and the loosened knot of attachment.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH04-10",
+   "kind": "exchange",
+   "poem_ids": [
+    42,
+    43
+   ],
+   "context": "A final exchange as Utsusemi travels away.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH04-11",
+   "kind": "single",
+   "poem_ids": [
+    44
+   ],
+   "context": "Genji contemplates both the deceased Yūgao and the departing Utsusemi.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH05-01",
+   "kind": "exchange",
+   "poem_ids": [
+    45,
+    46
+   ],
+   "context": "At the northern mountain residence, the nun frets over young Murasaki's future.",
+   "links": [
+    {
+     "poems": [
+      45,
+      46
+     ],
+     "hook": "わか草/はつ草・露きえん"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH05-02",
+   "kind": "exchange",
+   "poem_ids": [
+    47,
+    48
+   ],
+   "context": "Genji addresses the girl's grandmother about his sudden attachment.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH05-03",
+   "kind": "exchange",
+   "poem_ids": [
+    49,
+    50
+   ],
+   "context": "Religious chanting and a mountain stream at dawn.",
+   "links": [
+    {
+     "poems": [
+      49,
+      50
+     ],
+     "hook": "山の水/滝"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH05-04",
+   "kind": "exchange",
+   "poem_ids": [
+    51,
+    52,
+    53
+   ],
+   "context": "Formal farewell at the northern mountain temple; Sōzu and the ascetic each answer Genji's compliment.",
+   "links": [
+    {
+     "poems": [
+      51,
+      52
+     ],
+     "hook": "山桜"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH05-05",
+   "kind": "exchange",
+   "poem_ids": [
+    54,
+    55
+   ],
+   "context": "Genji reluctantly departs the mountain retreat.",
+   "links": [
+    {
+     "poems": [
+      54,
+      55
+     ],
+     "hook": "花・かすみ・たつ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH05-06",
+   "kind": "exchange",
+   "poem_ids": [
+    56,
+    57
+   ],
+   "context": "Genji sends a later poem to the grandmother.",
+   "links": [
+    {
+     "poems": [
+      56,
+      57
+     ],
+     "hook": "山桜・心とむ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH05-07",
+   "kind": "exchange",
+   "poem_ids": [
+    58,
+    59
+   ],
+   "context": "A further poem exchange using familiar poetic allusions.",
+   "links": [
+    {
+     "poems": [
+      58,
+      59
+     ],
+     "hook": "山の井・あさ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH05-08",
+   "kind": "exchange",
+   "poem_ids": [
+    60,
+    61
+   ],
+   "context": "Genji writes of a fleeting dream, implying his forbidden affair with Fujitsubo.",
+   "links": [
+    {
+     "poems": [
+      60,
+      61
+     ],
+     "hook": "夢"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH05-09",
+   "kind": "single",
+   "poem_ids": [
+    62
+   ],
+   "context": "Genji compares hearing young Murasaki to the call of a young crane.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH05-10",
+   "kind": "single",
+   "poem_ids": [
+    63
+   ],
+   "context": "Genji thinks of plucking young Murasaki, connected by blood to Fujitsubo.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH05-11",
+   "kind": "exchange",
+   "poem_ids": [
+    64,
+    65
+   ],
+   "context": "Genji presses the girl's nurse to accept his proposal.",
+   "links": [
+    {
+     "poems": [
+      64,
+      65
+     ],
+     "hook": "わかのうら・なみ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH05-12",
+   "kind": "exchange",
+   "poem_ids": [
+    66,
+    67
+   ],
+   "context": "Genji recites a short poem outside a house in the mist and receives an answer.",
+   "links": [
+    {
+     "poems": [
+      66,
+      67
+     ],
+     "hook": "霧・すぎがて/すぎう"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH05-13",
+   "kind": "exchange",
+   "poem_ids": [
+    68,
+    69
+   ],
+   "context": "Genji writes to Murasaki using the grass of Musashino.",
+   "links": [
+    {
+     "poems": [
+      68,
+      69
+     ],
+     "hook": "草のゆかり"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH06-01",
+   "kind": "exchange",
+   "poem_ids": [
+    70,
+    71
+   ],
+   "context": "Tō no Chūjō pursues Genji after leaving court; Genji answers his teasing accusation of slipping away.",
+   "links": [
+    {
+     "poems": [
+      70,
+      71
+     ],
+     "hook": "いる（月）・山"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH06-02",
+   "kind": "exchange",
+   "poem_ids": [
+    72,
+    73,
+    74
+   ],
+   "context": "Genji presses the silent princess for an answer; her maid Jijū supplies one, and Genji responds again.",
+   "links": [
+    {
+     "poems": [
+      72,
+      74
+     ],
+     "hook": "いはぬ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH06-03",
+   "kind": "exchange",
+   "poem_ids": [
+    75,
+    76
+   ],
+   "context": "Genji's rainy-evening letter and the princess's answer.",
+   "links": [
+    {
+     "poems": [
+      75,
+      76
+     ],
+     "hook": "はれぬ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH06-04",
+   "kind": "single",
+   "poem_ids": [
+    77
+   ],
+   "context": "Genji addresses Suetsumuhana's emotional reserve with a thawing-icicles image.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH06-05",
+   "kind": "single",
+   "poem_ids": [
+    78
+   ],
+   "context": "Genji reflects humorously and sadly on an elderly person at the princess's residence.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH06-06",
+   "kind": "exchange",
+   "poem_ids": [
+    79,
+    82
+   ],
+   "context": "The princess sends a robe with a waka; Genji answers after intervening humorous verses with Myōbu.",
+   "links": [
+    {
+     "poems": [
+      79,
+      82
+     ],
+     "hook": "から衣/ころも"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH06-07",
+   "kind": "exchange",
+   "poem_ids": [
+    80,
+    81
+   ],
+   "context": "Genji writes a joking red-safflower verse about Suetsumuhana; Myōbu counters the joke.",
+   "links": [
+    {
+     "poems": [
+      80,
+      81
+     ],
+     "hook": "末摘花/紅の花衣"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH06-08",
+   "kind": "single",
+   "poem_ids": [
+    83
+   ],
+   "context": "Genji sees early spring red plum blossoms and recalls the princess's famously red nose.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH07-01",
+   "kind": "exchange",
+   "poem_ids": [
+    84,
+    85
+   ],
+   "context": "Genji writes about his performance of Seigaiha; Fujitsubo responds privately.",
+   "links": [
+    {
+     "poems": [
+      84,
+      85
+     ],
+     "hook": "袖ふる・たち"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH07-02",
+   "kind": "exchange",
+   "poem_ids": [
+    86,
+    87
+   ],
+   "context": "Genji voices his sorrow about Fujitsubo and their son; Myōbu speaks for Fujitsubo.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH07-03",
+   "kind": "exchange",
+   "poem_ids": [
+    88,
+    89
+   ],
+   "context": "A secret exchange reflecting on the young prince.",
+   "links": [
+    {
+     "poems": [
+      88,
+      89
+     ],
+     "hook": "なでしこ・露"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH07-04",
+   "kind": "exchange",
+   "poem_ids": [
+    90,
+    91
+   ],
+   "context": "The older court lady flirts with Genji in a playful verbal contest.",
+   "links": [
+    {
+     "poems": [
+      90,
+      91
+     ],
+     "hook": "こま"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH07-05",
+   "kind": "exchange",
+   "poem_ids": [
+    92,
+    93
+   ],
+   "context": "Another playful exchange drawing on the traditional Azumaya song.",
+   "links": [
+    {
+     "poems": [
+      92,
+      93
+     ],
+     "hook": "あづまや"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH07-06",
+   "kind": "exchange",
+   "poem_ids": [
+    94,
+    95
+   ],
+   "context": "After a comic tussle over garments, Tō no Chūjō teases Genji's secret intimacy.",
+   "links": [
+    {
+     "poems": [
+      94,
+      95
+     ],
+     "hook": "中の衣/夏衣"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH07-07",
+   "kind": "exchange",
+   "poem_ids": [
+    96,
+    97
+   ],
+   "context": "Gen no Naishi writes after the staged intrusion/violent encounter involving Tō no Chūjō; Genji replies.",
+   "links": [
+    {
+     "poems": [
+      96,
+      97
+     ],
+     "hook": "浪・うらみ・たつ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH07-08",
+   "kind": "exchange",
+   "poem_ids": [
+    98,
+    99
+   ],
+   "context": "Genji sends back Tō no Chūjō's belt; the latter sends a quip in return.",
+   "links": [
+    {
+     "poems": [
+      98,
+      99
+     ],
+     "hook": "帯・なか絶え"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH07-09",
+   "kind": "single",
+   "poem_ids": [
+    100
+   ],
+   "context": "Genji reflects privately on anxieties of parenthood.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH08-01",
+   "kind": "single",
+   "poem_ids": [
+    101
+   ],
+   "context": "Fujitsubo privately likens Genji to blossoms after the court celebration.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH08-02",
+   "kind": "single",
+   "poem_ids": [
+    102
+   ],
+   "context": "At the unexpected moonlit encounter, Genji declares his sense of fated connection to an unknown woman.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH08-03",
+   "kind": "exchange",
+   "poem_ids": [
+    103,
+    104
+   ],
+   "context": "The woman, still concealing her identity, initiates a poem; Genji answers.",
+   "links": [
+    {
+     "poems": [
+      103,
+      104
+     ],
+     "hook": "草のはら・露"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH08-04",
+   "kind": "single",
+   "poem_ids": [
+    105
+   ],
+   "context": "After the nocturnal encounter, Genji reflects privately while remembering the exchanged fan.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH08-05",
+   "kind": "single",
+   "poem_ids": [
+    106
+   ],
+   "context": "A poem sent to invite Genji to a wisteria-flower celebration.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH08-06",
+   "kind": "exchange",
+   "poem_ids": [
+    107,
+    108
+   ],
+   "context": "At a later gathering Genji and Oborozukiyo trade verses while she remains guarded.",
+   "links": [
+    {
+     "poems": [
+      107,
+      108
+     ],
+     "hook": "弓/いる・月・まどふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH09-01",
+   "kind": "single",
+   "poem_ids": [
+    109
+   ],
+   "context": "After the Kamo festival carriage incident, Rokujō reflects in isolation.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH09-02",
+   "kind": "exchange",
+   "poem_ids": [
+    110,
+    111
+   ],
+   "context": "Genji speaks of watching Murasaki grow; she questions his constancy.",
+   "links": [
+    {
+     "poems": [
+      110,
+      111
+     ],
+     "hook": "ちひろ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH09-03",
+   "kind": "exchange",
+   "poem_ids": [
+    112,
+    113,
+    114
+   ],
+   "context": "Gen no Naishi sends an Aoi Festival verse, Genji retorts, and she follows up.",
+   "links": [
+    {
+     "poems": [
+      112,
+      113
+     ],
+     "hook": "あふひ"
+    },
+    {
+     "poems": [
+      112,
+      114
+     ],
+     "hook": "かざす"
+    },
+    {
+     "poems": [
+      113,
+      114
+     ],
+     "hook": "かざしける"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH09-04",
+   "kind": "exchange",
+   "poem_ids": [
+    115,
+    116
+   ],
+   "context": "Rokujō replies to Genji's prose letter with a waka; Genji sends a waka answer.",
+   "links": [
+    {
+     "poems": [
+      115,
+      116
+     ],
+     "hook": "おりたつ・恋ぢ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH09-05",
+   "kind": "single",
+   "poem_ids": [
+    117
+   ],
+   "context": "The voice speaking through the ill Aoi is revealed in the narrative as Rokujō's wandering spirit.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH09-06",
+   "kind": "single",
+   "poem_ids": [
+    118
+   ],
+   "context": "Genji contemplates the cremation smoke of Aoi no Ue.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH09-07",
+   "kind": "single",
+   "poem_ids": [
+    119
+   ],
+   "context": "Genji reflects on Aoi's death and the mourning garments.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH09-08",
+   "kind": "exchange",
+   "poem_ids": [
+    120,
+    121
+   ],
+   "context": "Rokujō offers condolences after Aoi's death, and Genji responds.",
+   "links": [
+    {
+     "poems": [
+      120,
+      121
+     ],
+     "hook": "露・おくる/おく"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH09-09",
+   "kind": "exchange",
+   "poem_ids": [
+    122,
+    123
+   ],
+   "context": "Aoi's brother and Genji share grief in linked verses.",
+   "links": [
+    {
+     "poems": [
+      122,
+      123
+     ],
+     "hook": "雨となり・雲"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH09-10",
+   "kind": "exchange",
+   "poem_ids": [
+    124,
+    125
+   ],
+   "context": "Genji sends Aoi's mother a flower by the surviving child; she answers.",
+   "links": [
+    {
+     "poems": [
+      124,
+      125
+     ],
+     "hook": "なでしこ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH09-11",
+   "kind": "exchange",
+   "poem_ids": [
+    126,
+    127
+   ],
+   "context": "Genji and Asagao exchange condolences after Aoi's death.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH09-12",
+   "kind": "single",
+   "poem_ids": [
+    128
+   ],
+   "context": "Genji adds a private waka beside a Chinese literary line in the bereaved household.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH09-13",
+   "kind": "single",
+   "poem_ids": [
+    129
+   ],
+   "context": "A second private elegiac inscription beside another Chinese verse.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH09-14",
+   "kind": "single",
+   "poem_ids": [
+    130
+   ],
+   "context": "A poem left for young Murasaki and read by her.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH09-15",
+   "kind": "exchange",
+   "poem_ids": [
+    131,
+    132
+   ],
+   "context": "At New Year Genji and Aoi's mother exchange mourning verses.",
+   "links": [
+    {
+     "poems": [
+      131,
+      132
+     ],
+     "hook": "涙ふる・あらた/あたらし"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-01",
+   "kind": "exchange",
+   "poem_ids": [
+    133,
+    134
+   ],
+   "context": "Genji brings a sakaki branch to the sacred residence; Rokujō questions his visit and he answers.",
+   "links": [
+    {
+     "poems": [
+      133,
+      134
+     ],
+     "hook": "榊・神・をる"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-02",
+   "kind": "exchange",
+   "poem_ids": [
+    135,
+    136
+   ],
+   "context": "An autumn-dawn farewell as Rokujō prepares to leave.",
+   "links": [
+    {
+     "poems": [
+      135,
+      136
+     ],
+     "hook": "秋のわかれ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-03",
+   "kind": "exchange",
+   "poem_ids": [
+    137,
+    138
+   ],
+   "context": "Genji writes to the Saigū; an attendant writes the response on her behalf.",
+   "links": [
+    {
+     "poems": [
+      137,
+      138
+     ],
+     "hook": "くにつ神・ことわる"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-04",
+   "kind": "single",
+   "poem_ids": [
+    139
+   ],
+   "context": "Rokujō contemplates her court life while escorting the Saigū.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH10-05",
+   "kind": "exchange",
+   "poem_ids": [
+    140,
+    141
+   ],
+   "context": "Genji sends a parting verse during the Saigū's procession; Rokujō answers from beyond the barrier the next day.",
+   "links": [
+    {
+     "poems": [
+      140,
+      141
+     ],
+     "hook": "すずか河・やそせ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-06",
+   "kind": "single",
+   "poem_ids": [
+    142
+   ],
+   "context": "Left behind after the procession, Genji reflects privately.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH10-07",
+   "kind": "chorus",
+   "poem_ids": [
+    143,
+    144,
+    145
+   ],
+   "context": "Three mourners compose verses in succession in the dead Kiritsubo Emperor's grounds.",
+   "links": [
+    {
+     "poems": [
+      143,
+      145
+     ],
+     "hook": "年の暮"
+    },
+    {
+     "poems": [
+      144,
+      145
+     ],
+     "hook": "影・池/水"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-08",
+   "kind": "exchange",
+   "poem_ids": [
+    146,
+    147
+   ],
+   "context": "Oborozukiyo and Genji trade verses at their distressed predawn separation.",
+   "links": [
+    {
+     "poems": [
+      146,
+      147
+     ],
+     "hook": "あく（明く/飽く）"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-09",
+   "kind": "exchange",
+   "poem_ids": [
+    148,
+    149
+   ],
+   "context": "Genji and Fujitsubo confront the prospect of never meeting in any lifetime.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH10-10",
+   "kind": "exchange",
+   "poem_ids": [
+    150,
+    151
+   ],
+   "context": "Genji writes to Murasaki in the midst of danger from court politics.",
+   "links": [
+    {
+     "poems": [
+      150,
+      151
+     ],
+     "hook": "浅茅・露"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-11",
+   "kind": "exchange",
+   "poem_ids": [
+    152,
+    153
+   ],
+   "context": "Genji invokes earlier meetings in a poem to Asagao; she returns a guarded answer.",
+   "links": [
+    {
+     "poems": [
+      152,
+      153
+     ],
+     "hook": "ゆふだすき・その神"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-12",
+   "kind": "exchange",
+   "poem_ids": [
+    154,
+    155
+   ],
+   "context": "Fujitsubo sends a poem to Genji under political strain; Genji responds.",
+   "links": [
+    {
+     "poems": [
+      154,
+      155
+     ],
+     "hook": "霧へだつ・月"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-13",
+   "kind": "exchange",
+   "poem_ids": [
+    156,
+    157
+   ],
+   "context": "Oborozukiyo writes first after Genji has stopped visiting; he answers.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH10-14",
+   "kind": "exchange",
+   "poem_ids": [
+    158,
+    159
+   ],
+   "context": "On the death anniversary of Emperor Kiritsubo, Genji writes and Fujitsubo answers.",
+   "links": [
+    {
+     "poems": [
+      158,
+      159
+     ],
+     "hook": "けふ・ゆきあふ/ゆきめぐり"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-15",
+   "kind": "exchange",
+   "poem_ids": [
+    160,
+    161
+   ],
+   "context": "After Fujitsubo's religious retirement, Genji laments his attachment; she replies.",
+   "links": [
+    {
+     "poems": [
+      160,
+      161
+     ],
+     "hook": "この世"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-16",
+   "kind": "exchange",
+   "poem_ids": [
+    162,
+    163
+   ],
+   "context": "Genji visits the newly tonsured Fujitsubo; she responds to his sea imagery.",
+   "links": [
+    {
+     "poems": [
+      162,
+      163
+     ],
+     "hook": "うらしま"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH10-17",
+   "kind": "exchange",
+   "poem_ids": [
+    164,
+    165
+   ],
+   "context": "At a court gathering Sanmi no Chūjō praises Genji; Genji counters.",
+   "links": [
+    {
+     "poems": [
+      164,
+      165
+     ],
+     "hook": "けさ・花・にほふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH11-01",
+   "kind": "exchange",
+   "poem_ids": [
+    166,
+    167
+   ],
+   "context": "Koremitsu recites Genji's poem to a former lover; she answers.",
+   "links": [
+    {
+     "poems": [
+      166,
+      167
+     ],
+     "hook": "ほととぎす"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH11-02",
+   "kind": "exchange",
+   "poem_ids": [
+    168,
+    169
+   ],
+   "context": "Reminiscence with a former imperial consort.",
+   "links": [
+    {
+     "poems": [
+      168,
+      169
+     ],
+     "hook": "たちばな"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-01",
+   "kind": "exchange",
+   "poem_ids": [
+    170,
+    171
+   ],
+   "context": "Genji visits his late wife's family before exile; Ōmiya replies.",
+   "links": [
+    {
+     "poems": [
+      170,
+      171
+     ],
+     "hook": "煙"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-02",
+   "kind": "exchange",
+   "poem_ids": [
+    172,
+    173
+   ],
+   "context": "Genji sends a farewell poem; Murasaki answers.",
+   "links": [
+    {
+     "poems": [
+      172,
+      173
+     ],
+     "hook": "鏡・影"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-03",
+   "kind": "exchange",
+   "poem_ids": [
+    174,
+    175
+   ],
+   "context": "Hanachirusato and Genji console each other before his departure.",
+   "links": [
+    {
+     "poems": [
+      174,
+      175
+     ],
+     "hook": "月影"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-04",
+   "kind": "exchange",
+   "poem_ids": [
+    176,
+    177
+   ],
+   "context": "A parting exchange before Genji leaves Kyoto.",
+   "links": [
+    {
+     "poems": [
+      176,
+      177
+     ],
+     "hook": "涙の河・みを/みなは"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-05",
+   "kind": "exchange",
+   "poem_ids": [
+    178,
+    179
+   ],
+   "context": "Fujitsubo's solemn farewell and Genji's reply.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-06",
+   "kind": "single",
+   "poem_ids": [
+    180
+   ],
+   "context": "A retainer recalls an Aoi Festival while passing the Kamo shrine.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-07",
+   "kind": "single",
+   "poem_ids": [
+    181
+   ],
+   "context": "Genji dismounts at the Kamo shrine and takes leave of the god.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-08",
+   "kind": "single",
+   "poem_ids": [
+    182
+   ],
+   "context": "Genji looks toward the late Kiritsubo Emperor's grave.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-09",
+   "kind": "exchange",
+   "poem_ids": [
+    183,
+    184
+   ],
+   "context": "Genji writes toward the crown prince's household; Ōmyōbu replies.",
+   "links": [
+    {
+     "poems": [
+      183,
+      184
+     ],
+     "hook": "花の都・春"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-10",
+   "kind": "exchange",
+   "poem_ids": [
+    185,
+    186
+   ],
+   "context": "Genji and Murasaki exchange verses on the night of farewell.",
+   "links": [
+    {
+     "poems": [
+      185,
+      186
+     ],
+     "hook": "別れ・命"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-11",
+   "kind": "single",
+   "poem_ids": [
+    187
+   ],
+   "context": "Genji remembers the exiled poet Qu Yuan.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-12",
+   "kind": "single",
+   "poem_ids": [
+    188
+   ],
+   "context": "A solitary verse on the journey to Suma.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-13",
+   "kind": "exchange",
+   "poem_ids": [
+    189,
+    191
+   ],
+   "context": "One thread of an interleaved correspondence from Suma.",
+   "links": [
+    {
+     "poems": [
+      189,
+      191
+     ],
+     "hook": "しほたるる・松島・あま"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-14",
+   "kind": "exchange",
+   "poem_ids": [
+    190,
+    192
+   ],
+   "context": "The other thread of the same postal round.",
+   "links": [
+    {
+     "poems": [
+      190,
+      192
+     ],
+     "hook": "あま・しほ焼く/たく・浦"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-15",
+   "kind": "single",
+   "poem_ids": [
+    193
+   ],
+   "context": "Murasaki answers Genji's letter; his initiating waka in this letter is not quoted.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-16",
+   "kind": "exchange",
+   "poem_ids": [
+    194,
+    195,
+    196,
+    197
+   ],
+   "context": "Rokujō sends two verses in one letter from Ise; Genji's one return letter holds two corresponding answers.",
+   "links": [
+    {
+     "poems": [
+      194,
+      195
+     ],
+     "hook": "伊勢・あま"
+    },
+    {
+     "poems": [
+      194,
+      196
+     ],
+     "hook": "うきめ"
+    },
+    {
+     "poems": [
+      194,
+      197
+     ],
+     "hook": "須磨の浦・しほたる"
+    },
+    {
+     "poems": [
+      195,
+      196
+     ],
+     "hook": "伊勢"
+    },
+    {
+     "poems": [
+      195,
+      197
+     ],
+     "hook": "しほ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-17",
+   "kind": "single",
+   "poem_ids": [
+    198
+   ],
+   "context": "Hanachirusato sends a poem during Genji's exile.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-18",
+   "kind": "single",
+   "poem_ids": [
+    199
+   ],
+   "context": "Genji watches the Suma shore privately.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-19",
+   "kind": "chorus",
+   "poem_ids": [
+    200,
+    201,
+    202,
+    203
+   ],
+   "context": "Four men compose successively as migrating geese pass overhead.",
+   "links": [
+    {
+     "poems": [
+      200,
+      201
+     ],
+     "hook": "雁"
+    },
+    {
+     "poems": [
+      200,
+      202
+     ],
+     "hook": "雁"
+    },
+    {
+     "poems": [
+      200,
+      203
+     ],
+     "hook": "雁・旅の空"
+    },
+    {
+     "poems": [
+      201,
+      202
+     ],
+     "hook": "雁"
+    },
+    {
+     "poems": [
+      201,
+      203
+     ],
+     "hook": "雁"
+    },
+    {
+     "poems": [
+      202,
+      203
+     ],
+     "hook": "雁・常世"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-20",
+   "kind": "single",
+   "poem_ids": [
+    204
+   ],
+   "context": "Genji looks toward the moon and distant capital.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-21",
+   "kind": "single",
+   "poem_ids": [
+    205
+   ],
+   "context": "A private lament in Suma.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-22",
+   "kind": "exchange",
+   "poem_ids": [
+    206,
+    207
+   ],
+   "context": "An earlier acquaintance writes to Genji; he replies.",
+   "links": [
+    {
+     "poems": [
+      206,
+      207
+     ],
+     "hook": "綱・たゆたふ・ひく"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-23",
+   "kind": "single",
+   "poem_ids": [
+    208
+   ],
+   "context": "Genji sings privately at his rustic dwelling.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-24",
+   "kind": "single",
+   "poem_ids": [
+    209
+   ],
+   "context": "Genji reflects in loneliness.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-25",
+   "kind": "single",
+   "poem_ids": [
+    210
+   ],
+   "context": "A later private verse at Suma.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-26",
+   "kind": "single",
+   "poem_ids": [
+    211
+   ],
+   "context": "Spring returns but Genji remains away from court.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-27",
+   "kind": "exchange",
+   "poem_ids": [
+    212,
+    213
+   ],
+   "context": "Two friends trade verses at dawn during a Suma visit.",
+   "links": [
+    {
+     "poems": [
+      212,
+      213
+     ],
+     "hook": "雁・ふるさと/都"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-28",
+   "kind": "exchange",
+   "poem_ids": [
+    214,
+    215
+   ],
+   "context": "A second pair later in the same visit, at actual departure.",
+   "links": [
+    {
+     "poems": [
+      214,
+      215
+     ],
+     "hook": "鶴・雲"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH12-29",
+   "kind": "single",
+   "poem_ids": [
+    216
+   ],
+   "context": "Genji contemplates public disgrace.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH12-30",
+   "kind": "single",
+   "poem_ids": [
+    217
+   ],
+   "context": "Genji appeals to the gods during the storm.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH13-01",
+   "kind": "single",
+   "poem_ids": [
+    218
+   ],
+   "context": "Murasaki waits in Kyoto and wonders about Genji in a storm.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH13-02",
+   "kind": "single",
+   "poem_ids": [
+    219
+   ],
+   "context": "Genji prays to the sea gods during the storm at Suma.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH13-03",
+   "kind": "single",
+   "poem_ids": [
+    220
+   ],
+   "context": "Genji sends a poem to the Akashi Novice after his unexpected arrival.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH13-04",
+   "kind": "single",
+   "poem_ids": [
+    221
+   ],
+   "context": "Genji gazes toward Awaji Island under the moon.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH13-05",
+   "kind": "exchange",
+   "poem_ids": [
+    222,
+    223
+   ],
+   "context": "The novice laments years of solitude; Genji replies.",
+   "links": [
+    {
+     "poems": [
+      222,
+      223
+     ],
+     "hook": "明石・うら"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH13-06",
+   "kind": "exchange",
+   "poem_ids": [
+    224,
+    225
+   ],
+   "context": "Genji sends a poem to the Akashi Lady; her father writes the reply on her behalf.",
+   "links": [
+    {
+     "poems": [
+      224,
+      225
+     ],
+     "hook": "雲居・ながむ"
+    }
+   ],
+   "split_from": "CH13-06"
+  },
+  {
+   "bucket_id": "CH13-06b",
+   "kind": "exchange",
+   "poem_ids": [
+    226,
+    227
+   ],
+   "context": "Genji asks to hear from the woman herself; she answers in her own verse.",
+   "links": [
+    {
+     "poems": [
+      226,
+      227
+     ],
+     "hook": "やよいかに・なやむ"
+    }
+   ],
+   "split_from": "CH13-06"
+  },
+  {
+   "bucket_id": "CH13-07",
+   "kind": "single",
+   "poem_ids": [
+    228
+   ],
+   "context": "Genji thinks of Murasaki from far away.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH13-08",
+   "kind": "exchange",
+   "poem_ids": [
+    229,
+    230
+   ],
+   "context": "Correspondence early in Genji's courtship.",
+   "links": [
+    {
+     "poems": [
+      229,
+      230
+     ],
+     "hook": "夢・かたる"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH13-09",
+   "kind": "exchange",
+   "poem_ids": [
+    231,
+    232
+   ],
+   "context": "An exchange of letters between Akashi and Kyoto.",
+   "links": [
+    {
+     "poems": [
+      231,
+      232
+     ],
+     "hook": "まつ（待つ/松）・波"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH13-10",
+   "kind": "exchange",
+   "poem_ids": [
+    233,
+    234
+   ],
+   "context": "The couple exchanges verses as departure approaches.",
+   "links": [
+    {
+     "poems": [
+      233,
+      234
+     ],
+     "hook": "塩焼く煙"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH13-11",
+   "kind": "exchange",
+   "poem_ids": [
+    235,
+    236
+   ],
+   "context": "The lady sends a poem in the metaphor of a musical instrument; Genji answers.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH13-12",
+   "kind": "exchange",
+   "poem_ids": [
+    237,
+    238
+   ],
+   "context": "Shoreline parting verses.",
+   "links": [
+    {
+     "poems": [
+      237,
+      238
+     ],
+     "hook": "波・なごり"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH13-13",
+   "kind": "exchange",
+   "poem_ids": [
+    239,
+    240
+   ],
+   "context": "The lady sends clothing as a farewell present; Genji responds.",
+   "links": [
+    {
+     "poems": [
+      239,
+      240
+     ],
+     "hook": "衣・かさね/かふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH13-14",
+   "kind": "exchange",
+   "poem_ids": [
+    241,
+    242
+   ],
+   "context": "The novice laments Genji's departure and his daughter's fate.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH13-15",
+   "kind": "exchange",
+   "poem_ids": [
+    243,
+    244
+   ],
+   "context": "Genji and the emperor exchange poems upon reunion.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH13-16",
+   "kind": "single",
+   "poem_ids": [
+    245
+   ],
+   "context": "After returning to the capital, Genji writes to the Akashi Lady.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH13-17",
+   "kind": "exchange",
+   "poem_ids": [
+    246,
+    247
+   ],
+   "context": "The Gosechi dancer writes after Genji returns, and he answers.",
+   "links": [
+    {
+     "poems": [
+      246,
+      247
+     ],
+     "hook": "袖・よせ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH14-01",
+   "kind": "exchange",
+   "poem_ids": [
+    248,
+    249
+   ],
+   "context": "Genji and a court attendant trade farewell verses over her journey to Akashi.",
+   "links": [
+    {
+     "poems": [
+      248,
+      249
+     ],
+     "hook": "別れ惜し"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH14-02",
+   "kind": "exchange",
+   "poem_ids": [
+    250,
+    251
+   ],
+   "context": "Genji writes about their young daughter, and the mother answers.",
+   "links": [
+    {
+     "poems": [
+      250,
+      251
+     ],
+     "hook": "なづる・袖・おひさき"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH14-03",
+   "kind": "exchange",
+   "poem_ids": [
+    252,
+    253
+   ],
+   "context": "Murasaki speaks of Genji's ties to Akashi, and he responds.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH14-04",
+   "kind": "exchange",
+   "poem_ids": [
+    254,
+    255
+   ],
+   "context": "A poem about the child's future and the mother's answer.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH14-05",
+   "kind": "exchange",
+   "poem_ids": [
+    256,
+    257
+   ],
+   "context": "Hanachirusato and Genji exchange poems after reunion.",
+   "links": [
+    {
+     "poems": [
+      256,
+      257
+     ],
+     "hook": "くひな・おどろか・月をいれ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH14-06",
+   "kind": "exchange",
+   "poem_ids": [
+    258,
+    259
+   ],
+   "context": "Koremitsu speaks at Sumiyoshi Shrine; Genji answers.",
+   "links": [
+    {
+     "poems": [
+      258,
+      259
+     ],
+     "hook": "住吉・神・かけて"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH14-07",
+   "kind": "exchange",
+   "poem_ids": [
+    260,
+    261
+   ],
+   "context": "Genji writes from Sumiyoshi to the Akashi Lady; she returns his poem.",
+   "links": [
+    {
+     "poems": [
+      260,
+      261
+     ],
+     "hook": "みをつくし"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH14-08",
+   "kind": "single",
+   "poem_ids": [
+    262
+   ],
+   "context": "Genji composes privately at the shore.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH14-09",
+   "kind": "exchange",
+   "poem_ids": [
+    263,
+    264
+   ],
+   "context": "Following Rokujō's death, Genji sends her daughter a snowy poem and she replies.",
+   "links": [
+    {
+     "poems": [
+      263,
+      264
+     ],
+     "hook": "ふる・かなしき・空"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH15-01",
+   "kind": "exchange",
+   "poem_ids": [
+    265,
+    266
+   ],
+   "context": "Suetsumuhana gives her departing attendant a hairpiece and a poem; Jijū answers.",
+   "links": [
+    {
+     "poems": [
+      265,
+      266
+     ],
+     "hook": "玉かづら"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH15-02",
+   "kind": "single",
+   "poem_ids": [
+    267
+   ],
+   "context": "The princess reflects alone in her decayed home on her late father.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH15-03",
+   "kind": "single",
+   "poem_ids": [
+    268
+   ],
+   "context": "Genji returns and recognizes the princess's constancy.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH15-04",
+   "kind": "exchange",
+   "poem_ids": [
+    269,
+    270
+   ],
+   "context": "The two exchange verses after their long separation.",
+   "links": [
+    {
+     "poems": [
+      269,
+      270
+     ],
+     "hook": "松/待つ・しるし・宿"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH16-01",
+   "kind": "single",
+   "poem_ids": [
+    271
+   ],
+   "context": "At the Ōsaka barrier Utsusemi privately laments an encounter that cannot become a reunion.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH16-02",
+   "kind": "exchange",
+   "poem_ids": [
+    272,
+    273
+   ],
+   "context": "After their chance encounter, Genji sends a poem to Utsusemi; she replies.",
+   "links": [
+    {
+     "poems": [
+      272,
+      273
+     ],
+     "hook": "わくらば/わくら・あふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH17-01",
+   "kind": "exchange",
+   "poem_ids": [
+    274,
+    275
+   ],
+   "context": "The retired emperor sends a memory of the farewell comb from her Ise departure; the former priestess answers.",
+   "links": [
+    {
+     "poems": [
+      274,
+      275
+     ],
+     "hook": "はるか・別れ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH17-02",
+   "kind": "exchange",
+   "poem_ids": [
+    276,
+    277
+   ],
+   "context": "Murasaki sends a poem with an image associated with Genji's life by the sea; Genji responds.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH17-03",
+   "kind": "exchange",
+   "poem_ids": [
+    278,
+    279,
+    280
+   ],
+   "context": "During the picture contest, an advocate defends The Tales of Ise, the opposing advocate counters on behalf of a different tale, and Fujitsubo issues a poetic verdict.",
+   "links": [
+    {
+     "poems": [
+      278,
+      280
+     ],
+     "hook": "伊勢・あま"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH17-04",
+   "kind": "exchange",
+   "poem_ids": [
+    281,
+    282
+   ],
+   "context": "The retired emperor writes again to the former Ise priestess, now a consort; she responds.",
+   "links": [
+    {
+     "poems": [
+      281,
+      282
+     ],
+     "hook": "しめ・神"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH18-01",
+   "kind": "exchange",
+   "poem_ids": [
+    283,
+    284,
+    285
+   ],
+   "context": "As the Akashi household prepares for the Lady's departure to the capital, her father, mother, and she each speak a farewell poem.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH18-02",
+   "kind": "exchange",
+   "poem_ids": [
+    286,
+    287
+   ],
+   "context": "On the boat leaving Akashi for the capital, mother and daughter exchange reflections.",
+   "links": [
+    {
+     "poems": [
+      286,
+      287
+     ],
+     "hook": "かへる・舟/浮木"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH18-03",
+   "kind": "exchange",
+   "poem_ids": [
+    288,
+    289
+   ],
+   "context": "At the secluded riverside villa, mother and daughter respond to each other amid the sound of the wind and a musical instrument.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH18-04",
+   "kind": "exchange",
+   "poem_ids": [
+    290,
+    291
+   ],
+   "context": "During Genji's visit to the riverside villa, the nun uses the watercourse to voice nostalgia; Genji replies.",
+   "links": [
+    {
+     "poems": [
+      290,
+      291
+     ],
+     "hook": "清水/いさらゐ・あるじ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH18-05",
+   "kind": "exchange",
+   "poem_ids": [
+    292,
+    293
+   ],
+   "context": "Genji plays the instrument kept as a memento of their parting; the Lady answers his pledge.",
+   "links": [
+    {
+     "poems": [
+      292,
+      293
+     ],
+     "hook": "かはらぬ・契・しらべ/ね"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH18-06",
+   "kind": "exchange",
+   "poem_ids": [
+    294,
+    295
+   ],
+   "context": "A poem sent in an imperial message praises Genji's stay near the Katsura River; Genji sends a deferential answer.",
+   "links": [
+    {
+     "poems": [
+      294,
+      295
+     ],
+     "hook": "月・桂・里"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH18-07",
+   "kind": "chorus",
+   "poem_ids": [
+    296,
+    297,
+    298
+   ],
+   "context": "At the moonlit gathering, Genji evokes his former exile; Tō no Chūjō and the older official follow with related poems.",
+   "links": [
+    {
+     "poems": [
+      296,
+      297
+     ],
+     "hook": "月"
+    },
+    {
+     "poems": [
+      296,
+      298
+     ],
+     "hook": "月"
+    },
+    {
+     "poems": [
+      297,
+      298
+     ],
+     "hook": "月・雲"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH19-01",
+   "kind": "exchange",
+   "poem_ids": [
+    299,
+    300
+   ],
+   "context": "Amid deep snow, the Akashi Lady asks the child's nurse to keep exchanging letters; the nurse answers.",
+   "links": [
+    {
+     "poems": [
+      299,
+      300
+     ],
+     "hook": "雪・山・跡絶え・かよふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH19-02",
+   "kind": "exchange",
+   "poem_ids": [
+    301,
+    302
+   ],
+   "context": "As their young daughter is to be raised elsewhere, the Akashi Lady worries about the separation; Genji consoles her.",
+   "links": [
+    {
+     "poems": [
+      301,
+      302
+     ],
+     "hook": "松・根"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH19-03",
+   "kind": "exchange",
+   "poem_ids": [
+    303,
+    304
+   ],
+   "context": "Murasaki playfully doubts Genji's promise to return on the morrow; Genji counters.",
+   "links": [
+    {
+     "poems": [
+      303,
+      304
+     ],
+     "hook": "をちかた人・あす"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH19-04",
+   "kind": "single",
+   "poem_ids": [
+    305
+   ],
+   "context": "Alone in mourning after Fujitsubo's death, Genji recites a verse without a listener.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH19-05",
+   "kind": "single",
+   "poem_ids": [
+    306
+   ],
+   "context": "Genji addresses the Saigū consort (former Ise Priestess) in a confidential autumn conversation; she offers no numbered poetic reply.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH19-06",
+   "kind": "exchange",
+   "poem_ids": [
+    307,
+    308
+   ],
+   "context": "At Akashi Lady's new home, fishing fires call back the Akashi shore; Genji responds.",
+   "links": [
+    {
+     "poems": [
+      307,
+      308
+     ],
+     "hook": "かがり火"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH20-01",
+   "kind": "exchange",
+   "poem_ids": [
+    309,
+    310
+   ],
+   "context": "Genji presses his long-standing suit after Asagao leaves her sacred office; she resists with a response.",
+   "links": [
+    {
+     "poems": [
+      309,
+      310
+     ],
+     "hook": "神・ゆるし/いさめ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH20-02",
+   "kind": "exchange",
+   "poem_ids": [
+    311,
+    312
+   ],
+   "context": "Genji sends an autumn morning-glory poem; Asagao answers wittily and evasively.",
+   "links": [
+    {
+     "poems": [
+      311,
+      312
+     ],
+     "hook": "あさがほ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH20-03",
+   "kind": "single",
+   "poem_ids": [
+    313
+   ],
+   "context": "Genji arrives at the old residence of the deceased princess and reflects on its overgrown state.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH20-04",
+   "kind": "exchange",
+   "poem_ids": [
+    314,
+    315
+   ],
+   "context": "The elderly lady-in-waiting teases Genji about their old promise; he replies playfully.",
+   "links": [
+    {
+     "poems": [
+      314,
+      315
+     ],
+     "hook": "親"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH20-05",
+   "kind": "exchange",
+   "poem_ids": [
+    316,
+    317
+   ],
+   "context": "Genji tries again to court Asagao; after hesitation she answers in verse.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH20-06",
+   "kind": "single",
+   "poem_ids": [
+    318
+   ],
+   "context": "Murasaki gazes at the frozen stream and the moon while feeling emotionally isolated.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH20-07",
+   "kind": "single",
+   "poem_ids": [
+    319
+   ],
+   "context": "Soon after, Genji responds to the winter scene with his own grief-stricken meditation, not a poem addressed in reply to Murasaki.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH20-08",
+   "kind": "single",
+   "poem_ids": [
+    320
+   ],
+   "context": "After a dream of the deceased Fujitsubo, Genji privately laments waking.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH20-09",
+   "kind": "single",
+   "poem_ids": [
+    321
+   ],
+   "context": "Genji later mourns Fujitsubo and imagines the obstacle between living and dead.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH21-01",
+   "kind": "exchange",
+   "poem_ids": [
+    322,
+    323
+   ],
+   "context": "Genji and Asagao exchange poems during her mourning and ritual purification.",
+   "links": [
+    {
+     "poems": [
+      322,
+      323
+     ],
+     "hook": "藤衣・みそぎ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH21-02",
+   "kind": "single",
+   "poem_ids": [
+    324
+   ],
+   "context": "Yūgiri privately composes a poem at night while dwelling on separation from Kumoinokari.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH21-03",
+   "kind": "exchange",
+   "poem_ids": [
+    325,
+    326
+   ],
+   "context": "After Kumoinokari's nurse disparages Yūgiri's court rank, he protests in verse and Kumoinokari answers.",
+   "links": [
+    {
+     "poems": [
+      325,
+      326
+     ],
+     "hook": "色・染め・衣/袖"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH21-04",
+   "kind": "single",
+   "poem_ids": [
+    327
+   ],
+   "context": "Yūgiri composes a private lament as he leaves before dawn after the encounter with Kumoinokari.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH21-05",
+   "kind": "single",
+   "poem_ids": [
+    328
+   ],
+   "context": "Yūgiri improvises a poem to the Gosechi dancer he has noticed during festival preparations.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH21-06",
+   "kind": "exchange",
+   "poem_ids": [
+    329,
+    330
+   ],
+   "context": "Genji exchanges festival-themed poems with Tsukushi Gosechi, the dancer he remembers from years before.",
+   "links": [
+    {
+     "poems": [
+      329,
+      330
+     ],
+     "hook": "袖（舞姫）"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH21-07",
+   "kind": "single",
+   "poem_ids": [
+    331
+   ],
+   "context": "Yūgiri sends a love poem to the Gosechi dancer through her younger brother.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH21-08",
+   "kind": "chorus",
+   "poem_ids": [
+    332,
+    333,
+    334,
+    335
+   ],
+   "context": "At the imperial spring gathering, Genji, Suzaku-in, Prince Hyōbukyō, and Emperor Reizei compose a linked four-voice sequence.",
+   "links": [
+    {
+     "poems": [
+      332,
+      333
+     ],
+     "hook": "鴬"
+    },
+    {
+     "poems": [
+      332,
+      334
+     ],
+     "hook": "さへづる・むかし/いにしへ"
+    },
+    {
+     "poems": [
+      332,
+      335
+     ],
+     "hook": "鴬・むかし・花"
+    },
+    {
+     "poems": [
+      333,
+      335
+     ],
+     "hook": "鴬"
+    },
+    {
+     "poems": [
+      334,
+      335
+     ],
+     "hook": "さへづる"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH21-09",
+   "kind": "exchange",
+   "poem_ids": [
+    336,
+    337,
+    364,
+    365
+   ],
+   "context": "Empress Akikonomu and Murasaki no Ue sustain an autumn-versus-spring poetic correspondence begun in 'Otome' and renewed in 'Kochō'.",
+   "links": [
+    {
+     "poems": [
+      336,
+      337
+     ],
+     "hook": "紅葉・風・春"
+    },
+    {
+     "poems": [
+      336,
+      364
+     ],
+     "hook": "春待つ/秋待つ"
+    },
+    {
+     "poems": [
+      364,
+      365
+     ],
+     "hook": "こてふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH22-01",
+   "kind": "chorus",
+   "poem_ids": [
+    338,
+    339
+   ],
+   "context": "During the journey by boat, the nurse's elder and younger daughters exchange laments recalling the late Yūgao.",
+   "links": [
+    {
+     "poems": [
+      338,
+      339
+     ],
+     "hook": "恋ふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH22-02",
+   "kind": "exchange",
+   "poem_ids": [
+    340,
+    341
+   ],
+   "context": "The provincial suitor Taiu no Gen proposes in verse; Tamakazura's nurse reluctantly answers.",
+   "links": [
+    {
+     "poems": [
+      340,
+      341
+     ],
+     "hook": "鏡の神"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH22-03",
+   "kind": "exchange",
+   "poem_ids": [
+    342,
+    343
+   ],
+   "context": "While secretly leaving Kyushu by boat, Hyōbu no Kimi speaks of an uncertain destination and Tamakazura responds.",
+   "links": [
+    {
+     "poems": [
+      342,
+      343
+     ],
+     "hook": "うき・ゆく・舟"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH22-04",
+   "kind": "single",
+   "poem_ids": [
+    344
+   ],
+   "context": "Tamakazura's nurse composes a poem fearing danger during the party's continuing sea passage.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH22-05",
+   "kind": "exchange",
+   "poem_ids": [
+    345,
+    346
+   ],
+   "context": "At Hase, Ukon and Tamakazura exchange poems after an unexpected reunion.",
+   "links": [
+    {
+     "poems": [
+      345,
+      346
+     ],
+     "hook": "河（布留川/初瀬川）"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH22-06",
+   "kind": "exchange",
+   "poem_ids": [
+    347,
+    348
+   ],
+   "context": "Genji and Tamakazura exchange verses probing her family connection and the roots of her displacement.",
+   "links": [
+    {
+     "poems": [
+      347,
+      348
+     ],
+     "hook": "みくり・すぢ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH22-07",
+   "kind": "single",
+   "poem_ids": [
+    349
+   ],
+   "context": "Genji writes a private practice poem while thinking of Tamakazura's arrival and her mother Yūgao.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH22-08",
+   "kind": "exchange",
+   "poem_ids": [
+    350,
+    351
+   ],
+   "context": "After Genji sends clothing, Suetsumuhana replies in verse with an old-fashioned complaint; at Murasaki's urging, Genji writes a playful answer.",
+   "links": [
+    {
+     "poems": [
+      350,
+      351
+     ],
+     "hook": "から衣・かへす"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH23-01",
+   "kind": "exchange",
+   "poem_ids": [
+    352,
+    353
+   ],
+   "context": "At New Year, Genji and Murasaki no Ue exchange a poem of harmony and enduring prosperity.",
+   "links": [
+    {
+     "poems": [
+      352,
+      353
+     ],
+     "hook": "池の鏡・影"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH23-02",
+   "kind": "exchange",
+   "poem_ids": [
+    354,
+    355,
+    356
+   ],
+   "context": "Akashi no Ue sends a poem with a New Year's gift to her daughter; the Akashi Princess replies, prompting her mother to write a private poem later that day.",
+   "links": [
+    {
+     "poems": [
+      354,
+      355
+     ],
+     "hook": "松・ね・鴬"
+    },
+    {
+     "poems": [
+      354,
+      356
+     ],
+     "hook": "鴬・ふる"
+    },
+    {
+     "poems": [
+      355,
+      356
+     ],
+     "hook": "鴬・巣"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH23-03",
+   "kind": "single",
+   "poem_ids": [
+    357
+   ],
+   "context": "Genji privately composes a wry poem when he visits Suetsumuhana.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH24-01",
+   "kind": "chorus",
+   "poem_ids": [
+    358,
+    359,
+    360,
+    361
+   ],
+   "context": "Four ladies-in-waiting exchange poems as their boat moves across the garden pond during the spring festivities.",
+   "links": [
+    {
+     "poems": [
+      358,
+      359
+     ],
+     "hook": "山吹"
+    },
+    {
+     "poems": [
+      360,
+      361
+     ],
+     "hook": "舟"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH24-02",
+   "kind": "exchange",
+   "poem_ids": [
+    362,
+    363
+   ],
+   "context": "Prince Hyōbukyō addresses Genji in a playful poem invoking purple kinship, and Genji responds.",
+   "links": [
+    {
+     "poems": [
+      362,
+      363
+     ],
+     "hook": "淵に身投げ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH24-03",
+   "kind": "single",
+   "poem_ids": [
+    366
+   ],
+   "context": "Kashiwagi sends Tamakazura a passionate but unopened letter which Genji reads aloud.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH24-04",
+   "kind": "exchange",
+   "poem_ids": [
+    367,
+    368
+   ],
+   "context": "Genji and Tamakazura trade verses using a young bamboo shoot and its roots to debate kinship and origins.",
+   "links": [
+    {
+     "poems": [
+      367,
+      368
+     ],
+     "hook": "竹・根・おひ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH24-05",
+   "kind": "exchange",
+   "poem_ids": [
+    369,
+    370
+   ],
+   "context": "Genji likens Tamakazura to the lingering sleeve scent of her mother, Yūgao; she responds defensively.",
+   "links": [
+    {
+     "poems": [
+      369,
+      370
+     ],
+     "hook": "橘・袖・よそふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH24-06",
+   "kind": "single",
+   "poem_ids": [
+    371
+   ],
+   "context": "Genji sends Tamakazura a further poem after a distressing personal encounter.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH25-01",
+   "kind": "exchange",
+   "poem_ids": [
+    372,
+    373
+   ],
+   "context": "Prince Hotaru and Tamakazura exchange poems during the firefly scene.",
+   "links": [
+    {
+     "poems": [
+      372,
+      373
+     ],
+     "hook": "おもひ（思ひ/火）・虫/蛍"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH25-02",
+   "kind": "exchange",
+   "poem_ids": [
+    374,
+    375
+   ],
+   "context": "Prince Hotaru and Tamakazura trade poems during the Fifth-Month iris festival.",
+   "links": [
+    {
+     "poems": [
+      374,
+      375
+     ],
+     "hook": "あやめ・ね（根/音）・なかれ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH25-03",
+   "kind": "exchange",
+   "poem_ids": [
+    376,
+    377
+   ],
+   "context": "Hanachirusato sends Genji a poem of the Fifth-Month irises, and he answers.",
+   "links": [
+    {
+     "poems": [
+      376,
+      377
+     ],
+     "hook": "こま・あやめ・ひく"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH25-04",
+   "kind": "exchange",
+   "poem_ids": [
+    378,
+    379
+   ],
+   "context": "Genji presses Tamakazura with an insistent poem claiming the privileges of a father; she rebuffs him in verse.",
+   "links": [
+    {
+     "poems": [
+      378,
+      379
+     ],
+     "hook": "昔の跡をたづぬ・親"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH26-01",
+   "kind": "exchange",
+   "poem_ids": [
+    380,
+    381
+   ],
+   "context": "Genji and Tamakazura exchange poems about a wild pink (nadeshiko) and the obscured family roots of her late mother Yūgao.",
+   "links": [
+    {
+     "poems": [
+      380,
+      381
+     ],
+     "hook": "なでしこ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH26-02",
+   "kind": "exchange",
+   "poem_ids": [
+    382,
+    383
+   ],
+   "context": "Ōmi no Kimi sends an ineptly constructed poem to her half-sister, the Kōkiden Consort; Chūnagon no Kimi, a lady-in-waiting, composes a mocking imitation in answer.",
+   "links": [
+    {
+     "poems": [
+      382,
+      383
+     ],
+     "hook": "常陸"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH27-01",
+   "kind": "exchange",
+   "poem_ids": [
+    384,
+    385
+   ],
+   "context": "By a garden bonfire, Genji voices his unending attraction to Tamakazura and she deflects him in verse.",
+   "links": [
+    {
+     "poems": [
+      384,
+      385
+     ],
+     "hook": "かがり火・煙"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH28-01",
+   "kind": "single",
+   "poem_ids": [
+    386
+   ],
+   "context": "After Genji offers only a brief typhoon visit, Akashi no Ue privately laments the wind blowing over reeds.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH28-02",
+   "kind": "exchange",
+   "poem_ids": [
+    387,
+    388
+   ],
+   "context": "In the aftermath of the storm, Tamakazura and Genji exchange poems using the vulnerable ominaeshi flower.",
+   "links": [
+    {
+     "poems": [
+      387,
+      388
+     ],
+     "hook": "をみなへし・風・しほれ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH28-03",
+   "kind": "single",
+   "poem_ids": [
+    389
+   ],
+   "context": "Yūgiri sends Kumoinokari a poem recalling her constantly even in stormy weather.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH29-01",
+   "kind": "exchange",
+   "poem_ids": [
+    390,
+    391
+   ],
+   "context": "Emperor Reizei sends Genji a pheasant and poem during the imperial outing at Ōharano; Genji sends a formal reply.",
+   "links": [
+    {
+     "poems": [
+      390,
+      391
+     ],
+     "hook": "小塩山・雪・跡"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH29-02",
+   "kind": "exchange",
+   "poem_ids": [
+    392,
+    393
+   ],
+   "context": "After the imperial procession, Tamakazura writes to Genji about seeing the emperor amid cloud and snow; Genji replies.",
+   "links": [
+    {
+     "poems": [
+      392,
+      393
+     ],
+     "hook": "み雪・光・空"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH29-03",
+   "kind": "single",
+   "poem_ids": [
+    394
+   ],
+   "context": "Ōmiya sends Tamakazura a verse welcoming the newly acknowledged granddaughter after the complicated family connection becomes public.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH29-04",
+   "kind": "exchange",
+   "poem_ids": [
+    395,
+    396
+   ],
+   "context": "Suetsumuhana sends an awkward ceremonial verse to Tamakazura with a gift, and Genji devises a comic reply on Tamakazura's behalf.",
+   "links": [
+    {
+     "poems": [
+      395,
+      396
+     ],
+     "hook": "から衣"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH29-05",
+   "kind": "exchange",
+   "poem_ids": [
+    397,
+    398
+   ],
+   "context": "At Tamakazura's coming-of-age ceremony, her newly acknowledged father Naidaijin challenges Genji in a poem and Genji responds.",
+   "links": [
+    {
+     "poems": [
+      397,
+      398
+     ],
+     "hook": "あま・よる/なぎさ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH30-01",
+   "kind": "exchange",
+   "poem_ids": [
+    399,
+    400
+   ],
+   "context": "Yūgiri sends Tamakazura a purple-blossom poem during the mourning period and she responds.",
+   "links": [
+    {
+     "poems": [
+      399,
+      400
+     ],
+     "hook": "露・かこと・野"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH30-02",
+   "kind": "exchange",
+   "poem_ids": [
+    401,
+    402
+   ],
+   "context": "Kashiwagi addresses Tamakazura in verse after the revelation of their sibling relationship; she answers.",
+   "links": [
+    {
+     "poems": [
+      401,
+      402
+     ],
+     "hook": "妹背山・ふみまよふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH30-03",
+   "kind": "single",
+   "poem_ids": [
+    403
+   ],
+   "context": "Higekuro sends Tamakazura an urgent poem as she approaches service at court.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH30-04",
+   "kind": "exchange",
+   "poem_ids": [
+    404,
+    406
+   ],
+   "context": "Prince Hotaru sends Tamakazura a poem asking that his memory survive her potential imperial favor, and she sends him a brief answer.",
+   "links": [
+    {
+     "poems": [
+      404,
+      406
+     ],
+     "hook": "光・霜・けつ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH30-05",
+   "kind": "single",
+   "poem_ids": [
+    405
+   ],
+   "context": "The Left Captain of the Palace Guards, a son of Prince Shikibu-kyō, sends Tamakazura a plaintive love poem.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH31-01",
+   "kind": "exchange",
+   "poem_ids": [
+    407,
+    408
+   ],
+   "context": "After Tamakazura's marriage to Higekuro, Genji and Tamakazura exchange distressed verses imagining the river crossed after death.",
+   "links": [
+    {
+     "poems": [
+      407,
+      408
+     ],
+     "hook": "わたり川/三瀬川"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH31-02",
+   "kind": "single",
+   "poem_ids": [
+    409
+   ],
+   "context": "Higekuro writes Tamakazura a snowy-morning poem lamenting his lonely night away from her.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH31-03",
+   "kind": "exchange",
+   "poem_ids": [
+    410,
+    411
+   ],
+   "context": "While tending Higekuro's scented garments, Moku no Kimi reproaches him for abandoning his original wife; Higekuro responds.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH31-04",
+   "kind": "exchange",
+   "poem_ids": [
+    412,
+    413
+   ],
+   "context": "As Higekuro's first wife leaves his residence, the young daughter later called Makibashira places a poem inside a familiar pillar, and her mother answers aloud.",
+   "links": [
+    {
+     "poems": [
+      412,
+      413
+     ],
+     "hook": "真木の柱・なれき"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH31-05",
+   "kind": "exchange",
+   "poem_ids": [
+    414,
+    415
+   ],
+   "context": "The first wife's attendant Chūjō no Omoto exchanges farewell poems with Moku no Kimi, who is remaining in Higekuro's residence.",
+   "links": [
+    {
+     "poems": [
+      414,
+      415
+     ],
+     "hook": "石間の水"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH31-06",
+   "kind": "single",
+   "poem_ids": [
+    416
+   ],
+   "context": "Prince Hotaru sends Tamakazura a jealous verse on her marriage to Higekuro.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH31-07",
+   "kind": "exchange",
+   "poem_ids": [
+    417,
+    418
+   ],
+   "context": "Emperor Reizei exchanges poems with Tamakazura when he gives her a high court rank, using purple dye as a metaphor for frustrated desire.",
+   "links": [
+    {
+     "poems": [
+      417,
+      418
+     ],
+     "hook": "紫・染め"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH31-08",
+   "kind": "exchange",
+   "poem_ids": [
+    419,
+    420
+   ],
+   "context": "At Tamakazura's departure from the palace, Emperor Reizei and Tamakazura exchange farewell poems comparing her to fragrant plum blossoms.",
+   "links": [
+    {
+     "poems": [
+      419,
+      420
+     ],
+     "hook": "梅の花・にほひ・かばかり"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH31-09",
+   "kind": "exchange",
+   "poem_ids": [
+    421,
+    422
+   ],
+   "context": "Genji writes to Tamakazura after her move to Higekuro's residence, and she replies with an imagery-rich rain poem.",
+   "links": [
+    {
+     "poems": [
+      421,
+      422
+     ],
+     "hook": "しのぶ・雨/しづく"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH31-10",
+   "kind": "single",
+   "poem_ids": [
+    423
+   ],
+   "context": "Alone, Genji murmurs his continued longing for Tamakazura through the place-name Ide and the yellow yamabuki flower.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH31-11",
+   "kind": "exchange",
+   "poem_ids": [
+    424,
+    425
+   ],
+   "context": "Genji sends Tamakazura a gift of bird eggs and a poem; Higekuro writes the answering poem instead of Tamakazura.",
+   "links": [
+    {
+     "poems": [
+      424,
+      425
+     ],
+     "hook": "卵/雁の子・巣"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH31-12",
+   "kind": "exchange",
+   "poem_ids": [
+    426,
+    427
+   ],
+   "context": "Ōmi no Kimi makes a suggestive poetic advance to Yūgiri, who rebuffs her in verse.",
+   "links": [
+    {
+     "poems": [
+      426,
+      427
+     ],
+     "hook": "よるべなみ・舟"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH32-01",
+   "kind": "exchange",
+   "poem_ids": [
+    428,
+    429
+   ],
+   "context": "Asagao sends Genji a poem accompanying fragrant materials for the young Akashi princess's coming-of-age preparations; Genji replies.",
+   "links": [
+    {
+     "poems": [
+      428,
+      429
+     ],
+     "hook": "花の香・袖"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH32-02",
+   "kind": "chorus",
+   "poem_ids": [
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436
+   ],
+   "context": "During the incense-judging and musical gathering at Rokujō-in, Prince Hotaru, Genji, Kashiwagi, Yūgiri and Ben no Shōshō compose a linked sequence. At dawn, as Prince Hotaru departs the same gathering with fragrant gifts, he composes a farewell thank-you verse and Genji answers.",
+   "links": [
+    {
+     "poems": [
+      430,
+      432
+     ],
+     "hook": "鴬"
+    },
+    {
+     "poems": [
+      432,
+      433
+     ],
+     "hook": "吹く（笛/風）"
+    },
+    {
+     "poems": [
+      432,
+      434
+     ],
+     "hook": "ねぐら"
+    },
+    {
+     "poems": [
+      431,
+      435
+     ],
+     "hook": "色も香もうつる/花の香をうつし"
+    }
+   ],
+   "merged_from": [
+    "CH32-02",
+    "CH32-03"
+   ]
+  },
+  {
+   "bucket_id": "CH32-04",
+   "kind": "exchange",
+   "poem_ids": [
+    437,
+    438
+   ],
+   "context": "Yūgiri writes privately to Kumoinokari while a possible alternative marriage is being discussed, and she replies obliquely.",
+   "links": [
+    {
+     "poems": [
+      437,
+      438
+     ],
+     "hook": "忘る"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH33-01",
+   "kind": "exchange",
+   "poem_ids": [
+    439,
+    440
+   ],
+   "context": "Naidaijin invites Yūgiri to view his flowering wisteria, implicitly reopening the possibility of marriage to Kumoinokari; Yūgiri replies.",
+   "links": [
+    {
+     "poems": [
+      439,
+      440
+     ],
+     "hook": "藤・たそかれ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH33-02",
+   "kind": "chorus",
+   "poem_ids": [
+    441,
+    442,
+    443
+   ],
+   "context": "At Naidaijin's wisteria banquet he gives Yūgiri a verse signifying consent to the marriage; Yūgiri answers and Kashiwagi follows with a celebratory verse.",
+   "links": [
+    {
+     "poems": [
+      441,
+      443
+     ],
+     "hook": "藤の花"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH33-03",
+   "kind": "exchange",
+   "poem_ids": [
+    444,
+    445
+   ],
+   "context": "After their marriage, Kumoinokari and Yūgiri exchange playful reproaches about how their formerly secret courtship became known.",
+   "links": [
+    {
+     "poems": [
+      444,
+      445
+     ],
+     "hook": "河口・関・あさき"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH33-04",
+   "kind": "single",
+   "poem_ids": [
+    446
+   ],
+   "context": "Yūgiri sends Kumoinokari a rather boldly intimate morning-after verse, asking that his visible tears not be blamed.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH33-05",
+   "kind": "exchange",
+   "poem_ids": [
+    447,
+    448
+   ],
+   "context": "Yūgiri writes to his longtime lover Tō no Naishi no Suke on the day of her public marriage; she answers amidst her departure preparations.",
+   "links": [
+    {
+     "poems": [
+      447,
+      448
+     ],
+     "hook": "かざし・かつ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH33-06",
+   "kind": "exchange",
+   "poem_ids": [
+    449,
+    450
+   ],
+   "context": "Yūgiri boasts of his promotion to an old wet nurse, Daisuke no Menoto, and she returns his poem.",
+   "links": [
+    {
+     "poems": [
+      449,
+      450
+     ],
+     "hook": "菊・露・色"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH33-07",
+   "kind": "exchange",
+   "poem_ids": [
+    451,
+    452
+   ],
+   "context": "At the old residence associated with their late grandmother Ōmiya, Yūgiri addresses a spring and Kumoinokari composes a sympathetic answer.",
+   "links": [
+    {
+     "poems": [
+      451,
+      452
+     ],
+     "hook": "水（真清水/いさらゐ）"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH33-08",
+   "kind": "chorus",
+   "poem_ids": [
+    453,
+    454
+   ],
+   "context": "At the young couple's new home, the Grand Minister compares the late family matriarch and descendants to an old tree and pine seedlings; Yūgiri's nurse responds.",
+   "links": [
+    {
+     "poems": [
+      453,
+      454
+     ],
+     "hook": "松・小松・根"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH33-09",
+   "kind": "exchange",
+   "poem_ids": [
+    455,
+    456
+   ],
+   "context": "At the imperial autumn celebration, Genji recalls his youthful dance while presenting chrysanthemums, and the Grand Minister responds.",
+   "links": [
+    {
+     "poems": [
+      455,
+      456
+     ],
+     "hook": "菊"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH33-10",
+   "kind": "exchange",
+   "poem_ids": [
+    457,
+    458
+   ],
+   "context": "During the same imperial celebration, retired Emperor Suzaku voices regret at being absent from such splendor and Emperor Reizei responds.",
+   "links": [
+    {
+     "poems": [
+      457,
+      458
+     ],
+     "hook": "紅葉"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH34-01",
+   "kind": "exchange",
+   "poem_ids": [
+    459,
+    460
+   ],
+   "context": "Akikonomu sends retired Emperor Suzaku a poem accompanying a precious old comb connected with the young Third Princess; he replies.",
+   "links": [
+    {
+     "poems": [
+      459,
+      460
+     ],
+     "hook": "小櫛・神さぶ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH34-02",
+   "kind": "exchange",
+   "poem_ids": [
+    461,
+    462
+   ],
+   "context": "At Genji's spring celebration, Tamakazura presents her children as young pines and offers him a congratulatory poem; he answers.",
+   "links": [
+    {
+     "poems": [
+      461,
+      462
+     ],
+     "hook": "小松・野辺・若"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH34-03",
+   "kind": "exchange",
+   "poem_ids": [
+    463,
+    464
+   ],
+   "context": "Murasaki no Ue writes a private poem on the fragility of her bond with Genji after he marries the Third Princess; he reads the writing and answers.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH34-04",
+   "kind": "exchange",
+   "poem_ids": [
+    465,
+    466
+   ],
+   "context": "Genji sends the Third Princess a poem from Murasaki no Ue's quarters after their marriage, and a belated poem arrives as her answer.",
+   "links": [
+    {
+     "poems": [
+      465,
+      466
+     ],
+     "hook": "あは雪"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH34-05",
+   "kind": "exchange",
+   "poem_ids": [
+    467,
+    468
+   ],
+   "context": "Retired Emperor Suzaku appeals to Murasaki no Ue to care for his daughter, the Third Princess, after his religious retirement; Murasaki replies.",
+   "links": [
+    {
+     "poems": [
+      467,
+      468
+     ],
+     "hook": "そむく・ほだし"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH34-06",
+   "kind": "exchange",
+   "poem_ids": [
+    469,
+    470
+   ],
+   "context": "During Genji's reunion with his former lover Oborozukiyo, they first exchange verses about the long-severed road over the Ōsaka Barrier.",
+   "links": [
+    {
+     "poems": [
+      469,
+      470
+     ],
+     "hook": "関・涙"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH34-07",
+   "kind": "exchange",
+   "poem_ids": [
+    471,
+    472
+   ],
+   "context": "Later during the same reunion, Genji renews his advance with a wisteria/water-deep metaphor, and Oborozukiyo responds.",
+   "links": [
+    {
+     "poems": [
+      471,
+      472
+     ],
+     "hook": "こりすま・身を投げ・淵"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH34-08",
+   "kind": "exchange",
+   "poem_ids": [
+    473,
+    474
+   ],
+   "context": "Murasaki privately writes of changing autumn leaves and waning affection, and Genji reads and counters her metaphor.",
+   "links": [
+    {
+     "poems": [
+      473,
+      474
+     ],
+     "hook": "青葉・色/うつろふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH34-09",
+   "kind": "chorus",
+   "poem_ids": [
+    475,
+    476,
+    477
+   ],
+   "context": "At a family reunion, Akashi no Amagimi, Akashi no Nyōgo and Akashi no Ue compose three interrelated verses about their fortunes and the absent Akashi Nyūdō.",
+   "links": [
+    {
+     "poems": [
+      475,
+      476
+     ],
+     "hook": "しほたるるあま"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH34-10",
+   "kind": "single",
+   "poem_ids": [
+    478
+   ],
+   "context": "In a farewell letter from his distant retreat, Akashi Nyūdō gives a poem about a long-awaited dawn and the realization of his dream.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH34-11",
+   "kind": "exchange",
+   "poem_ids": [
+    479,
+    480
+   ],
+   "context": "Kashiwagi criticizes Genji's perceived neglect of the Third Princess in a poem, and Yūgiri responds in Genji's defense.",
+   "links": [
+    {
+     "poems": [
+      479,
+      480
+     ],
+     "hook": "ねぐら・花・鳥"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH34-12",
+   "kind": "exchange",
+   "poem_ids": [
+    481,
+    482
+   ],
+   "context": "Kashiwagi sends a courtship poem intended for the Third Princess through her attendant Kojijū; Kojijū writes the answer herself.",
+   "links": [
+    {
+     "poems": [
+      481,
+      482
+     ],
+     "hook": "花（桜）を折る"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH35-01",
+   "kind": "single",
+   "poem_ids": [
+    483
+   ],
+   "context": "Kashiwagi privately addresses the cat that reminds him of the Third Princess.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH35-02",
+   "kind": "exchange",
+   "poem_ids": [
+    484,
+    485,
+    486
+   ],
+   "context": "During the Sumiyoshi pilgrimage, Genji exchanges poems with Akashi's elderly mother and she adds a private reflection on the divine blessing of their family.",
+   "links": [
+    {
+     "poems": [
+      484,
+      485
+     ],
+     "hook": "住吉/住の江"
+    },
+    {
+     "poems": [
+      484,
+      486
+     ],
+     "hook": "住吉・神・松"
+    },
+    {
+     "poems": [
+      485,
+      486
+     ],
+     "hook": "住吉"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH35-03",
+   "kind": "chorus",
+   "poem_ids": [
+    487,
+    488,
+    489
+   ],
+   "context": "Later during the Sumiyoshi ceremonies, Murasaki no Ue, Akashi no Nyōgo and Nakatsukasa no Kimi compose a short choral sequence on signs of divine favor.",
+   "links": [
+    {
+     "poems": [
+      487,
+      488
+     ],
+     "hook": "霜・神・ゆふ"
+    },
+    {
+     "poems": [
+      487,
+      489
+     ],
+     "hook": "霜・神・ゆふ"
+    },
+    {
+     "poems": [
+      488,
+      489
+     ],
+     "hook": "霜・神・ゆふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH35-04",
+   "kind": "exchange",
+   "poem_ids": [
+    490,
+    491
+   ],
+   "context": "After Kashiwagi's illicit sexual encounter with the Third Princess, he addresses her at dawn, and she replies in distress.",
+   "links": [
+    {
+     "poems": [
+      490,
+      491
+     ],
+     "hook": "あけくれ・空・きえ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH35-05",
+   "kind": "solo",
+   "poem_ids": [
+    492,
+    493
+   ],
+   "context": "Kashiwagi writes two related private poems while ruminating on the Third Princess and his marriage to her sister, the Second Princess, around the Aoi festival.",
+   "links": [
+    {
+     "poems": [
+      492,
+      493
+     ],
+     "hook": "かざし"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH35-06",
+   "kind": "single",
+   "poem_ids": [
+    494
+   ],
+   "context": "The accusing spirit of the deceased Rokujō no Miyasudokoro speaks in a poem during its possession of Murasaki no Ue.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH35-07",
+   "kind": "exchange",
+   "poem_ids": [
+    495,
+    496
+   ],
+   "context": "Recovering from grave illness, Murasaki no Ue compares her remaining life to dew on a lotus leaf and Genji replies.",
+   "links": [
+    {
+     "poems": [
+      495,
+      496
+     ],
+     "hook": "はちすの露"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH35-08",
+   "kind": "exchange",
+   "poem_ids": [
+    497,
+    498
+   ],
+   "context": "The Third Princess reproaches Genji for leaving when evening cicadas begin to sound, and he answers.",
+   "links": [
+    {
+     "poems": [
+      497,
+      498
+     ],
+     "hook": "ひぐらし"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH35-09",
+   "kind": "exchange",
+   "poem_ids": [
+    499,
+    500
+   ],
+   "context": "Genji sends a nostalgic poem to Oborozukiyo upon learning that she has entered religious life; she replies.",
+   "links": [
+    {
+     "poems": [
+      499,
+      500
+     ],
+     "hook": "あま・須磨/明石の浦"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH36-01",
+   "kind": "exchange",
+   "poem_ids": [
+    501,
+    502,
+    503
+   ],
+   "context": "As Kashiwagi nears death, he sends the Third Princess a poem through Kojijū; the princess reluctantly replies, and Kashiwagi writes a further poem back.",
+   "links": [
+    {
+     "poems": [
+      501,
+      502
+     ],
+     "hook": "煙"
+    },
+    {
+     "poems": [
+      501,
+      503
+     ],
+     "hook": "煙"
+    },
+    {
+     "poems": [
+      502,
+      503
+     ],
+     "hook": "煙"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH36-02",
+   "kind": "single",
+   "poem_ids": [
+    504
+   ],
+   "context": "Genji quietly questions the Third Princess about the paternity of the infant Kaoru, using a pine growing out of rock as his metaphor.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH36-03",
+   "kind": "exchange",
+   "poem_ids": [
+    505,
+    506
+   ],
+   "context": "Yūgiri exchanges mourning poems with Ichijō no Miyasudokoro at the home of Kashiwagi's widow.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH36-04",
+   "kind": "chorus",
+   "poem_ids": [
+    507,
+    508,
+    509
+   ],
+   "context": "Kashiwagi's grieving father composes a verse about mourning his son; Yūgiri and Kashiwagi's younger brother Ben no Kimi add two closely linked verses in the same gathering.",
+   "links": [
+    {
+     "poems": [
+      507,
+      508
+     ],
+     "hook": "かすみの衣"
+    },
+    {
+     "poems": [
+      507,
+      509
+     ],
+     "hook": "かすみの衣"
+    },
+    {
+     "poems": [
+      508,
+      509
+     ],
+     "hook": "かすみ・着る"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH36-05",
+   "kind": "exchange",
+   "poem_ids": [
+    510,
+    511
+   ],
+   "context": "During a visit to Kashiwagi's bereaved household, Yūgiri speaks a poem about close branches and the guardian deity of leaves; Shōshō no Kimi, a lady-in-waiting, replies.",
+   "links": [
+    {
+     "poems": [
+      510,
+      511
+     ],
+     "hook": "葉守の神・ならす"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH37-01",
+   "kind": "exchange",
+   "poem_ids": [
+    512,
+    513
+   ],
+   "context": "Retired Emperor Suzaku sends the newly tonsured Third Princess mountain produce and a poem asking her to follow him toward the Pure Land; she replies.",
+   "links": [
+    {
+     "poems": [
+      512,
+      513
+     ],
+     "hook": "背く/入る・ところ・山路"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH37-02",
+   "kind": "single",
+   "poem_ids": [
+    514
+   ],
+   "context": "Watching the young Kaoru with bamboo shoots, Genji privately composes a poem about a beloved child and the bitter circumstances of his birth.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH37-03",
+   "kind": "exchange",
+   "poem_ids": [
+    515,
+    516
+   ],
+   "context": "Yūgiri addresses Ochiba no Miya after hearing her play music, and she replies without encouraging his advances.",
+   "links": [
+    {
+     "poems": [
+      515,
+      516
+     ],
+     "hook": "こと（言/琴）"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH37-04",
+   "kind": "exchange",
+   "poem_ids": [
+    517,
+    518
+   ],
+   "context": "Ichijō no Miyasudokoro sends Yūgiri a lament while they remember the deceased Kashiwagi's music; Yūgiri replies.",
+   "links": [
+    {
+     "poems": [
+      517,
+      518
+     ],
+     "hook": "かはらぬ・声/音"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH37-05",
+   "kind": "single",
+   "poem_ids": [
+    519
+   ],
+   "context": "Kashiwagi's spirit appears to Yūgiri in a dream and voices a poem expressing the wish that his flute should eventually pass to his child Kaoru.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH38-01",
+   "kind": "exchange",
+   "poem_ids": [
+    520,
+    521
+   ],
+   "context": "Genji laments separation from the Third Princess after her religious retirement by invoking their shared lotus seat; she answers.",
+   "links": [
+    {
+     "poems": [
+      520,
+      521
+     ],
+     "hook": "はちす・契"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH38-02",
+   "kind": "exchange",
+   "poem_ids": [
+    522,
+    523
+   ],
+   "context": "After Genji releases bell crickets into the Third Princess's garden, she addresses him with a poem on their sound and his changing affection; he replies.",
+   "links": [
+    {
+     "poems": [
+      522,
+      523
+     ],
+     "hook": "すずむし"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH38-03",
+   "kind": "exchange",
+   "poem_ids": [
+    524,
+    525
+   ],
+   "context": "Retired Emperor Reizei sends Genji a Mid-Autumn Moon poem regretting their separation and Genji's absence; Genji replies before visiting.",
+   "links": [
+    {
+     "poems": [
+      524,
+      525
+     ],
+     "hook": "秋・月・雲"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH39-01",
+   "kind": "exchange",
+   "poem_ids": [
+    526,
+    527,
+    528,
+    529,
+    530,
+    531
+   ],
+   "context": "During Yūgiri's prolonged evening and night at the Ono mountain retreat, he and the distressed Ochiba no Miya exchange six poems as he presses for intimacy and she attempts to maintain her distance.",
+   "links": [
+    {
+     "poems": [
+      526,
+      527
+     ],
+     "hook": "霧・たつ"
+    },
+    {
+     "poems": [
+      526,
+      530
+     ],
+     "hook": "霧"
+    },
+    {
+     "poems": [
+      527,
+      530
+     ],
+     "hook": "霧"
+    },
+    {
+     "poems": [
+      528,
+      529
+     ],
+     "hook": "ぬれ衣/袖・名をくたす"
+    },
+    {
+     "poems": [
+      529,
+      531
+     ],
+     "hook": "ぬれぎぬ"
+    },
+    {
+     "poems": [
+      530,
+      531
+     ],
+     "hook": "露・わけ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH39-02",
+   "kind": "single",
+   "poem_ids": [
+    532
+   ],
+   "context": "In a letter following the tense visit to Ono, Yūgiri writes to Ochiba no Miya that he has left his soul in her unyielding sleeve.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH39-03",
+   "kind": "single",
+   "poem_ids": [
+    533
+   ],
+   "context": "Yūgiri sends Ochiba no Miya another insistent poem about the futility of damming the flow of their public reputation; she is displeased and does not reply in verse.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH39-04",
+   "kind": "exchange",
+   "poem_ids": [
+    534,
+    535
+   ],
+   "context": "The gravely ill Ichijō no Miyasudokoro challenges Yūgiri by letter about his night at her daughter's Ono retreat; he answers the reproach.",
+   "links": [
+    {
+     "poems": [
+      534,
+      535
+     ],
+     "hook": "かり（宿借り/仮寝）・野"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH39-05",
+   "kind": "exchange",
+   "poem_ids": [
+    536,
+    537
+   ],
+   "context": "Kumoi no Kari writes an anguished poem to her husband Yūgiri about his pursuit of Ochiba no Miya, and he sends a reply.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH39-06",
+   "kind": "exchange",
+   "poem_ids": [
+    538,
+    539
+   ],
+   "context": "Yūgiri speaks in verse to Koshōshō no Kimi, an attendant attempting to mediate his increasingly fraught access to Ochiba no Miya; she replies.",
+   "links": [
+    {
+     "poems": [
+      538,
+      539
+     ],
+     "hook": "しか（鹿/然）・声/音"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH39-07",
+   "kind": "single",
+   "poem_ids": [
+    540
+   ],
+   "context": "At a moonlit pool, Yūgiri privately recalls his dead friend Kashiwagi and composes a poem on an absent reflection and the solitary autumn moon.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH39-08",
+   "kind": "single",
+   "poem_ids": [
+    541
+   ],
+   "context": "After another strained encounter with Ochiba no Miya, Yūgiri sends a poem recalling her promise to awaken from a dark, unending dream.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH39-09",
+   "kind": "single",
+   "poem_ids": [
+    542
+   ],
+   "context": "Ochiba no Miya privately practices writing a lament on Yūgiri's letter about the ceaseless tears of Ono; her attendant secretly sends him the fragment.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH39-10",
+   "kind": "single",
+   "poem_ids": [
+    543
+   ],
+   "context": "Reluctantly preparing to leave the Ono retreat, Ochiba no Miya privately wishes she could mingle with her mother's cremation smoke rather than be blown toward a future she rejects.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH39-11",
+   "kind": "single",
+   "poem_ids": [
+    544
+   ],
+   "context": "Ochiba no Miya mourns her mother while holding an ornate keepsake box as she leaves Ono.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH39-12",
+   "kind": "single",
+   "poem_ids": [
+    545
+   ],
+   "context": "At Ochiba no Miya's residence in winter, Yūgiri complains in verse that the door is closed to him as tightly as a mountain barrier.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH39-13",
+   "kind": "exchange",
+   "poem_ids": [
+    546,
+    547
+   ],
+   "context": "Kumoi no Kari murmurs a poem about changing into a nun's robe while holding Yūgiri's discarded garment; Yūgiri overhears it and answers.",
+   "links": [
+    {
+     "poems": [
+      546,
+      547
+     ],
+     "hook": "松島のあま・衣/ぬれぎぬ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH39-14",
+   "kind": "exchange",
+   "poem_ids": [
+    548,
+    549
+   ],
+   "context": "Kashiwagi's father, the retired Grand Minister, sends Ochiba no Miya a deliberately ambivalent letter after Yūgiri begins residing with her; she answers.",
+   "links": [
+    {
+     "poems": [
+      548,
+      549
+     ],
+     "hook": "うらめし/うし・きく"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH39-15",
+   "kind": "exchange",
+   "poem_ids": [
+    550,
+    551
+   ],
+   "context": "Fuji no Naishi, another partner of Yūgiri, sends a sympathetic poem to the distressed Kumoi no Kari, who answers.",
+   "links": [
+    {
+     "poems": [
+      550,
+      551
+     ],
+     "hook": "世のうさ・身"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH40-01",
+   "kind": "exchange",
+   "poem_ids": [
+    552,
+    553
+   ],
+   "context": "During Murasaki no Ue's Buddhist Lotus Sutra ceremony, she sends Akashi no Ue an anxious poem about her impending death; Akashi answers with a wish for long continued religious devotion.",
+   "links": [
+    {
+     "poems": [
+      552,
+      553
+     ],
+     "hook": "薪"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH40-02",
+   "kind": "exchange",
+   "poem_ids": [
+    554,
+    555
+   ],
+   "context": "As the religious ceremony concludes, Murasaki no Ue speaks to Hanachirusato of their bond across future lives; Hanachirusato answers.",
+   "links": [
+    {
+     "poems": [
+      554,
+      555
+     ],
+     "hook": "みのり・契・むすぶ・たえ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH40-03",
+   "kind": "chorus",
+   "poem_ids": [
+    556,
+    557,
+    558
+   ],
+   "context": "Near Murasaki no Ue's final illness, Murasaki, Genji, and Akashi no Nyōgo compose three consecutive related poems about vanishing life as dew.",
+   "links": [
+    {
+     "poems": [
+      556,
+      557
+     ],
+     "hook": "露・風"
+    },
+    {
+     "poems": [
+      556,
+      558
+     ],
+     "hook": "露・風"
+    },
+    {
+     "poems": [
+      557,
+      558
+     ],
+     "hook": "露の世"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH40-04",
+   "kind": "single",
+   "poem_ids": [
+    559
+   ],
+   "context": "After Murasaki no Ue's death, Yūgiri privately composes a recollection of earlier autumn evenings and a dream-like final parting.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH40-05",
+   "kind": "exchange",
+   "poem_ids": [
+    560,
+    561
+   ],
+   "context": "The retired Grand Minister sends a condolence poem to Genji over Murasaki no Ue's death, recalling the earlier death of his sister Aoi no Ue; Genji replies.",
+   "links": [
+    {
+     "poems": [
+      560,
+      561
+     ],
+     "hook": "露・いにしへ/むかし・秋"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH40-06",
+   "kind": "exchange",
+   "poem_ids": [
+    562,
+    563
+   ],
+   "context": "Akikonomu, the Autumn Consort, consoles Genji over Murasaki no Ue's death with a poem on autumn and withered fields; he replies by asking the departed woman's rising spirit to look back.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH41-01",
+   "kind": "exchange",
+   "poem_ids": [
+    564,
+    565
+   ],
+   "context": "Prince Hotaru visits Genji in spring after Murasaki no Ue's death; Genji sends him a verse of welcome emptied of joy, and the prince responds.",
+   "links": [
+    {
+     "poems": [
+      564,
+      565
+     ],
+     "hook": "たづね/とめ・花・来つ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH41-02",
+   "kind": "single",
+   "poem_ids": [
+    566
+   ],
+   "context": "Genji recalls an earlier snowy dawn and privately laments surviving when he wishes to vanish from the painful world.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH41-03",
+   "kind": "solo",
+   "poem_ids": [
+    567,
+    568
+   ],
+   "context": "On separate occasions in spring, Genji observes the flowering garden cherished by the late Murasaki and worries that it will be left to decay if he enters religious life.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH41-04",
+   "kind": "exchange",
+   "poem_ids": [
+    569,
+    570
+   ],
+   "context": "After failing to stay with Akashi no Ue, Genji sends her a verse about returning sadly to his solitary life; she answers his letter.",
+   "links": [
+    {
+     "poems": [
+      569,
+      570
+     ],
+     "hook": "かり（仮/雁）"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH41-05",
+   "kind": "exchange",
+   "poem_ids": [
+    571,
+    572
+   ],
+   "context": "Hanachirusato sends Genji summer garments with a waka on changing clothes and recalling former feelings; he replies.",
+   "links": [
+    {
+     "poems": [
+      571,
+      572
+     ],
+     "hook": "衣・たちかへ・けふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH41-06",
+   "kind": "exchange",
+   "poem_ids": [
+    573,
+    574
+   ],
+   "context": "During the Aoi Festival, Genji picks up an aoi sprig near Chūjō no Kimi, a woman with whom he has been intimate, and their teasing conversation becomes two waka.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH41-07",
+   "kind": "chorus",
+   "poem_ids": [
+    575,
+    576
+   ],
+   "context": "While Yūgiri visits Genji on a rainy early-summer evening, a cuckoo calls and Genji composes a mourning poem; Yūgiri answers in the same imagery.",
+   "links": [
+    {
+     "poems": [
+      575,
+      576
+     ],
+     "hook": "ほととぎす"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH41-08",
+   "kind": "solo",
+   "poem_ids": [
+    577,
+    578
+   ],
+   "context": "Alone in the garden during one summer evening, Genji successively hears the loud cicadas and sees fireflies, privately composing two verses on ceaseless grief.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH41-09",
+   "kind": "single",
+   "poem_ids": [
+    579
+   ],
+   "context": "On the seventh night of the seventh month, Genji privately watches Tanabata's celestial meeting while his own home and garden remain marked by parting.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH41-10",
+   "kind": "exchange",
+   "poem_ids": [
+    580,
+    581
+   ],
+   "context": "At the observance of Murasaki no Ue's death anniversary, Chūjō no Kimi writes a lament on her fan, which Genji reads and answers by writing a verse on the same fan.",
+   "links": [
+    {
+     "poems": [
+      580,
+      581
+     ],
+     "hook": "恋ふる涙"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH41-11",
+   "kind": "single",
+   "poem_ids": [
+    582
+   ],
+   "context": "On the ninth day of the ninth month, Genji sees chrysanthemums covered to collect dew and remembers the time he and Murasaki attended them together.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH41-12",
+   "kind": "single",
+   "poem_ids": [
+    583
+   ],
+   "context": "In the tenth month, Genji privately imagines asking a supernatural seeker to discover the whereabouts of Murasaki's soul.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH41-13",
+   "kind": "single",
+   "poem_ids": [
+    584
+   ],
+   "context": "During court celebrations, Genji observes the festivities and privately measures their liveliness against his own lonely passage through the day.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH41-14",
+   "kind": "solo",
+   "poem_ids": [
+    585,
+    586
+   ],
+   "context": "Genji examines Murasaki no Ue's surviving letters, composes one verse about following the traces of the dead, then writes another beside the letters before having them burned.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH41-15",
+   "kind": "exchange",
+   "poem_ids": [
+    587,
+    588
+   ],
+   "context": "At a year-end Buddhist rite, Genji recites a poem while offering a cup to the officiating monk, who replies with a blessing.",
+   "links": [
+    {
+     "poems": [
+      587,
+      588
+     ],
+     "hook": "雪・春・梅/花"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH41-16",
+   "kind": "single",
+   "poem_ids": [
+    589
+   ],
+   "context": "At the end of the year, Genji privately wonders whether his year and his own lifetime are ending together.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH42-01",
+   "kind": "single",
+   "poem_ids": [
+    590
+   ],
+   "context": "Kaoru, troubled by suspicions surrounding his birth and uncertain future, privately asks whom he can consult about the beginning and end of his life.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH43-01",
+   "kind": "exchange",
+   "poem_ids": [
+    591,
+    592,
+    593,
+    594
+   ],
+   "context": "Kōbai Dainagon twice approaches Prince Niou about marriage to his daughter Nakano Kimi through fragrant plum-blossom poems; Niou answers each overture without committing.",
+   "links": [
+    {
+     "poems": [
+      591,
+      592
+     ],
+     "hook": "風・花の香/にほふ"
+    },
+    {
+     "poems": [
+      591,
+      593
+     ],
+     "hook": "にほふ"
+    },
+    {
+     "poems": [
+      591,
+      594
+     ],
+     "hook": "にほはす"
+    },
+    {
+     "poems": [
+      592,
+      594
+     ],
+     "hook": "花の香"
+    },
+    {
+     "poems": [
+      593,
+      594
+     ],
+     "hook": "にほふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH44-01",
+   "kind": "exchange",
+   "poem_ids": [
+    595,
+    596
+   ],
+   "context": "At Tamakazura's residence, the senior attendant Saishō no Kimi teases Kaoru's reserved manner by comparing him to a young plum blossom; Kaoru answers in kind.",
+   "links": [
+    {
+     "poems": [
+      595,
+      596
+     ],
+     "hook": "梅のはつ花"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH44-02",
+   "kind": "exchange",
+   "poem_ids": [
+    597,
+    598,
+    611,
+    612
+   ],
+   "context": "Kurōdo no Shōshō's frustrated pursuit of Tamakazura's elder daughter produces a spring-flower verse and an attendant's reply, then a later April letter and a female reply written on Tamakazura's behalf.",
+   "links": [
+    {
+     "poems": [
+      597,
+      598
+     ],
+     "hook": "花に心をうつす/うつる"
+    },
+    {
+     "poems": [
+      597,
+      611
+     ],
+     "hook": "花・まどふ"
+    },
+    {
+     "poems": [
+      597,
+      612
+     ],
+     "hook": "花に心をうつす"
+    },
+    {
+     "poems": [
+      598,
+      612
+     ],
+     "hook": "うつる/うつす"
+    },
+    {
+     "poems": [
+      611,
+      612
+     ],
+     "hook": "けふ・花"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH44-03",
+   "kind": "exchange",
+   "poem_ids": [
+    599,
+    600,
+    617,
+    618
+   ],
+   "context": "Kaoru's early written exchange with Fuji no Jijū about a night singing 'Takekawa' is explicitly recalled years later when a woman at Tamakazura's residence asks him whether he remembers that night; Kaoru answers.",
+   "links": [
+    {
+     "poems": [
+      599,
+      600
+     ],
+     "hook": "竹河・ふし"
+    },
+    {
+     "poems": [
+      599,
+      617
+     ],
+     "hook": "竹河・ふし"
+    },
+    {
+     "poems": [
+      599,
+      618
+     ],
+     "hook": "竹河"
+    },
+    {
+     "poems": [
+      600,
+      617
+     ],
+     "hook": "竹河・ふし"
+    },
+    {
+     "poems": [
+      600,
+      618
+     ],
+     "hook": "竹河"
+    },
+    {
+     "poems": [
+      617,
+      618
+     ],
+     "hook": "竹河"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH44-04",
+   "kind": "chorus",
+   "poem_ids": [
+    601,
+    602,
+    603,
+    604,
+    605,
+    606
+   ],
+   "context": "During Tamakazura's daughters' spring flower contest, the two princesses, their attendants and two girls from opposing sides improvise a six-voice debate as wind scatters cherry blossoms.",
+   "links": [
+    {
+     "poems": [
+      601,
+      602
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      601,
+      603
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      601,
+      604
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      601,
+      605
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      601,
+      606
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      602,
+      603
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      602,
+      604
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      602,
+      605
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      602,
+      606
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      603,
+      604
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      603,
+      605
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      603,
+      606
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      604,
+      605
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      604,
+      606
+     ],
+     "hook": "桜/花・風・散る"
+    },
+    {
+     "poems": [
+      605,
+      606
+     ],
+     "hook": "桜/花・風・散る"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH44-05",
+   "kind": "single",
+   "poem_ids": [
+    607
+   ],
+   "context": "Kaoru sends an understated, unanswered spring-ending complaint to Fuji no Jijū that his attention and hopes have been met with unchanging coldness.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH44-06",
+   "kind": "chorus",
+   "poem_ids": [
+    608,
+    609,
+    610
+   ],
+   "context": "Kurōdo no Shōshō complains to Chūjō no Omoto, an attendant mediating access to Tamakazura's daughter, in three consecutive verses during a discussion of the daughters' Go contest.",
+   "links": [
+    {
+     "poems": [
+      608,
+      609
+     ],
+     "hook": "勝ち負け・心"
+    },
+    {
+     "poems": [
+      609,
+      610
+     ],
+     "hook": "まかする"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH44-07",
+   "kind": "exchange",
+   "poem_ids": [
+    613,
+    614
+   ],
+   "context": "After receiving an alarming letter from Kurōdo no Shōshō, Tamakazura's elder daughter Ōigimi writes a wary verse on the letter and receives his more desperate answer.",
+   "links": [
+    {
+     "poems": [
+      613,
+      614
+     ],
+     "hook": "ひとこと・世"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH44-08",
+   "kind": "exchange",
+   "poem_ids": [
+    615,
+    616
+   ],
+   "context": "Kaoru tells Fuji no Jijū, Tamakazura's son, of his regret over the imminent marriage of the elder daughter while they sit beneath flowering wisteria beside a pine; Fuji no Jijū replies.",
+   "links": [
+    {
+     "poems": [
+      615,
+      616
+     ],
+     "hook": "藤の花・色・かく"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH45-01",
+   "kind": "chorus",
+   "poem_ids": [
+    619,
+    620,
+    621
+   ],
+   "context": "The Eighth Prince watches paired waterbirds with his two young daughters and laments the mother's death; Ōigimi and Nakano Kimi each extend the waterbird image in turn.",
+   "links": [
+    {
+     "poems": [
+      619,
+      620
+     ],
+     "hook": "水鳥"
+    },
+    {
+     "poems": [
+      620,
+      621
+     ],
+     "hook": "巣・すだつ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH45-02",
+   "kind": "single",
+   "poem_ids": [
+    622
+   ],
+   "context": "After the Eighth Prince's residence in the capital burns and he moves with his daughters to Uji, he privately mourns his dead wife and destroyed home.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH45-03",
+   "kind": "exchange",
+   "poem_ids": [
+    623,
+    624
+   ],
+   "context": "Reizei-in writes the reclusive Eighth Prince, asking whether mountains and layers of cloud keep them apart; the prince replies from Uji.",
+   "links": [
+    {
+     "poems": [
+      623,
+      624
+     ],
+     "hook": "世を（いとふ/宇治）・山・心"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH45-04",
+   "kind": "single",
+   "poem_ids": [
+    625
+   ],
+   "context": "Kaoru privately weeps after seeing the Eighth Prince's secluded world, comparing the fragility of his tears to dew on leaves driven by a mountain wind.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH45-05",
+   "kind": "exchange",
+   "poem_ids": [
+    626,
+    627
+   ],
+   "context": "At dawn after Kaoru's first intimate visit to Uji, he laments that fog hides his way home; the elder daughter Ōigimi gives a poetic reply.",
+   "links": [
+    {
+     "poems": [
+      626,
+      627
+     ],
+     "hook": "霧・へだつ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH45-06",
+   "kind": "exchange",
+   "poem_ids": [
+    628,
+    629
+   ],
+   "context": "During the same departure from Uji, Kaoru sends another verse to Ōigimi, this time invoking the Bridge Maiden and a ferryman's dripping pole; she replies by letter.",
+   "links": [
+    {
+     "poems": [
+      628,
+      629
+     ],
+     "hook": "しづく・袖・棹さす"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH45-07",
+   "kind": "solo",
+   "poem_ids": [
+    630,
+    631
+   ],
+   "context": "Kaoru examines Kashiwagi's secretly preserved dying correspondence concerning the Third Princess and the child who became Kaoru, encountering two waka composed long ago by Kashiwagi.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH46-01",
+   "kind": "exchange",
+   "poem_ids": [
+    632,
+    633
+   ],
+   "context": "The Eighth Prince sends a river-and-flute invitation during Niou's spring excursion; Niou sees the letter with Kaoru and volunteers an answering poem.",
+   "links": [
+    {
+     "poems": [
+      632,
+      633
+     ],
+     "hook": "をち・浪・吹く・へだつ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH46-02",
+   "kind": "exchange",
+   "poem_ids": [
+    634,
+    635,
+    651,
+    652
+   ],
+   "context": "Niou first sends the Eighth Prince's daughters a spring mountain-cherry poem about sharing a blossom ornament; Nakano Kimi answers, and the next spring Niou explicitly recalls that earlier verse and renews his courtship with another cherry poem to which she responds.",
+   "links": [
+    {
+     "poems": [
+      634,
+      635
+     ],
+     "hook": "かざし"
+    },
+    {
+     "poems": [
+      634,
+      651
+     ],
+     "hook": "かざし・桜"
+    },
+    {
+     "poems": [
+      634,
+      652
+     ],
+     "hook": "たづね・をる・桜"
+    },
+    {
+     "poems": [
+      635,
+      651
+     ],
+     "hook": "かざし・をる"
+    },
+    {
+     "poems": [
+      635,
+      652
+     ],
+     "hook": "をる・桜"
+    },
+    {
+     "poems": [
+      651,
+      652
+     ],
+     "hook": "宿の桜・をる"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH46-03",
+   "kind": "exchange",
+   "poem_ids": [
+    636,
+    637
+   ],
+   "context": "At a farewell meeting the Eighth Prince asks Kaoru to continue caring for his daughters after his death, and Kaoru answers his verse.",
+   "links": [
+    {
+     "poems": [
+      636,
+      637
+     ],
+     "hook": "草の庵・かれ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH46-04",
+   "kind": "chorus",
+   "poem_ids": [
+    638,
+    639,
+    640
+   ],
+   "context": "Niou writes condolences and an overture to Nakano Kimi after the Eighth Prince's death; Ōigimi composes the household reply on her sister's behalf, and Niou sends a further response.",
+   "links": [
+    {
+     "poems": [
+      638,
+      639
+     ],
+     "hook": "鹿・山里"
+    },
+    {
+     "poems": [
+      638,
+      640
+     ],
+     "hook": "鹿"
+    },
+    {
+     "poems": [
+      639,
+      640
+     ],
+     "hook": "鹿・霧"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH46-05",
+   "kind": "exchange",
+   "poem_ids": [
+    641,
+    642
+   ],
+   "context": "During Kaoru's visit to the mourning daughters, he compares autumn grasses changing color with their subdued mourning garments; Ōigimi answers.",
+   "links": [
+    {
+     "poems": [
+      641,
+      642
+     ],
+     "hook": "色かはる・袖"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH46-06",
+   "kind": "single",
+   "poem_ids": [
+    643
+   ],
+   "context": "Kaoru departs the late Eighth Prince's residence, hears wild geese overhead and privately reflects on a world as temporary as the bird's lodging.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH46-07",
+   "kind": "chorus",
+   "poem_ids": [
+    644,
+    645,
+    649,
+    650
+   ],
+   "context": "After their father's death, Ōigimi and Nakano Kimi mourn together amid winter snow at Uji, exchanging two poems about the inaccessible mountain path and the snow on pines. In the next spring, the Uji sisters receive fresh bracken and watercress gathered after the snow melts and lament that their father is no longer there to collect them.",
+   "links": [
+    {
+     "poems": [
+      644,
+      645
+     ],
+     "hook": "松・雪"
+    }
+   ],
+   "merged_from": [
+    "CH46-07",
+    "CH46-10"
+   ]
+  },
+  {
+   "bucket_id": "CH46-08",
+   "kind": "exchange",
+   "poem_ids": [
+    646,
+    647
+   ],
+   "context": "When Kaoru visits Uji through deep winter snow, Ōigimi speaks of his being the only one to tread the isolated mountain route; Kaoru replies about crossing an iced-over river to guide and visit her.",
+   "links": [
+    {
+     "poems": [
+      646,
+      647
+     ],
+     "hook": "ふみ（踏み）・山"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH46-09",
+   "kind": "single",
+   "poem_ids": [
+    648
+   ],
+   "context": "Kaoru enters the late Eighth Prince's unused room and privately laments that the sheltering chinquapin tree (shii) and former place of welcome are now an empty bed.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH47-01",
+   "kind": "exchange",
+   "poem_ids": [
+    653,
+    654
+   ],
+   "context": "While planning offerings for the Eighth Prince's memorial, Kaoru writes to Ōigimi of binding their lives together; she replies in the idiom of frail tears and an impossible long promise.",
+   "links": [
+    {
+     "poems": [
+      653,
+      654
+     ],
+     "hook": "なかき契・むすぶ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH47-02",
+   "kind": "exchange",
+   "poem_ids": [
+    655,
+    656
+   ],
+   "context": "At dawn after a long night in Uji, Kaoru hears birds and reflects on the remote village's melancholy; Ōigimi answers that the sorrows of the world have found even this mountain retreat.",
+   "links": [
+    {
+     "poems": [
+      655,
+      656
+     ],
+     "hook": "山・鳥の声"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH47-03",
+   "kind": "exchange",
+   "poem_ids": [
+    657,
+    658
+   ],
+   "context": "Kaoru sends Ōigimi a leafed branch, half deeply colored in autumn, asking which of the sisterly branches has deeper color; Ōigimi responds with a pointed allusion to his supposedly changing affection.",
+   "links": [
+    {
+     "poems": [
+      657,
+      658
+     ],
+     "hook": "山姫・染め"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH47-04",
+   "kind": "exchange",
+   "poem_ids": [
+    659,
+    660
+   ],
+   "context": "Niou teasingly accuses Kaoru of enclosing a field of maiden flowers and keeping Uji's sisters from view; Kaoru answers that these flowers can be seen only by someone who looks with sincere devotion.",
+   "links": [
+    {
+     "poems": [
+      659,
+      660
+     ],
+     "hook": "をみなへし"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH47-05",
+   "kind": "exchange",
+   "poem_ids": [
+    661,
+    662
+   ],
+   "context": "At dawn after the night when Niou first reaches Nakano Kimi, Kaoru laments that he has become lost on the path he was supposed to guide; Ōigimi answers by turning his wandering into her own divided worries.",
+   "links": [
+    {
+     "poems": [
+      661,
+      662
+     ],
+     "hook": "まどふ・道・心"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH47-06",
+   "kind": "single",
+   "poem_ids": [
+    663
+   ],
+   "context": "Niou sends his first morning-after letter to the shaken Nakano Kimi, claiming that crossing dew-soaked bamboo grass was no ordinary journey of love.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH47-07",
+   "kind": "exchange",
+   "poem_ids": [
+    664,
+    665
+   ],
+   "context": "Kaoru sends Ōigimi clothing and a teasing poem about a garment he cannot claim to have worn close to her; she replies denying that their bond licenses such familiarity.",
+   "links": [
+    {
+     "poems": [
+      664,
+      665
+     ],
+     "hook": "なれ・かけ・衣/袖"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH47-08",
+   "kind": "exchange",
+   "poem_ids": [
+    666,
+    667
+   ],
+   "context": "Departing Uji, Niou asks Nakano Kimi to trust that his love will not break and invokes the Bridge Maiden's lonely sleeve; she answers through the enduring Uji bridge and waiting over separation.",
+   "links": [
+    {
+     "poems": [
+      666,
+      667
+     ],
+     "hook": "橋姫/宇治橋・たえ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH47-09",
+   "kind": "chorus",
+   "poem_ids": [
+    668,
+    669,
+    670,
+    671,
+    672
+   ],
+   "context": "A sequence of five courtly poems at the Eighth Prince's Uji residence moves from the sisters' earlier beauty and autumnal loneliness through impermanence, red leaves, creeping vines and protection against mountain wind.",
+   "links": [
+    {
+     "poems": [
+      668,
+      669
+     ],
+     "hook": "花"
+    },
+    {
+     "poems": [
+      668,
+      672
+     ],
+     "hook": "木のもと・さびし・秋"
+    },
+    {
+     "poems": [
+      669,
+      670
+     ],
+     "hook": "もみぢ"
+    },
+    {
+     "poems": [
+      670,
+      671
+     ],
+     "hook": "山里"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH47-10",
+   "kind": "single",
+   "poem_ids": [
+    673
+   ],
+   "context": "Niou uses an illustrated Ise-story scene of a brother and sister to make a teasing, mildly improper declaration to his own elder sister, First Princess.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH47-11",
+   "kind": "exchange",
+   "poem_ids": [
+    674,
+    675
+   ],
+   "context": "While unable to visit Nakano Kimi, Niou writes of viewing the same clouded sky and rain with added uncertainty; she answers from hail-darkened, remote Uji.",
+   "links": [
+    {
+     "poems": [
+      674,
+      675
+     ],
+     "hook": "ながむ・空/雲居"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH47-12",
+   "kind": "exchange",
+   "poem_ids": [
+    676,
+    677
+   ],
+   "context": "Kaoru addresses Nakano Kimi with the lonely cry of a plover on a frostbound shore at dawn; she responds that the bird might know the heart of someone who mourns.",
+   "links": [
+    {
+     "poems": [
+      676,
+      677
+     ],
+     "hook": "千鳥・霜・鳴く"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH47-13",
+   "kind": "single",
+   "poem_ids": [
+    678
+   ],
+   "context": "Kaoru privately composes a poem of a sunless, cloud-covered deep mountain as a metaphor for his inner despair.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH47-14",
+   "kind": "single",
+   "poem_ids": [
+    679
+   ],
+   "context": "After Ōigimi's death, Kaoru laments that even blood-red tears cannot dye his forbidden-light-colored mourning dress deeply enough.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH47-15",
+   "kind": "solo",
+   "poem_ids": [
+    680,
+    681
+   ],
+   "context": "During a wintry night at Uji, Kaoru watches the moon on ice and snow and twice imagines following or vanishing after the dead Ōigimi.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH47-16",
+   "kind": "exchange",
+   "poem_ids": [
+    682,
+    683
+   ],
+   "context": "As the story's final grief-stricken conversation turns to Nakano Kimi's future, she asks how she can trust what lies ahead when the past is so fleeting; Niou asks her not to turn away in their short present time.",
+   "links": [
+    {
+     "poems": [
+      682,
+      683
+     ],
+     "hook": "行く末"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH48-01",
+   "kind": "exchange",
+   "poem_ids": [
+    684,
+    685
+   ],
+   "context": "The mountain Ajari sends seasonal first bracken in memory of the dead Eighth Prince; Nakano Kimi responds that there is no longer anyone to whom she can show the spring gathering.",
+   "links": [
+    {
+     "poems": [
+      684,
+      685
+     ],
+     "hook": "蕨・摘む"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH48-02",
+   "kind": "exchange",
+   "poem_ids": [
+    686,
+    687
+   ],
+   "context": "Niou questions Kaoru's feelings after Kaoru breaks off a white-plum branch; Kaoru replies that plucking a blossom requires care when observers may read too much into it.",
+   "links": [
+    {
+     "poems": [
+      686,
+      687
+     ],
+     "hook": "折る・花・心"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH48-03",
+   "kind": "single",
+   "poem_ids": [
+    688
+   ],
+   "context": "As Nakano Kimi prepares to leave Uji, Kaoru sends clothing and attendants with a verse on how quickly mourning dress has yielded to the season of opening blossoms.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH48-04",
+   "kind": "exchange",
+   "poem_ids": [
+    689,
+    690
+   ],
+   "context": "In the Uji house, Nakano Kimi laments the blossom fragrance that recalls the lost past; Kaoru answers that the plum's fragrance stays the same even as the dwelling and those who once knew it have changed.",
+   "links": [
+    {
+     "poems": [
+      689,
+      690
+     ],
+     "hook": "梅の香/にほひ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH48-05",
+   "kind": "chorus",
+   "poem_ids": [
+    691,
+    692,
+    695,
+    696
+   ],
+   "context": "Ben no Amagimi, grieving Ōigimi's death, tells Kaoru she wishes she had thrown herself into the river of tears; he answers in the same imagery. Later, during Nakano Kimi's departure, Taifu no Kimi and another attendant turn the same drowning-in-Uji figure toward hope at surviving to enjoy good fortune.",
+   "links": [
+    {
+     "poems": [
+      691,
+      692
+     ],
+     "hook": "涙の河・身を投げ"
+    },
+    {
+     "poems": [
+      691,
+      695
+     ],
+     "hook": "身を投げ"
+    },
+    {
+     "poems": [
+      692,
+      695
+     ],
+     "hook": "身を投げ・せ（瀬）"
+    },
+    {
+     "poems": [
+      692,
+      696
+     ],
+     "hook": "恋しき・忘る"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH48-06",
+   "kind": "exchange",
+   "poem_ids": [
+    693,
+    694
+   ],
+   "context": "As Nakano Kimi prepares to leave Uji, Ben no Amagimi mourns being left alone like a seaweed-salt worker while the other attendants make ready; Nakano Kimi consoles her in the same wet-sleeve imagery.",
+   "links": [
+    {
+     "poems": [
+      693,
+      694
+     ],
+     "hook": "しほたるるあま・袖"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH48-07",
+   "kind": "single",
+   "poem_ids": [
+    697
+   ],
+   "context": "Riding away from Uji toward Niou's household, Nakano Kimi watches the moon cross the hills and imagines it wishing to return to the mountains from a wearisome world.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH48-08",
+   "kind": "single",
+   "poem_ids": [
+    698
+   ],
+   "context": "Hearing news of Nakano Kimi's welcome by Niou, Kaoru privately regrets his lost chance to be with her, likening the encounter to a boat sailing without a full sail.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH49-01",
+   "kind": "exchange",
+   "poem_ids": [
+    699,
+    700
+   ],
+   "context": "During an intimate game of go with the Reigning Emperor, Kaoru compares the inaccessible Second Princess to a flower behind a lofty hedge; the emperor answers by presenting his daughter as the remaining color of a frost-touched garden.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH49-02",
+   "kind": "exchange",
+   "poem_ids": [
+    701,
+    702,
+    703
+   ],
+   "context": "Kaoru first composes a private poem over a freshly picked morning glory and its perishable dew, then carries that very flower to Nakano Kimi; he offers a second verse comparing flower and dew to her bond with her late sister, and she answers.",
+   "links": [
+    {
+     "poems": [
+      701,
+      702
+     ],
+     "hook": "露・花・きえ"
+    },
+    {
+     "poems": [
+      701,
+      703
+     ],
+     "hook": "露・花・きえ"
+    },
+    {
+     "poems": [
+      702,
+      703
+     ],
+     "hook": "露・朝顔/花"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH49-03",
+   "kind": "single",
+   "poem_ids": [
+    704
+   ],
+   "context": "Yūgiri sends Niou a summons on the night when Niou is expected to attend his new wife Roku no Kimi, likening the tardy guest to a moon absent from its waiting host's home.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH49-04",
+   "kind": "solo",
+   "poem_ids": [
+    705,
+    707
+   ],
+   "context": "As Niou's new marriage leaves Nakano Kimi neglected, she twice composes private autumn laments: first on the piercing wind even in her new residence, and later on a cicada's painful call at autumn dusk.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH49-05",
+   "kind": "single",
+   "poem_ids": [
+    706
+   ],
+   "context": "An elegantly written poem on a wilting maiden flower and the morning dew's departure is sent to Niou on behalf of the newly married Roku no Kimi, accusing him of neglect.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH49-06",
+   "kind": "exchange",
+   "poem_ids": [
+    708,
+    709
+   ],
+   "context": "Azechi no Kimi, a woman serving Kaoru, complains at his hasty departure after spending the night with her; Kaoru answers with a pledge that their unseen deeper connection will not cease.",
+   "links": [
+    {
+     "poems": [
+      708,
+      709
+     ],
+     "hook": "せき河"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH49-07",
+   "kind": "single",
+   "poem_ids": [
+    710
+   ],
+   "context": "After being received coldly, Kaoru sends Nakano Kimi a morning letter recalling the wet autumn path and his earlier unhappy love.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH49-08",
+   "kind": "exchange",
+   "poem_ids": [
+    711,
+    712
+   ],
+   "context": "Niou detects Kaoru's lingering fragrance on Nakano Kimi and accuses her of intimacy with another man; she answers that a trace of familiar scent cannot sever their established bond.",
+   "links": [
+    {
+     "poems": [
+      711,
+      712
+     ],
+     "hook": "なれ・袖/衣"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH49-09",
+   "kind": "single",
+   "poem_ids": [
+    713
+   ],
+   "context": "Kaoru sends Nakano Kimi clothing with an insinuating verse about an improperly tied undergarment cord and a bond claimed elsewhere.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH49-10",
+   "kind": "exchange",
+   "poem_ids": [
+    714,
+    715,
+    732,
+    733,
+    758
+   ],
+   "context": "At the deserted Uji house, Kaoru and Ben no Amagimi first trade poems about a tree that once offered lodging. The following autumn, Ben deliberately renews the image of its changed colors and still-same moon, and Kaoru responds about the changed person in the old room. After Ukifune's presumed death, Kaoru returns to the very Uji dwelling and privately wonders who will remember the shade of the lodging tree if he too abandons the house.",
+   "links": [
+    {
+     "poems": [
+      714,
+      715
+     ],
+     "hook": "宿り木"
+    },
+    {
+     "poems": [
+      714,
+      732
+     ],
+     "hook": "宿り木"
+    },
+    {
+     "poems": [
+      714,
+      758
+     ],
+     "hook": "宿り木"
+    },
+    {
+     "poems": [
+      715,
+      732
+     ],
+     "hook": "宿り木"
+    },
+    {
+     "poems": [
+      715,
+      758
+     ],
+     "hook": "宿り木・荒れはつ"
+    },
+    {
+     "poems": [
+      732,
+      733
+     ],
+     "hook": "月・むかし"
+    },
+    {
+     "poems": [
+      732,
+      758
+     ],
+     "hook": "宿り木"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH49-11",
+   "kind": "exchange",
+   "poem_ids": [
+    716,
+    717
+   ],
+   "context": "Niou addresses Nakano Kimi through a silver grass stalk and its dew-laden sleeves, and she answers by returning the image of susuki swaying in autumn wind.",
+   "links": [
+    {
+     "poems": [
+      716,
+      717
+     ],
+     "hook": "すすき"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH49-12",
+   "kind": "chorus",
+   "poem_ids": [
+    718,
+    719,
+    720,
+    721
+   ],
+   "context": "Four surviving poems from the formal court celebration of Kaoru's marriage to the Emperor's Second Princess develop an extended purple wisteria and ceremonial flower ornament motif.",
+   "links": [
+    {
+     "poems": [
+      718,
+      720
+     ],
+     "hook": "かざし・折る"
+    },
+    {
+     "poems": [
+      718,
+      721
+     ],
+     "hook": "藤の花"
+    },
+    {
+     "poems": [
+      719,
+      721
+     ],
+     "hook": "色・花"
+    },
+    {
+     "poems": [
+      720,
+      721
+     ],
+     "hook": "紫の雲/雲居"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH49-13",
+   "kind": "single",
+   "poem_ids": [
+    722
+   ],
+   "context": "Kaoru searches out Ukifune at Uji and quietly likens her voice to the remembered call of an elusive face-bird, recalling Ōigimi's likeness.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH50-01",
+   "kind": "exchange",
+   "poem_ids": [
+    723,
+    724
+   ],
+   "context": "Kaoru proposes to Nakano Kimi that Ukifune might serve as a substitute image of the dead Ōigimi; Nakano Kimi turns his metaphor of a purification doll and river currents against such an arrangement.",
+   "links": [
+    {
+     "poems": [
+      723,
+      724
+     ],
+     "hook": "なで物・瀬々・身にそふ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH50-02",
+   "kind": "exchange",
+   "poem_ids": [
+    725,
+    726
+   ],
+   "context": "Ukifune's mother confronts Sakon no Shōshō after he abandons his proposed marriage to Ukifune when he learns of her uncertain status; he answers through the same small bush-clover and dew allegory.",
+   "links": [
+    {
+     "poems": [
+      725,
+      726
+     ],
+     "hook": "小萩・露"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH50-03",
+   "kind": "exchange",
+   "poem_ids": [
+    727,
+    728
+   ],
+   "context": "During her concealment away from the capital, Ukifune replies to her mother's compassionate letter by wishing that her hiding place were truly outside the world; her mother answers wishing to see her daughter's future happiness even beyond the suffering world.",
+   "links": [
+    {
+     "poems": [
+      727,
+      728
+     ],
+     "hook": "あらぬ所"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH50-04",
+   "kind": "single",
+   "poem_ids": [
+    729
+   ],
+   "context": "Kaoru visits the rebuilt Uji estate and privately laments that clear flowing spring water cannot preserve the face of the dead Eighth Prince or Ōigimi.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH50-05",
+   "kind": "single",
+   "poem_ids": [
+    730
+   ],
+   "context": "Waiting in a rain-soaked eastern dwelling during his difficult pursuit of Ukifune, Kaoru privately alludes to the courtly song Azumaya and the overgrown doorway keeping him out.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH50-06",
+   "kind": "single",
+   "poem_ids": [
+    731
+   ],
+   "context": "While accompanying Ukifune to Uji, Kaoru privately compares her to the deceased Ōigimi's keepsake and his sleeve to a heavy bed of morning dew.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH51-01",
+   "kind": "single",
+   "poem_ids": [
+    734
+   ],
+   "context": "Ukifune sends a New Year's verse for Nakano Kimi's little son (Niou's young prince), using a pine branch and puns on waiting, longevity, and a boy's growth.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH51-02",
+   "kind": "exchange",
+   "poem_ids": [
+    735,
+    736
+   ],
+   "context": "Niou promises Ukifune an enduring bond but fears life's unpredictability; she answers by shifting the problem from uncertain life to the uncertainty of another's heart.",
+   "links": [
+    {
+     "poems": [
+      735,
+      736
+     ],
+     "hook": "命"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH51-03",
+   "kind": "exchange",
+   "poem_ids": [
+    737,
+    738
+   ],
+   "context": "At their separation, Niou says tears darken the path before him; Ukifune counters that her sleeves are too small to dam her tears or stop him leaving.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH51-04",
+   "kind": "exchange",
+   "poem_ids": [
+    739,
+    740
+   ],
+   "context": "Kaoru reassures Ukifune by invoking the enduring Uji Bridge; she replies that a bridge defined by interruptions cannot guarantee an unbroken bond.",
+   "links": [
+    {
+     "poems": [
+      739,
+      740
+     ],
+     "hook": "宇治橋・くちせぬ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH51-05",
+   "kind": "exchange",
+   "poem_ids": [
+    741,
+    742
+   ],
+   "context": "On their excursion to Tachibana no Kojima, Niou promises unchanging love like the isle; Ukifune echoes the place but says her own floating boat has no certain destination.",
+   "links": [
+    {
+     "poems": [
+      741,
+      742
+     ],
+     "hook": "橘の小島"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH51-06",
+   "kind": "exchange",
+   "poem_ids": [
+    743,
+    744
+   ],
+   "context": "Niou crosses snowy mountain and icy shoreline to reach Ukifune; she answers his account of his dangerous journey with her own image of disappearing like snow suspended before settling.",
+   "links": [
+    {
+     "poems": [
+      743,
+      744
+     ],
+     "hook": "汀・氷・雪"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH51-07",
+   "kind": "exchange",
+   "poem_ids": [
+    745,
+    746,
+    747,
+    748,
+    749
+   ],
+   "context": "As prolonged rain isolates Ukifune at Uji, Niou sends a poem about clouded distance and Kaoru separately asks about her through swollen water and unending rain. Torn between them, Ukifune composes a private Uji lament before answering Niou in rain-cloud imagery and Kaoru in images of rain-soaked sleeves.",
+   "links": [
+    {
+     "poems": [
+      745,
+      746
+     ],
+     "hook": "ながめ・かきくらす"
+    },
+    {
+     "poems": [
+      745,
+      748
+     ],
+     "hook": "雲・かきくらし"
+    },
+    {
+     "poems": [
+      746,
+      747
+     ],
+     "hook": "里"
+    },
+    {
+     "poems": [
+      746,
+      748
+     ],
+     "hook": "かきくらし・晴れぬ"
+    },
+    {
+     "poems": [
+      746,
+      749
+     ],
+     "hook": "水かさまさる/みかさまさる"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH51-08",
+   "kind": "single",
+   "poem_ids": [
+    750
+   ],
+   "context": "Kaoru sends Ukifune an accusing poem, invoking the famous Sue no Matsu shore where waves should never overtop the pledged fidelity he had trusted.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH51-09",
+   "kind": "exchange",
+   "poem_ids": [
+    751,
+    752,
+    753
+   ],
+   "context": "After Niou fails to meet her, he privately wonders where he could cast away his life amid mountain clouds. Ukifune is told of his visit, privately fears the disgrace attached to throwing away her own life, and then sends Niou a verse asking how he could even blame her if she left no body behind.",
+   "links": [
+    {
+     "poems": [
+      751,
+      752
+     ],
+     "hook": "身をすつ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH51-10",
+   "kind": "exchange",
+   "poem_ids": [
+    754,
+    755
+   ],
+   "context": "Ukifune responds to a letter from her mother by hoping for reunion in another life; immediately hearing the tolling sutra bell, she adds a second verse asking that her approaching death be reported to her mother.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH52-01",
+   "kind": "exchange",
+   "poem_ids": [
+    756,
+    757
+   ],
+   "context": "After Ukifune's apparent death, Kaoru sends Niou a poem likening their grief to the cuckoo of the land of the dead, and Niou answers with the cuckoo calling beside fragrant orange blossom.",
+   "links": [
+    {
+     "poems": [
+      756,
+      757
+     ],
+     "hook": "ほととぎす（しでのたをさ）・なく"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH52-02",
+   "kind": "exchange",
+   "poem_ids": [
+    759,
+    760
+   ],
+   "context": "Kozai-shō no Kimi, an attendant of Onna Ichi no Miya, tells Kaoru that she too knows grief though she is insignificant; he replies by opposing her claimed grief to his long acquaintance with impermanence.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH52-03",
+   "kind": "single",
+   "poem_ids": [
+    761
+   ],
+   "context": "Kaoru privately compares autumn wind blowing dew on reed-like ogi leaves to the particular chill of grief at evening.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH52-04",
+   "kind": "chorus",
+   "poem_ids": [
+    762,
+    763,
+    764,
+    765
+   ],
+   "context": "At Onna Ichi no Miya's residence, Kaoru teasingly claims he can mingle among maiden flowers without acquiring a scandalous reputation; Chūjō no Omoto answers the flower/dew conceit; Ben no Omoto joins to challenge his fidelity, and Kaoru responds in a playful overnight-lodging pledge.",
+   "links": [
+    {
+     "poems": [
+      762,
+      763
+     ],
+     "hook": "をみなへし・露・みだる"
+    },
+    {
+     "poems": [
+      762,
+      764
+     ],
+     "hook": "をみなへし"
+    },
+    {
+     "poems": [
+      763,
+      764
+     ],
+     "hook": "をみなへし"
+    },
+    {
+     "poems": [
+      764,
+      765
+     ],
+     "hook": "うつる"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH52-05",
+   "kind": "single",
+   "poem_ids": [
+    766
+   ],
+   "context": "Kaoru watches ephemerally flying mayflies and privately laments the beloved who appeared before him only to vanish beyond his grasp.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH53-01",
+   "kind": "solo",
+   "poem_ids": [
+    767,
+    793
+   ],
+   "context": "Ukifune privately recalls casting herself into the fast Uji River and wonders what barrier prevented her death. Much later, while Ukifune remains hidden, Kaoru inscribes a poem beside the same river lamenting the woman who has vanished from its surface and adding his own tears; the poem is subsequently reported within Ukifune's hearing.",
+   "links": [
+    {
+     "poems": [
+      767,
+      793
+     ],
+     "hook": "涙・河・せき/しがらみ"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-02",
+   "kind": "single",
+   "poem_ids": [
+    768
+   ],
+   "context": "Under moonlight at the household where she has been taken after her failed suicide, Ukifune privately wonders who in the capital of the moon could know she is still living.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH53-03",
+   "kind": "exchange",
+   "poem_ids": [
+    769,
+    770
+   ],
+   "context": "A male courtier called Chūjō privately courts Ukifune by writing that he will tie up the maiden flower despite the distance; the younger nun who shelters her answers on Ukifune's behalf by invoking a transplanted flower in the grass hermitage that has renounced the world.",
+   "links": [
+    {
+     "poems": [
+      769,
+      770
+     ],
+     "hook": "をみなへし"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-04",
+   "kind": "exchange",
+   "poem_ids": [
+    771,
+    772
+   ],
+   "context": "Chūjō returns in autumn, composing about hearing the waiting-cricket and being led astray by dew among autumn plants; Ukifune refuses to write, and her nun-guardian answers as if conveying Ukifune's complaint about the dew-wet hunting garment and overgrown lodging.",
+   "links": [
+    {
+     "poems": [
+      771,
+      772
+     ],
+     "hook": "露・野"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-05",
+   "kind": "exchange",
+   "poem_ids": [
+    773,
+    774
+   ],
+   "context": "The younger nun urges Chūjō to stay by comparing Ukifune to the late-night moon at a mountain-edge lodging; Chūjō replies that he will look until it sinks and hopes for a view through the bedroom's narrow crack.",
+   "links": [
+    {
+     "poems": [
+      773,
+      774
+     ],
+     "hook": "月・山の端"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-06",
+   "kind": "exchange",
+   "poem_ids": [
+    775,
+    776
+   ],
+   "context": "After an evening visit and flute music, Chūjō sends the younger nun a morning poem bringing back the flute's sound, his memories of a deceased wife and Ukifune's refusal; she replies by continuing the flute, old memories and damp-sleeve images.",
+   "links": [
+    {
+     "poems": [
+      775,
+      776
+     ],
+     "hook": "笛竹・昔のこと"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-07",
+   "kind": "exchange",
+   "poem_ids": [
+    777,
+    778
+   ],
+   "context": "Ukifune writes a private practice verse refusing to revisit the painful Old River and its twin cedars; the younger nun notices it and improvises a return verse about not knowing the cedars' roots but finding in Ukifune the image of her own deceased daughter.",
+   "links": [
+    {
+     "poems": [
+      777,
+      778
+     ],
+     "hook": "布留川・杉"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-08",
+   "kind": "single",
+   "poem_ids": [
+    779
+   ],
+   "context": "In an autumn evening's wind, Ukifune privately describes her sleeves covered in dew-like tears while reflecting on the remnants of her former life.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH53-09",
+   "kind": "exchange",
+   "poem_ids": [
+    780,
+    781
+   ],
+   "context": "Chūjō intrudes on Ukifune's autumn-night seclusion, suggesting that a person burdened by feelings should understand the pathos of a deep mountain night; she answers obliquely that others seem to understand the sorrow she scarcely recognizes in herself.",
+   "links": [
+    {
+     "poems": [
+      780,
+      781
+     ],
+     "hook": "物思ふ人・知る"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-10",
+   "kind": "solo",
+   "poem_ids": [
+    782,
+    783
+   ],
+   "context": "Immediately after her tonsure, Ukifune writes two private waka describing how she has now renounced for a second time the world she first abandoned when she tried to drown herself.",
+   "links": [
+    {
+     "poems": [
+      782,
+      783
+     ],
+     "hook": "世を捨つ/背く"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-11",
+   "kind": "exchange",
+   "poem_ids": [
+    784,
+    785
+   ],
+   "context": "Learning that Ukifune has taken vows, Chūjō compares her departure from worldly life to a boat leaving the near shore for the far; Ukifune answers that her heart has crossed away but she still floats with no known destination.",
+   "links": [
+    {
+     "poems": [
+      784,
+      785
+     ],
+     "hook": "あま舟/あまの浮木・岸・はなる"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-12",
+   "kind": "exchange",
+   "poem_ids": [
+    786,
+    787
+   ],
+   "context": "After Ukifune has taken vows, the younger nun tells visiting Chūjō that a tree stripped by autumn wind has no shelter left for him; he answers that he has still lingered looking at the mountain village's branches although nobody waits.",
+   "links": [
+    {
+     "poems": [
+      786,
+      787
+     ],
+     "hook": "山の木・嵐/木枯"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-13",
+   "kind": "single",
+   "poem_ids": [
+    788
+   ],
+   "context": "Chūjō sends a separate reproach to the tonsured Ukifune, complaining that her renunciation of the world feels like personal rejection of him.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH53-14",
+   "kind": "single",
+   "poem_ids": [
+    789
+   ],
+   "context": "At New Year in her religious refuge, Ukifune sees snow darkening the hills and writes a private poem about memories that continue to grieve her despite her withdrawal.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH53-15",
+   "kind": "exchange",
+   "poem_ids": [
+    790,
+    791
+   ],
+   "context": "When fresh young herbs are brought through the lingering snow, the younger nun composes a poem wishing Ukifune a hopeful future; Ukifune replies that she will gather the young herbs for the nun's longevity.",
+   "links": [
+    {
+     "poems": [
+      790,
+      791
+     ],
+     "hook": "雪・若菜・摘む"
+    }
+   ]
+  },
+  {
+   "bucket_id": "CH53-16",
+   "kind": "single",
+   "poem_ids": [
+    792
+   ],
+   "context": "The scent of red plum blossoms at spring dawn unexpectedly recalls Niou's fragrance to Ukifune, who writes a private verse about the absent figure and the lingering scent.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH53-17",
+   "kind": "single",
+   "poem_ids": [
+    794
+   ],
+   "context": "Presented with bright courtly clothing while dressed as a nun, Ukifune privately asks whether she can keep worldly sleeves as mementos of her earlier life.",
+   "links": []
+  },
+  {
+   "bucket_id": "CH54-01",
+   "kind": "single",
+   "poem_ids": [
+    795
+   ],
+   "context": "As the novel closes, Kaoru sends a poem through Ukifune's brother Ko-gimi, saying that following the Buddhist teacher's path has led him bewildered into an unexpected mountain of longing for her.",
+   "links": []
+  }
+ ]
+}

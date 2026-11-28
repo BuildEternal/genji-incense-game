@@ -50,8 +50,11 @@
 - Preserve five unique poems per round, sequential presentation without access
   to earlier full texts during normal play, and legitimate singleton groups.
   Hide answer metadata until submission and explain actual exchanges afterward.
-- Current records contain exactly two poems per exchange; do not fabricate
-  three-poem groups. Use documented partition templates when implementing them.
+- The pilot contains exactly two poems per exchange. The full database
+  (`data/genji_buckets.json`) has buckets of one to seven poems: show poems as a
+  group only through a listed `link`, never show two poems of one bucket as
+  different groups, and never fabricate links without a hook. See
+  `data/genji_buckets_README.md`.
 - Use recorded random seeds for reproducible generation. Compare partitions by
   group relationships so equivalent relabelings score identically. Treat
   difficulty ratings as uncalibrated until supported by player evidence.
