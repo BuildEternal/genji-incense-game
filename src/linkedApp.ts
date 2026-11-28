@@ -58,16 +58,25 @@ function groupsFrom(colours: readonly (number | null)[]): number[][] {
   return [...groups.values()];
 }
 
+/** A short, shareable seed such as "kiri-4f7k2q". */
+export function randomSeed(): string {
+  const bytes = new Uint8Array(6);
+  crypto.getRandomValues(bytes);
+  return `genji-${[...bytes].map(b => 'abcdefghjkmnpqrstuvwxyz23456789'[b % 31]).join('')}`;
+}
+
 export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
   let phase: 'intro' | 'reading' | 'grouping' | 'results' | 'summary' = 'intro';
   let mode: Mode = 'normal';
-  let seed = 'genji-game-1';
+  let typedSeed = ''; // what the player entered; blank means a fresh random game
+  let seed = '';
   let tutorial = false;
   let round = 0;
   let cards: LinkedCard[] = [];
   let position = 0;
   let colours: (number | null)[] = Array(5).fill(null);
   let history: RoundRecord[] = [];
+  let readingHeight = 0; // reserved height of the reading slip for this round (0 = not measured yet)
   let popup: number | null = null; // poem index shown in the reread popup (easy mode)
 
   root.classList.add('room');
@@ -75,7 +84,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
   const assignments = () => colours.map(c => (c === null ? '' : String.fromCharCode(65 + c)));
   const complete = () => colours.every(c => c !== null);
   const score = () => history.filter(record => record.exact).length;
-  const roundLabel = () => tutorial ? 'Practice' : `Round ${round + 1} of ${ROUNDS_PER_GAME}`;
+  const roundLabel = () => tutorial ? 'Practice' : phase === 'summary' ? 'Evening complete' : `Round ${round + 1} of ${ROUNDS_PER_GAME}`;
   const tip = (text: string) => tutorial ? `<aside class="tip"><span class="tip-mark">Practice</span> ${text}</aside>` : '';
 
   const japanese = (text: string) => `<p class="ja" lang="ja">${text.split('/').map(unit => `<span>${escape(unit)}</span>`).join('')}</p>`;
@@ -100,6 +109,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
       ${popup !== null ? popupHtml(popup) : ''}
       <footer class="foot"><span>795 waka from the Tale of Genji · <a href="?pilot">English pilot</a></span><span>Sounds: found recordings, credited in ASSETS.md · No AI-generated art</span></footer>`;
     bind();
+    if (phase === 'reading' && !readingHeight) measureReading();
     if (focus) root.querySelector<HTMLElement>(popup !== null ? '.popup' : 'h1')?.focus({ preventScroll: true });
   }
 
@@ -117,15 +127,14 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
         <fieldset class="modes"><legend>Difficulty</legend>${(Object.keys(MODES) as Mode[]).map(m =>
           `<label class="mode${m === mode ? ' chosen' : ''}"><input type="radio" name="mode" value="${m}" ${m === mode ? 'checked' : ''}><strong>${MODES[m].name}</strong><span>${MODES[m].text}</span></label>`).join('')}</fieldset>
         <div class="actions"><button id="start-button" class="primary" type="button">Begin a game of ${ROUNDS_PER_GAME} rounds</button><button id="tutorial-button" class="secondary" type="button">Practice round first</button></div>
-        <details class="seed"><summary>Repeat a game</summary><label for="seed">Game seed</label><input id="seed" maxlength="100" value="${escape(seed)}"><p>The same seed and difficulty repeat the same five rounds.</p></details>
+        <details class="seed"><summary>Repeat a game</summary><label for="seed">Game seed</label><input id="seed" maxlength="100" value="${escape(typedSeed)}" placeholder="Blank for a new game" autocomplete="off" spellcheck="false"><p>Leave it blank for a new game each time. Enter a seed from a record sheet, with the same difficulty, to replay those five rounds.</p></details>
         <p class="fine">Research prototype · English glosses, groupings, and hooks are provisional.</p>
       </section>`;
 
     if (phase === 'reading') return `
       <section class="reading">
         <h1 class="sr-only" tabindex="-1">Poem ${position + 1} of 5</h1>
-        ${tip(position === 0 ? 'Read the poem and notice its images. In a real round it folds away for good when you continue.' : position === 4 ? 'Last poem. Next you colour all five from memory.' : 'Does this poem share an image with one you have read? Some poems match nothing.')}
-        <article class="slip unfold"><p class="slip-no">${position + 1}</p>${slip(cards[position].poem)}</article>
+        <div class="reading-body"${readingHeight ? ` style="min-height:${readingHeight}px"` : ''}>${readingSlip(position, true)}</div>
         ${tray()}
         <div class="actions"><button id="next" class="primary" type="button">${position === 4 ? 'Group the poems' : 'Next poem'}</button></div>
       </section>`;
@@ -162,9 +171,9 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
             return `<li class="${record.exact ? 'won' : ''}"><span class="rno">${i + 1}</span>${patternSvg(actual.groups)}<span class="rname">${patternName(actual)}</span><span class="mark">${record.exact ? '<span class="seal small" lang="ja">玉</span>' : '—'}</span></li>`;
           }).join('')}</ol>
         </div>
-        <details class="chart"><summary>The fifty-two patterns</summary><p class="fine">Lit: patterns from tonight's game. Sealed in red: those you named.</p><div class="chart-grid">${PATTERNS.map(p => {
+        <details class="chart"><summary>The fifty-two patterns</summary><p class="fine">Gold: patterns that came up tonight. Sealed 玉: the ones you named exactly.</p><div class="chart-grid">${PATTERNS.map(p => {
           const key = patternKey(p);
-          return `<div class="chart-cell${seen.has(key) ? ' lit' : ''}${won.has(key) ? ' won' : ''}">${patternSvg(p.groups)}<span lang="ja">${p.ja}</span><span class="romaji">${escape(p.romaji)}</span></div>`;
+          return `<div class="chart-cell${seen.has(key) ? ' seen' : ''}${won.has(key) ? ' won' : ''}">${patternSvg(p.groups)}<span lang="ja">${p.ja}</span><span class="romaji">${escape(p.romaji)}</span></div>`;
         }).join('')}</div></details>
         <div class="actions"><button class="primary" id="new-game" type="button">Play a new game</button><button class="secondary" id="replay-game" type="button">Replay this game</button></div>
         <p class="fine">Game seed: <code>${escape(seed)}</code> · ${MODES[mode].name}</p>
@@ -199,9 +208,9 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
             <div class="revealed">${selected.map(({ card, index }) => `<div class="slip small"><p class="slip-no">${index + 1}</p>${slip(card.poem, `${noteFor(card.poem)}<p class="attribution">${escape(card.poem.speaker)} · <a href="${escape(card.poem.original_page_url)}" target="_blank" rel="noopener noreferrer">Source text</a> · Poem ${card.poem.poem_id}</p>`)}</div>`).join('')}</div>
           </article>`;
         }).join('')}</div>
-        <details class="chart"><summary>Find it on the chart of fifty-two patterns</summary><div class="chart-grid">${PATTERNS.map(p => {
+        <details class="chart"><summary>Find it on the chart of fifty-two patterns</summary><p class="fine">Gold: the incense. Dashed: your answer.</p><div class="chart-grid">${PATTERNS.map(p => {
           const key = patternKey(p);
-          const cls = key === patternKey(actual) ? ' won' : key === patternKey(answered) ? ' lit' : '';
+          const cls = key === patternKey(actual) ? ' seen' : key === patternKey(answered) ? ' guess' : '';
           return `<div class="chart-cell${cls}">${patternSvg(p.groups)}<span lang="ja">${p.ja}</span><span class="romaji">${escape(p.romaji)}</span></div>`;
         }).join('')}</div></details>
         <div class="actions">${tutorial
@@ -221,6 +230,30 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
     const dye = colour === null ? null : DYES[colour];
     const label = `Poem ${i + 1}: ${dye ? dye.name : 'no colour yet'}`;
     return `<div class="dye-slot"><button type="button" class="dye${dye ? ` dye-${dye.id}` : ' empty'}" data-poem="${i}" aria-label="${label}" title="${label}">${dye ? `<span lang="ja">${dye.mark}</span>` : ''}</button><span class="dye-no">${i + 1}</span></div>`;
+  }
+
+  // The tip and slip for one reading position. All five are measured off-screen at the start of
+  // a round so the space below can be reserved for the tallest, keeping the controls still.
+  function readingSlip(i: number, animate: boolean) {
+    const tipText = i === 0 ? 'Read the poem and notice its images. In a real round it folds away for good when you continue.' : i === 4 ? 'Last poem. Next you colour all five from memory.' : 'Does this poem share an image with one you have read? Some poems match nothing.';
+    return `${tip(tipText)}<article class="slip${animate ? ' unfold' : ''}"><p class="slip-no">${i + 1}</p>${slip(cards[i].poem)}</article>`;
+  }
+
+  function measureReading() {
+    const body = root.querySelector<HTMLElement>('.reading-body');
+    if (phase !== 'reading' || !body) return;
+    const probe = document.createElement('div');
+    probe.className = 'reading-body reading-probe';
+    probe.setAttribute('aria-hidden', 'true');
+    body.parentElement!.append(probe);
+    let tallest = 0;
+    for (let i = 0; i < cards.length; i++) {
+      probe.innerHTML = readingSlip(i, false);
+      tallest = Math.max(tallest, probe.getBoundingClientRect().height);
+    }
+    probe.remove();
+    readingHeight = Math.ceil(tallest);
+    if (readingHeight) body.style.minHeight = `${readingHeight}px`;
   }
 
   function popupHtml(i: number) {
@@ -253,6 +286,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
     cards = tutorial ? tutorialCards(db) : generateLinkedRound(db, roundSeed(round), { sameChapterRule: mode !== 'hard' });
     colours = Array(5).fill(null);
     position = 0;
+    readingHeight = 0;
     play('begin');
     go('reading');
   }
@@ -265,7 +299,8 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
   }
 
   function readSettings() {
-    seed = root.querySelector<HTMLInputElement>('#seed')?.value.trim() || 'genji-game-1';
+    typedSeed = root.querySelector<HTMLInputElement>('#seed')?.value.trim() ?? '';
+    seed = typedSeed || randomSeed();
     mode = (root.querySelector<HTMLInputElement>('input[name="mode"]:checked')?.value as Mode) ?? 'normal';
   }
 
@@ -336,10 +371,12 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
     });
     root.querySelector('#replay-game')?.addEventListener('click', startGame);
     root.querySelector('#new-game')?.addEventListener('click', () => {
-      seed = `genji-${crypto.randomUUID()}`;
+      typedSeed = '';
       go('intro');
     });
   }
 
+  window.addEventListener('resize', () => { readingHeight = 0; measureReading(); });
+  void document.fonts?.ready.then(() => { readingHeight = 0; measureReading(); });
   render(false);
 }

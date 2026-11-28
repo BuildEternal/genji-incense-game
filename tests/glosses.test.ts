@@ -35,6 +35,7 @@ describe('English glosses', () => {
     vi.spyOn(window, 'scrollTo').mockImplementation(() => {});
     mountLinkedGame(root, db);
     const cards = generateLinkedRound(db, 'genji-game-1#1');
+    root.querySelector<HTMLInputElement>('#seed')!.value = 'genji-game-1';
     root.querySelector<HTMLButtonElement>('#start-button')!.click();
     for (let i = 0; i < 5; i++) {
       expect(root.querySelector('blockquote')!.textContent).toBe(db.glosses.get(cards[i].poem.poem_id)!.english);

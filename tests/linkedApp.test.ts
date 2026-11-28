@@ -16,6 +16,7 @@ const answer = (labels: string[]) => labels.forEach((label, i) => {
   for (let k = 0; k <= label.charCodeAt(0) - 65; k++) root.querySelector<HTMLButtonElement>(`.dye[data-poem="${i}"]`)!.click();
 });
 const readAll = () => { for (let i = 0; i < 5; i++) button('#next').click(); };
+const useSeed = (seed: string) => { root.querySelector<HTMLInputElement>('#seed')!.value = seed; };
 const chooseMode = (mode: string) => { root.querySelector<HTMLInputElement>(`input[name="mode"][value="${mode}"]`)!.checked = true; };
 
 beforeEach(() => {
@@ -28,6 +29,7 @@ beforeEach(() => {
 describe('full-collection game', () => {
   it('shows one poem at a time and hides answers until submission', () => {
     const cards = generateLinkedRound(db, 'genji-game-1#1');
+    useSeed('genji-game-1');
     button('#start-button').click();
     for (let i = 0; i < 5; i++) {
       expect(root.querySelectorAll('main .ja')).toHaveLength(1);
@@ -49,6 +51,7 @@ describe('full-collection game', () => {
   });
 
   it('cycles colour buttons, draws the pattern live, and enables submit only when all are coloured', () => {
+    useSeed('genji-game-1');
     button('#start-button').click();
     readAll();
     expect(button('#submit-answer').disabled).toBe(true);
@@ -71,6 +74,7 @@ describe('full-collection game', () => {
 
   it('plays five rounds, counts only exact patterns, and summarizes', () => {
     chooseMode('hard');
+    useSeed('genji-game-1');
     button('#start-button').click();
     let expected = 0;
     for (let round = 0; round < ROUNDS_PER_GAME; round++) {
@@ -90,11 +94,28 @@ describe('full-collection game', () => {
     expect(root.querySelectorAll('.record-rounds li')).toHaveLength(ROUNDS_PER_GAME);
     expect(root.querySelectorAll('.record-rounds li.won')).toHaveLength(expected);
     button('#new-game').click();
-    expect(root.querySelector<HTMLInputElement>('#seed')!.value).not.toBe('genji-game-1');
+    expect(root.querySelector<HTMLInputElement>('#seed')!.value).toBe('');
+  });
+
+  it('starts a fresh random game when the seed is left blank, and replays an entered one', () => {
+    const firstPoem = () => root.querySelector('main .ja')!.textContent;
+    const seen = new Set<string | null>();
+    for (let i = 0; i < 4; i++) {
+      mountLinkedGame(root, db);
+      expect(root.querySelector<HTMLInputElement>('#seed')!.value).toBe('');
+      button('#start-button').click();
+      seen.add(firstPoem());
+    }
+    expect(seen.size).toBeGreaterThan(1);
+    mountLinkedGame(root, db);
+    useSeed('genji-game-1');
+    button('#start-button').click();
+    expect(firstPoem()).toBe(generateLinkedRound(db, 'genji-game-1#1').map(c => c.poem.japanese.split('/').join(''))[0]);
   });
 
   it('easy mode lets the player reopen any poem in a popup while grouping', () => {
     chooseMode('easy');
+    useSeed('genji-game-1');
     button('#start-button').click();
     const cards = generateLinkedRound(db, 'genji-game-1#1');
     readAll();
@@ -107,6 +128,7 @@ describe('full-collection game', () => {
   });
 
   it('normal mode gives no reread', () => {
+    useSeed('genji-game-1');
     button('#start-button').click();
     readAll();
     expect(root.querySelector('.reread')).toBeNull();

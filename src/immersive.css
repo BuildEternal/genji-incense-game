@@ -2,8 +2,11 @@
    fonts are bundled under the SIL Open Font License (src/assets/fonts, ASSETS.md). */
 @font-face { font-family: 'Shippori Mincho'; font-weight: 500; font-display: swap; src: url('./assets/fonts/shippori-mincho-500-subset.woff2') format('woff2'); }
 @font-face { font-family: 'Shippori Mincho'; font-weight: 700; font-display: swap; src: url('./assets/fonts/shippori-mincho-700-subset.woff2') format('woff2'); }
-@font-face { font-family: 'EB Garamond'; font-weight: 400 800; font-display: swap; src: url('./assets/fonts/eb-garamond-latin.woff2') format('woff2'); }
-@font-face { font-family: 'EB Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('./assets/fonts/eb-garamond-latin-italic.woff2') format('woff2'); }
+/* EB Garamond comes as two Google Fonts subsets: basic Latin, and Latin Extended for macrons (ō, ū). */
+@font-face { font-family: 'EB Garamond'; font-weight: 400 800; font-display: swap; src: url('./assets/fonts/eb-garamond-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'EB Garamond'; font-weight: 400 800; font-display: swap; src: url('./assets/fonts/eb-garamond-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+2020, U+2113, U+A720-A7FF; }
+@font-face { font-family: 'EB Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('./assets/fonts/eb-garamond-latin-italic.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'EB Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('./assets/fonts/eb-garamond-latin-ext-italic.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+2020, U+2113, U+A720-A7FF; }
 
 /* Dark all the way out, so overscroll and rubber-band stretch show night, not white. */
 html:has(.room), body:has(.room) { background: #120d0b; margin: 0; overflow-x: clip; }
@@ -100,11 +103,14 @@ html:has(.room) { color-scheme: dark; }
 /* Poem slips */
 .room .slip { position: relative; color: var(--ink); background: linear-gradient(180deg, var(--paper), var(--paper-2)); border-radius: 2px; box-shadow: 0 18px 50px rgba(0, 0, 0, .55), inset 0 0 0 1px rgba(142, 116, 67, .35); padding: clamp(1.5rem, 4vw, 2.75rem); }
 .room .slip::before { content: ''; position: absolute; inset: .45rem; border: 1px solid rgba(142, 116, 67, .3); pointer-events: none; }
+.room .reading { position: relative; }
+.room .reading-body { display: flow-root; }
+.room .reading-probe { position: absolute; top: 0; left: 0; right: 0; visibility: hidden; pointer-events: none; }
 .room .reading .slip { max-width: 44rem; margin: 0 auto; }
 .room .slip-no { position: absolute; top: .9rem; left: 1.1rem; margin: 0; font: italic 1rem var(--serif); color: var(--gold-soft); }
 .room .slip-body { display: flex; gap: clamp(1rem, 4vw, 2.5rem); align-items: flex-start; }
 .room .slip .en { flex: 1; }
-.room .slip blockquote { margin: .5rem 0 .75rem; font-size: clamp(1.35rem, 3vw, 1.75rem); line-height: 1.5; }
+.room .slip blockquote { font-family: var(--serif); margin: .5rem 0 .75rem; font-size: clamp(1.35rem, 3vw, 1.75rem); line-height: 1.5; }
 .room .gloss-label { margin: 0; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
 .room .slip .ja { margin: 0; writing-mode: vertical-rl; font-size: 1.15rem; line-height: 2; letter-spacing: .12em; color: var(--ink-soft); max-height: 14em; display: block; }
 .room .slip .ja span { display: block; }
@@ -207,13 +213,16 @@ html:has(.room) { color-scheme: dark; }
 .room .chart { margin: 2rem 0 0; text-align: left; }
 .room .chart summary { cursor: pointer; color: var(--gold); }
 .room .chart-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr)); gap: .4rem; margin-top: 1rem; }
-.room .chart-cell { display: grid; justify-items: center; gap: .1rem; padding: .4rem .2rem; font-size: .85rem; color: var(--text-soft); border: 1px solid rgba(200, 163, 90, .12); }
-.room .chart-cell .genjiko { width: 2.6rem; height: 2.6rem; color: var(--text-soft); }
-.room .chart-cell .romaji { font-size: .65rem; font-style: italic; }
-.room .chart-cell.lit { border-color: var(--gold); color: var(--text); }
-.room .chart-cell.lit .genjiko { color: var(--gold); }
-.room .chart-cell.won { border-color: var(--vermilion); background: rgba(184, 56, 42, .15); color: var(--text); }
-.room .chart-cell.won .genjiko { color: #e58a7a; }
+.room .chart-cell { position: relative; display: grid; justify-items: center; gap: .1rem; padding: .55rem .2rem .45rem; font-size: .85rem; color: var(--text-soft); background: rgba(236, 226, 207, .025); border: 1px solid rgba(200, 163, 90, .12); border-radius: 2px; cursor: default; transition: border-color .3s, background .3s; }
+.room .chart-cell .genjiko { width: 2.4rem; height: 2.4rem; margin-bottom: .2rem; color: #5b4f45; }
+.room .chart-cell [lang="ja"] { color: var(--text-soft); }
+.room .chart-cell .romaji { font-size: .65rem; font-style: italic; color: rgba(181, 166, 144, .75); }
+.room .chart-cell.seen { border-color: rgba(200, 163, 90, .65); background: rgba(200, 163, 90, .09); }
+.room .chart-cell.seen .genjiko { color: var(--gold); }
+.room .chart-cell.seen [lang="ja"] { color: var(--text); }
+.room .chart-cell.guess { border: 1px dashed rgba(236, 226, 207, .45); }
+.room .chart-cell.guess .genjiko { color: #c9bda9; }
+.room .chart-cell.won::after { content: '玉'; position: absolute; top: .25rem; right: .25rem; display: grid; place-items: center; width: 1.1rem; height: 1.1rem; font: 700 .65rem/1 var(--mincho); color: #fff4ea; background: var(--vermilion); border-radius: 3px; }
 
 /* Summary record sheet */
 .room .summary { text-align: center; }

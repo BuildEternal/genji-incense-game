@@ -28,7 +28,7 @@ texts sit next to the font files.
 | File | Font | License |
 | --- | --- | --- |
 | `shippori-mincho-500-subset.woff2`, `shippori-mincho-700-subset.woff2` | [Shippori Mincho](https://github.com/fontdasu/ShipporiMincho) (subset to the characters the game uses) | OFL 1.1 (`OFL-ShipporiMincho.txt`) |
-| `eb-garamond-latin.woff2`, `eb-garamond-latin-italic.woff2` | [EB Garamond](https://github.com/octaviopardo/EBGaramond12) (Latin subset) | OFL 1.1 (`OFL-EBGaramond.txt`) |
+| `eb-garamond-latin.woff2`, `eb-garamond-latin-italic.woff2`, `eb-garamond-latin-ext.woff2`, `eb-garamond-latin-ext-italic.woff2` | [EB Garamond](https://github.com/octaviopardo/EBGaramond12) (Google Fonts Latin and Latin Extended subsets) | OFL 1.1 (`OFL-EBGaramond.txt`) |
 
 ## Images
 
