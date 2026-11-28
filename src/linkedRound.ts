@@ -104,3 +104,33 @@ export function generateLinkedRound(db: LinkedDatabase, seed: string, options: R
   }
   throw new Error('No fair round found for this seed and template');
 }
+
+/** Groups as canonical labels by first appearance, e.g. [A, B, A, C, B]. */
+export function correctLabels(cards: readonly LinkedCard[]): string[] {
+  const labels = new Map<number, string>();
+  return cards.map(card => {
+    if (!labels.has(card.groupIndex)) labels.set(card.groupIndex, String.fromCharCode(65 + labels.size));
+    return labels.get(card.groupIndex)!;
+  });
+}
+
+export function scoreLinkedRound(cards: readonly LinkedCard[], assignments: readonly string[]) {
+  if (cards.length !== 5 || assignments.length !== 5 || assignments.some(value => !value.trim()))
+    throw new Error('Assign a group to every poem');
+  const canon = (values: readonly string[]) => {
+    const map = new Map<string, string>();
+    return values.map(v => { if (!map.has(v)) map.set(v, String.fromCharCode(65 + map.size)); return map.get(v)!; });
+  };
+  const correct = correctLabels(cards);
+  const submitted = canon(assignments);
+  let actualPairs = 0, matchingPairsFound = 0, falseMatches = 0;
+  for (let i = 0; i < 5; i++) for (let j = i + 1; j < 5; j++) {
+    const actual = correct[i] === correct[j];
+    const guessed = submitted[i] === submitted[j];
+    if (actual) actualPairs++;
+    if (actual && guessed) matchingPairsFound++;
+    if (!actual && guessed) falseMatches++;
+  }
+  return { correct, submitted, actualPairs, matchingPairsFound, falseMatches,
+    exact: correct.every((label, index) => label === submitted[index]) };
+}
