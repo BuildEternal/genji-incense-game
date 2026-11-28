@@ -48,6 +48,13 @@ describe('Genji-kō patterns', () => {
       expect(lines).toBe(5 + p.groups.filter(g => g.length > 1).length);
     }
   });
+
+  it('runs a grouped line from its own beam straight through a lower beam', () => {
+    // 絵合: (1 3) (2 5) 4. The 2–5 beam is on top; line 2 crosses the lower 1–3 beam.
+    const svg = patternSvg([[1, 3], [2, 5], [4]]);
+    const starts = [...svg.matchAll(/<line class="stroke[^"]*" x1="([\d.]+)" y1="([\d.]+)" x2="[\d.]+" y2="100"/g)].map(m => Number(m[2]));
+    expect(starts).toEqual([20, 0, 20, 20, 0]); // positions 1–5: 1 and 3 hang from the lower beam, 4 sits under the top one
+  });
 });
 
 describe('rounds built from the real draw', () => {
