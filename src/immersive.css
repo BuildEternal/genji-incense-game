@@ -56,9 +56,10 @@ html:has(.room) { color-scheme: dark; }
 .room .stage { flex: 1; width: min(60rem, 100% - 2rem); margin: 0 auto; padding: clamp(1.5rem, 4vw, 3rem) 0 3rem; outline: none; }
 .room .lead { color: var(--text-soft); max-width: 40rem; }
 .room .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin: 2rem 0 1rem; }
-.room button.primary, .room button.secondary { font: 600 1rem var(--serif); letter-spacing: .04em; padding: .8rem 1.8rem; border-radius: 2px; cursor: pointer; transition: transform .15s, background .2s, box-shadow .2s; }
-.room button.primary { color: var(--night); background: linear-gradient(180deg, #d9b56b, var(--gold)); border: 1px solid var(--gold); box-shadow: 0 2px 14px rgba(200, 163, 90, .25); }
-.room button.primary:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 4px 22px rgba(200, 163, 90, .4); }
+.room button.primary, .room button.secondary { font: 600 1rem var(--serif); letter-spacing: .04em; padding: .8rem 1.8rem; border-radius: 2px; cursor: pointer; transition: filter .3s ease, box-shadow .3s ease, background-color .3s ease, border-color .3s ease; }
+.room button.primary, .room button.primary:hover { color: var(--night); background: linear-gradient(180deg, #d9b56b, var(--gold)); border: 1px solid var(--gold); box-shadow: 0 2px 14px rgba(200, 163, 90, .25); }
+.room button.primary:hover:not(:disabled) { filter: brightness(1.08); box-shadow: 0 2px 26px rgba(200, 163, 90, .45); }
+.room button.primary:active:not(:disabled) { filter: brightness(.95); }
 .room button.primary:disabled { opacity: .35; cursor: not-allowed; box-shadow: none; }
 .room button.secondary { color: var(--text); background: transparent; border: 1px solid rgba(200, 163, 90, .45); }
 .room button.secondary:hover { background: rgba(200, 163, 90, .1); }
@@ -113,11 +114,11 @@ html:has(.room) { color-scheme: dark; }
 .room .gloss-note { font-size: .9rem; color: var(--ink-soft); margin: 1rem 0 0; padding-top: .6rem; border-top: 1px dotted rgba(142, 116, 67, .5); }
 .room .attribution { font-size: .85rem; color: var(--ink-soft); margin: .75rem 0 0; }
 .room .attribution a { color: #7a4a1f; }
-.room .unfold { animation: unfold .55s cubic-bezier(.2, .8, .2, 1) both; transform-origin: 50% 0; }
-@keyframes unfold {
-  from { opacity: 0; transform: perspective(900px) rotateX(-55deg) translateY(-1rem); }
-  to { opacity: 1; transform: none; }
-}
+.room .unfold { animation: slip-in .5s cubic-bezier(.25, .7, .3, 1) both; }
+/* Poems are read right to left, like a scroll: the next slip arrives from the left, the last one leaves to the right. */
+@keyframes slip-in { from { opacity: 0; transform: translateX(-1.5rem); } to { opacity: 1; transform: none; } }
+.room .slip.leaving { animation: slip-out .22s ease-in forwards; }
+@keyframes slip-out { to { opacity: 0; transform: translateX(1.5rem); } }
 
 /* Tray of five slots (right to left) */
 .room .tray { list-style: none; padding: 0; margin: 2rem auto 0; display: flex; justify-content: center; gap: 1.2rem; }
@@ -143,7 +144,8 @@ html:has(.room) { color-scheme: dark; }
 .room .dye:hover { transform: scale(1.06); }
 .room .dye:active { transform: scale(.94); }
 .room .dye.empty { background: transparent; border: 2px dashed rgba(200, 163, 90, .55); }
-.room .dye span { text-shadow: 0 1px 2px rgba(0, 0, 0, .5); }
+.room .dye { padding: 0; min-height: 0; line-height: 1; }
+.room .dye span { display: block; line-height: 1; text-shadow: 0 1px 2px rgba(0, 0, 0, .5); }
 .room .dye-ai { background: var(--ai); box-shadow: 0 0 16px rgba(43, 74, 126, .7); }
 .room .dye-beni { background: var(--beni); box-shadow: 0 0 16px rgba(192, 57, 43, .7); }
 .room .dye-kuchinashi { background: var(--kuchinashi); color: var(--ink); box-shadow: 0 0 16px rgba(225, 169, 58, .6); }
@@ -155,7 +157,14 @@ html:has(.room) { color-scheme: dark; }
 .room .reread { justify-self: center; font: .8rem var(--serif); color: var(--text-soft); background: transparent; border: 1px solid rgba(200, 163, 90, .3); border-radius: 999px; padding: .2rem .6rem; cursor: pointer; }
 
 /* Popup (easy-mode reread) */
-.room .veil { position: fixed; inset: 0; background: rgba(8, 5, 4, .72); backdrop-filter: blur(3px); z-index: 10; }
+.room .veil { position: fixed; inset: 0; background: rgba(8, 5, 4, .72); backdrop-filter: blur(3px); z-index: 10; animation: fade-in .3s ease both; }
+.room .popup { animation: pop-in .35s cubic-bezier(.25, .7, .3, 1) both; }
+.room .veil.leaving { animation: fade-out .22s ease-in forwards; }
+.room .popup.leaving { animation: pop-out .22s ease-in forwards; }
+@keyframes fade-in { from { opacity: 0; } }
+@keyframes fade-out { to { opacity: 0; } }
+@keyframes pop-in { from { opacity: 0; transform: scale(.97); } }
+@keyframes pop-out { to { opacity: 0; transform: scale(.98); } }
 .room .popup { position: fixed; z-index: 11; left: 50%; top: 50%; width: min(40rem, 100% - 2rem); max-height: calc(100vh - 2rem); overflow: auto; translate: -50% -50%; outline: none; }
 .room .popup .actions { margin: 1.5rem 0 0; }
 .room .popup .secondary { color: var(--ink); border-color: var(--gold-soft); }

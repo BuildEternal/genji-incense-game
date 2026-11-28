@@ -224,10 +224,23 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
   }
 
   function popupHtml(i: number) {
-    return `<div class="veil"></div><div class="popup slip unfold" role="dialog" aria-modal="true" aria-label="Poem ${i + 1}" tabindex="-1"><p class="slip-no">${i + 1}</p>${slip(cards[i].poem)}<div class="actions"><button type="button" class="secondary" id="close-popup">Close</button></div></div>`;
+    return `<div class="veil"></div><div class="popup slip" role="dialog" aria-modal="true" aria-label="Poem ${i + 1}" tabindex="-1"><p class="slip-no">${i + 1}</p>${slip(cards[i].poem)}<div class="actions"><button type="button" class="secondary" id="close-popup">Close</button></div></div>`;
   }
 
   const roundSeed = (index: number) => `${seed}#${index + 1}`;
+
+  // Play a short exit animation on the matched elements, then continue. Skipped where motion
+  // is reduced or unsupported, so the change is immediate there (and in tests).
+  let leaving = false;
+  function leave(selector: string, then: () => void) {
+    const els = [...root.querySelectorAll<HTMLElement>(selector)];
+    const motion = typeof window.matchMedia === 'function' && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!motion || els.length === 0) { then(); return; }
+    if (leaving) return;
+    leaving = true;
+    els.forEach(el => el.classList.add('leaving'));
+    window.setTimeout(() => { leaving = false; then(); }, 220);
+  }
 
   function go(next: typeof phase) {
     phase = next;
@@ -280,7 +293,7 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
     root.querySelector('#tutorial-button')?.addEventListener('click', () => { readSettings(); tutorial = true; startRound(); });
     root.querySelector('#next')?.addEventListener('click', () => {
       play('paper');
-      if (position < 4) { position++; go('reading'); } else go('grouping');
+      leave('.stage-reading .slip', () => { if (position < 4) { position++; go('reading'); } else go('grouping'); });
     });
     root.querySelectorAll<HTMLButtonElement>('.dye').forEach(button => {
       const i = Number(button.dataset.poem);
@@ -299,12 +312,12 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
       play('paper');
       render();
     }));
-    const closePopup = () => {
+    const closePopup = () => leave('.popup, .veil', () => {
       const last = popup;
       popup = null;
       render(false);
       root.querySelector<HTMLButtonElement>(`.reread[data-poem="${last}"]`)?.focus();
-    };
+    });
     root.querySelector('#close-popup')?.addEventListener('click', closePopup);
     root.querySelector('.veil')?.addEventListener('click', closePopup);
     root.querySelector('.popup')?.addEventListener('keydown', event => { if ((event as KeyboardEvent).key === 'Escape') closePopup(); });

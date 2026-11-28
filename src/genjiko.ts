@@ -140,8 +140,10 @@ export function patternSvg(groups: readonly (readonly number[])[], label = '', o
   const parts: string[] = [];
   for (let p = 1; p <= 5; p++) {
     const own = multi.find(g => g.includes(p));
+    // A grouped line hangs from its own beam and runs straight down, through any lower beam.
+    // A lone line starts just below the lowest beam that spans it.
     let start = own ? top(level.get(own)!) : 0;
-    for (const g of multi) if (g !== own && p > g[0] && p < g[g.length - 1]) start = Math.max(start, top(level.get(g)!) + step);
+    if (!own) for (const g of multi) if (p > g[0] && p < g[g.length - 1]) start = Math.max(start, top(level.get(g)!) + step);
     parts.push(`<line class="stroke${faint.has(p) ? ' faint' : ''}" x1="${x(p)}" y1="${start}" x2="${x(p)}" y2="${S}" stroke-width="${T}"/>`);
   }
   for (const g of multi) {
