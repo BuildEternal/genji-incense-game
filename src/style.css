@@ -104,3 +104,26 @@ footer { border-top: 1px solid var(--line); display: flex; justify-content: spac
   footer { flex-direction: column; gap: .25rem; }
 }
 .gloss-note { font-size: .95rem; color: #435962; margin-top: .75rem; }
+/* Genji-kō patterns */
+.genjiko { width: 3rem; height: 3rem; color: #2c3e46; flex: none; }
+.pattern { display: flex; align-items: center; gap: 1rem; margin: 0; }
+.pattern .genjiko { width: 4.5rem; height: 4.5rem; }
+.pattern figcaption { display: grid; gap: .2rem; }
+.pattern-preview { background: white; border: 1px solid var(--line); padding: 1.25rem 1.5rem; margin: 1.5rem 0; min-height: 4rem; }
+.pattern-preview h2 { font: 600 1rem system-ui, sans-serif; margin: 0 0 .75rem; }
+.pattern-chart { margin: 1rem 0 1.5rem; }
+.pattern-chart summary { cursor: pointer; font-weight: 600; }
+.chart-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr)); gap: .5rem; margin-top: 1rem; }
+.chart-cell { display: grid; justify-items: center; gap: .15rem; padding: .5rem .25rem; background: white; border: 1px solid var(--line); border-radius: 3px; cursor: pointer; font: inherit; color: inherit; }
+.chart-cell .romaji { font-size: .7rem; color: #52656d; }
+.chart-cell.selected { border-color: var(--accent); background: #eeeaf2; outline: 2px solid var(--accent); }
+.tutorial-tip { background: #fbf6e9; border-left: 3px solid #b8892b; padding: .75rem 1rem; margin: 1rem 0; }
+.reread { background: white; border: 1px solid var(--line); padding: 1rem 1.5rem; margin: 1rem 0; }
+.reread-poem blockquote { font-size: 1.15rem; margin: .5rem 0; }
+.modes { border: none; padding: 0; margin: 0 0 1rem; display: grid; gap: .5rem; }
+.start-buttons { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1rem; }
+.pair-feedback { margin: 1.5rem 0; }
+.round-list { list-style: none; padding: 0; display: grid; gap: .5rem; }
+.round-list li { display: flex; align-items: center; gap: 1rem; background: white; border: 1px solid var(--line); padding: .5rem 1rem; }
+.round-list .mark { margin-left: auto; font: 400 1.6rem Georgia, serif; color: #9aa5aa; }
+.round-list li.won .mark { color: var(--accent); }

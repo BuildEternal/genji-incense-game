@@ -30,17 +30,16 @@ to your computer. Previews may need restarting after the environment resumes;
 `sites-preview stop` stops the managed preview.
 
 1. The game opens on the **full collection** (795 waka), each shown as a provisional
-   English gloss with the Japanese original beneath it
-   (`data/genji_glosses.json`). Choose a round shape (2+2+1, 2+1+1+1, 3+1+1,
-   3+2) and optionally hard mode. Add `?pilot` to the URL for the 15-exchange
-   English pilot, where Japanese can be shown alongside English.
-2. Read each poem and select **Next poem**. There is no timer or backtracking.
-3. After poem five, assign group letters to positions 1–5 without their texts.
-   Matching poems share a letter; a singleton gets its own. Revise freely.
-4. Select **Submit grouping** to see results, poems, attributions, explanations,
-   and source links. Japanese originals always appear in the reveal.
-5. Replay the same round or try a new one. **Repeat a round** on the start screen
-   lets you enter a seed; the default `genji-demo-1` is repeatable for demos.
+   English gloss with the Japanese original beneath it (`data/genji_glosses.json`).
+   Choose easy (reread while grouping), normal, or hard (same-chapter decoys), and
+   optionally play an unscored practice round first.
+2. A game is five rounds. Each round's shape comes from the real Genji-kō draw
+   (25 packets, 5 drawn; `src/genjiko.ts`), so every pattern has its real odds.
+   Read each poem and select **Next poem**. There is no timer or backtracking.
+3. Group the poems with letters or pick one of the 52 Genji-kō patterns on the chart.
+4. Only an exact pattern scores (玉). The reveal shows both patterns, which pairs you
+   found (feedback only), the poems, links, notes, and source links. After five
+   rounds a summary shows your 玉 count. Add `?pilot` for the 15-exchange pilot.
 
 ## Development and checks
 
