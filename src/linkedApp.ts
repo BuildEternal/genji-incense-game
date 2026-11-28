@@ -1,7 +1,7 @@
 import type { LinkedDatabase } from './buckets';
 import { PATTERNS, patternFor, patternKey, patternSvg, type GenjiPattern } from './genjiko';
 import { correctLabels, generateLinkedRound, scoreLinkedRound, type LinkedCard } from './linkedRound';
-import { play, setSoundEnabled, soundEnabled } from './sound';
+import { play, preloadSound, setSoundEnabled, soundEnabled, warmUpSound } from './sound';
 import './immersive.css';
 
 // Full-collection game: a game of five rounds, played like Genji-kō.
@@ -395,6 +395,9 @@ export function mountLinkedGame(root: HTMLElement, db: LinkedDatabase) {
     });
   }
 
+  preloadSound();
+  root.addEventListener('pointerdown', warmUpSound, { once: true });
+  root.addEventListener('keydown', warmUpSound, { once: true });
   window.addEventListener('resize', () => { readingHeight = 0; measureReading(); });
   void document.fonts?.ready.then(() => { readingHeight = 0; measureReading(); });
   render(false);

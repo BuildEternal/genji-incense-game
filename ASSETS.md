@@ -11,10 +11,10 @@ mono MP3, and level-adjusted. No other processing.
 
 | File | Original | Author | License | Clip taken |
 | --- | --- | --- | --- | --- |
-| `click.mp3` | [Fischtrommel_Muyu.mp3](https://freesound.org/people/the_very_Real_Horst/sounds/205999/) | the_very_Real_Horst | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | one wood-block hit at 7.18 s |
+| `click.mp3` | [Fischtrommel_Muyu.mp3](https://freesound.org/people/the_very_Real_Horst/sounds/205999/) | the_very_Real_Horst | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | one wood-block hit at 7.20 s |
 | `paper.mp3` | [rustling paper.wav](https://freesound.org/s/181774/) | keweldog | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | 1.0–1.9 s |
-| `gyoku.mp3` | [Big Singing Bowl](https://freesound.org/s/116315/) | Garuda1982 | CC0 1.0 | 0.72–6.72 s |
-| `begin.mp3` | [Tibetan_Singing_Bowls_Improv.wav](https://freesound.org/s/365416/) | RutgerMuller | CC0 1.0 | 1.38–5.38 s |
+| `gyoku.mp3` | [Big Singing Bowl](https://freesound.org/s/116315/) | Garuda1982 | CC0 1.0 | 0.90–6.72 s |
+| `begin.mp3` | [Tibetan_Singing_Bowls_Improv.wav](https://freesound.org/s/365416/) | RutgerMuller | CC0 1.0 | 1.40–5.38 s |
 | `pluck1.mp3`, `pluck2.mp3`, `pluck3.mp3` | [Japan_Koto_My_Amateur_Improv_Session_2.wav](https://freesound.org/people/RutgerMuller/sounds/365215/) | RutgerMuller | CC0 1.0 | single notes at 178.80 s, 181.93 s, 13.02 s |
 
 Credit for the CC BY sound: "Fischtrommel_Muyu.mp3" by the_very_Real_Horst
